@@ -1,0 +1,11 @@
+Wix Editor: Adjusting the Layout of Your Columns
+Source: https://support.wix.com/en/article/wix-editor-adjusting-the-layout-of-your-columns
+
+Wix Editor: Adjusting the Layout of Your Columns
+Adjust the layout of your columns to suit the look and alignment of your page. You can change the sizing and spacing to fit your content to make sure that your site is clear and easy to navigate.In this article, learn how to: 
+Resize your columns Adjust the column spacing and padding Align the column contentResizing your columnsAdjust the size of columns to suit your strip's content. You can select a preset layout, or use the customization option to change the proportions to whatever you'd like.To resize your columns:
+Click the strip that contains the columns in the editor. Click the Layout icon . Click a layout under Column Proportions.  (Optional) Click Customize Proportions and customize the layout by dragging the column edges.Note:If you have 5 columns, you cannot customize their proportions - they are always distributed equally.Changing the column spacingChoose the amount of space between your columns and the margins around them by adjusting the spacing and padding.To adjust the spacing and padding:
+Click your strip that contains your columns in the editor. Click the Layouts icon . Drag the Column Spacing slider to increase or decrease the gap between each column, or enter a value. Drag the Padding slider to increase or decrease the space between the columns and the edge of the strip, or enter a value.Aligning the column contentEach column in your strip can have a different alignment for its content. To change the alignment of the content in your columns:
+Click the column in your strip element. Click the Layout icon . Select a layout: 
+    
+Center: The content is aligned to the center of the column. Left: The content is aligned to the left of the column. Right: The content is aligned to the right of the column.

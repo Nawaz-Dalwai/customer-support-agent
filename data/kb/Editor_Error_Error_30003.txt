@@ -1,0 +1,7 @@
+Editor Error: Error 30003
+Source: https://support.wix.com/en/article/editor-error-error-30003
+
+Editor Error: Error 30003
+If you receive an Error 30003 message, it means there's an issue in the backend that may interfere with publishing your site.
+
+If you experience this issue, please contact Customer Care so that we can resolve the error.When contacting Wix Customer Care, include the following:Your site name or URL. The steps you took before receiving the error message.

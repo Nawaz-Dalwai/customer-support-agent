@@ -1,0 +1,88 @@
+Wix Bookings: Customizing Your Service Pages
+Source: https://support.wix.com/en/article/wix-bookings-customizing-your-service-pages
+
+Wix Bookings: Customizing Your Service Pages
+The Wix Bookings service page is the place to showcase each of your services. There, you can provide clients with everything they need to know before booking.Service pages appear in your editor automatically using the information you provide when creating your services. Your clients can access a service page by clicking the image, service name, or Read More link of a service.In this article, learn more about:
+Customizing your service page layout Managing the sections in your service page Designing your service page Editing the text on your service pageCustomizing your service page layoutStart by choosing a layout for your service page that suits your business. Then decide which service information you want to display. Include details such as the description, schedule, contact details, and more.You can customize the design of each of the three sections of the service page: the header, the sidebar and the main body. You can also hide the header and the sidebar if you prefer.Wix EditorEditor XStudio Editor
+Go to your editor. Go to your Service Page:
+    
+Click Pages & Menu  on the left side of the editor. Click Bookings Pages. Click the Service Page.   
+Click the Service Page element on your page. Click Settings.  Click the Layout tab. Enable the Show header toggle to show the header on your service page. Then customize the header: 
+    
+Select the checkboxes next to the elements you want to display on the service page header.  Drag the sliders to adjust the opacity, image height and side padding of your header.  Choose the alignment for your header.  Click Customize Image Cropping to set the image position of your header.    Scroll down to the Body & Sidebar section and choose what you want to customize:
+    
+Body: You can edit the spacing, column position and alignment. Sidebar: Enable the Show sidebar toggle to customize what you want displayed and how it appears on the sidebar.  
+Go to your editor. Go to your Service Page:
+    
+Click Pages  at the top of the editor. Click the Service Page under Bookings Pages.  
+Click the Service Page element on your page. Click Settings.  Click the Layout tab. Enable the Show header toggle to show the header on your service page. Then customize the header: 
+    
+Select the checkboxes next to the elements you want to display on the service page header.  Drag the sliders to adjust the opacity, image height and side padding of your header.  Choose the alignment for your header.  Click Customize Image Cropping to set the image position of your header.    Scroll down to the Body & Sidebar section and choose what you want to customize:
+    
+Body: You can edit the spacing, column position and alignment. Sidebar: Enable the Show sidebar toggle to customize what you want displayed and how it appears on the sidebar.  
+Go to your editor. Go to your Service Page:
+    
+Click Pages  on the left side of the editor. Click the Service Page under Bookings Pages.  
+Click the Service Page element on your page. Click Settings.  Click the Layout tab. Enable the Show header toggle to show the header on your service page. Then customize the header: 
+    
+Select the checkboxes next to the elements you want to display on the service page header.  Drag the sliders to adjust the opacity, image height and side padding of your header.  Choose the alignment for your header.  Click Customize Image Cropping to set the image position of your header.    Scroll down to the Body & Sidebar section and choose what you want to customize:
+    
+Body: You can edit the spacing, column position and alignment. Sidebar: Enable the Show sidebar toggle to customize what you want displayed and how it appears on the sidebar.  Managing sections in your service pageDisplay up to 8 different sections of information on your service page. These sections include: the service title, description, details, gallery and schedule. You can also display your cancellation policy, contact details and any plugins. Choose the order you think best serves your clients.If you display a sidebar on your service page, make sure to select the information section you want to display there. Whatever you display in the sidebar won't appear in the main body section.Note:Go to your site's dashboard to edit the specific information on the service page:
+To edit the service title, subtitle, and description go to the Booking Services. To change your cancellation policy, edit it in the Bookings Settings tab.  To change your contact details, go to the Business Info tab.Wix EditorEditor XStudio Editor
+Go to your editor. Go to your Service Page:
+    
+Click Pages & Menu  on the left side of the editor. Click Bookings Pages. Click the Service Page.   
+Click the Service Page element on your page. Click Settings.  Click Sections. Drag and drop the sections into your preferred order using the blue grids on the left. 
+(Optional) Click the Edit icon  on each section and choose what you want to do:
+    
+Toggle to hide or show a specific section. 
+Tip: Theicon indicates that an element is hidden. Customize the details displayed in each section.
+Note: Available options vary depending on the section you choose to edit.  
+Go to your editor. Go to your Service Page:
+    
+Click Pages  at the top of the editor. Click the Service Page under Bookings Pages.  
+Click the Service Page element on your page. Click Settings. Click Sections. Drag and drop the sections into your preferred order using the grids on the left. 
+(Optional) Click the Edit icon  on each section and choose what you want to do:
+    
+Toggle to hide or show a specific section. 
+Tip: Theicon indicates that an element is hidden. Customize the details displayed in each section.
+Note: Available options vary depending on the section you choose to edit.  
+Go to your editor. Go to your Service Page:
+    
+Click Pages  on the left side of the editor. Click the Service Page under Bookings Pages.  
+Click the Service Page element on your page. Click Settings. Click Sections. Drag and drop the sections into your preferred order using the blue grids on the left. 
+(Optional) Click the Edit icon  on each section and choose what you want to do:
+    
+Toggle to hide or show a specific section. 
+Tip: Theicon indicates that an element is hidden. Customize the details displayed in each section.
+Note: Available options vary depending on the section you choose to edit.  Designing your service pageYou can customize the design of the service page to better suit your brand and business. Edit the header, body and sidebar to make the information you display clear. You can also add elements such as a service details box, a schedule or a gallery so clients know exactly what to expect from your services. Wix EditorEditor XStudio Editor
+Go to your editor. Go to your Service Page:
+    
+Click Pages & Menu  on the left side of the editor. Click Bookings Pages. Click the Service Page.   
+Click the Service Page element on your page. Click Settings.  Click the Design tab. Choose what you want to customize:
+    
+Header: Customize the color and opacity of the service page Header background and Service Title. You can also adjust the font and background color and opacity of the header button. Body: Customize the color and opacity of the service page body background, text, and buttons using the available options. Sidebar: Customize the color and opacity of the service page sidebar background, text, and buttons using the available options. Service Details box: Adjust the design of the details box, including the font, color, background and border using the available options. Schedule: Customize the design of the schedule, including the background color, opacity, borders and dividers using the available options. You can also customize the color and the font of the text that appears in the schedule.  Gallery: Adjust the corner radius, border width, color and opacity using the available options.   
+Go to your editor. Go to your Service Page:
+    
+Click Pages  at the top of the editor. Click the Service Page under Bookings Pages.  
+Click the Service Page element on your page. Click Settings. Click the Design tab. Choose what you want to customize:
+    
+Header: Customize the color and opacity of the service page Header background and Service Title. You can also adjust the font and background color and opacity of the header button using the available options. Body: Customize the color and opacity of the service page body background, text, and buttons using the available options. Sidebar: Customize the color and opacity of the service page sidebar background, text, and buttons using the available options. Service Details box: Adjust the design of the details box, including the font, color, background and border using the available options. Schedule: Customize the design of the schedule, including the background color, opacity, borders and dividers using the available options. You can also customize the color and the font of the text that appears in the schedule.  Gallery: Adjust the corner radius, border width, color and opacity using the available options.   
+Go to your editor. Go to your Service Page:
+    
+Click Pages  on the left side of the editor. Click the Service Page under Bookings Pages.  
+Click the Service Page element on your page. Click Settings Click the Design tab. Choose what you want to customize:
+    
+Header: Customize the color and opacity of the service page Header background and Service Title. You can also adjust the font and background color and opacity of the header button using the available options. Body: Customize the color and opacity of the service page body background, text, and buttons using the available options. Sidebar: Customize the color and opacity of the service page sidebar background, text, and buttons using the available options. Service Details box: Adjust the design of the details box, including the font, color, background and border using the available options. Schedule: Customize the design of the schedule, including the background color, opacity, borders and dividers using the available options. You can also customize the color and the font of the text that appears in the schedule.  Gallery: Adjust the corner radius, border width, color and opacity using the available options.   Want to learn more?Check out the full course in Wix Learn about designing your site to build your business online. Editing the text on your service pageCustomize the text on your service page to fit your brand's tone and voice. This is useful if you and your staff have specific ways of describing your services and availability.You can customize the text for the bookings buttons, booking requests, course availability, and more. Wix EditorEditor XStudio Editor
+Go to your editor. Go to your Service Page:
+    
+Click Pages & Menu  on the left side of the editor. Click Bookings Pages. Click the Service Page.   
+Click the Service Page element on your page. Click Settings.  Click the Text tab. Click to edit the text on any of the available options, including your call-to-action or "Book Now" button.
+Go to your editor. Go to your Service Page:
+    
+Click Pages  at the top of the editor. Click the Service Page under Bookings Pages.  
+Click the Service Page element on your page. Click Settings. Click the Text tab. Click to edit the text on any of the available options, including your call-to-action or "Book Now" button.
+Go to your editor. Go to your Service Page:
+    
+Click Pages  on the left side of the editor. Click the Service Page under Bookings Pages.  
+Click the Service Page element on your page. Click Settings. Click the Text tab. Click to edit the text on any of the available options, including your call-to-action or "Book Now" button.

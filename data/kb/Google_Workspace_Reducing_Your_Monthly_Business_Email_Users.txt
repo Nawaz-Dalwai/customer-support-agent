@@ -1,0 +1,12 @@
+Google Workspace: Reducing Your Monthly Business Email Users
+Source: https://support.wix.com/en/article/google-workspace-reducing-your-monthly-business-email-users
+
+Google Workspace: Reducing Your Monthly Business Email Users
+You can always reduce the number of business email users in your monthly Google Workspace subscription. First, delete the relevant user(s) from your Google Workspace account. Then, you can remove the user(s) from the subscription.  Before you begin:
+Have a yearly business email subscription? Learn how to reduce yearly business email subscription users.  Subscriptions with outstanding invoices cannot be reduced. Make sure you do not have any outstanding or unpaid invoices for your Google Workspace email subscription. If you need to cancel your primary Workspace subscription, you can cancel your auto-renewal. Step 1 | Delete the user's business emailTo get started, select the relevant user(s) and delete them from your Google Workspace account. This makes the user(s) inactive, allowing you to reduce your subscription. Note:If the user has a Workspace Admin status, you need to revoke their Admin status before deleting their account.To delete a user:
+Go to Business Email in your Wix account. Click the More Actions  icon next to the business email you want to remove. Click Manage at Google.
+Note: You may need to sign into your Google Workspace account if you are not already signed in. From the Google Admin console menu, go to Directory, then Users. Click Remove user or Delete user for the user you want to remove. 
+Note: Depending on your Google account setup, you might need to confirm that you want to delete the user. Follow the on screen prompts to complete the process.Step 2 | Reduce business email subscriptionNow that you deleted the relevant user(s) from your Google Workspace account, you can go ahead and reduce your subscription.To reduce business email subscriptions:
+Go to Premium Subscriptions in your Wix account. Click the More Actions icon  next to the business email subscription you want to reduce. Click Remove users.
+Tip: This option only appears for monthly subscriptions. Learn how to cancel yearly subscriptions.
+Select the I want to delete my inactive Business Emails checkbox. Click Reduce Subscription.

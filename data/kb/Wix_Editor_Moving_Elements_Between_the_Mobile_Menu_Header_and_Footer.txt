@@ -1,0 +1,8 @@
+Wix Editor: Moving Elements Between the Mobile Menu, Header and Footer
+Source: https://support.wix.com/en/article/wix-editor-moving-elements-between-the-mobile-menu-header-and-footer
+
+Wix Editor: Moving Elements Between the Mobile Menu, Header and Footer
+You may want to rearrange elements on the mobile version of your site, or notice that elements you have placed in the header or footer appear in the wrong location. You can move elements between the header, footer, and menu box to resolve this issue, as well as tailor your site's structure for mobile visitors.  To move elements between the menu, header, and footer:
+Right-click the element on the mobile menu, header or footer. Click Move To. Click an option:
+    
+Move to Menu Box: Element is displayed the menu box. Move to Header: Element is displayed on your site's header. Move to Footer: Element is displayed on the site footer.

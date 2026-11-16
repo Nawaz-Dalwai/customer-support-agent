@@ -1,0 +1,15 @@
+Google Workspace: Canceling Your Business Email Renewal
+Source: https://support.wix.com/en/article/google-workspace-canceling-your-business-email-renewal
+
+Google Workspace: Canceling Your Business Email Renewal
+You can cancel your Google Workspace business email at any time by turning off the auto renewal option. This does not cancel the email immediately, rather it prevents it from renewing automatically at the end of the subscription period. 
+
+          Click to turn off auto renewal for your business email.  
+    
+
+
+        Cancel Auto Renewal
+      
+
+Important:We will attempt to process your renewal payment up to 30 days before your plan's expiration date. If you do not want your plan to renew, make sure to turn off auto renewal before your next payment date. Tip: You can see the exact date in the Next payment due section of Premium Subscriptions in your Wix account.Canceling your business emailAfter completing these steps, you will still have access to your business email until the end of its subscription period. To cancel your business email:
+Go to Premium Subscriptions in your Wix account. Click the More Actions icon  next to the relevant business email. Click Cancel business email.   Select the I still want to cancel checkbox. Click Cancel business email.FAQsWe are here to help with all your questions. Click a question below to learn more.I have multiple business emails. How do I cancel one of these? If you have more than one business email, you can choose to cancel only one or some of these instead of all of them. Click to learn how to cancel one of your business emails.I think I've been charged in error. What should I do?Google Workspace business emails purchased through Wix are non-refundable. However, if you believe that you have been charged in error, you can contact us to request a refund.What happens to my data after canceling my business email?According to Google's Terms of Service, business email data is retained for 180 days from the expiration date. If you repurchase your business email during this time frame, your business email data will be restored.

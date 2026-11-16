@@ -1,0 +1,32 @@
+Wix Blog: Adding Links and Buttons in Your Blog
+Source: https://support.wix.com/en/article/wix-blog-adding-links-in-your-blog
+
+Wix Blog: Adding Links and Buttons in Your Blog
+Adding links and buttons to your Wix Blog allows you to guide your readers to additional content, products, or external resources. This can enhance user engagement and drive traffic to other parts of your site.In this article, learn more about:
+Adding links to a blog post Adding buttons to a blog postAdding links to a blog postYou can add a link to certain words in your post, for example, "click here", or "buy now". You can also add a link to images to make them clickable. To add a link:
+Go to Blog in your site's dashboard. Click + Create New Post or open an existing post. Choose what you want to do:Add a link to a piece of text
+Highlight the text to which you want to add a link.  Click the Linkicon. Choose what you want to link to:
+    
+Web address: Link to another blog post or an external page.
+        
+Enter the address (URL) you want to link to. Select the relevant checkbox to choose how the link behaves.    Section: Link to a specific section in the same blog post.
+        
+Select the section of the blog post you want to link to.     Click Save.Add a link to an image
+Add a new image or edit an existing one:
+    
+Add new image: 
+
+Click the Add  icon.  Click the Image icon. Choose to upload media or select one from stock images.   Edit existing image: 
+
+Click the relevant image in your post. Click the Linkicon.     Copy the URL of the link you want to add and paste it into the link box.  Select the relevant checkboxes to choose how the link behaves:
+    
+Link opens in a new tab: The link, when clicked, opens in a new tab on the screen. Noreferrer: A noreferrer link does not provide information on the referring website.  Nofollow: ﻿A nofollow link prevents the link from showing in SEO results. Learn more about no follow links Sponsored: A sponsored link indicates that the link contains a product advertisement or affiliate marketing.     Adding a button to your blog postButtons are a great way to get your visitors interacting with various parts of your blog. For example, you can add 'click here' or 'view post' text to your button that prompts visitors to click and read other blog posts that they may like. To add a button:
+Go to Blog in your site's dashboard. Click + Create New Post or open an existing post. Add a new button or edit an existing one:
+    
+New button:
+
+Click the Add icon  in the panel on the left.  Click Button.    Edit an existing button: Click the relevant button.   Click the Settings icon  and customize your button.
+    
+Button text: ﻿Enter the text that is displayed on your button. Link: Copy the URL of the link you want to add and paste it into the link box.  Link opens in a new tab: The link, when clicked, opens in a new tab on the screen. Nofollow: ﻿A nofollow link prevents the link from showing in SEO results. Learn more about no follow links. Sponsored: A sponsored link indicates that the link contains a product advertisement or affiliate marketing.    Click Save. Click the Design tab to change the design of your button:
+    
+Border: Drag the sliders to change the width and corners of the border around the button. Button colors: Click the colors to choose the color for the text, background and border of your button.   Click Save.

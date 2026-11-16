@@ -1,0 +1,6 @@
+Connecting a Spanish (.es) Domain to Your Wix Site
+Source: https://support.wix.com/en/article/connecting-a-spanish-es-domain-to-your-wix-site
+
+Connecting a Spanish (.es) Domain to Your Wix Site
+Once you upgrade your site with a plan, you can connect a .es domain you already own to your Wix site.In most cases, we recommend connecting your domain to Wix via Nameservers. With this connection method, Wix hosts your DNS records, which means you can manage them in your Wix account. This way, if you ever need assistance managing your DNS records, Wix Customer Care can help you.Keep the following in mind when you’re preparing to connect your domain:
+You will need access to your current domain registrar. New DNS records may take up to 48hrs to fully propagate.Learn how to connect a domain to the Wix nameservers.Currently, it is not possible to purchase a .es domain from Wix or transfer one to Wix. If this is a feature you would like to see in the future, please Vote for this feature and we'll make sure to keep you updated.

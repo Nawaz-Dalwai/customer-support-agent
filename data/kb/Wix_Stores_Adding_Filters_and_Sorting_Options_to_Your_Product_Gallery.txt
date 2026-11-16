@@ -1,0 +1,20 @@
+Wix Stores: Adding Filters and Sorting Options to Your Product Gallery
+Source: https://support.wix.com/en/article/wix-stores-adding-filters-and-sorting-options-to-your-product-gallery
+
+Wix Stores: Adding Filters and Sorting Options to Your Product Gallery
+Make it easy for customers to find the perfect product by adding filters and sorting options to your Product Galleries.You can display the default filters already set up for you or create your own custom filters. You can also add a "Sort by" drop-down so that your customers can sort your products as they wish.Note:Filter and sorting options are not available in slider galleries.In this article, learn more about:
+Displaying default filters Creating your own custom filters   Displaying sorting optionsDisplaying default filtersWix Stores comes with 3 preset filters. You can let customers filter by:
+Category Price Product OptionsTo set up default filters:
+Click the Product Gallery you want to add filters to. Click the Settings icon . Click the Filters tab. Enable the Show filters toggle. Select the Show filters title checkbox to display or hide the title. Select the Show applied filters section checkbox to show customers which filters they've selected. (Optional) Edit the Filter Title. Choose which types of filters you want to set up:Filter by category
+Click the More Actions icon .
+ Click Show or Hide to change the visibility of this filter. Click Edit.
+    
+(Optional) Edit the name of the category filter. Deselect the checkboxes next to the categories you don't want to display.  Filter by price
+Click the More Actions icon .
+ Click Show or Hide to change the visibility of this filter.  (Optional) Edit the filter name:
+    
+Click Edit. Edit the name of the price filter.  Filter by product optionsIf your products have product options, such as different sizes and colors, you can let customers filter by these options. Note: You cannot select which product options to display. You can display them all or hide them all.
+Click the More Actions icon .
+ Click Show or Hide to change the visibility of this filter. Note:Filtered products do not necessarily appear on your live site in the order in which they appear in categories.Creating custom filtersYou can create your own filters using the custom filter option. For example, your site might have 3 categories displayed on 3 sites pages, "Men", "Women", and "Kids". You may want to add the option to filter by brand. To do so, you need to first create a category for each brand you carry in your store. To create custom filters:
+Create the categories you need for the custom filter (e.g. brands). Click the Product Gallery you want to add filters to. Click the Settings icon . Click the Filters tab. Enable the Show filters toggle. (Optional) Edit the Filter Title. Click +Create Custom Filter. Enter a name for your custom filter (e.g. brands). Deselect the checkboxes next to categories you don't want to include in the custom filter.Displaying sorting optionsAllow customers to sort products by price, name, or to show the newest products first.To add sorting options:
+Click the Product Gallery to which you want to add sorting options. Click the Settings icon . Click the Sorting tab. Enable the Show "Sort by" options toggle. (Optional) Edit the Sorting title. Deselect any sorting options you don't want to display.

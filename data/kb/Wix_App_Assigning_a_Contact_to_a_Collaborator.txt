@@ -1,0 +1,7 @@
+Wix App: Assigning a Contact to a Collaborator
+Source: https://support.wix.com/en/article/wix-owner-app-assigning-a-contact-to-a-collaborator
+
+Wix App: Assigning a Contact to a Collaborator
+Assign your site collaborators specific contacts so that they can help manage your customer relations. Site collaborators can chat with customers, respond to their requests, and manage customer relations via the Wix app. You can unassign contacts at any time.To assign a contact to a collaborator:
+Go to your site in the Wix app.﻿ Tap Manage  at the bottom. Tap Customers & Leads and select Contacts.  Tap the More Actions icon  next to the relevant contact. Tap Assign contact.  Tap the relevant collaborator.Tips:
+Reassign contacts to a different collaborator, or to yourself, by repeating the steps above. You can also assign contacts to collaborators from your desktop.

@@ -1,0 +1,70 @@
+Wix Forum: Adding and Setting Up Your Forum
+Source: https://support.wix.com/en/article/wix-forum-adding-and-setting-up-your-forum
+
+Wix Forum: Adding and Setting Up Your Forum
+Adding a Wix Forum to your site allows you to create a community space where visitors can interact, share ideas, and ask questions. This not only increases engagement but also keeps your audience coming back for more interactive experiences. For instance, if you run a small gardening business, a forum could enable your customers to discuss gardening tips, share photos of their gardens, and seek advice on plant care, fostering a loyal community around your brand.Step 1 | Add Wix Forum to your siteTo get started, add Wix Forum to your site. Wix EditorStudio EditorDashboard
+Go to your editor. Click Add Apps  on the left side of the editor. Search for Wix Forum in the search bar. Click Add to Site.
+Go to your editor. Click App Market  on the left side of the editor. Click App Market. Search for Wix Forum in the search bar. Click Add to Site.
+Go to the Wix App Market in your site's dashboard. Search for Wix Forum in the search bar. Click Add to Site.After you add Wix Forum, 2 pages are added to your site:
+Forum Page: Your main forum page, where forum posts appear. Members Page: On this page, forum members can view other members of the community, follow each other, see what other members have written – even chat with one another.Step 2 |  Create a category Categories help keep your forum organized and engaging. Consider the main themes or topics you want to discuss on your site, and create categories based on these ideas. Each category should relate to your overall site content and encourage interaction among community members. By organizing your forum into clear, topic-based categories, you make it easier for users to find relevant discussions and contribute effectively.To create a category:DashboardWix app
+Go to Forum in your site's dashboard. Click Categories on the left. Click Add Category at the top right.Set up your category
+Enter a name in the Category Name field (appears in the navigation menu). Customize the New Post button text. Enter a name in the Category Header Title field (appears in the header). Enter a short description of what your category is about in the Description field (maximum 65 characters). Choose one of the following options:
+    
+Color:
+
+Click the Background color field to choose a color for your header background. Click the Opacity field to increase or decrease the level of opacity of your header. Click the Text color field to choose the color of your header text.    Image:
+
+Click the Add icon  to add an image to your header.  Click the Overlay color field to choose the color for your image overlay. Click the Opacity field to increase or decrease the level of opacity on your image.     Choose who has access to the category and its content:
+    
+Everyone: Any member can access this category. Logged in members: Only members that are logged in can access this category Selected members: Only specific members, with certain roles, badges, or subscriptions can access this category.    Click the Category guidelines toggle:
+    
+Enabled: A set of guidelines created by you are added to the category. These can include asking all members to stay within the topic of the category, etc.  Disabled: Guidelines do not appear on your category.   Set up your category posts
+Click Posts at the top. Select if visitors can use reactions:
+    
+ Reactions:  Select your "Like" reaction and other reactions. No reactions.   Choose who can post in this category:
+    
+Everyone with access: All members that have access to the category can write posts in this category.  Admins and moderators only: Only admins and moderators can write posts in this category.   Set up your category comments
+Click Comments at the top. Set up your section labels:
+    
+Enter the Header Label Text and Publish button text.   Select what type of guest commenting system you would like: Allow commenting or Allow comment reactions. Select up how comments are sorted: By Newest, Oldest or Most reactions. Set up marked comments and their labels and icons. Click the Allow users to reply to comments toggle to enable or disable comment replies.
+Go to your site in the Wix app. Tap Manage  at the bottom. Tap Forum. Tap Categories.  Tap + Add New Category at the bottom.  Enter a name in the Category Name field (appears in the navigation menu). Enter a Category Description so visitors know what it's about. Choose what type of commenting system you would like:
+    
+Comments with reactions: Comments appear in the order they are posted. Members can react with a heart. Comments with upvotes and downvotes: Comments are ordered by votes. Upvote a comment to push it to the top.   Tap Add Category Image to display a cover image for your category. Tap Create. Set up your Category Permissions:
+    
+Tap Edit next to Who has access? and choose who has access to the category and its content:
+        
+Everyone: Anyone can access this category. Members only: Only members that are logged in can access this category Selected members: Only specific members, with certain roles, badges, or subscriptions can access this category.    Tap Edit next to Who can post? and choose who can post in this category:
+        
+Member with access: All members that have access to the category can write posts in this category.    Admins and moderators: Only admins and moderators can write posts in this category.   Note: To make additional changes to the category, go to your site's dashboard on desktop.Tip:You can also add subcategories within your categories. Learn moreStep 3 |  Customize your forum layout and designAfter you've set up some categories, you can then take a look at customizing your forum settings. This will allow you to shape your forum to how you want it. You can customize your general forum settings as well as the layout, display and design of your forum. To customize your forum layout and design:
+Click the Wix Forum app in your editor. Click Settings. Choose what you want to do:Change the layoutNote: There are 2 layouts to consider — the main page layout and the post page layout. 
+Click the Layout tab. Customize the main page layout settings:
+    
+Choose a Main Page layout (option available if you display categories on your forum):
+        
+Classic: An organized, classic layout, better for forums with lots of text. Cards: A beautiful masonry layout to showcase posts.   Show subcategories: Click the Show subcategories toggle to show or hide subcategories on your main forum page. Show header: Click the Show header toggle to show or hide the header on the main forum page. Header height: Drag the slider to change the size of the header. Header text alignment: Aligned the header text to the left or center.   Click the Post Page tab to customize the post page layout:
+    
+Choose a Posts Page layout:
+        
+Classic: An organized, classic layout, better for forums with lots of text. Cards: A beautiful masonry layout to showcase posts. If you selected the Cards layout, click to select a card size.   Show header: Click the Show header toggle to show or hide the header on category pages. Header height: Drag the slider to change the size of the header. Header text alignment: Align the header to the left or center.  Change the displayNote: There are 3 display settings to consider — All Forum, Posts, and Comments.
+Click the Display tab. Click All Forum.  Customize the All forum settings:
+    
+Choose your main page display as a:
+        
+List of categories: Your main forum page shows the categories you've created to structure your forum topics, e.g. Books and TV Shows. List of posts: Your main forum page shows a list of your posts rather than the categories, e.g. a forum post about favorite books.    Click the Default post sorting drop-down to sort your posts from the options available. Choose what you want to show: Select or deselect the checkboxes to choose what you want to show on your main forum page.  (Optional): Click Manage badges for more badge customization options.  Login from forum menu: Click the Login from forum menu toggle to enable or disable it:
+        
+Enabled: Site members can login directly from your main forum page.  Disabled: Site members can login from your homepage.    (Optional): Click member signup customization to customize your member signup form.    Click Back.  Click Posts.  Customize your Post display settings: 
+    
+Posts: Select or deselect the checkboxes to choose what you want to show on your post. Post Widgets: Select or deselect the checkboxes to choose what sections you want to show on your post widgets.   Click Back.  Customize your Comments display settings:
+    
+Comments Header: Select or deselect the checkboxes to choose what you want to show on your comments header. Comments List: Select or deselect the checkboxes to choose what you want to show on your comments list.   Customize the design
+Click the Design tab. Click the Navigation menu tab to customize the navigation menu settings:
+    
+Fonts and icons color: Click the color box to choose a color for your fonts and icons.  Background opacity and color: Drag the slider to change the level of opacity, and click the color box to select a color for your background.  Divider opacity and color: Drag the slider to change the level of opacity, and click the color box to select a color for your divider.    Click Back.  Click the Text styles tab to customize the text styles settings:
+    
+Font style and size: Click the font icon   to customize the style and size of the font. Header title: Click the font icon  to customize the style and size of the header title.  Header description: Click the font icon  to customize the style and size of the header description.  Post text color: Click the color box to select a color for your post text.  Post title: Click the font icon  to customize the style and size of the post title.  Post description: Click the font icon  to customize the style and size of the post description.    Click Back.  Click the Icons and buttons tab to customize the icons and buttons settings:
+    
+Button text color: Click the color box to select the button text color. Button opacity and color: Click the color box to select a button color and drag the slider to change the opacity.  Corner radius: Drag the slider to change the corner radius.  Links and hashtags: Click the color box to select a color for your links and hashtags. Comment icon colors: Click the color box to select a color for your comment icons.    Click Back. Click the Background and borders tab to customize the settings for the background and borders:
+    
+Forum background: Drag the slider to change the opacity and click the color box to select a background color for the forum.  Posts, categories, and sidebar background and opacity: Drag the slider to change the opacity and click the color box to select a background color for your posts, categories, and sidebar. Posts, categories, and sidebar border color and opacity: Drag the slider to change the opacity and click the color box to select a border color for your posts, categories, and sidebar. Border width: Drag the slider to change the width of the border.  Corner radius: Drag the slider to change the corner radius.   Click Back. What's next?When you're ready, take a look at the following articles to help build on what you've already put in place. Learn more about:
+Writing your first forum post The forum members page Managing your forum on the Wix mobile app Sharing forum posts on social mediaFAQ'sClick a question below to learn more about Wix Forum.How do I access the forum to manage it?To manage the forum as an owner, log in to your live site using the email associated with your Wix account.What can guests, members and owners do on the forum?
+Guest: As a guest you can read, like, and share posts from a forum. Member: As a member you can comment, post, and report inappropriate content. Owner: As an owner you can manage categories, move and delete posts, disable comments and pin a post to the top of a category. What languages is Wix Forum available in?Wix Forum is available in multiple languages. Learn which languages are available.

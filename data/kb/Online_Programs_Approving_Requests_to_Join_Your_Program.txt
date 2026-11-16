@@ -1,0 +1,7 @@
+Online Programs: Approving Requests to Join Your Program
+Source: https://support.wix.com/en/article/online-programs-approving-requests-to-join-your-program
+
+Online Programs: Approving Requests to Join Your Program
+When you create a private program, members of your site must submit a request to join and access the content. Important:
+You must upgrade your site so people can start joining your program.  If you've set a price for your program, new participants are automatically approved once they make the payment. To approve requests to join your program:
+Go to Online Programs in your site's dashboard. Click the relevant program. Click Manage next to Participants. Click the Pending tab. Click Approve next to the member(s) you want to approve.

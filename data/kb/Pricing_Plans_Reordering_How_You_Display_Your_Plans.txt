@@ -1,0 +1,30 @@
+Pricing Plans: Reordering How You Display Your Plans
+Source: https://support.wix.com/en/article/pricing-plans-reordering-how-you-display-your-plans
+
+Pricing Plans: Reordering How You Display Your Plans
+Change the order of your pricing plans on your site to highlight specific options or create a more logical flow. For example, prioritize the most popular plans, or those with exclusive offers to capture visitors' attention.You can easily reorder your plans while editing the Plans & Pricing page in your editor, or on-the-go from the Wix app and Studio app.Wix EditorEditor XStudio EditorMobile Apps
+Go to your editor. Go to your Plans & Pricing page:
+    
+Click Pages & Menu  on the left side of the editor. Click your Plans & Pricing page.    Click the Plans & Pricing element on your page. Click Settings.  Click Plans.  Click Reorder Plans.  Drag and drop the plans into your preferred order. 
+Click Publish to make the change live on your site. Click Done.
+Go to your editor. Go to your Plans & Pricing page:
+    
+Click Pages  at the top of the editor. Click your Plans & Pricing page.    Click the Pricing Plans element on your page. Click Settings. Click Plans.  Click Reorder Plans.  Drag and drop the plans into your preferred order. 
+Click Publish to make the change live on your site. Click Done. 
+Go to your editor. Go to your Plans & Pricing page:
+    
+Click Pages  on the left side of the editor. Click your Plans & Pricing page.    Click the Pricing Plans element on your page. Click Settings.  Click Plans.  Click Reorder Plans.  Drag and drop the plans into your preferred order. 
+Click Save at the top. Click Publish to make the change live on your site. Click Done. You can reorder your pricing plans from both the Wix app or Studio app. Click the relevant app below to reorder your plans:Wix app
+Go to your site in the Wix app. Tap Manage  at the bottom. Tap Site & App.  Tap Customize under Mobile Apps.  Tap the Pricing Plans element.  Tap the Edit icon   at the top right of the element.
+ Tap Customize element. Decide how you want to organize your Pricing Plans under Sorting:
+    
+Oldest to newest. Newest to oldest.  Custom: Reorder your plans the way you want to showcase them on your site.
+        
+Tap Set Custom Order. Tap and drag the plans into your preferred order.      Tap Save.  Tap Save to confirm.
+Studio app
+Go to your site in the Wix Studio app. Tap the More Actions icon  next to the relevant site. Tap Manage site.
+ Tap Site & App.  Tap Customize under Mobile Apps.  Tap the Pricing Plans element.  Tap the Edit icon   at the top right of the element. Tap Customize element. Decide how you want to organize your Pricing Plans under Sorting:
+    
+Oldest to newest. Newest to oldest.  Custom: Reorder your plans the way you want to showcase them on your site.
+        
+Tap Set Custom Order.  Tap and drag the plans into your preferred order.      Tap Save.  Tap Save to confirm.What's next?You can also display your pricing plans by type using tabs. This is a great way to help your customers find the plan that's right for them.

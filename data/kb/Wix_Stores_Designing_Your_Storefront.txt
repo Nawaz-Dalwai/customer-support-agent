@@ -1,0 +1,6 @@
+Wix Stores: Designing Your Storefront
+Source: https://support.wix.com/en/article/wix-stores-designing-your-storefront
+
+Wix Stores: Designing Your Storefront
+No matter what look you're going for, Wix Stores' lets you bring your design vision to life.Wix Stores is made of many different elements - from the Product Gallery where you display your products, to the Product Page, the Shopping Cart, and more. In each of these elements, almost all the fonts, colors, styles, and layouts can be customized.To get started, go to the element you want to customize, click it, and click the Settings icon . Want to learn more?Check out the full course in Wix Learn on building your store or skip to the last video on designing and publishing your store.Learn how to customize your:
+Product galleries Product page Category page (not yet available for all) Product quick view Cart page Cart Icon Side Cart Thank You page

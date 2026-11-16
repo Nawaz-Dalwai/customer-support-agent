@@ -1,0 +1,21 @@
+Wix Editor: Changing the Background Image Scaling, Position and Opacity
+Source: https://support.wix.com/en/article/wix-editor-changing-the-background-image-scaling-and-position
+
+Wix Editor: Changing the Background Image Scaling, Position and Opacity
+Adding a background image can help make your page stand out. There are some small things you can do to really make it your own. For example, you can change the scaling and position of the image, add a scroll effect, or adjust the level of opacity on the image itself.In this article, learn more about:
+Changing the opacity of your background image Adding scroll effects to your background image Changing the scaling and position of your background imageChanging your page background image opacityOpacity is the opposite of transparency. When you make something darker you are increasing the level of opacity. You can adjust the opacity of your background image by increasing or decreasing it. To change the opacity of your background image:
+Go to the relevant page in your editor.  Click Site Design  on the left side of the editor. Click Page Background. Choose what you want to do:
+    
+Preset image: Select a preset image from the options available Upload your own image: Follow the steps to upload a new image.
+        
+Click Image. Click Upload Media. Upload your image using your preferred method. Click Change Background.     Click Settings  on the image background preview. 
+Note: Settings only appears if an image is selected or uploaded.
+Drag the Image opacity (%) slider to make the image more or less visible. (Optional) Click the Color behind image color box and select a color.Adding scroll effects to your background imageAdd some flair to your image by giving it a scroll effect. You can choose to add a parallax scroll or a freeze effect. What are they?A parallax scroll allows the foreground and background to move, but the background moves slower, offering the illusion of depth. Adding a freeze scroll means your page background does not move while visitors scroll up and down, but the content on top does move. To add scroll effects:
+Go to the relevant page in your editor.  Click Site Design  on the left side of the editor. Click Page Background. Click Settings .  Choose the scroll effect: 
+    
+None: No scrolling effect. Parallax: Your page background and content on top move at different speeds, creating a cool and fun experience for your visitors.
+Note: Parallax scrolling is not displayed on the mobile version of your site. Freeze: This means your page background doesn't move while visitors scroll up and down, but the content on top does.  Changing the background image scaling and positionChange the scaling and position of your background to suit different screen sizes. You can choose to fill the entire screen with your image background, or maintain a certain width and height to fit a proportion of the screen. To change the image scaling and position:
+Add an image background. Click the background image and then click Change Background.  Click Settings .
+Under How's the image scaled? select an option: 
+    
+Fill: The background image is resized to fit to the size of the screen on a desktop screen only. For mobile screens, it keeps the proportions. Tile: The background image is displayed in a tile formation across the screen.   Under Where is it positioned? Select a position on the grid.

@@ -1,0 +1,6 @@
+Accessibility: Making Document Files Accessible
+Source: https://support.wix.com/en/article/accessibility-making-document-files-accessible
+
+Accessibility: Making Document Files Accessible
+If you have documents on your site, we recommend improving their accessibility to ensure that all site visitors can view and use them.You should know:As PDFs and Word documents are not Wix products, you need to adjust them on their respective platforms / programs.
+Learn how to make PDF files accessible Learn how to make your Word documents accessibleNext step:Go back to the Accessibility Checklist to continue improving your site for accessibility.

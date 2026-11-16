@@ -1,0 +1,8 @@
+Wix Editor: Creating a Floating Menu
+Source: https://support.wix.com/en/article/wix-editor-creating-a-floating-menu
+
+Wix Editor: Creating a Floating Menu
+Add a cool floating menu to your site!This is a popular and stunning effect that ensures that your site visitors never have to scroll back to the top of a page to find the menu.A floating menu sticks to your screen at a location of your choice, so that it is always visible when you scroll down your site.There are two options for creating a floating menu:
+Create a floating pages menu: The menu items link to pages. Create a floating in-page menu: The menu items link to anchors and sections, not pages. They are most useful on one-page sites, or site pages that are very long with several sections.To create a floating pages menu:
+Add a menu. Pin the element to the desired location on the screen.To create a floating in-page menu:
+Add and set up an in-page menu.

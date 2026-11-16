@@ -1,0 +1,21 @@
+Wix Multilingual: Translating Text, Buttons and Links
+Source: https://support.wix.com/en/article/wix-multilingual-translating-text-buttons-and-links
+
+Wix Multilingual: Translating Text, Buttons and Links
+You can translate text, buttons and links on your site with Wix Multilingual. Choose whether to use the Translation Manager in the dashboard, or head over to your editor to see how your translations look on the page.Before you begin:Add and set up Wix Multilingual on your site and translate it in the Translation Manager. To translate text, buttons and links:Wix EditorStudio EditorDashboard
+Go to your editor. Click the Switch languages drop-down menu at the top of the editor.  Select the language you want to edit. 
+Select the text element you want to translate in your page. Click Edit Translation or Auto-translate to enter or edit the translation.
+Note: Currently, collapsible text can only be translated manually. (Optional) Design the element in your secondary language. (Optional for buttons and links) Click the Link icon  to change the link. (If the secondary language is still hidden) Make this language visible on your site:
+    
+Go to Multilingual in your site's dashboard. Click the Status drop-down next to your language and select Visible.  
+Go to your editor. Click the Switch languages drop-down menu at the top of the editor. Select the language you want to edit. 
+Select the text element you want to translate in your page. Click Edit Translation or Auto-translate to enter or edit the translation.
+Note: Currently, collapsible text can only be translated manually. (Optional) Design the text element in your secondary language. (Optional for buttons and links) Click the Link icon  to change the link. Publish your translations:
+    
+Go to Multilingual in your site's dashboard. Click the Status drop-down next to your language and select Visible. (In the editor) Click Publish at the top right to publish your site.  
+Go to the Translation Manager in your site's dashboard. Choose the relevant language at the top left.  Click an item from the list to add or edit the translation.
+Note: Currently, collapsible text can only be translated manually. Click Save. 
+Publish your translations:
+    
+Go to Multilingual in your site's dashboard. Click the Status drop-down next to your language and select Visible. (In the editor) Click Publish at the top right to publish your site.  What's next?
+Customize your language menu Translate images, galleries, and backgrounds Translate menus

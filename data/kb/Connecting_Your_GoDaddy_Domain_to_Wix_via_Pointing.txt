@@ -1,0 +1,14 @@
+Connecting Your GoDaddy Domain to Wix via Pointing
+Source: https://support.wix.com/en/article/connecting-your-godaddy-domain-to-wix-via-pointing-9528059
+
+Connecting Your GoDaddy Domain to Wix via Pointing
+Connect your GoDaddy domain to Wix by updating your DNS records in GoDaddy. Note that when connected via pointing, Wix is unable to help you manage your DNS because the records are hosted at GoDaddy. You'll need to contact GoDaddy if you need help with your DNS.Alternatively, you can connect your domain via name servers to manage your DNS records in your Wix account. Learn more about the differences between connection methods. Before you begin:In order to connect your GoDaddy domain to Wix via pointing, make sure you have:
+Upgraded your site with a plan Added your domain to your Wix accountTo connect your GoDaddy domain via pointing:Sign in to your GoDaddy account.Click the user profile icon at the top right and select My Products. Click DNS to the right of your domain. Update the A record that has @ in the Name column.Show me how
+Click the Edit icon  to the right of the A record that has @ in the Name column. 
+Note: If you don't have an A record with @ in the Name column, add one (see below). Enter 185.230.63.107 in the Points to field. Click Save.  
+To add an A record with @ in the Name column (if you don't already have one):
+Click ADD at the bottom right.   Click the Type drop-down and select A. Enter @ in the Host field.  Enter 185.230.63.107 in the Points to field. Click Save. 5.  Update the CNAME record that has www in the Name column. Show me how
+Click the Edit icon  to the right of the CNAME record that has WWW in the Name column. 
+Note: If you don't have a CNAME record with WWW under Name, create one (see below). In the Points to field, type: pointing.wixdns.net     Click Save. 
+To add a CNAME record with WWW in the Name column (if you don't already have one):
+Click ADD at the bottom right.   Click the Type drop-down and select CNAME. Enter www in the Host field.  In the Points to field, type: pointing.wixdns.net    Click Save. Note:It may take up to 48 hours for the DNS changes to propagate (become live) worldwide. Learn more about domain propagation.

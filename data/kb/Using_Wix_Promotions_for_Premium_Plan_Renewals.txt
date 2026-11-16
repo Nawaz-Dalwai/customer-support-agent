@@ -1,0 +1,5 @@
+Using Wix Promotions for Premium Plan Renewals
+Source: https://support.wix.com/en/article/using-wix-promotions-for-premium-plan-renewals
+
+Using Wix Promotions for Premium Plan Renewals
+Promotions offered by Wix (e.g. the Wix promo code) are valid for the first month/year of service (depending on the plan purchased). Promotions cannot be used to renew an existing Premium plan.Tip:It is possible to upgrade an existing Premium plan using a promotional coupon.In addition, the discounted price is valid for the first year/month ONLY. All subsequent renewals are charged at the original price of the plan (without the discount).

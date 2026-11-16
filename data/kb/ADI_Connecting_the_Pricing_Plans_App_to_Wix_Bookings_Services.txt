@@ -1,0 +1,12 @@
+ADI: Connecting the Pricing Plans App to Wix Bookings Services
+Source: https://support.wix.com/en/article/adi-connecting-the-pricing-plans-app-to-wix-bookings-services
+
+ADI: Connecting the Pricing Plans App to Wix Bookings Services
+The Pricing Plan app works together with Wix Bookings to allow you to offer clients membership and packages for Bookings services. Add Pricing Plans so you can display membership plans or packages on your site.Membership plans: Give unlimited access to selected services for a time frame you choose. Packages: Give clients the option of buying a set number of services at a discounted rate.Learn more about membership plans and packages for Wix Bookings services.To create a membership plan for Bookings services:Step 1 | Add and set up Wix BookingsIf you have not already done so, add Wix Bookings to your site. 
+
+Click Add on the top bar inside ADI. Click Apps. Hover over Bookings and click Add. Step 2 | Add the Pricing Plan appIf you have not already done so, add Pricing Plans to your site. Click Add on the top bar inside ADI.Click Apps.Hover over Pricing Plans and click Add. Step 3 |  Create services & offer them as part of a membership plan or packageWith Wix Bookings, you can create different types of services.
+
+While you are creating a service, you can optionally offer it as part of a membership plan or package. 
+
+Start by creating the services you want to offer. Learn how to:
+Create appointments  Create classesStep 4 | Connect an online payment methodConnect a payment option. To accept recurring payment (e.g. monthly payments), you need to connect either PayPal or Stripe.Step 5 | Customize your Pricing Plans pageOnce you've created your plans and connected them to bookings services, you can customize the look of the Pricing Plans page on your site. Tip:When you view your services in the Booking Services tab, you can identify those connected to a membership plan by the information listed under Pricing.

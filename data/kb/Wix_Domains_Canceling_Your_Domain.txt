@@ -1,0 +1,16 @@
+Wix Domains: Canceling Your Domain
+Source: https://support.wix.com/en/article/canceling-a-wix-domain
+
+Wix Domains: Canceling Your Domain
+You can cancel your domain at any time from your Wix account if you no longer need it. This turns off the auto renew feature, so you'll still own your domain until the end of the subscription period after you cancel.  
+
+        Click to cancel your domain
+    
+
+
+        Choose domain to cancel
+      
+
+In this article learn more about:
+Canceling your domain Frequently asked questions (FAQs)Canceling your domainYou can cancel your domain at any time from your Wix account.
+Go to Premium Subscriptions in your Wix account. Click the More Actions icon  next to the relevant domain. Click Cancel domain. Select Cancel auto renew and click Submit.FAQsClick a question below to learn more.Is there a trial period for domain purchases?Wix domain purchases are non-refundable and do not include a 14 day trial period.If I cancel my domain, what happens to my plan?Your site plan and domain are separate services. If you want to cancel your Premium or Studio plan, you'll need to do that separately. What happens when my domain renews at the end of the subscription period?To ensure your site remains live at all times, domains purchased from Wix are set to automatically renew 30 days before the end of their subscription period. Learn more about checking your domain's renewal date.How can I check when my domain subscription period ends?You can check your domain's subscription period by going to the Premium Subscriptions section in your Wix account. The renewal date will be listed next to your domain.

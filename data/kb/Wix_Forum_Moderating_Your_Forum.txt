@@ -1,0 +1,26 @@
+Wix Forum: Moderating Your Forum
+Source: https://support.wix.com/en/article/wix-forum-moderating-your-forum
+
+Wix Forum: Moderating Your Forum
+You don't have to do it all yourself. You can assign moderator status to any of your forum members, so they can:
+Disable commenting on posts Move posts between categories Pin posts Delete posts (except posts created by the admin)You can also customize the moderation settings in your dashboard. These settings let you add word filters and enable spam prevention across your Forum. Learn more about:
+Adding a moderator to your forum Customizing your forum moderation settingsAdding a Moderator to Your ForumModerators are trusted members that take on additional tasks to help keep your forum running well. You can select any member that you know and trust to act as a moderator for your forum.To add a moderator to your forum:
+Go to the forum on your live site. Log in using the email associated with your Wix account. Navigate to the relevant forum member.
+Note: You can access forum members from the members page or through one of their forum posts by clicking on their profile picture.  Click the Show More icon. Click Set as Forum Moderator. Click Confirm.Tip:To remove a member as moderator, follow the steps 1 to 4 above, and click Remove Moderator.Customizing the Moderation SettingsBy customizing the moderation settings, you can enable reCAPTCHA to help prevent spam, and add a word filter that lets you block posts and comments with specific words etc. To customize the moderation settings:
+Go to Forum in your site's dashboard.  Click Moderation Settings at the top.  Click the Spam protection with reCAPTCHA toggle to enable or disable it:
+    
+Enabled: Your forum is protected against spam. 
+        
+Click the relevant toggles to choose when reCAPTCHA activates.    Disabled: Your forum is not protected against spam.    Click the Post limit for new members toggle to enable or disable it:
+    
+Enabled: A limit is applied to new member posts in their first week.
+        
+Click the relevant toggle to select a post limit for new members.    Disabled: New members can post as much as they want in their first week.    Click the Attachment size toggle to enable or disable it:
+    
+Enabled: Members can only upload files to a maximum set size chosen by you. 
+        
+Drag the slider to set the maximum file size.    Disabled: There's no size limit on files uploaded by members.    Click the Word filter toggle to enable or disable it:
+    
+Enabled: Filters are applied to selected words to stop them appearing in posts and comments. 
+        
+Click the Spam text box and add the relevant words.  Click the Banned text box and add the relevant words.    Disabled: No filter is applied. Members can use any words they like when they post or comment.    Click Save. Tip:You can edit permissions for a category, so only admins and moderators can write posts. Learn more

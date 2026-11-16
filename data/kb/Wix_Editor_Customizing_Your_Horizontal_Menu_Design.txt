@@ -1,0 +1,63 @@
+Wix Editor: Customizing Your Horizontal Menu Design
+Source: https://support.wix.com/en/article/wix-editor-customizing-your-horizontal-menu-design
+
+Wix Editor: Customizing Your Horizontal Menu Design
+Customize the design of your menu, change the colors to match the look of your site, or choose a new font size, style, and more. You can adjust both the menu and dropdown menu, and have different designs for the 3 states of the menu items; Regular, Hover and Current page.Important:
+This article refers to horizontal menus in the add panel only, and not themed menus that you can add to your site.  The design options vary depending on the preset you choose. Learn more about customizing your:
+Menu container Menu items Dropdown menu container Dropdown menu itemsCustomizing the menu containerThe menu container is the space around the items.Use options such as border and fills to design your container and create an eye-catching menu.To customize the menu container:
+Select the menu in the editor. Click the Design  icon. Click Customize Design. Click Menu container under What do you want to design? and use the options to customize the container.Tell me more
+Background Fills  : 
+
+Click the color box to select a color for your menu container. Drag the slider to adjust the opacity.   Borders : 
+
+Click the color box to select a color for your border.  Click the dropdown menu to choose a border style. Click the Lock / Unlock icon  to choose whether all sides of the border are the same, or different sizes. Type the pixel number into the boxes to change the size of the border.   Corners :
+
+Click the Lock / Unlock icon  to choose whether the corners are the same, or different sizes. Type the pixel number into the boxes to change the radius of the corners.   Shadows :
+
+Click Add a shadow to add a shadow to your container. Drag the slider to adjust the shadow's opacity. Click the box to customize the shadow:
+        
+Click the color box to select a color for your shadow. Select whether the shadow is an outer or inner type. Enter the angle into the box. Drag the slider to increase or decrease the distance between the container and the shadow. Use the slider to adjust the blur of the shadow. Drag the slider to increase or decrease the shadow's size.     Layout :
+
+Click the Lock / Unlock icon  to choose whether the padding is the same or different sizes. Type the pixel number into the boxes to change the size of the padding.  Customizing the menu itemsAdjust how your items appear in your site menu.Customize the design to keep your menu sleek, and encourage site visitors to click and explore your site.To customize the menu items:
+Select the menu in the editor. Click the Design  icon. Click Customize Design. Select Menu items under What do you want to design? Choose whether to design the items on regular, hover, or current page mode, and use the tabs to customize the items.Tell me more
+Background Fills :
+
+Color: Click the color box to select a color for your items. Opacity: Drag the slider to adjust the opacity.   Text :
+
+Themes: Choose a text theme from the dropdown menu. Fonts: Choose a font from the dropdown menu. Font size: Drag the slider to increase or decrease the size of the text. Formatting: Use the options to format your item text, such as bold, italics, and underline. You can also choose a color for the text, text outline, and highlight. Character spacing: Drag the slider to increase or decrease the spaces between text characters. Shadows: Add and customize a shadow on your item text.   Borders :
+
+Lock: Click the Lock / Unlock  icon to choose whether all sides of the border are the same, or different sizes. Size: Type the pixel number into the boxes to change the size of the border.   Corners :
+
+Lock: Click the Lock / Unlock  icon to choose whether the corners are the same, or different sizes. Size: Type the pixel number into the boxes to change the radius of the corners.   Shadows :
+
+Add a shadow: Click Add a shadow to add a shadow to your container. Opacity: Drag the slider to adjust the shadow's opacity. Customize: Click the box to customize the shadow with the following options:
+        
+Click the color box to select a color for your shadow. Select whether the shadow is an outer or inner type. Enter the angle into the box. Drag the slider to increase or decrease the distance between the container and the shadow. Use the slider to adjust the blur of the shadow. Drag the slider to increase or decrease the shadow's size.    Customizing the dropdown menu containerCustomize the dropdown menu container to display dropdown items in a unique, sophisticated way.You can have a similar design to the main menu, or design something completely different to interest your site visitors.To customize the dropdown container:
+Select the menu in the editor. Click the Design  icon. Click Customize Design. Select Dropdown menu container under What do you want to design? and use the options to adjust the design.Tell me more
+Background Fills :
+
+Click the color box to select a color for your menu container. Drag the slider to adjust the opacity.   Borders :
+
+Click the color box to select a color for your border. Click the dropdown menu to choose a border style. Click the Lock / Unlock icon  to choose whether all sides of the border are the same, or different sizes. Type the pixel number into the boxes to change the size of the border.   Corners :
+
+Click the Lock / Unlock icon  to choose whether the corners are the same, or different sizes. Type the pixel number into the boxes to change the radius of the corners.   Shadows :
+
+Click Add a shadow to add a shadow to your container. Drag the slider to adjust the shadow's opacity. Click the box to customize the shadow:
+        
+Click the color box to select a color for your shadow. Select whether the shadow is an outer or inner type. Enter the angle into the box. Drag the slider to increase or decrease the distance between the container and the shadow. Use the slider to adjust the blur of the shadow. Drag the slider to increase or decrease the shadow's size.     Layout :
+
+Click the Lock / Unlock icon  to choose whether the padding is the same or different sizes. Type the pixel number into the boxes to change the size of the padding.  Customizing the dropdown menu itemsChange the design of your dropdown menu items with the available options.You can edit the text settings, add a shadow, and more to suit your site's look and feel. To customize the dropdown menu items:
+Select the menu in the editor. Click the Design  icon. Click Customize Design. Select Dropdown menu items under What do you want to design? Choose whether to design the items on regular, hover, or current page mode, and click the tabs to customize the items.Tell me more
+Background Fills :
+
+Color: Click the color box to select a color for your items. Opacity: Drag the slider to adjust the opacity.   Text :
+
+Themes: Choose a text theme from the dropdown menu. Fonts: Choose a font from the dropdown menu. Font size: Drag the slider to increase or decrease the size of the text. Formatting: Use the options to format your item text, such as bold, italics, and underline. You can also choose a color for the text, text outline, and highlight. Character spacing: Drag the slider to increase or decrease the spaces between text characters. Shadows: Add and customize a shadow on your item text.   Borders :
+
+Lock: Click the Lock / Unlock icon  to choose whether all sides of the border are the same, or different sizes. Size: Type the pixel number into the boxes to change the size of the border.   Corners :
+
+Lock: Click the Lock / Unlock icon  to choose whether the corners are the same, or different sizes. Size: Type the pixel number into the boxes to change the radius of the corners.   Shadows :
+
+Add a shadow: Click Add a shadow to add a shadow to your container. Opacity: Drag the slider to adjust the shadow's opacity. Customize: Click the box to customize the shadow with the following options:
+        
+Click the color box to select a color for your shadow. Select whether the shadow is an outer or inner type. Enter the angle into the box. Drag the slider to increase or decrease the distance between the container and the shadow. Use the slider to adjust the blur of the shadow. Drag the slider to increase or decrease the shadow's size.    Note:If you do not see the option to customize the design of your dropdown menu, you may need to add a new horizontal menu to your site. Learn how

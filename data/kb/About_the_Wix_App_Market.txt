@@ -1,0 +1,19 @@
+About the Wix App Market
+Source: https://support.wix.com/en/article/about-the-wix-app-market
+
+About the Wix App Market
+The Wix App Market is filled with over 800 popular web apps, powerful services, and great features to enhance your website and grow your business. You can choose from apps made by Wix such as Wix Stores and Wix Blog, or from one of the many third-party apps. Most of the apps are free to use, mobile optimized, and can be added to your site in just a few clicks. Some apps have both a free and premium version while others require a premium upgrade.
+
+        Click here to discover new apps for your site
+    
+
+
+        Go to the App Market
+      
+
+In this article, learn more about:
+Adding apps to your site Managing your apps Managing your Wix apps in the My Business panelAdding apps to your siteYou can add apps to your site from the Wix App Market, from the App Market tab in your dashboard. You can also access the App Market by clicking Add Apps  in the Editor or App Market  in the Studio Editor.Wix EditorStudio EditorDashboard
+Go to your editor. Click Add Apps  on the left side of the editor. Type the name of the app in the search bar. Select the app from the options provided. Click Add to Site.
+Go to your editor. Click App Market  on the left side of the editor. Click App Market. Type the name of the app in the search bar. Select the app from the options provided. Click Add to Site.
+Go to the Wix App Market in your site's dashboard. Type the name of the app in the search bar. Select the app from the options provided. Click Add to Site.Managing your appsAfter you add apps to your site, you can manage your apps from Manage Apps in your dashboard. From the Manage Apps tab, you can:
+Access your apps Get info and support for your apps  Rate and review your apps  Get more apps  Update your apps  Upgrade your apps Delete apps you no longer needManaging your Wix apps in the My Business panelYou can access additional options for your Wix apps by clicking My Business  in your site's editor. Use the quick access links to your app's dashboard options and additional elements to enhance your business. Learn more

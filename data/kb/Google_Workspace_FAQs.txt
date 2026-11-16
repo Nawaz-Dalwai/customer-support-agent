@@ -1,0 +1,6 @@
+Google Workspace: FAQs
+Source: https://support.wix.com/en/article/google-workspace-faqs
+
+Google Workspace: FAQs
+FAQs: Google Workspace and your Wix accountClick on the arrows next to each FAQ to see the answers to these common questions.Can I transfer a Google Workspace business email from my Wix account to Google?Yes, you can transfer a Google Workspace business email from Wix to Google. This action disconnects the Workspace business email from your Wix account. To do so, contact Wix Customer Care for assistance. This is an irreversible action. Once transferred to Google, you cannot repurchase the business email through Wix.FAQs: Google WorkspaceClick on the questions below to be taken to Google Workspace help center to view answers.
+I'm having trouble logging in with my username and password I forgot my admin password. How can I access my account? How can I change a business email username? Is there a limit to how many emails I can send per day? How can I connect Google Workspace with Outlook? Can I set up alias addresses for a specific business email? Can I set up alias addresses for a domain? Why do I have missing emails? How can I connect Google Workspace to a mail client using IMAP?

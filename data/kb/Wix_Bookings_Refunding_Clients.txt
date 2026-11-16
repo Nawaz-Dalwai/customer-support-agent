@@ -1,0 +1,9 @@
+Wix Bookings: Refunding Clients
+Source: https://support.wix.com/en/article/refunding-clients-in-wix-bookings
+
+Wix Bookings: Refunding Clients
+Whenever you or a client cancel a paid service, we recommend handling the refund as soon as possible. This is to avoid chargebacks, which are charge reversals issued by payment providers on behalf of clients that dispute them. You can issue refunds directly from the Orders tab or the Participant List in your site's dashboard.Tips:
+To reduce chargebacks, make sure to update clients as soon as you process their refunds.  Keep records about all the refunds you issue, including details about the services, clients, dates, and amounts. In this article, learn how to refund clients:
+Using the Orders tab Using the Participant ListRefunding clients using the Orders tabYou can process refunds for most paid orders right in the Orders tab in the Wix dashboard.  To get started, select the relevant order, click More Actions at the top right, and select Refund. Learn more about how to refund an order.Tip:If you need to cancel the session as well, you can do so separately. Learn more about cancelling sessions.Refunding clients using the Participants ListYou can issue refunds to clients from the Participant List in your Booking Calendar. To refund a client using the Participant List:
+Go to Booking Calendar in your site's dashboard. Click the relevant session in your calendar. Click Manage to view the Participant List. Click the More Actions icon  on the right side of the relevant client and click Remove. (Optional) Select the Send cancelation email checkbox and add a note to let the client know you cancelled the session or issued a refund. (Optional) Select the Mark as refunded checkbox to refund the client. Click Remove.
+(If necessary) Click Mark as refunded to confirm.

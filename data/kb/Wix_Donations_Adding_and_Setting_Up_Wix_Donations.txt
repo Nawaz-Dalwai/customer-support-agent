@@ -1,0 +1,59 @@
+Wix Donations: Adding and Setting Up Wix Donations
+Source: https://support.wix.com/en/article/wix-donations-adding-and-setting-up-wix-donations
+
+Wix Donations: Adding and Setting Up Wix Donations
+Add Wix Donations to make it easy for site visitors to donate to your cause. Create as many donation campaigns as you need and customize each one to suit your goals.Learn more about creating a fundraising website.Notes:
+To accept donations on your site, you must upgrade your site with a plan and connect a payment provider. To accept recurring payments from donors, set up a payment method that supports recurring payments.Step 1 | Add Wix DonationsTo get started, add the Wix Donations app to your site.Wix EditorStudio Editor
+Go to your editor. Click Add Apps  on the left side of the editor. Search for the Wix Donations app in the search bar. Click Add to Site.
+Go to your editor. Click App Market  on the left side of the editor. Click App Market. Use the search bar to find the Wix Donations app. Click Add to Site.What's next?A blank donation form is added to the page. You can always add more forms for different causes (see Step 6 in this article).Step 2 | Create a donation campaignFor each type of donation you want to request, you can create a separate campaign. For example, if you run an animal shelter, you can create a campaign for dogs and a separate one for cats. You can choose whether each one has the same donation frequency, suggested amounts, and so on.To create a campaign:
+Go to Wix Donations in your site's dashboard. Click Create Campaign. Enter a Campaign name.
+Tip: This name appears on the Checkout Page and in your donor's email confirmation. (Optional) Enter a campaign image:
+Tip: The image appears next to the campaign name in the checkout.
+    
+Click the Image icon. Select or upload an image and click Add to Page.   Select the frequency options you offer donors:
+Tip: Choose from one or more of these options: One time, Weekly, Monthly, Yearly.
+Enable or disable the Give donors suggested amounts to choose from toggle. If you enabled the toggle in step 6, select the donation amounts you display:
+    
+Type the first amount in Suggested amounts and add a comma. (Optional) Add additional amounts.   (Optional) Let donors enter the amount they want to donate:
+    
+Click the Let donors enter their own amount toggle to enable it. Enter a minimum and maximum donation amount.    (Optional) Enable the Notes from donors toggle.
+Tip: You can change the note title in Step 4 below. Click Save.Step 3 | Display the campaign on your siteNow that you have at least one campaign, you can display it on your site. You can connect one campaign to a donation form. Tips:
+When you add Wix Donations, a donation form is added to your site. You can cut and paste it to move it to another site page. If you accidentally deleted the donation form, you can re-add it (see FAQs below).To display a specific campaign in a donation form:
+Click to select the donation form in the Editor. Select which campaign you want to display:
+    
+Click Choose Campaign. Select a campaign from the Campaign drop-down.  Note that after selecting a campaign, the form title is still "Make a donation". You can edit the name and description in the next step. Step 4 | Customize the donation formNow that you created a campaign, you can customize it to suit your business needs and your site's design.To customize the donation form:
+Click the donation form in the editor. Choose what to customize:Edit the default "Make a Donation" title
+Click the title field. Click Edit text. (Optional) Enter a new title. Use the available options to customize the font.Edit the default description
+Click the description field. Click Edit text. (Optional) Enter a new description. Use the available options to customize the font.Hide campaign elements
+Click the donation form in the editor. Select the Elements icon .  Deselect the checkboxes next to elements you want to hide.Select default donation options
+Click the Settings icon . Choose the frequency and amounts you want preselected as default options.Adjust the layout
+Click the Layout icon . Drag the slider to adjust the padding.Design the form
+Select the Design icon . Click Background. Select design options from the available customizations. 
+Tip: These design options affect the entire form, not the elements in the form.Customize individual elements in the form
+Click an element (e.g. a frequency option). Customize the element using the available options.
+
+Tip:Some elements have sub-elements in them. For example, you can click to select a frequency option to edit the background color, then click again to select the frequency text and edit the font.Step 5 | (Optional) Customize the Checkout PageYou can make any necessary customizations to the Checkout Page. For example, you can add extra fields to collect additional information.Learn how to customize the Checkout Page.Step 6 | Display multiple campaigns on your siteIf you collect donations for multiple campaigns, you'll need to display multiple donation forms on your site - one for each campaign.If you want your donation forms to have a similar look as well as similar settings, save time by copying and pasting a form you already set up. Otherwise, you can start from scratch with a new, uncustomized form.Choose the kind of form you want to add:Start with a copied, customized form
+Click to select a donation form that you customized.
+Tip: The entire form should be outlined.
+ Press CTRL + C on your keyboard to copy the form. Navigate to the relevant site page and press CTRL + V on your keyboard to paste the form. Click to select the new donation form. Click Choose Campaign. Select a campaign from the Campaign drop-down or click Add New Campaign to create a new one.
+Start from scratch
+Navigate to the page where you want to place the form. Follow the instructions for your editor:
+    
+Wix Editor: 
+        
+Click Add Elements  on the left side of the editor. Click Payments. Click Donation Form.   Studio Editor: 
+
+Click Add Elements  on the left side of the editor. Click Donations.     Drag a Wix Donations form to your page. Click to select the new donation form. Click Choose Campaign. Select an option from the Campaign drop-down or click Add New Campaign to create a new one.
+FAQsClick a question below to learn more about Wix Donations.How can I add a donation form?You can add a brand new form from the Add Elements section of your editor. Note: The donation form found under Contact & Forms is not connected to the Wix Donations app.To add a new donation form:
+Navigate to the page where you want to place the form. Follow the instructions for your editor:
+    
+Wix Editor: 
+        
+Click Add Elements  on the left side of the editor. Click Payments. Click Donation Form.   Studio Editor:
+
+Click Add Elements  on the left side of the editor. Click Donations.     Drag a Wix Donations form to your page. Which emails are sent to my donors?There are 3 emails that are sent automatically to donors:
+Confirmation email: Sent to donors every time they make a donation. Recurring charge: If your donor has chosen to send you recurring donations, for example, $50 every month, then they receive an email every month when the donation is sent. Recurring donation canceled: If the recurring donation is cancelled, the donor receives an email confirming the cancelation.Can I customize the emails my donors receive?Yes. You can customize the text and design of any of the emails sent automatically.To customize an email:
+Go to Automations in your site's dashboard. Select the Installed for you tab.
+ Click the More Actions icon  next to the relevant email. Select Edit. Edit your automation. Learn moreIs it possible to automatically send an invoice every time I receive a donation?You can set it up so an invoice is sent automatically each time a donation is paid online. These invoices have a balance of $0.00 because the donation has already been paid.To enable automatic invoicing:
+Go to Checkout Settings in your site's dashboard. Click the Automatically create invoices for every new order paid online toggle to enable it.What happens when donor chooses a recurring donation option (e.g. monthly donation)After a customer selects a recurring donation option and completes checkout, a new order appears in your Orders tab, just as with one-time donations. Then, every subscription period, an additional order appears there.For example, if a donor visited your site on the 5th of June and decided to donate $50 every month, they are charged $50 that day and you see the order in the Orders tab. Then, on the 5th of every month, they are charged and an additional order appears there. The donor receives an email informing them that they were charged $50 for their donation to your cause.In addition, every recurring donation appears in Subscriptions in your site's dashboard.Where can I view analytics reports about my donations?You can go to your sales reports to view analytics about your sales. If you have other kinds of sales, such as through Wix Stores or Wix Events, they will appear here, as well. How can I learn more about creating a successful nonprofit websites.
+Learn more about some of the best nonprofit websites. Read more on how to create a donation website.

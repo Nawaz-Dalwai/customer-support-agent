@@ -1,0 +1,5 @@
+Google Search Console: Excluded (Crawl Anomaly)
+Source: https://support.wix.com/en/article/google-search-console-excluded-crawl-anomaly
+
+Google Search Console: Excluded (Crawl Anomaly)
+If you see the API resource "/_api/common-services/notification/invoke" as a crawled URL from your site in Google Search Console, it is because Google accessed it in an unusual manner. This is why Google marks it as a "Crawl Anomaly".Members Only pages and password protected pages can cause this error as they return a 403 (Access Denied error) when Google tries to crawl them. This API resource is related to the structure and functionality of your site. After trying to crawl it, the search engine has determined there's nothing to "gain" from retrieving it. A crawl anomaly does not affect your site's SEO and you should therefore ignore this message.

@@ -1,0 +1,150 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: >-
+  Customer support agent - S3 bucket for help articles and an Amazon Bedrock
+  Managed Knowledge Base that indexes them.
+
+Parameters:
+  KnowledgeBaseName:
+    Type: String
+    Default: customer-support-kb
+
+Resources:
+  # 1. Private, encrypted bucket that holds the help-article .txt files
+  ArticlesBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub "${KnowledgeBaseName}-${AWS::AccountId}"
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      OwnershipControls:
+        Rules:
+          - ObjectOwnership: BucketOwnerEnforced
+      VersioningConfiguration:
+        Status: Enabled
+      Tags:
+        - Key: project
+          Value: customer-support-agent
+
+  ArticlesBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref ArticlesBucket
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Sid: DenyInsecureTransport
+            Effect: Deny
+            Principal: "*"
+            Action: "s3:*"
+            Resource:
+              - !GetAtt ArticlesBucket.Arn
+              - !Sub "${ArticlesBucket.Arn}/*"
+            Condition:
+              Bool:
+                aws:SecureTransport: "false"
+
+  # 2. Service role the knowledge base uses to read the bucket (read-only, this bucket only)
+  KnowledgeBaseRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub "AmazonBedrockExecutionRoleForKB-${KnowledgeBaseName}"
+      Description: Lets the Bedrock managed knowledge base read the help-article bucket
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: bedrock.amazonaws.com
+            Action: sts:AssumeRole
+            Condition:
+              StringEquals:
+                aws:SourceAccount: !Ref AWS::AccountId
+              ArnLike:
+                aws:SourceArn: !Sub "arn:${AWS::Partition}:bedrock:${AWS::Region}:${AWS::AccountId}:knowledge-base/*"
+      Policies:
+        - PolicyName: ReadArticlesBucket
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action: s3:ListBucket
+                Resource: !GetAtt ArticlesBucket.Arn
+              - Effect: Allow
+                Action: s3:GetObject
+                Resource: !Sub "${ArticlesBucket.Arn}/*"
+      Tags:
+        - Key: project
+          Value: customer-support-agent
+
+  # 3. Managed knowledge base: AWS manages the vector store, chunking and embeddings
+  KnowledgeBase:
+    Type: AWS::Bedrock::KnowledgeBase
+    Properties:
+      Name: !Ref KnowledgeBaseName
+      Description: Wix help-center articles (WixQA subset) for the customer support agent prototype
+      RoleArn: !GetAtt KnowledgeBaseRole.Arn
+      KnowledgeBaseConfiguration:
+        Type: MANAGED
+        ManagedKnowledgeBaseConfiguration:
+          EmbeddingModelType: MANAGED
+      Tags:
+        project: customer-support-agent
+
+  # 4. S3 data source via the managed connector (synced on demand)
+  ArticlesDataSource:
+    Type: AWS::Bedrock::DataSource
+    Properties:
+      KnowledgeBaseId: !Ref KnowledgeBase
+      Name: help-articles-s3
+      Description: Help-article .txt files in the project bucket
+      DataSourceConfiguration:
+        Type: MANAGED_KNOWLEDGE_BASE_CONNECTOR
+        ManagedKnowledgeBaseConnectorConfiguration:
+          ConnectorParameters:
+            type: S3
+            version: "1"
+            connectionConfiguration:
+              bucketName: !Ref ArticlesBucket
+              bucketOwnerAccountId: !Ref AWS::AccountId
+          DeletionProtectionConfiguration:
+            DeletionProtectionStatus: ENABLED
+            DeletionProtectionThreshold: 15
+
+  # 5. Identity the Next.js app uses (BAWS_* keys). Search-only, this knowledge base only.
+  #    No console login. The access key is created by a human in the console, never in
+  #    CloudFormation, so the secret is not stored in the stack.
+  AppUser:
+    Type: AWS::IAM::User
+    Properties:
+      UserName: !Sub "${KnowledgeBaseName}-app"
+      Policies:
+        - PolicyName: RetrieveFromKnowledgeBaseOnly
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Sid: SearchSupportArticles
+                Effect: Allow
+                Action: bedrock:Retrieve
+                Resource: !GetAtt KnowledgeBase.KnowledgeBaseArn
+      Tags:
+        - Key: project
+          Value: customer-support-agent
+
+Outputs:
+  AppUserName:
+    Value: !Ref AppUser
+  BucketName:
+    Value: !Ref ArticlesBucket
+  KnowledgeBaseId:
+    Value: !Ref KnowledgeBase
+  DataSourceId:
+    Value: !GetAtt ArticlesDataSource.DataSourceId
+  KnowledgeBaseRoleArn:
+    Value: !GetAtt KnowledgeBaseRole.Arn

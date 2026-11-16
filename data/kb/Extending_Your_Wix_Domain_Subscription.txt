@@ -1,0 +1,10 @@
+Extending Your Wix Domain Subscription
+Source: https://support.wix.com/en/article/extending-your-wix-domain-subscription
+
+Extending Your Wix Domain Subscription
+You can add up to 5 additional years to your domain registration by extending your subscription. The more additional years you purchase, the more you save. While extending you can also add domain privacy and protection options to your subscription.Important:
+4 year and 5 year registration periods are available for .com, .net, and .org domains. Other domains can be extended for up to 3 years. It is not possible to manually renew .de, .ch, .at, .nl, .fr, or .be domains. If you've disabled the auto-renewal for one of these domains, click Turn Auto Renew On if you wish to keep your domain.
+To extend your domain's registration period:
+Go to Domains in your Wix account.  Click Extend next to the relevant domain.
+Select a registration period (e.g. extend by an additional one, two, or three years) and click Continue. Select a privacy option and click Continue.
+Tip: Learn more about domain privacy and protection. Enter your payment information and click Submit Purchase.

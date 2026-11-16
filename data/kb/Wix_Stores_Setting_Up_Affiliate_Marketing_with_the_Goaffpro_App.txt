@@ -1,0 +1,16 @@
+Wix Stores: Setting Up Affiliate Marketing with the Goaffpro App
+Source: https://support.wix.com/en/article/wix-stores-setting-up-affiliate-marketing-with-the-goaffpro-app
+
+Wix Stores: Setting Up Affiliate Marketing with the Goaffpro App
+Using Goaffpro Affiliate Marketing, you can set up a custom branded affiliate portal for your store.Affiliate marketing is a way to reward other people (affiliates) who bring traffic to your site or create sales. Start by adding the Goaffpro app to your site and then decide what level of commissions you want to offer your affiliates.To add and set up the Goaffpro app:
+Go to the Wix App Market:
+    
+Wix Editor: Click App Market on the left side of the Editor. Editor X: Click the Apps icon  on the top of the Editor.   Type "Goaffpro" in the search bar and select it from the results. Click Add to Site.  Review the permissions and click Add to Site.  Create an account. Click Get Started.
+Note: You are now in the Goaffpro dashboard. Set up commission:
+    
+Select percentage or a flat rate. Enter the amount. Click Next.   (Optional) Create coupon discounts that affiliates can offer their followers:
+    
+Select percentage or a flat rate. Enter the amount. Click Next.   Click to copy your affiliate portal link.
+Note: This is the link potential affiliates use to sign up for your affiliate program.  Add an affiliate page to your site.  
+Note: Add all the information potential affiliates need to the page, including the link to the affiliate program where they can sign up. Customize the page design and select a language. (Optional) Create a test affiliate to make sure everything is set up properly.After setup, you can make additional customizations in the Goaffpro dashboard.Learn more about:
+Commissions Coupons Payouts to affiliates

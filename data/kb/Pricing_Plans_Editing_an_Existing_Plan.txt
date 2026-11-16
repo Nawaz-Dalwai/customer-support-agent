@@ -1,0 +1,9 @@
+Pricing Plans: Editing an Existing Plan
+Source: https://support.wix.com/en/article/pricing-plans-editing-an-existing-plan
+
+Pricing Plans: Editing an Existing Plan
+You can make changes to an existing plan at any time. For example, you can change a plan's price,  duration, or update the connected benefits. Changes to the price and plan duration only affect new purchases. Existing clients continue to receive the conditions they agreed to when they purchased a plan.Changes you make to the connected benefits do affect existing plan holders. For example, if you no longer offer a class that was connected to a plan, you can remove it from the list of connected services. Notes:
+To increase prices for existing clients with recurring payments, you must cancel a client's plan so it doesn't renew and then direct them to purchase the plan again.  Learn how to make changes to a plan that a specific client purchased.To edit a pricing plan:
+Go to the Pricing Plans tab in your site's dashboard. Click the plan you want to edit. Make any of the following changes:
+    
+Edit the plan details:  You can update or customize the Plan name, Image and Description at any time. Edit the services and content included: Select only the relevant checkboxes in the Benefits section for services and content you want to include. You can also remove existing or outdated benefits that you no longer offer. Learn more about connecting a plan to content and services. Edit the plan's price: Enter a new price under Pricing options, you can also choose a new payment frequency, length of plan etc using the available options. Learn more about creating a one-time payment plan or creating a recurring payment plan.  Update the plan policy: Click add or edit next to Add a policy under Settings.    Click Save.

@@ -1,0 +1,21 @@
+Accessing Your Site's Dashboard
+Source: https://support.wix.com/en/article/accessing-your-sites-dashboard
+
+Accessing Your Site's Dashboard
+Your site's dashboard contains everything you need to manage your site and online business.From one central location, you can access your editor, set up payment methods, contact your site's contacts, or perform other critical tasks. You can also view your site's analytics which gives you insights to understand your visitors better. Learn more about your site's dashboard
+
+        Go to your site’s dashboard
+    
+
+
+        Take me there
+      
+
+
+In this article, learn how to:
+Access a site dashboard when signing in Access your site dashboard from your editor Switching to another site's dashboard Frequently asked questions (FAQs)Accessing your site's dashboard when signing inIf you only have one site in your Wix account, when you sign in, you are taken directly to your site's dashboard.If you have multiple sites, you're directed to the Sites page, where you can access the dashboards of all your sites and easily switch between them. Just click Select Site on the one you want to access.Accessing your dashboard while editing your siteIf needed, you can access your site's dashboard directly from within your editor, allowing you to make updates without leaving your editing environment.Wix EditorEditor XStudio EditorWix app
+Go to your editor. Hover over the Wix logo on the top left of the editor. Click Go to Dashboard.
+Go to your editor. Click Site on the top bar of the editor. Click Dashboard.
+Go to your editor. Click the Wix Studio logo on the top left of the editor. Click Dashboard.
+Go to your site in the Wix app. Tap the Site List drop-down at the top. Select the relevant site.Switching to another site dashboard in your accountYou may have multiple sites in your Wix account. You can easily switch from one site's dashboard to another.To switch to another site's dashboard:
+Click the name of the current site you're working on at the top left of the dashboard.  Click the site you want to access.FAQsClick a question below to learn more.Why can't I find my site in my account?If you have a large number of sites in your account, you can use the search bar on the Sites page to search for a specific site.If you're still unable to find your site, it may be that you used a different email address when first signing up, or that you have more than 1 account. Using our Account Email Locator, you can check which email address you used when creating your site.Read more about finding your site.Why can't I see some sections in the site dashboard?This is likely due to your role and permissions as a site collaborator. Contact the site owner to make changes to your permissions.Why can't I log into my account?If you are having trouble logging in to your account, view Logging into Your Wix Account.Why can't I find what I'm looking for in the site dashboard?In 2024, we made some changes to the dashboard menu to make it cleaner and more focused. We've also grouped similar items by action and intent rather than by business app. Learn more about these changes.If you are still looking for something, you can use the search bar at the top of the dashboard to find what you need.Can I restore my site if I accidentally deleted it?Yes, deleted sites are stored in the Trash folder on the Sites page. Go to the Trash folder and find the site you want to restore. Learn more about restoring sites from Trash.

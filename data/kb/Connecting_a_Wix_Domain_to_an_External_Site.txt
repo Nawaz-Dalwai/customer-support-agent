@@ -1,0 +1,26 @@
+Connecting a Wix Domain to an External Site
+Source: https://support.wix.com/en/article/connecting-a-wix-domain-to-an-external-site
+
+Connecting a Wix Domain to an External Site
+You can connect a domain purchased from Wix to any site, even if it's hosted on an external platform. This requires editing of the DNS records in your Wix account, so they point to your external site (the A and CNAME records).Connecting the two ensures visitors can see your site (which isn't hosted by Wix) when they enter your Wix web address in their browser.Before you begin:
+Contact your site host and ask for the relevant DNS records (the A and CNAME records) to which your Wix domain should point. Make sure to let your site host know you need to point your domain to them without changing name servers as this is not possible with a Wix domain. If you're required to change the name servers, you'll need to transfer your domain away from Wix to connect it. Connecting your domain to an external siteGet the relevant DNS records (A and CNAME record) from your site host. Then, follow the steps below to allow visitors to see your external site when they enter your Wix address.To connect your domain to an external site: 
+Go to Domains ﻿in your Wix account. Click the More Actions icon  next to the relevant domain. Select Manage DNS Records. 
+Edit your CNAME records as needed.  
+Note: Ask your new provider for the relevant records (hostname and value).Update a CNAME record
+Hover over the relevant CNAME record and click Edit. Click Got it in the pop-up. Click the Host Name field and edit the host name.
+Note: Include the www prefix here for Host Name. Click the Value field and edit the web address the record points to.  Click Save. Click Save Changes in the pop-up.Add a CNAME record 
+Click + Add Record under CNAME (Aliases).  Click Got it in the pop-up. Enter the Host Name and Value in the relevant fields.   
+Note: Include the www prefix here for Host Name. Click Save. Click Save Changes in the pop-up.Delete a CNAME record
+Click the More Actions icon  next to a CNAME record. Click Delete. 
+
+ Click Delete Record in the pop-up. 5. Edit your A records as needed.
+Note: Ask your new provider for the relevant records (hostname and value).Update an A record
+Hover over the A record and click Edit. Click Got it in the pop-up. Click the Host Name field and edit the host name.
+Note: Leave this field blank if instructed to add an @ sign. Click the Value field and edit the IP address the record points to.
+
+ Click Save. Click Save Changes in the pop-up.Add an A record
+Click + Add Record in the A (Host) section.  Click Got it in the pop-up. Enter the record's Host Name and Value in the relevant fields. 
+Note: Leave the Host Name field blank if instructed to add an @ sign in it.  Click Save. Click Save Changes in the pop-up.Delete an A record
+Click the More Actions icon  next to the A record. Click Delete. 
+
+ Click Delete Record in the pop-up. FAQsWe are here to help with all your questions. Click a question below to learn more.What does it mean to point a domain to an external site?If your domain and site are not hosted by the same company, you can point your domain to your website to ensure they are connected. Pointing a Wix domain to an external site means you connect your Wix domain name to the web host server where your site files are located.What are DNS records? Domain Name System records tell your domain where to go to load your website. They are used to relate your website address to an IP address (the unique identifier for objects on the internet). DNS records help users connect their websites to the outside world.What are CNAME records?CNAME records are a type of DNS record and are used to relate content to a domain. What is an A record?An A record is a type of DNS record. It maps a domain to the IP address of the computer hosting that domain.How long will it before the updates are completed?Any changes to the A/CNAME records can take up to 48 hours to complete.

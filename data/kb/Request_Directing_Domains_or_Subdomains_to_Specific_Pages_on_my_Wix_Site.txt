@@ -1,0 +1,5 @@
+Request: Directing Domains or Subdomains to Specific Pages on my Wix Site
+Source: https://support.wix.com/en/article/request-directing-domains-or-subdomains-to-specific-pages-on-my-wix-site
+
+Request: Directing Domains or Subdomains to Specific Pages on my Wix Site
+Currently, it is not possible to direct a domain or subdomain to a page on your Wix site. It is only possible to connect a domain or subdomain to your site's home page. We are always working to update and improve our products, and your feedback is greatly appreciated.

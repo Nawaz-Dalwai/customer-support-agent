@@ -1,0 +1,10 @@
+Wix Multilingual: Changing the Regional Settings of a Language in a Multilingual Site
+Source: https://support.wix.com/en/article/changing-the-locale-of-a-language-in-a-multilingual-site
+
+Wix Multilingual: Changing the Regional Settings of a Language in a Multilingual Site
+After you add a language to your site, you can update the regional settings for that language in the Multilingual Dashboard. For example, when you add German to your site, you can choose Austria, Belgium, Germany, Liechtenstein, Luxembourg or Switzerland as the locale. The locale you choose determines the date format, time format, number and currency display, and the measurement system (Metric or Imperial) for that language version.In this article, learn more about:
+Changing the regional settings of a language Frequently asked questions (FAQs)Changing the regional settings of a languageAdjust any language's regional settings directly from the Site Languages tab of the Multilingual Dashboard.To change the regional settings of a language:
+Click the Switch Languages panel at the top of your Editor. Click Manage Languages. Click the More Actions icon  next to the relevant language.   Click Set regional format.
+Click the Region drop-down and select your chosen locale. Click Save.FAQsClick a question below to learn more about changing the regional settings of a language.How can I change the currency of my site?You can change your site currency from the Language & Region settings in your site's dashboard. The currency you choose will be the same currency displayed across all languages. 
+
+It is currently not possible to display a different currency per language version of your multilingual site. If this is something you would like to see in the future, vote for that feature.Can I add multiple dialects of the same language?Currently, you can only choose one dialect per language in Wix Multilingual. If this is something you'd like to see in the future, vote for that feature.

@@ -1,0 +1,15 @@
+Wix Media: Connecting or Disconnecting Your Instagram / Google Photo Account in the Wix App
+Source: https://support.wix.com/en/article/wix-media-connecting-disconnecting-your-instagram-google-photo-account-in-the-wix-owner-app
+
+Wix Media: Connecting or Disconnecting Your Instagram / Google Photo Account in the Wix App
+Connect your Instagram and Google Photo accounts to your Wix app for easy access to all your favorite photos in one place - the Wix Media Manager.In this article, learn more about:
+Connecting Instagram and Google Photo accounts Disconnecting your accountsConnecting Instagram and Google Photo accountsConnect your accounts to the Wix app and browse all your favorite images in one place. To connect your account:
+Go to your site in the Wix app. Tap Manage  at the bottom. Tap Media Manager under Settings.  Tap Connected apps.
+Choose which account you want to connect:
+    
+Instagram:
+
+Tap Instagram. Tap Connect Instagram and log in with your account details. Tap Allow.   Google Photos:
+
+Tap Google Photos. Tap Connect Google Photos and log in with your account details. Tap Allow.    Disconnecting your accountsIf you decide you no longer want your account connected to the Wix app, you can disconnect it. To disconnect your account:
+Go to your site in the Wix app. Tap Manage  at the bottom. Tap Media Manager under Settings. Tap Connected apps. Tap the More Actions icon  at the top right. Tap Manage apps. Tap Disconnect next to the relevant app.

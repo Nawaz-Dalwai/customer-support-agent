@@ -1,0 +1,7 @@
+Contacts vs. Subscribers
+Source: https://support.wix.com/en/article/contacts-vs-subscribers
+
+Contacts vs. Subscribers
+Subscribers are contacts who have given permission for you to send them marketing emails. In Contacts you can find your subscribers in the Subscribers folder on the left. The Difference Between Contacts and Subscribers:Contacts:
+Anyone who has contacted you through your site (e.g., through a contact form). Anyone who you manually added to your contacts. Any contact lists that you've imported to your contacts.Subscribers:
+Anyone who subscribed to your newsletter (e.g., through the Get Subscribers form)). Anyone who has actively agreed to receive newsletters or updates from your site.Important:When sending marketing emails using Wix Email Marketing, make sure that you send to subscribers only. For more information, check out our Wix Email Marketing Best Practices.

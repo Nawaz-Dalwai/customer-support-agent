@@ -1,0 +1,25 @@
+Closing Your Wix Account
+Source: https://support.wix.com/en/article/closing-your-wix-account
+
+Closing Your Wix Account
+You can close your Wix account if you're sure you're no longer going to need it. Closing your account is not the same as canceling a subscription plan. If you wish to retain access to your site but cancel your plan, you can do so and continue to use the free version of your site.Already using the free version?This article covers all the steps required to close a Wix account with an upgrade plan or other premium subscriptions. If you do not have any premium services in your account, skip directly to step 3.Step 1 | Remove all plans and premium services from your accountIn order to close a Wix account, the account must have no active services or subscriptions associated with it. If you have active services, you'll need to cancel your subscriptions and wait for them to expire. Alternatively, you can transfer your services to another Wix account.Choose what you want to do:
+Option 1 | Cancel your premium services Option 2 | Transfer your premium site and services Option 3 | Transfer your domain onlyCanceling a domain?When canceling a Wix domain subscription, you must wait until it expires, is past the redemption period, and is no longer registered. Only then can you close your account. This process can take up to 80 days. We recommend setting a reminder in your calendar if you need to wait until your domain is no longer registered. Option 1 | Cancel your premium servicesCancel each service that you have in your account (e.g. site plan, domain, mailbox, app) separately.To cancel your services:
+Go to Premium Subscriptions in your Wix account. Click the More Actions icon  next to relevant subscription. Click Cancel plan/Domain/Mailbox/App.
+Follow the on-screen instructions to cancel your service.Option 2 | Transfer your premium site and servicesWhen you transfer a premium site to another account, you can transfer it together with most of its connected services. This is a great option if you're trying to merge two Wix accounts or give ownership of your site to someone else.Note:Some premium subscriptions cannot be transferred. If your subscription can't be transferred, go to the Premium Subscriptions section of your account and unassign it before transferring to your site. To transfer your premium site and services:
+Go to your site's dashboard. Click the Site Actions icon  at the top of the page. Click Transfer Site.
+Enter the recipient's email address. Fill out the Transfer Ownership form (here you can select the additional services you want to transfer). Click Next. Review and confirm the transfer details and click Transfer Ownership. Option 3 | Transfer your domain onlyYou also have the option to transfer your Wix domain without transferring a site. Either transfer your domain to another Wix account or away from Wix entirely.To transfer your domain:
+Go to Domains ﻿in your Wix account. Click the Domain Actions icon  next to the relevant domain. Click either Transfer away from Wix or Transfer to a different Wix account.
+Note: If you see Remove from Wix, see step 2 below.  Note:Learn more about transferring domains away from Wix or to another Wix account.Step 2 | Remove any additional domains from your accountFollow the steps below to remove any external domains connected to your Wix account. To remove a domain from your account:
+Go to Domains ﻿in your Wix account. Click the Domain Actions icon  next to the relevant domain. Click Remove from Wix.Step 3 | Move your sites to TrashNext, move any remaining sites in your account to Trash. This ensures all your sites are deleted correctly. To move your sites to Trash: 
+Go to your site's dashboard. Click the Site Actions icon  at the top of the page. Click Move to Trash.
+Click Move to Trash to confirm. Repeat these steps for all remaining sites in your account.Step 4 | Close your accountOnce you've moved your remaining sites to the trash, canceled all existing premium services, subscriptions, and domains, you can close your account. 
+
+        Click to close your account
+    
+
+
+         Close Account
+      
+
+FAQsClick the questions below to learn more about closing your Wix account.Can I remove my site without closing my account?Yes, you can unpublish a site or delete it if you no longer need it. As long as you've canceled all of your premium services, you can keep your Wix account open for free. Can I permanently erase my account information from Wix's database?Yes, you can permanently delete your Wix account and erase all of your information from Wix's databases. Learn more about permanently erasing your account.I want to close my account, but I can't log inBefore you can go ahead with closing your account, you'll need to log in. If you're having trouble, select one of the issues below to learn how to resolve it:
+I've forgotten my password I don't know what email address I used to sign up I don't have access to the email address associated with the account

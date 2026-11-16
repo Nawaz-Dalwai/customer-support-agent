@@ -1,0 +1,7 @@
+Wix Stores: Deleting Wix Stores
+Source: https://support.wix.com/en/article/wix-stores-deleting-wix-stores
+
+Wix Stores: Deleting Wix Stores
+When you delete Wix Stores, all the store elements (the cart icon, product widgets, store tabs in your Wix dashboard, etc.) are removed.Important:Deleting Wix Stores does not cancel your Premium plan or Studio plan. Wix EditorStudio Editor
+Go  to your editor. Click Pages & Menu  on the left side of the editor. Click the Actions iconnext to Store Pages. Select Delete Store. Click Delete to confirm.
+Go to your editor. Click Pages  on the left side of the editor. Click the More Actions icon   next to Store Pages. Select Delete Store. Click Delete to confirm.Tip:Your store data is not lost when you delete your store. If you want to display your store again, reverting to a previously saved version with the store will restore it.

@@ -1,0 +1,6 @@
+Wix Video: Unavailable Videos in Your Video Library
+Source: https://support.wix.com/en/article/unavailable-videos-in-your-video-library
+
+Wix Video: Unavailable Videos in Your Video Library
+You may see that a video in your Video Library is unavailable. This can be for the following reasons:
+You have filmed a live stream but you don't have enough video storage to post the video on your site.  You downgraded your site and you now have less video storage so the video has become unavailable.You can only post the video once you delete other videos from your site or purchase a higher plan.Tip:Learn more about upgrading your video storage.

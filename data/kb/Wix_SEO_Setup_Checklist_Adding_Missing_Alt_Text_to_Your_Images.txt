@@ -1,0 +1,21 @@
+Wix SEO Setup Checklist: Adding Missing Alt Text to Your Images
+Source: https://support.wix.com/en/article/wix-seo-wiz-adding-missing-alt-text-to-your-images
+
+Wix SEO Setup Checklist: Adding Missing Alt Text to Your Images
+Alt text is a type of text in your site's code that describes an image on your site. Adding alt text to your images gives search engines valuable information about them. Alt text is also important for accessibility. Learn more about alt textThe Wix SEO Checklist checks your site's images for alt text and lets you know when it's missing. If you see an error about alt text in your SEO checklist, you can try the troubleshooting steps in this article to resolve it.In this article, find out how to:
+Check the alt text of your images, vector art, and shapes Check if any images are hidden behind elements Find the alt text issue with the Wix Accessibility WizardCheck the alt text of your images, vector art, and shapesThe main reason that you might see an error is that some images, vector art, or basic shapes on your page don't have alt text. Go through your page that your SEO Checklist identified carefully and look for any images that are missing alt text.Tips:
+It's a good idea to consider the context of what a user sees in the image and use that to write your alt text. For example, "Freshly baked bread on a kitchen table". Avoid using the name of your file for your alt text (for example, "bread.jpg").To check your images, vector art, and shapes:SEO ChecklistWix EditorStudio Editor
+Go to the SEO Setup Checklist in your site's SEO dashboard. Open step 2. Hover over the Add alt text to all images error and click Go for it. Click Add Alt Text. Enter appropriate alt text next to each image. Click Apply Alt Text.
+Click the image in your editor. Click the Settings icon . Enter a description of the image under What's in the image?.
+Click the image in your editor. Click the Settings icon .  Enter a description of the image under What's in the image?.
+Tip:Make sure that you also add alt text to your gallery images. For galleries, the alt text is the image's title and description. Learn more about gallery imagesCheck if any images are hidden behind other elementsIf you check all of your images and can't find any with missing alt text, it's possible that the image is hidden behind another element. In this case, the SEO Setup Checklist still identifies it as missing alt text even if it's not visible on your live site.There are a few ways you can look for hidden elements. Select an option below to learn more.Find elements using the Layers panel
+Go to your site's editor. Open the Layers panel:
+    
+Wix Editor: Click Tools in the top right and select Layers. Studio Editor:  Click the Layers icon .   Click Header, Page, or Footer. Click the relevant element from the list.Find elements using right-click
+Go to your site's editor. Right-click an element in the editor. Check if it has any element behind it.
+    
+Wix Editor: Hover over Overlapping Items and check the list. Studio Editor: Hover over Arrange and check the options.  Find elements using Ctrl + M
+Go to your site's editor. Click to select any element.  Press Ctrl + M repeatedly to cycle the through the elements on the page
+Tip: Press Ctrl + Shift + M to cycle through the elements in the opposite direction.Find the alt text issue with the Wix Accessibility WizardIf you still can't find the element that has missing alt text, you can use the Wix Accessibility Wizard to help you find it.Important:You can only use the Wix Accessibility Wizard in the Wix Editor. It is not available for Editor X or the Studio Editor.To use the wizard:
+Go to your editor. Select Settings at the top of the editor. Select Accessibility Wizard. Select Scan My Site on the right. Click Alt Text in the relevant section. 
+Enter a description of the image under What's in the image? Click Set Alt Text. Repeat these steps for any other alt text issues in the list. Publish your site.Still need help?If you're still having issues with adding missing alt text, contact us and we will be happy to help.

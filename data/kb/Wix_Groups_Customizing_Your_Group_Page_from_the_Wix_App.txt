@@ -1,0 +1,46 @@
+Wix Groups: Customizing Your Group Page from the Wix App
+Source: https://support.wix.com/en/article/wix-groups-customizing-your-group-page-from-the-wix-owner-app
+
+Wix Groups: Customizing Your Group Page from the Wix App
+Customize the look of your group pages in the member apps using the Wix app. To match the theme of your group, you can edit the names of each tab that appears in your group such as the Discussion Board, Media and the About tab. You can also get creative and create a custom tab for your members to meet the needs of your group.To customize your Group Page from the Wix app:
+Go to your site in the Wix app. Tap Manage  at the bottom. Tap Groups. Tap on the group you want to customize. Tap Edit next to your group name.  
+Choose what you want to customize:Group cover photo
+Tap the Camera icon . Choose one of the following:
+    
+Tap Take Photo.
+        
+Tap Use Photo.   Tap Choose from Device.     Do one of the following:
+    
+Tap Upload. Tap Edit to adjust the way your photo looks.
+        
+Tap Save. Tap Upload.    Group nameEnter the name of your group in the Group Name field. Tip: You can edit this at any time. Group typeTap the Group Type drop-down to select the privacy level of your group: 
+Public: Anyone (including anonymous visitors) can see the group's posts and media. They still need to sign up in order to post.  Private: The group appears on the group list, but members must request to join it.  Secret: The group is only visible to members you invite.   7.  Tap Save.8.  Edit the Content tabs of your group.Discussion
+Tap Group Tabs under Content. Tap the More Actions icon  next to Discussion. To change the name of your Discussion tab:
+    
+Tap Rename. Enter a new name in the Tab Name field.   Tap Done.Media
+Tap Group Tabs under Content. Tap the More Actions icon  next to Media. To change the name of your Media tab:
+    
+Tap Rename. Enter a new name in the Tab Name field. Tap Done.   (Optional) Tap Hide Tab to no longer display this to your group members. (Optional) Tap Show Tab to display this to your group members.About
+Tap Group Tabs under Content. Tap the More Actions icon  next to About. Tap Settings to edit your group description: 
+    
+Enter a new group description. Tap the Gallery icon  to add multiple images group description:
+        
+Tap Take Photo to take a photo on the spot. Tap Choose from Device to select an existing photo from your phone. Tap Select from Media Manager to choose a photo from the media manager.     Tap the Video icon    to add a video to your group description:
+        
+Tap Take a Video to record a video on the spot. Tap Choose from Device to choose an existing video from your phone. Tap Select from Media Manager to choose a video from the media manager. Tap Create with Video Maker to create your own video using Wix Media.   Tap the GIF icon  to add a GIF to your group description.   Tap Save. To change the name of your About tab:
+    
+Tap Rename. Enter a new name in the Tab Name field. Tap Done.  Events
+Tap Group Tabs under Content. Tap the More Actions icon  next to Events. Tap Settings to select which events to display to group members: 
+    
+Select the checkbox next to each event you want to display.  Tap Save.   To change the name of your Events tab:
+    
+Tap Rename. Enter a new name in the Tab Name field. Tap Done.   (Optional) Tap Hide Tab to no longer display this tab on your Group Page. (Optional) Tap Show Tab to display this tab on your Group Page.Custom TabCreate a custom tab for your members.
+Tap Group Tabs under Content. Tap the More Actions icon  next to New Tab. (Optional) Tap Hide Tab to no longer display this to your group members. (Optional) Tap Show Tab to display this to your group members. Tap Manage to customize your new tab:
+    
+Enter a name for your new tab. Write a description for your custom tab. Tap the Gallery icon  to add multiple images group description:
+        
+Tap Take Photo to take a photo on the spot. Tap Choose from Device to select an existing photo from your phone. Tap Select from Media Manager to choose a photo from the media manager.     Tap the Video icon    to add a video to your group description:
+        
+Tap Take a Video to record a video on the spot. Tap Choose from Device to choose an existing video from your phone. Tap Select from Media Manager to choose a video form the media manager. Tap Create with Video Maker to create your own video using Wix Media.   Tap the GIF icon  to add a GIF to your group description.   Tap Save. To change the name of your Events tab:
+    
+Tap Rename. Enter a new name in the Tab Name field. Tap Done.   Tap Delete Tab to remove the tab completely. Tip:You can also customize your Group Page from your desktop.

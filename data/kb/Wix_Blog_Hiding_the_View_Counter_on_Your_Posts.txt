@@ -1,0 +1,21 @@
+Wix Blog: Hiding the View Counter on Your Posts
+Source: https://support.wix.com/en/article/wix-blog-hiding-the-view-counter-on-your-posts
+
+Wix Blog: Hiding the View Counter on Your Posts
+With Wix Blog, you have the ability to add a view counter to your posts. This counter displays the number of readers for each of your blog entries, both in your blog feed and on individual posts. However, if you prefer a more minimalist look or simply want to keep your readership numbers private, you can easily hide this counter from your site's editor. This gives you more control over your blog's appearance and the information shared with your readers.In this article, learn more about:
+Hiding the view counter on your blog feed Hiding the view counter on the post pageHiding the view counter on your blog feedYou can hide the view counter from the blog feed in the Settings panel of the Blog page in your editor. Wix EditorStudio Editor
+Go to your editor. Go to your Blog page:
+    
+Click Pages & Menu  on the left side of the editor. Click Blog Pages. Click your Blog page.   Click the Blog Feed element in your editor. Click Settings. Click the Display tab. Deselect the Views counter checkbox under What shows on your feed?.Tip:Publish your site to view the changes. 
+Go to your editor. Go to your Blog page:
+    
+Click Pages  on the left side of the editor. Click your Blog page under Blog Pages.   Click the Blog element on your page. Click Settings. Click the Display tab. Deselect the View counter checkbox under What shows on your feed?.Tip:Publish your site to view the changes. Hiding the view counter on your post pageThe Post page is the view readers see when they click to read a single post. You can hide the view counter when a post displays on your Post page. Wix EditorStudio EditorWix appWix Studio app
+Go to your editor. Go to your Post page:
+    
+Click Pages & Menu  on the left side of the editor. Click Blog Pages. Click Post.   Click the Post Page element on your page.
+Note: Make sure you click the empty space otherwise you may pull up settings for a specific element on the page.  Click the Elements  icon  In the pop-up scroll down to Counters. Deselect the Views checkbox to hide the view counter.Tip:Publish your site to view the changes.
+Go to your editor. Go to your Post page:
+    
+Click Pages  on the left side of the editor. Click Post under Blog Pages.   Click the Blog Post element on your page. Click Settings. Click the Display tab. Deselect the View counter checkbox under What shows on your post?.Tip:Publish your site to view the changes.
+Go to your site in the Wix app. Tap Manage  at the bottom. Tap Blog.  Tap Page Settings.  Deselect the Views checkbox.
+Go to your site in the Wix Studio app.  Tap Manage at the top left.  Tap Blog.  Tap Page Settings.  Deselect the Views checkbox.Tip:Want to make different display choices for your site on mobile? Just access the mobile Editor, select the blog, click Settings, and then enable mobile settings in the Display tab.

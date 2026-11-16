@@ -1,0 +1,12 @@
+Studio Editor: Creating Sticky Elements and Sections
+Source: https://support.wix.com/en/article/studio-editor-creating-sticky-elements-and-sections
+
+Studio Editor: Creating Sticky Elements and Sections
+Make a section or an element stick to the page as visitors scroll up and down. When the element or section reaches the visitor's viewport, it sticks to the top, bottom or both. You can set the offset, which is the distance from the top or bottom. 
+Go to our Wix Studio Academy to check out additional Wix Studio webinars, tutorials, and courses.In this article, learn more about:
+Making an element or section sticky Removing the sticky position Useful tutorialsDid you know?You can add a header scroll effect to change the way it looks as visitors scroll up and down. For example, make the header change colors on scroll, or move it out of the way to help visitors focus on the page.Applying the sticky position to an element or section
+Select the relevant section or element. Click the Open Inspector icon  at the top right of the editor.
+Scroll down to Position. Select Sticky from the Position type drop-down. Choose where the section/element sticks to: Top, Bottom, or Bottom and top. (Optional) Enter an offset value to create space above or below.Note about the DOM order:By default, the page's DOM order, including the section order, is automatically organized. If you want a "sticky" section to appear above others in the DOM, right-click the section, select Arrange and Bring to Front.Removing the sticky positionYou can always revert elements and sections back to the default position. This means they no longer stick to the screen when reaching the viewport, they stay in their position.To remove the sticky position:
+Select the relevant section or element. Click the Open Inspector icon  at the top right of the editor.
+Scroll down to Position. Select Default from the Position type drop-down.Useful tutorialsThere are so many interesting effects you can create with sticky elements and sections. Check out these videos from the Wix Studio Academy and explore your options:
+How we built the Wix Studio homepage Create a sticky sidebar with no code Create a half sticky, half scrolling design Add motion and depth will scroll, animations and interactions

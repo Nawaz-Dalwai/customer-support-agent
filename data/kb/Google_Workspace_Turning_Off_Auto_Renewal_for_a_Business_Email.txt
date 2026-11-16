@@ -1,0 +1,16 @@
+Google Workspace: Turning Off Auto Renewal for a Business Email
+Source: https://support.wix.com/en/article/google-workspace-turning-off-auto-renewal-for-a-business-email
+
+Google Workspace: Turning Off Auto Renewal for a Business Email
+You can easily turn off auto renewal for your Google Workspace business email. Turning off auto renewal for your business email does not cancel it immediately, rather it prevents it from automatically renewing the subscription. After completing the steps below, you will still have access to the business email until the end of its subscription period. 
+
+          Click to turn off auto renewal for your business email  
+    
+
+
+        Cancel Auto Renewal
+      
+
+Important:We will attempt to process your renewal payment up to 30 days before your plan's expiration date. If you do not want your plan to renew, make sure to turn off auto renewal before your next payment date. Tip: You can see the exact date in the Next payment due section of Premium Subscriptions in your Wix account.To turn off auto renewal for a Google Workspace business email:
+Go to Premium Subscriptions in your Wix account. Click the More Actions icon  next to the relevant business email. Click Cancel business email.   Select the I still want to cancel checkbox. Click Cancel business email.Tips:
+Do you have multiple business emails in your subscription and want to remove only one of them? Click to learn how to cancel one of your business emails. According to Google's Terms of Service, business email data is retained for 180 days from the expiration date. If you repurchase your business email during this time frame, your business email data will be restored.

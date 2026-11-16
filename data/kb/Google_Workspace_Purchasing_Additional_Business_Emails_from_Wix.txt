@@ -1,0 +1,6 @@
+Google Workspace: Purchasing Additional Business Emails from Wix
+Source: https://support.wix.com/en/article/google-workspace-purchasing-additional-business-emails-from-wix
+
+Google Workspace: Purchasing Additional Business Emails from Wix
+Purchase additional Google Workspace business emails for your growing business. Learn how a custom business email address makes a great first impression to your potential customers.To purchase additional business emails:
+Go to Business Email in your Wix account. Scroll to the relevant business email and click Add Users. Click the drop-down menu to select the number of additional business emails you want to add. Choose your saved payment method or click Use Another Card and fill in your payment details.  Click Submit Purchase. Important:After submitting your purchase, your bank may require you to verify your identity. If you're experiencing any issues with the authentication process, contact your bank directly. Learn MoreNote:You can set up your new business emails from the Users section of the Google Workspace Admin console. Click here to learn more.
