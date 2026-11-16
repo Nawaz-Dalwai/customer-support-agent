@@ -1,0 +1,44 @@
+{
+  "categories": [
+    {
+      "id": "account",
+      "name": "Account",
+      "keywords": ["login", "password", "email change", "2-step verification", "site ownership", "collaborators", "roles", "account deletion"]
+    },
+    {
+      "id": "billing",
+      "name": "Billing & Plans",
+      "keywords": ["premium plan", "upgrade", "renewal", "invoice", "refund", "cancel subscription", "pricing", "vouchers"]
+    },
+    {
+      "id": "payments",
+      "name": "Payments",
+      "keywords": ["Wix Payments", "payment provider", "PayPal", "verification", "payouts", "checkout", "point of sale"]
+    },
+    {
+      "id": "domains_email",
+      "name": "Domains & Email",
+      "keywords": ["connect domain", "transfer domain", "DNS", "SSL", "mailbox", "Google Workspace", "domain verification"]
+    },
+    {
+      "id": "site_editor",
+      "name": "Site & Editor",
+      "keywords": ["editor", "design", "mobile view", "pages", "menus", "CMS", "SEO", "publishing"]
+    },
+    {
+      "id": "apps_commerce",
+      "name": "Apps & Commerce",
+      "keywords": ["Wix Stores", "Bookings", "Events", "Hotels", "Restaurants", "pricing plans", "discounts", "forms"]
+    },
+    {
+      "id": "technical",
+      "name": "Technical Issue",
+      "keywords": ["error", "not loading", "bug", "performance", "known issue", "integration not working"]
+    },
+    {
+      "id": "other",
+      "name": "Other",
+      "keywords": ["feature request", "feedback", "partnership", "unrelated"]
+    }
+  ]
+}
