@@ -1,0 +1,18 @@
+# secrets — never commit
+.env
+.env*.local
+*.pem
+
+# dependencies
+/node_modules
+
+# next.js (added later)
+/.next/
+/out/
+/build
+next-env.d.ts
+*.tsbuildinfo
+
+# misc
+.DS_Store
+npm-debug.log*
