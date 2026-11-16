@@ -1,0 +1,5 @@
+Wix Editor: Close Icon Overlapping the Menu Items on Your Mobile Site
+Source: https://support.wix.com/en/article/wix-editor-close-icon-overlapping-the-menu-items-on-your-mobile-site
+
+Wix Editor: Close Icon Overlapping the Menu Items on Your Mobile Site
+In some cases, your menu Close icon may overlap the menu items on your mobile site. To resolve the issue, move your mobile menu to a different position in the header.You can move the mobile menu by clicking and dragging it to its new position in the header. We recommend placing the menu in the top right corner, or you can change the layout of your menu so it opens to the left of your mobile site.

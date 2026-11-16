@@ -1,0 +1,5 @@
+Wix Editor Request: Switching an Existing Site's Template (No Content)
+Source: https://support.wix.com/en/article/wix-editor-request-switching-an-existing-sites-template-no-content
+
+Wix Editor Request: Switching an Existing Site's Template (No Content)
+It is not currently possible to change your site's template, even if you haven't added any content or elements.As an alternative, you can create a new site and select the template you want. You can also reassign your Premium plan and domain to the new site as needed.We are always working to update and improve our products, and your feedback is greatly appreciated.

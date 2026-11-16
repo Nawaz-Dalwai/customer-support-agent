@@ -1,0 +1,33 @@
+Wix Proposals: Managing Your Proposals on the Wix App
+Source: https://support.wix.com/en/article/wix-proposals-managing-your-proposals-on-the-wix-owner-app
+
+Wix Proposals: Managing Your Proposals on the Wix App
+Manage your existing proposals on the go with the Wix app. Access and review your proposals from any location using your mobile device, ensuring you stay on top of your business even when you're away from your desk. You can view proposal details, track client responses, and send invoices automatically or manually based on agreed terms, all from the convenience of your smartphone.In this article, learn more about:
+Viewing and managing existing proposals Viewing and managing saved templatesViewing and managing existing proposalsWith the Wix app, managing your proposals is straightforward. You can preview a proposal, and check the client's contact information if you need to follow up. You can also copy a link to the proposal, send it again, as well as change its status. To view and manage your existing proposals:
+Go to the Wix app on your mobile device. Tap Manage  at the bottom. Tap Proposals under Getting Paid.  Select an existing proposal. Tap the More Actions icon  at the top right and choose what you want to do:
+    
+Preview: Tap to preview the details of a proposal you already created. This works great before a follow-up call with the client. Save as template: Tap to add the proposal to your saved templates, which can help speed up the process for future deals with clients in the future.  Copy Link: Tap to copy the link to your mobile device's clipboard. This is useful if you're sending the proposal to a colleague, another stakeholder or to the client via another method (e.g. messaging apps, emails).  Send/Resend: Tap to send a draft proposal or to resend an existing proposal at your client's request.  Change status: Tap to update the status of the proposal to: Accepted, Declined, or to return the proposal to Draft status, if the client gave feedback. Tap Done when ready.  Download PDF: Tap to download a PDF version of your proposal to your mobile device.  Delete: Tap to delete the existing proposal. Tap to Delete again to confirm.
+Note: You cannot undo this action.   Viewing and managing saved proposal templatesWith the Wix app, you can store any proposal you create as a template. This keeps all the important details and design features, but removes the customer's name. Templates help you keep a consistent proposal style and make it faster to bring new clients onboard.To view and manage your saved proposal templates:
+Go to the Wix app on your mobile device. Tap Manage  at the bottom. Tap Proposals under Getting Paid. Tap Saved Templates.  Select the relevant saved template.  Choose what you want to do:PreviewTap to preview the details of a saved proposal template you already created.Create a proposal from templateChoose this option to create a new proposal from the existing template, featuring all the design features and important information, but without any client information included. You can add the client details and customize the new proposal to suit the new client. To create a proposal from template:
+Tap Create a proposal from template.  Tap Choose a contact and select an existing contact or tap + Add New Contact at the bottom to create a new contact.  Enter the Proposal title.  Tap to select the Expiration date, then tap Done.  Choose what you want to do:
+    
+Tap the More Actions icon  next to existing products or services on the proposal template to Edit or Remove them from the new proposals:
+        
+Edit: Tap to update any details of the product or service including: the Name, Description, Price, Quantity, and Tax Group. Tap Add to Proposal when finished.  Remove: Tap to remove an existing product or service from the proposal template.
+Note: You cannot undo this action.   + Add Items: Tap to add products, services or custom items to the new proposal: 
+        
+Products: Tap Products at the top. 
+            
+Select the relevant product and edit the description, price, quantity, and tax group as needed. Then tap Add to proposal.  Repeat as necessary for all other products.    Services: Tap Services at the top. 
+            
+Select the relevant service and edit the description, price, quantity, and tax group as needed. Then tap Add to proposal. Repeat as necessary for all other services.   + Create New Custom Item: Tap to add a custom item to the proposal. 
+            
+Enter the new custom item's Name, Description, Price, Quantity, and Tax Group.  Tap Add to Proposal.        (Optional) Tap Add next to Discount, enter the monetary discount you want to apply to the proposal, and tap Apply.  Tap Next.  Select your Payment Terms:
+
+Charge a one-time payment: Send an invoice for the full amount once the client signs the proposal.  Split total into multiple payments: Charge several amounts over a set period of time. Choose the payment settings: 
+        
+Set payments as: Select whether the payments are a percentage (%) of the total or a fixed amount ($).   Split equally: Enable the toggle to create multiple payments of an equal amount, or disable the toggle to set custom amounts in the payment schedule.  Payment 1: Enter the payment Title, Amount, and set the timeframe for payment using the Invoice due within field.  Repeat for all payments included in the proposal, and add Invoice issue dates for all remaining payments.  Enable automated invoices: Enable the toggle to issue invoices to the client on the issue dates you set. Disable the toggle to send invoices manually.      Tap Next.  Review the details of the proposal, and tap Share.  Choose the relevant option: 
+    
+Copy Link: Tap to copy a link to the proposal to your mobile device's clipboard.  Send: Tap to send the proposal to the client right away.   Edit detailsChoose this option to update specific details in the proposal template. To edit a proposal template's details:
+Tap Edit details.  Tap to edit the template proposal's name.  Tap to add a private note (only visible to you).  Tap to update the proposal template's thumbnail image. Then tap to select any relevant media stored on your mobile device to update the thumbnail.  Tap Save.DeleteTap to delete the existing proposal. Tap to Delete again to confirm. 
+Note: You cannot undo this action.

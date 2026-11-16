@@ -1,0 +1,24 @@
+Adding Your Privacy Policy or Terms and Conditions to Your Site's Footer
+Source: https://support.wix.com/en/article/adding-your-privacy-policy-or-terms-and-conditions-to-your-sites-footer
+
+Adding Your Privacy Policy or Terms and Conditions to Your Site's Footer
+In accordance with local policy and privacy regulations such as the GDPR and the CCPA, you may be required to display your privacy policy or terms and conditions on your site. To ensure your website visitors can easily access your policies, create dedicated pages for each policy, adding the content within text elements. You can optionally hide these pages from your website menu and search engine indexing, if desired.In the footer of your site, list the titles of each policy and link them to the corresponding pages you've created. This way, visitors can conveniently review the specific policy information they need directly from your site's footer.Step 1 | Create a new page for your policyBegin by creating a dedicated page to house your policy. You can choose to make your policy publicly searchable online, or accessible only through the link in your site's footer. Wix EditorStudio Editor
+Click Pages & Menu  on the left side of your editor. Click +Add Page.
+ Click +Blank Page. Enter the new page name (e.g. 'Privacy Policy') Click Done. (Optional) You can hide your page from your site menu and search engines, if required. 
+Click Pages  on the left side of your editor. Click + Add New Page. Select a standard blank page type.
+ Enter the page name and press Enter on your keyboard. (Optional) You can hide your page from your site menu and search engines, if required.Step 2 | Add your policy to your new page with textUse a text element to write the details of your policy in your new page. Need help writing your policy?Visit our articles on creating a privacy policy, or creating a terms & conditions policy. Wix EditorStudio Editor
+Click Add  on the left side of your editor. Click Text. Drag the text element you want to the relevant spot on your page:
+    
+Titles: These should be used for headings on your site to let your site visitors know what the pages or sections are about. Paragraphs: These should be used for most of the text on your site. They should contain most of your site's content.
+   Select your text element and click Edit Text to enter the wording of your policy.
+Click Add Elements  on the left side of your editor. Click Text. Drag a text element on to your page:
+    
+Titles: These should be used for headings on your site to let your site visitors know what the pages or sections are about. Paragraphs: These should be used for most of the text on your site. They should contain most of your site's content.   Select your text element and click Edit Text to enter the wording of your policy.Step 3 | Add a text element to the footer of your pageAdd your policy title to the footer of your site so visitors can easily find your policy.Wix EditorStudio Editor
+Click Add  on the left side of your editor. Click Text. Drag the text element to the footer of the page. Note: Any text added to your footer shows on all of your site's pages. Select your text element and click Edit Text to enter the title of your policy (e.g. 'Privacy Policy, 'Terms of Use', etc.)
+
+Click Add Elements  on the left side of your editor. Click Text. Drag the text element to a global footer section.
+Note: Any text added to a global section shows on all sections set as global.  Select your text element and click Edit Text to enter the title of your policy (e.g. 'Privacy Policy, 'Terms of Use', etc.)
+Step 4 | Link your policy to your footer textLink your new policy page to the footer text to create an easy bridge between your visitor and your policy page.Wix EditorStudio Editor
+Click the text element in your footer. Click Edit Text. Highlight the policy title. Click the Link icon. Choose where to link to: Select Page and then click the dropdown and select the relevant policy.
+ Click Done.
+Click the text element in your footer.  Click Edit Text.  Highlight the policy title. Click the Link icon. Choose where to link to: Select Page and then click the dropdown and select the relevant policy.

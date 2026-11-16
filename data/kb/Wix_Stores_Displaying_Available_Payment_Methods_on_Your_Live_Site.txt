@@ -1,0 +1,5 @@
+Wix Stores: Displaying Available Payment Methods on Your Live Site
+Source: https://support.wix.com/en/article/wix-stores-displaying-available-payment-methods-on-your-live-site
+
+Wix Stores: Displaying Available Payment Methods on Your Live Site
+Some countries require local sites to display the available payment methods at the start of the payment process. Even where this is not a requirement, displaying payment options removes a roadblock which may stop some customer from buying your products.One way to do this is to add the information to the footer, so customers can see it no matter which page they're viewing. Learn how to place elements in your site's footer.Want to learn more?Check out the full course in Wix Learn on building your store or skip to the last video on designing and publishing your store.

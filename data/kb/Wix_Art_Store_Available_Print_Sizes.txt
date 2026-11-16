@@ -1,0 +1,6 @@
+Wix Art Store: Available Print Sizes
+Source: https://support.wix.com/en/article/wix-art-store-available-print-sizes
+
+Wix Art Store: Available Print Sizes
+Important:Wix Art Store is currently not available to all users. As of October 2022 it is no longer possible to add the Wix Art Store to your site. Alternatively, you can add Wix Stores to your site and connect it to Printful to sell your art.When you sell your images through the Wix Art Store, you can offer a variety of print sizes to your customers. Note:Available prints sizes depend on the size of the original file (the bigger the original file the more sizes will be available) and on the location of your customer. To view available sizes:
+Click the Art Store in your Editor. Click the Store tab.  Click Set Pricing (available sizes can be viewed on the left).Tip:You can also set prices in this view. If you change any pricing in this view, make sure to click Done when you're finished.

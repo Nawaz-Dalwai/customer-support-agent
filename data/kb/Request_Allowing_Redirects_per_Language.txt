@@ -1,0 +1,5 @@
+Request: Allowing Redirects per Language
+Source: https://support.wix.com/en/article/request-allowing-redirects-per-language
+
+Request: Allowing Redirects per Language
+Currently, you can create one redirect that will effect all languages. It is not possible to create different redirects for different languages.We are always working to update and improve our products, and your feedback is hugely appreciated.

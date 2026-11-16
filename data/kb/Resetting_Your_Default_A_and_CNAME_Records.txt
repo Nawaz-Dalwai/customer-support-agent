@@ -1,0 +1,14 @@
+Resetting Your Default A and CNAME Records
+Source: https://support.wix.com/en/article/resetting-your-default-a-and-cname-records
+
+Resetting Your Default A and CNAME Records
+You can reset your A records and CNAME records by changing them back to their default values. You might need to reset your A and CNAME records if you have previously edited them (for example, in order to point your domain to an external site). Follow the steps in this article to revert your A and CNAME records to their original values. DNS records make sure that your domain is mapped to the correct website. When someone types your website address into their browser, DNS records make sure that they are directed to the correct IP address to access your site.   
+An A Record (Address Record) points the domain name (web address) to a specific IP address. For example, it points mystunningwebsite.com to the hosting server's IP address.  A CNAME (Canonical Name) is an alias record that points an alternative name (the alias) to the primary domain name (the canonical domain). For example, it tells shop.mystunningwebsite.com to point to mystunningwebsite.com. Important:If your domain is connected via pointing, these directions do not apply. Contact your domain host for help with resetting your DNS records. Step 1 | Reset your default A records
+Go to Domains in your Wix account. Click the Domain Actions icon  next to the relevant domain and select Manage DNS Records. 
+Note: If you're not seeing this option, your domain may be connected via pointing. You'll need to contact your domain host to reset your records.  Hover over the A record that has your domain name in the Host Name field and click Edit.
+Note: Click + Add Record in the A (Host) section if you need to add the A record.   Click the Value field and enter the following IP address: 185.230.63.107
+Note: Leave the Host name field blank. 
+Click Save, then Save Changes in the pop-up message.Step 2 | Reset your default CNAME recordsFrom the same Manage DNS Records page as the previous step: 
+Hover over the CNAME record that has www. before your domain name and click Edit.
+Note: Click + Add Record in this section if you need to add the CNAME record.  Type www in the Host name field.   Click the Value field and enter the following address: initial.wixdns.net 
+Click Save, then Save Changes in the pop-up message.Next: It can take up to 48 hours for your domain's new DNS records to propagate and for your site to appear worldwide. Learn more about domain propagation.

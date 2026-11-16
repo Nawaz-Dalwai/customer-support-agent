@@ -1,0 +1,6 @@
+Service List Title / Image Navigates to Calendar Page Instead of Service Page
+Source: https://support.wix.com/en/article/service-list-title-image-navigates-to-calendar-page-instead-of-service-page
+
+Service List Title / Image Navigates to Calendar Page Instead of Service Page
+Please note that this feature is currently working as expected and by design.
+However, you are able to edit the navigation yourself. Please follow these steps in order to update it to either Service Page or Calendar Page that you choose: 1. Open Editor.2. Go to Book Online Page.3. Click on Service List Widget and Choose Settings.4. Click on Display5. Scroll down to Service Actions.6. Under 'Clicking on the service name or image will take clients to the' Choose either Booking Calendar or Service Page.7. Publish

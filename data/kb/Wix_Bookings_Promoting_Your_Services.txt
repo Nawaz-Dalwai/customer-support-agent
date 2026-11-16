@@ -1,0 +1,43 @@
+Wix Bookings: Promoting Your Services
+Source: https://support.wix.com/en/article/wix-bookings-about-promoting-your-services
+
+Wix Bookings: Promoting Your Services
+Getting the word out about your services is a crucial part of growing your business. In Wix bookings, there is a suite of tools made specially for promoting your services and attracting clients.In this article, learn more about:
+Sending an email campaign Sharing a post about your service on social media Sharing a link to your service Creating a promo video for your serviceSending an email campaign about a serviceCreate a tailored email campaign to engage with your clients and promote your service. You can create a customized email that perfectly matches your brand - select the colors, choose the text and media etc. You can then choose who to send the email to from your contacts.To send an email campaign:
+Go to Booking Services in your site's dashboard. Hover over the relevant service and click the More Actions icon . Click Promote .
+Click Create email campaign. Customize your email using the following options:
+    
+Add elements like text, images, videos and links.  Choose a theme. Choose a background.   Click Next. Add participants to the email campaign by:
+    
+Typing contact names in the To: field. Selecting a group of contacts by their label. Selecting the checkbox next to the specific contacts.   Click Next. Click Publish. (Optional) Click Get Link or any of the social media icons to share your campaign on different platforms.  Click Done.Sharing a post about your service on social mediaDrive traffic and business from social media back to your site using a designer-made graphic featuring your service information to share on Facebook or Instagram.To share a post about your services on social media:
+Go to Booking Services in your site's dashboard. Hover over the relevant service and click the More Actions icon . Click Promote .
+Click Create Social Post. Customize your social post using the following options:
+    
+Choose a design template. Choose a background. Add text.  Add graphic elements.   Click Next. Connect to your social media accounts:
+    
+Facebook:
+
+Add a caption. Add hashtags Click Connect and follow the steps to connect to Facebook.    Instagram:
+
+Select your country from the drop-down menu. Enter your mobile number. Click Send. Check your mobile phone for your Instagram post.     Choose what you want to do:
+    
+Publish now: Publish the social post on your Facebook instantly. 
+        
+Click Publish at the bottom right.    Schedule for later: Publish the social post at a different date and time:
+        
+Select a date and time.  Click Schedule at the bottom right.    Sharing a link to a serviceShare a link that brings visitors directly to a specific service page. This drives more traffic to your service to generate more bookings. Share this link via text, email, or directly through popular social media channels.To share a link to a service:
+Go to Booking Services in your site's dashboard. Hover over the relevant service and click the More Actions icon . Click Promote .
+Choose how you want to share a link to your service:
+    
+Copy link to your clipboard: Click Copy Link  and paste it into another app, for example your email or messenger app. Share the link on social media: Click one of the social media icons to share the link directly from that app or site.  Creating a promo video for a serviceCreate a customized video for sharing on popular social media channels including Facebook, Instagram and YouTube. Sharing promotional video content is a powerful way to drive more traffic to your site and promote a specific service.To create a promo video for your services:
+Go to Booking Services in your site's dashboard. Hover over the relevant service and click the More Actions icon . Click Promote .
+Click the Next icon  on the right to view more options.  Click Create Video. Add video content and text, then click Next. Choose the video style, layout, colors and font. Click Next. Choose if you want to add music to this video: 
+    
+Video with music: 
+
+Enable the Music On toggle. Choose a music track for your video from the options available.    Video without music: Disable the Music On toggle.   Click Next. Decide if you want to include your business information in the video: 
+    
+Video with business info: 
+
+Enable the Include info at the end of this video toggle. Fill in the information to appear on the video.   Video without business info: Disable the Include info at the end of this video toggle.   Click Apply & Preview. (Optional) Click Back to Editing to make changes. Click Save & Share. Choose the relevant social media platform where you want to share your video. (Optional) Click Download File to save the video to your desktop. Note:Your video will be saved under the My Videos tab in the Video Maker, and under Site Files in your Media Manager.Tips:
+You can customize your services to set the title, description, and image that appears when you share your service on social networks.  You can also customize your Twitter Settings to display a different text and image for services that you share on Twitter.

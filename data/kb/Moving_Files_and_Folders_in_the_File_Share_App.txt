@@ -1,0 +1,10 @@
+Moving Files and Folders in the File Share App
+Source: https://support.wix.com/en/article/moving-files-and-folders-in-the-file-share-app
+
+Moving Files and Folders in the File Share App
+With the File Share app, you can create a file sharing library where people can exchange ideas and collaborate on projects.You can reorganize your files and folders on your live site or from your site's dashboard.Learn how to move files and folders:
+From your site's dashboard On your live siteMoving files and folders from your site's dashboard
+Go to File Share in your site's dashboard. Click the Show More icon   next to the file or folder you want to move. Click Move.
+Navigate to the folder you want to move the file or folder to. Click Move Here.Moving files and folders on your live site
+Go to the File Share app on your live site. Log in using the email address associated with your Wix account. Click the Show More icon   next to the file or folder you want to move. Click Move.
+Navigate to the folder you want to move the file or folder to. Click Move Here.

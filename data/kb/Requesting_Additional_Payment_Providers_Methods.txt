@@ -1,0 +1,12 @@
+Requesting Additional Payment Providers & Methods
+Source: https://support.wix.com/en/article/requesting-additional-payment-providers-methods
+
+Requesting Additional Payment Providers & Methods
+Wix currently allows you to receive payment through a variety of payment providers, depending on your location. View the full list of available providers in your country.We are constantly working to add additional payment providers and we'd like to hear from you. Click a payment provider listed below to vote for it:Multiple Countries
+PayU Ingenico (Ogone) Payline HiPay CyberSource Digital River Amazon Payments Google PaymentsUnited KingdomSagePayPayboxLatin America
+Todo Pago Cielo Moip allpagoEurope
+SEPA  Mangopay Caisse D'Epargne (France) Monetico (France) Mercanet (France) XPay (CartaSi) (Italy) QuiPago (Italy) Redsys (Spain) Dotpay (Poland) MobilePay (Denmark)Africa
+PayFast (South Africa)UAECCAvenuePayfortUkraine
+LiqPayKorea
+PayGate LG U+ KCPCan't find the provider you want on the list?
+If you want to request another payment provider, please contact us to let us know. Alternatively, you can connect unsupported payment providers out-of-the-box using Velo and the Payment Provider Custom Extension.

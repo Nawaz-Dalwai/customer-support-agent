@@ -1,0 +1,11 @@
+Wix Editor: Setting Up Your Video for Your Mobile Site
+Source: https://support.wix.com/en/article/wix-editor-setting-up-your-video-for-your-mobile-site
+
+Wix Editor: Setting Up Your Video for Your Mobile Site
+Set up your video for your mobile-friendly site. You can choose whether the video plays once or in a loop, and decide if it starts automatically. To set up your video for your mobile site:
+Click your video in the mobile editor. Click the Settings icon . Click the toggle next to In a loop to enable or disable video looping. 
+    
+Enabled: The video plays on repeat. Disabled: The video plays once.   Click the toggle next to Autoplays:
+    
+Enabled: The video plays automatically when a visitor opens the page. Disabled: The video doesn't play until a visitor clicks it.  Note about autoplay:Autoplay may not work on some mobile devices, even if you've enabled it. 
+Apple and Chrome may block autoplay to prevent additional data charges from the visitor's cellphone network. No data is loaded until the user taps the play button on the audio or video player. If the visitor has enabled low-power mode on an iOS device, autoplay is automatically disabled. For more information, please see Apple's Safari Developer Library and Google's Developers guidelines.

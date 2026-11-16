@@ -1,0 +1,14 @@
+Troubleshooting Pending PayPal Payments
+Source: https://support.wix.com/en/article/troubleshooting-pending-paypal-payments
+
+Troubleshooting Pending PayPal Payments
+Payments made through PayPal may have a Pending status. This is shown in the Payments page in your site's dashboard. In many cases, the payment will show as pending because PayPal has not yet processed the payment. Processing can take up to 24 hours.If, after 24 hours, you still see a Pending status on your PayPal payment, you can follow the troubleshooting steps below in order to understand or remedy the reason for that status. Check the PayPal pending reason in your Payments pageTo learn the reason of a pending status:
+Go to Payments in your site's dashboard. Click on the PayPal payment to view more details.
+Check that you have a PayPal Business accountIn order to accept PayPal payments through your Wix site, you need a PayPal Business account.
+Log in to your PayPal dashboard to confirm if you have a Business account.
+If you do not have a PayPal Business account, you can change your account type to accept payments through Wix. Make sure Advanced Features are enabledFor some types of payments, such as recurring payments, you need to have Advanced Features enabled in your PayPal account.
+To enable Advanced Features:
+Go to Accept Payments in your site's dashboard. Click Enable Advanced Options under PayPal.
+ Click Grant Permission.Note: If you don't see the option to enable Advanced Features, contact Wix Customer Care. Confirm your email address / account with PayPalPayPal automatically sends an email to confirm the address you've provided when setting up your account. If you haven't received this email, or are unsure whether you've already confirmed, go to PayPal to confirm your email address. Note: If you have misspelled or added an incorrect email, you need to confirm the correct email with PayPal and reconnect your account to Wix.Tip: You can get a clue of which email address you've used in the Accept Payments page. A partially visible email can be seen under PayPal once the provider is connected.
+Make sure the purchase amount meets the minimum payment thresholdSome payment providers have a minimum payment threshold (e.g. $1.01). Payments below this amount will not be processed.
+For PayPal in the US, the threshold is $1 For PayPal in the UK, the threshold is £1Still need help?If after trying the troubleshooting steps above, your payments are still showing as Pending, contact us and we'll be happy to help.

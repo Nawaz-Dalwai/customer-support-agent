@@ -1,0 +1,5 @@
+Request: Downgrading a Google Workspace Subscription
+Source: https://support.wix.com/en/article/request-downgrade-a-google-workspace-formerly-g-suite-subscription
+
+Request: Downgrading a Google Workspace Subscription
+Currently, it is not possible to downgrade a Google Workspace subscription from one plan to another.We are always working to update and improve our products, and your feedback is greatly appreciated.

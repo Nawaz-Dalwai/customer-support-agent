@@ -1,0 +1,76 @@
+Wix Bookings: Scheduling and Managing Multi-Service Appointments
+Source: https://support.wix.com/en/article/wix-bookings-scheduling-and-managing-multi-service-appointments
+
+Wix Bookings: Scheduling and Managing Multi-Service Appointments
+Important:
+Multi-service bookings are only available for appointments.  You must upgrade your site for multi-service bookings. Currently, it is not possible for clients to schedule multi-service appointments when booking through any of the Wix member apps (e.g. Spaces by Wix, Fit by Wix, or your own branded app). You can vote for this feature here.In your Booking Calendar, you can schedule multi-service appointments on behalf of your clients. You can also allow clients to book services in the same appointment themselves. When multiple services are added to an appointment, all services share the same date and location. For example, if a client books a manicure, pedicure and an eyebrow wax during the same time slot, the services appear one after the other on your booking calendar. If you book these same services yourself, you can schedule multiple services to take place at the same time. For example, the manicure and pedicure offered by two different staff members can take place at the same time. This is a great way to offer more convenience to your clients and encourage repeat business. Plus, it allows you to maximize your resources and optimize your scheduling. In this article, learn more about:
+Scheduling multi-service appointments for clients Managing and editing multi-service appointments for your clients Enabling the multi-service appointments toggle for your clients How your clients book multi-service appointments Frequently asked questions (FAQs)Scheduling multi-service appointments for clientsYou can schedule multi-service appointments for clients in your Booking Calendar. In one session, you can add up to five different appointment services. You can always change the start time per service to have a buffer between sessions or have the sessions overlap. By default, the appointments appear one after the other.To schedule a multi-service appointment for clients:
+Go to Booking Calendar in your site's dashboard. Click Add at the top right, or click to select a time slot on the calendar. Select Appointment. Enter the Client name.
+Note: For new clients, enter their name and then click + Add [New client name] to contacts. You can then enter their email and phone number to finish creating the new contact.  Click Continue.  Click to select the first service.  Select the relevant day from the Date drop-down calendar.  Select the relevant start time in the Arrival time field.  Leave the Repeats checkbox unchecked. When you add multiple services to an appointment you cannot create a recurring session. Choose where the appointment takes place from the Location drop-down. This is only relevant if you offer services in different locations.  Click + Add Another Service. Hover over the relevant service and click Select. (Optional) Repeat steps 11-12 to add more services.
+Tip: When you click any of the services in the Booking Calendar, you can see the number of bookings within the same order. 
+(Optional) Click the Edit icon next to the relevant service to modify it:
+    
+Edit any of the following details:
+        
+Session starts: Select the start time of the appointment. Duration: Select how long the session will last.  Staff member: Choose the relevant staff member in charge of the appointment.
+Note: If the selected staff member is not available at the specific date or time, a yellow scheduling conflict notification appears. You can still book the appointment and make the necessary arrangements with your staff.  Payment options: Choose how or when your client will be charged, depending on which payment plan.   Click Save. Repeat this step for each service you need to edit.   
+Choose what you want to do:
+    
+Book: Click Book to finish scheduling the session without collecting payment up front.  Book & Collect Payment: Click Book & Collect Payment to finish scheduling the session and collect payment. This takes you to the Orders tab in the dashboard. Choose an option from the Collect Payment drop-down on the Orders page:  Charge with pay linkChoose this option to create a payment link you can send to your client. To charge with a pay link:
+Click Collect Payment and select Charge with pay link. Edit the pay link info:
+    
+Link name: Enter a name for your pay link. Price: Enter the amount your pay link will charge your customer. Description: Enter a description for your pay link. This should clearly summarize the reason for payment. Open settings: Click Open settings and choose what you want to do:
+        
+Set an expiration date: Enable the Set an expiration date toggle and set the expiration date of the pay link. Limit the number of payments: Enable the Limit the number of payments toggle and enter the number of payments you want to receive via the pay link.   Customize link: Edit the button color, button text and link image.    Click Create Link. Charge card manuallyChoose this option if the client wants you to charge their credit card manually. Ensure you have your client's permission before entering their credit card details for them.To charge card manually:
+Click Collect Payment and select Charge card manually. Enter the client's credit card details, including their Zip or postal code. Click Charge.Charge with invoiceChoose this option to send your client an invoice for the order.To charge with invoice:
+Click Collect Payment and select Charge with invoice.  Click Create Invoice. Choose what you want to do next:
+    
+Print: Print out the invoice if your client requires a physical copy.  Share Link: Create a shareable link that you can send via email, social media or messenger app: 
+        
+Click to create a link to the invoice.  Click Copy Link.  Click Done.
+Note: When you create the link to the invoice, it automatically marks the invoice as Sent.   Send via Email: Send the client their invoice via email:
+        
+Click to edit the subject line.  Click to edit the message you send in the email.  Click Send.    Mark as paidChoose this option to mark the order as paid.To mark as paid:
+Click Collect Payment and select Mark as Paid. (Optional) Click the Mark a custom amount as paid checkbox to allow for partial payments. Then enter the custom payment amount.  Click Mark [amount] as Paid to confirm. 
+Note: You cannot undo this action. Managing and editing multi-service appointmentsYou can manage and edit your existing multi-service appointments at any time from the Booking Calendar. This is useful if a client needs to reschedule one of several services in the appointment, for example. You can also add items or discounts to an existing multi-service appointment.  Note:When you change the date or time of a specific session within a multi-service appointment, it separates that session from the multi-service appointment and creates a new separate session you can manage separately.To manage multi-service appointments:
+Go to Booking Calendar in your site's dashboard. Click the relevant multi-service appointment. Choose what you want to edit:Edit specific sessions in the multi-service appointment
+Click the More Actions icon  next to the relevant session. Choose from the following options: 
+    
+Edit: Change the session date, session start time, duration or staff member. Make the necessary changes and click Save.
+Note: Select the Notify client with an email checkbox to inform the client about the changes you made to the specific session in the multi-service appointment.
+ Change date: Change the date of a specific session in the multi-service appointment.
+        
+Click Continue to confirm that the session will be split from the multi-service.
+Note: If you make a mistake, you can add the session to the multi-service appointment again manually.  Enter the relevant date, time, and location you want to reschedule the appointment for. Click Save & Collect payment to charge the client right away or click Save to collect payment later.  
+   Book again: Schedule another specific session within the multi-service appointment:
+Note: This is great if the client requires a follow-up session for one specific service within the multi-service appointment. 
+        
+Enter the Date and Arrival time for the follow-up session.  (Optional) Select the Repeats checkbox and choose how frequently and how many times the session repeats.  Click the Location drop-down and choose a location for the appointment.   Click Book & Collect payment to collect payment right away or click Book to collect payment later.              Add items and discounts to the multi-service appointment
+Click the More Actions icon  at the bottom. Click Add items and discounts. Choose what you want to do:
+    
+Add Item: Click + Add item at the top. Then choose from the following options:
+
+
+Service: 
+
+Click to select the relevant Service.  Click Continue.  Enter the session details including Location, Staff, Date & Time, Price and payment method.
+Note: You can enter a custom price when adding another service to an existing multi-service appointment. Click Add to Order.    Product: 
+            
+Click to select the relevant Product. Click Add to Order.   Custom item: 
+
+Enter the Title.  Enter the Price.  Enter Item info, describing what the custom item is for your own records. This is useful if clients request products or services that you don't normally offer.  Click Add to Order. Click Update Order.      Add Fees & Tips: Click Add Fees & Tips under Order summary. 
+        
+Enter a Name for the add-on.  Enter the Amount.  Click Add. 
+ Click Update Order.    Add Discount: Click Add Discount under Order summary. 
+        
+Enter the Discount reason.  Enter the Amount.  Click Add Discount. 
+ Click Update Order.    View order 
+Click the More Actions icon  at the bottom. Click View Order to review the details of the entire multi-service appointment order, including all bookings, items, discounts, tips and payment info. Learn more about:
+Using the Orders tab.  Editing an existing order. Edit appointment 
+Click the More Actions icon  at the bottom. Click Edit appointment.  Edit the relevant appointment details, such as the Date, Arrival time or location.  (Optional) Click the Edit icon  next to any session to edit the specific session details, including the start time, duration, staff member, or payment options. Then click Update.  Click Save & Collect Payment to accept payment right away, or click Save to collect payment later. Learn more about:
+Making credit card payments for your clients. Sending an invoice. Manually marking a service as paid.Enabling multi-service appointments for your clientsWhen you enable the Multi-service appointment toggle, your clients can choose up to five services in the same appointment. For example, clients can book a facial, eyebrow wax and a massage in one appointment. After your client selects services, the calendar calculates time slots and resources for the entire appointment. This includes the staff's availability.This is a simple yet effective way to improve your clients' overall booking experience. It offers more convenience to your clients, while encouraging more bookings, optimizing your schedule and maximizing sales.To enable multi-service appointments for your clients:
+Go to Booking Settings in your site's dashboard. Scroll down and select Multi-service Appointments under Online Bookings. Enable the Allow multi-service appointments toggle to turn this feature on or off.
+Click Save at the top right.How your clients book multi-service appointmentsHelp your clients book multi-service appointments themselves by sharing the steps below:To book multi-service appointments as a client:
+Select your first service as usual from the appointment booking form. Choose + Add Service.
+Select another service from the service list and choose Next.
+Once you choose your services (up to five in one appointment), click Select Date & Time to complete your booking.FAQsClick a question below to learn more.How can I set my availability for multi-service appointments?The times offered are calculated and only given based on when all the services are available.How many services can a client book in a multi-service appointment?Clients can book up to 5 services in one multi-service appointment. Can I create custom service bundles or suggest specific services to be coupled? Custom service bundles are not currently available, but if this is a feature you would like to see in the future, you can vote for it here. How can a client cancel one service from a multi-service appointment?At the moment, clients can only cancel the whole booking. However, you are able to reschedule or cancel a booking in the multi-service appointment for them.How are booking policies applied in multi-service appointments?If a more restrictive rule exists in one of the booking policies, it applies to the entire booking. For instance, if one of the services doesn't take late bookings, you won't be able to book any appointment in that booking.We recommend adding a general note about this in your default policy. Such as: "Booking policies may change based on the selected services. Please contact us for more information when booking multi-service appointments."Do multiple-service appointments use custom booking forms?Currently, multi-service appointments only use the default appointment form, even if a service has a custom booking form.Can the same staff member provide all services in the booking?Currently no. Clients can select staff per service but if this is a feature you would like to see in the future, you can vote for it here.Can clients book a service set as 'pending approval' within a multi-service appointment?Clients can only schedule services with the same 'Booking requests' setting. For instance, if a client chooses a service that is pending approval, they can only add other services set as pending approval in the appointment, and vice versa.How can clients book multi-services for classes?For booking multiple class sessions use the cart. You can learn more about carts here.Can multi-service appointments be added to recurring sessions?You cannot add multi-service appointments to recurring sessions. However, you can add multi-service appointments to one-time sessions. Do I need to enable Cart for users to book a multi-service appointment?No. Once the Allow multi-service appointments toggle is enabled, clients can add multiple sessions to the same appointment.Cart allows clients to book multiple sessions that don't occur on the same day or if you offer services and products. You can learn more about carts here.

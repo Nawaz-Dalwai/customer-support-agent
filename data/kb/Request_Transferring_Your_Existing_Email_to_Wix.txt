@@ -1,0 +1,6 @@
+Request: Transferring Your Existing Email to Wix
+Source: https://support.wix.com/en/article/request-transferring-your-existing-email-to-wix
+
+Request: Transferring Your Existing Email to Wix
+Currently, it is not possible to transfer an existing email account to Wix, even if you've transferred the domain to Wix. Instead, you can connect your business email to Wix by adding DNS records (MX, A, CNAME and TXT records) provided by your email host in the Domains page of your Wix account. Tips:
+Learn how to connect your email service to a domain in your Wix account.  Learn how to purchase a Google Workspace business email from Wix. We are always working to update and improve our products, and your feedback is hugely appreciated.

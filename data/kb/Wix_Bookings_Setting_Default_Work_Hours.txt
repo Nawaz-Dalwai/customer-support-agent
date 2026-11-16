@@ -1,0 +1,8 @@
+Wix Bookings: Setting Default Work Hours
+Source: https://support.wix.com/en/article/wix-bookings-setting-default-work-hours
+
+Wix Bookings: Setting Default Work Hours
+Add your default hours so clients know when you're available for appointments. These hours apply to all new staff members automatically.Your default work hours determine availability for clients to book appointments online. Default hours don’t affect availability of classes and courses, when you create those types of services, you set the hours separately.Note:You can customize staff hours manually if they offer services outside of your default hours or if they change their shifts. You can also set start and end dates for a staff member's custom work hours, which is useful for holiday overtime or maternity cover, for example.To set default hours for your business:
+Go to Default Hours in your site's dashboard. Select the checkboxes next to the days your business is open. Enter a start and end time for the first day. (e.g. 9:00 AM - 1:00 PM). (Optional) Add an additional time period for the same day:
+    
+Click the add hours  icon. Enter a start and end time. (e.g. 4:00 PM - 7:00 PM).   Repeat for all other work days.  Click Save.

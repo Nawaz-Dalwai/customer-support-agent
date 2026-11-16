@@ -1,0 +1,26 @@
+Wix Forms: Adding and Setting Up a Donation Form
+Source: https://support.wix.com/en/article/wix-forms-adding-and-setting-up-a-donation-form
+
+Wix Forms: Adding and Setting Up a Donation Form
+Having a donation form on your site allows you to connect with your charitable site visitors. Your visitors can help you support a cause by making a donation. Donations can be made on behalf of an organization, a specific individual, or anonymously.Before you begin:Make sure you've connected your site to a payment method and purchased a Premium plan.Notes:
+Donation forms are currently only available using old Wix Forms.  You can also add a donation form and manage incoming funds using Wix Donations.Step 1 | Add a Donation Form to Your SiteAdd a predefined donation form to your site, then drag and drop it to anywhere on your site. You can change the form fields and the design of your donation form anytime.To add a donation form:
+Click  Add on the left side of the Editor. Click Contact & Forms. Click Donation on the left. Click or drag any of the forms under Donation onto your site.Step 2 | Manage Your Donation FieldsAfter adding your donation form, customize the fields according to the information you want visitors to submit. You can add, edit or remove fields as needed. To manage your form fields:
+Add a new field:
+
+Click the form. Click Add New Field or click the Plus icon . Click the Add icon  next to the field you want to add.    Edit an existing field: 
+
+Click the relevant field in your form.  Click Edit Field. Edit the field using the available options:
+        
+Click the Field title text box to add a title for the field name.   
+Tip: Learn more about adding field titles to your form. Select the relevant option under Show initial text:
+            
+None: No text appears in the field.  Placeholder text: Add text to the field to help visitors understand what they should enter (e.g. "Add it here").        Remove a field: 
+
+Click the relevant field in your form.  Press "Delete" on your keyboard.   Step 3 | Setup Payments on Your Donation FormSend your site visitors to checkout when they submit your donation form. You can suggest a donation amount by setting a default, or allow visitors to decide.To setup payments on your form:
+Click Donate. Click Settings. Choose what happens when a visitor submits a form:Show success messageDisplay a success message. Edit the message settings:
+Enter the message you want to show. Set how long the message should show for.Go to site page or popupDirect visitors to another page on your site or a popup. 
+Click the Link icon. Select the link destination on the left and enter the link details on the right. Click Done.Link to external URLDirect visitors to an external web address. 
+Click the Link icon. Enter the URL on the right. Click Done.Show link to file downloadAllow visitors to download a file after submitting the form.Note: This is a Premium feature which requires a Premium plan.
+Click Upload file to choose the file your site visitors will download.
+Note: You can add doc & .docx, .xls & .xlsx, .ppt & .pptx, .odt, .odp and .pdf. You cannot upload password protected documents. Edit the download link text.3.  Scroll down to Accept Payments on Your Form.4.  Click Set Up Payment Form.5.  Click Get Started and set up the desired payment form type.
+Tip: Click here to set up your payment form type.Design Your Donation Form:Now that your Donation Form is set up, you can design it using one of the preset designs. You can also customize the design to match the look and feel of your site by clicking the Design icon . Learn More

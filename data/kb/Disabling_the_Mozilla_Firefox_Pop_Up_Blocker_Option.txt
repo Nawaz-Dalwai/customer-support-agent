@@ -1,0 +1,6 @@
+Disabling the Mozilla Firefox Pop-Up Blocker Option
+Source: https://support.wix.com/en/article/disabling-the-mozilla-firefox-pop-up-blocker-option
+
+Disabling the Mozilla Firefox Pop-Up Blocker Option
+The Firefox browser includes a default pop-up blocker that blocks all pop-ups. This can block links to Wix.com that should open in a separate window. To disable the Firefox pop-up blocker:
+Click Firefox in the menu bar at the top of the screen.  Select Preferences or Settings. Scroll down to the Permissions section.  Click Exceptions... next to Block pop-up windows. Type www.wix.com and click Allow. Click Save Changes.

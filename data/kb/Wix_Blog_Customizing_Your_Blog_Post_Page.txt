@@ -1,0 +1,30 @@
+Wix Blog: Customizing Your Blog Post Page
+Source: https://support.wix.com/en/article/wix-blog-customizing-your-blog-post-page
+
+Wix Blog: Customizing Your Blog Post Page
+Customizing your Blog Post page allows you to tailor the look and feel of your blog posts to match your brand and engage your readers. The changes you make to your Post page settings are applied to all your blog posts. This means the font you select is the same font applied to all your blog posts. The same also applies for the information you select to display on a post. This helps create a cohesive and professional appearance for your blog, making it more appealing and easier to navigate.Step 1 | Access the Blog Post pageStart by accessing the Blog Post page in your editor. Wix EditorStudio Editor
+Go to your editor. Go to your Post page:
+    
+Click Pages & Menu  on the left side of the editor. Click Blog Pages. Click Post.   Click the Post Page element on your page.
+Go to your editor. Go to your Post page:
+    
+Click Pages  on the left side of the editor. Click Post under Blog Pages.   Click the Blog Post element on your page.Step 2 | Choose what elements to show on your post pageNext, choose exactly what info and elements to show on your post page. For example, you can show or hide information about the post, such as the author name and reading time. You can also choose which elements you want to include, such as the blog menu and sharing options.To choose what elements you want to show:
+Click the Post page in your editor.  Click Settings.  Click the Display tab. Select or deselect the checkboxes to choose what shows on your post.  Scroll down and choose what you want to customize:Blog menuShow your blog menu at the top of your post page to allow readers to easily navigate your blog. If you've divided your posts into categories, the category names appear here.
+Click Blog Menu. Click the Show Blog Menu toggle to show or hide the menu at the top of the post. (If enabled) Select or deselect the checkboxes to choose what info you want to show on the menu.Share and printGet more traffic to your blog by allowing readers to share your posts on social media. 
+Click Share and print. Customize your share and print options by enabling / disabling the toggles:
+    
+Enable share and print icons: Adds social share and print icons to the post, e.g. Facebook, LinkedIn and Print post.  Add "Save" Button to images: Adds a Pinterest "Save" button to your image to allow your blog readers to share the image on their Pinterest boards.  Share text on X/Twitter: Adds a Share text on X/Twitter button to your post to allow your blog readers to share the text on X/Twitter.  Related postsEngage your readers more by showing posts related to the one they're currently reading. Related posts appear at the bottom of the post page.
+Click Related Posts. Customize your related post options by enabling / disabling the toggles:
+    
+Show related posts: A related post element displays on your post page.  Display post label: A label displays on your posts to identify these posts as either Related Posts or Recent Posts. Show "See All" link: A "See all" link appears on your related posts' element, which identifies more related posts.   Step 3 | Customize the design of the post pageAs the post page is a dynamic page, it means that the design you set here is used every time a reader opens one of your blog posts. Customize the fonts and colors to make sure it matches your site.Note:If you hide certain elements, design options for that element do not appear.To customize the design of the post page:
+Click the Post page in your editor.  Click Settings.  Click the Design tab. Choose what you want to design:NavigationCustomize the design of the menu that appears at the top of the post page.
+Click Navigation.  Customize the font style and color when your site visitors click and hover on the text in your blog post and adjust the post background opacity and color.  Text style and colorCustomize the design of the post text. Make sure to select a color and font that's easy to read. You can override these settings when writing your post.
+Click Text style and color. Customize the font style and color of your paragraph and heading text and change the color of your links and hashtags. RatingsCustomize the design of the star that shows the rating your post received. 
+Click Ratings.  Customize the opacity and color of the star and change the font and color of the ratings text. TagsCustomize the design of the tag labels that appear on your blog posts.
+Click Tags. Choose what you want to customize:
+    
+Tag label: Enable or disable the Show Label toggle to show or hide a tag label. Tag layout: Choose a layout for your tag and adjust its alignment. Spacing between tabs: Drag the relevant slider to adjust the spacing between tabs. Tag padding: Adjust the amount of padding at the top, bottom and side of your text.  Tag design: Customize the Regular and Hover view of your tags by adjusting the fonts, background, and borders.  Background and ButtonsCustomize the design of the post background and buttons used on the post page.
+
+Click Background & Buttons. Choose what you want to customize:
+    
+Post background: Drag the relevant slider to adjust the post background borders and colors.  Button style: Click the color box to choose a color for your button text and background color.

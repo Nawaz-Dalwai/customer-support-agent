@@ -1,0 +1,7 @@
+Renaming Your Site
+Source: https://support.wix.com/en/article/renaming-your-site
+
+Renaming Your Site
+You can rename your site for any reason, to align with your brand, or to correct a typo or test name. When you create multiple Wix sites, it helps to name each site so it's easy to spot on your My Sites page.Note:The browser tab on your live site displays your site name if you haven't updated the page's title tag. Go to the SEO Panel in your Editor to update the title tags of your pages. To rename your site:
+Go to your site's dashboard. Click Site Actions. Click Rename Site.
+Enter your new site name. (Optional for free sites only) Edit the Site Address (URL) if you want to change your site's free domain. Click Save.What's next?Your site's Business Information shows up in search results, invoices, chat, and more. Learn how to update your business information,

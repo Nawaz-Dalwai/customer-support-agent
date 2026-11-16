@@ -1,0 +1,19 @@
+Adding or Updating MX Records in Your Wix Account
+Source: https://support.wix.com/en/article/adding-or-updating-mx-records-in-your-wix-account
+
+Adding or Updating MX Records in Your Wix Account
+Mail Exchange (MX) records are a type of DNS record. They specify the mail server to which any of your mail should be directed. Your domain must have your email provider's MX records added to its DNS records for your email to work. Before you begin:If your domain is connected to your Wix account, make sure it is connected via name servers, not via pointing. If it is connected via pointing, you must contact your domain host (not Wix) to configure the DNS records of your email provider.To add or update MX records:
+Go to Domains in your Wix account. Click the Domain Actions icon  next to the relevant domain. Select Edit MX Records.
+Click the drop-down menu and check if your email provider is listed:
+    
+If your email provider is listed: Select them from the list and click Start Connecting. You've just added your provider's MX records and do not need to continue adding them in the next steps.   If your email provider is not listed: Click Other (provider not on the list) and proceed to the next step.   Get your email provider's MX records (and any other necessary DNS records).Click here for an email template to use when contacting your email provider:"Dear {name of email host (e.g., GoDaddy)},
+
+My name is {your name} and I purchased an email account from you for the following domain: {your domain name (e.g., www.mystunningwebsite.com)}. I've built a site on Wix.com and I'm using their name servers. Please provide me with the required MX records and any other necessary DNS records so that I can forward them to Wix and have my emails redirected back to you."5.  Add the MX records:Show me howImportant: When adding more than one MX record, add the record with the lowest Priority value first. They should appear in ascending order from lowest to highest Priority value. The Priority values themselves do not need to match your provider's directions.
+
+Click the Points to field and enter the mail server address of your MX record.
+ (If you have multiple MX records) Add the additional MX records:
+    
+Click + Add Another. Click the Points to field and enter the mail server address of the next MX record.  Repeat this step for each additional MX record you need to add.    Click Connect Business Email.6.  (If instructed by your email provider) Add DNS records:Show me how
+Click the Show More icon  on the right and select Manage DNS Records.
+ Scroll to the record type you'd like to add (e.g., CNAME, TXT) and click + Add Record.
+ Enter the DNS record in the relevant fields. Click Save, then click Save Changes in the pop-up message. Repeat steps 2-4 above to add more DNS records. Still need help? Contact Wix Customer Care and request a call back if you are having trouble adding your records.FAQsClick a question below to learn more about adding or updating MX records in your Wix account.What are DNS records? Domain Name System (DNS) records tell your domain where to go to load your website. They are used to map your website address to an IP address (the unique identifier for objects on the internet).What are MX records?Mail Exchange (MX) records are a type of DNS record. They specify the mail server to which any of your mail should be directed. If you have a domain-based email address (e.g., contact@yourdomain.com), your domain must have your email provider's MX records added to its DNS records for your mailbox to work. What is an 'email provider'?Your email provider is the site you purchased your business email from.

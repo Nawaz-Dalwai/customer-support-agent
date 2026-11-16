@@ -1,0 +1,17 @@
+Wix Media: Creating a Promotional Video in the Wix App
+Source: https://support.wix.com/en/article/wix-media-creating-a-promotional-video-in-the-wix-owner-app
+
+Wix Media: Creating a Promotional Video in the Wix App
+Create promotional videos on your mobile device using the Wix app. It's an easy way to boost your business, just like a bakery owner who increased online orders by showcasing their pastries in a video. You can use promotional videos to engage your audience and promote your products or services effectively.To create promotional videos in the Wix app:
+Go to your site in the Wix app. Tap Manage  at the bottom. Tap Marketing and select Video Maker.
+Tap Get Started. Choose a template from the available options or tap Start from Scratch to create a video without a template. (If you selected a template) Tap Customize Video. Tap Add Media to add images or video clips to your video. Tap Next and add titles to your video:
+    
+Opening Title: This appears at the beginning of your video and should introduce the concept of the video. Second Title: This text appears next. Use it to explain more about the video content. Third Title: This text is the next to appear. It's a good idea to make this a call-to-action to explain what you would like the viewers to do, such as "Visit Our Store". End Title: This is the last text to appear. It is usually a good place to enter your website address or contact details, so your viewers know how to find you. Include Business Info: Tap the toggle to choose how your business info is displayed:
+        
+Enabled: Your business information is displayed in your video. Enter your business details and add your logo. Disabled: Your business information is not displayed in your video.     Tap Next and choose from the following options: 
+    
+Choose a Video Style: Play the different style options and select one for your video. Choose a Layout: Choose between Square, Landscape and Portrait. Choose Colors and Font: Select the primary color, secondary colors and font.  Font: Select the font style used on your video.   Tap Next and choose a music track for your video or select No Music. Tap Next.  Tap an option to choose what you want to do:
+    
+Customize: Make changes to the video. Save Video: Save the video to your Media Manager. Choose an option:
+        
+Share: Share your video with others. Download: Save the file to your device.     Tap Done.

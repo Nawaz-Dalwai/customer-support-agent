@@ -1,0 +1,6 @@
+Using the Wix Whois Lookup Tool to Find Domain Registration Details
+Source: https://support.wix.com/en/article/using-the-wix-whois-lookup-tool-to-find-domain-registration-details
+
+Using the Wix Whois Lookup Tool to Find Domain Registration Details
+The Wix Whois Lookup tool allows you to find detailed information about a domain name, including the registrar details, the date the domain was registered, and when it expires. This tool is incredibly useful for site owners who want to verify domain ownership, check the status of a domain, or gather information for business purposes. For example, if you are considering purchasing a domain, you can use the Whois Lookup tool to see who currently owns it and when it might be available. To look up domain details: 
+Go to the Wix Whois Lookup tool.  Enter the domain name you want to look up and click Search.  View the domain and registration details that appear below the searched domain.

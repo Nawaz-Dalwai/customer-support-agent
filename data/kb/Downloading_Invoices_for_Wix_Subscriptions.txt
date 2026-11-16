@@ -1,0 +1,8 @@
+Downloading Invoices for Wix Subscriptions
+Source: https://support.wix.com/en/article/downloading-invoices-for-wix-subscriptions
+
+Downloading Invoices for Wix Subscriptions
+Note:The following article refers to downloading invoices for your Wix subscriptions. For information on downloading invoices that you've sent to your clients, learn about Wix Invoices.Download invoices for Wix subscriptions and save them for your records. Invoices are downloaded in PDF format.To download an invoice:
+Go to Billing History in your Wix account. Click the More Actions icon  next to the relevant subscription. Click View Invoice. Choose an option:
+    
+Click the Download icon  to download your invoice. Click the Print icon  to print your invoice.

@@ -1,0 +1,19 @@
+Changing Your Premium or Studio Plan
+Source: https://support.wix.com/en/article/changing-your-premium-plan-4954690
+
+Changing Your Premium or Studio Plan
+If you purchased a Premium plan or a Studio plan, you can change to a different plan (of the same duration) at any time. For example, if you are currently on a monthly plan, you can change to any other plan with a monthly subscription period. Changing your plan
+Go to Premium Subscriptions in your Wix account. Click the More Actions icon next to the relevant plan.  Click Change Plan.
+Select the plan you want to change to. Follow the steps on screen depending on your choice of plan change.Alternative instructionsThere are some exceptions where changing your plan is not possible. Please follow the alternative instructions below if either of the following applies to you: 
+You want to change a plan that was transferred from another account. The Change Plan button does not appear for you.Alternative instructions for changing your planIf you are unable to change your plan using the steps above, you can use the following workaround.These steps are complex, so keep this page open in a separate tab for reference. To summarize, you will be cancelling your plan's auto-renewal, duplicating your site, signing up for a new plan (the one you want to change to), then applying your new subscription to your original site. Important: Canceling your plan's auto-renewal means that your old plan will remain active until the end of the subscription period. If you cancel your plan after your 14-day refund period, both subscriptions will overlap, and you won't receive a credit for the remainder of your old plan. 
+Cancel the plan that you want to change:
+    
+Go to Premium Subscriptions in your Wix account. Click the More Actions icon  next to the relevant plan. Click Cancel Plan. Click Cancel Now. Enter the reason for cancellation and click Cancel Now.   Duplicate the site that the plan is assigned to:
+    
+Go to your site's dashboard. Click the Site Actions drop-down. Click Duplicate Site. Enter a name for the duplicate site. Click Duplicate.    Reassign the canceled plan to the duplicate site:
+    
+Go to Premium Subscriptions in your Wix account.  Select the canceled plan. Click Assign to a different site next to Assigned to:. Click Assign next to the duplicate site.   Upgrade the original site to the plan of your choice:
+    
+Go to the dashboard of the original site. Click Upgrade at the top of the dashboard. Click Select under the plan you want to purchase. Follow the steps to complete the purchase.   Assign your domain back to your original site:
+    
+Go to the Domains page. Click the Domain Actions icon  next to the domain you want to reassign. Click Assign to a site. Select the site you wish to assign the domain to (your original site, not the duplicate). Click Next. Click Assign.  FAQs:Read this article for frequently asked questions about changing your plan.Video tutorial

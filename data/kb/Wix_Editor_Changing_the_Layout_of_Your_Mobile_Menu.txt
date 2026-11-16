@@ -1,0 +1,11 @@
+Wix Editor: Changing the Layout of Your Mobile Menu
+Source: https://support.wix.com/en/article/wix-editor-changing-the-layout-of-your-mobile-menu
+
+Wix Editor: Changing the Layout of Your Mobile Menu
+Menus that you have added to your desktop site are automatically added to your mobile site. You can adjust the size of the menu to suit smaller screen sizes, as well adjust the alignment of the text to fit your mobile site's layout.In this article, learn more about:
+Adjusting the size of your menu Changing your menu's alignmentChanging the size of your mobile menuMake the menu larger or smaller to fit your site, and make sure it looks good on mobile devices.You can change the size of the menu icon, as well as the size of the opened menu by using the drag handles. To change the size of your mobile menu:
+Click the menu icon in the mobile editor. Choose what you want to do:Change the size of the menu iconClick and drag the resize handles to increase or decrease the size of the menu.Change the size of the open menu
+Click Edit Menu. Click the menu text. Click and drag the resize handles to increase or decrease the size of the menu.Changing your menu alignmentChange the alignment of both the item text, and the submenu arrows on your mobile site. To change the alignment of your mobile menu:
+Click the mobile menu in the mobile Editor. Click Edit Menu. Click the mobile menu text. Click the Layout icon . Choose what you want to do: Change the alignment of the menu textSelect an alignment under How's text aligned?:
+Left: The menu items are aligned to the left. Center: The menu items are aligned to the center. Right: The menu items are aligned to the right.Change the alignment of submenu arrowsChoose an alignment under How's the submenu arrow aligned?:
+Left: The arrow is displayed to the left of the item text. Right: The arrow is displayed to the right of the item text.What's next?Customize your mobile menu's design to suit your site and encourage your visitors to explore.

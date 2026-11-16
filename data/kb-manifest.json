@@ -1,0 +1,4502 @@
+[
+  {
+    "id": "49d9e88fadbf11fa4e685c847590078ff9394c2fe7566094f504f53ca4aca465",
+    "file": "Wix_Payments_Verification_Process.txt",
+    "title": "Wix Payments Verification Process",
+    "url": "https://support.wix.com/en/article/wix-payments-verification-process",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 8967
+  },
+  {
+    "id": "06535db983ea0ffe0214af14497a1d158f279d92c92f211e87b8820aa95dbe43",
+    "file": "Using_Your_Free_1_Year_Domain_Voucher.txt",
+    "title": "Using Your Free 1 Year Domain Voucher",
+    "url": "https://support.wix.com/en/article/using-your-free-1-year-domain-voucher",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3817
+  },
+  {
+    "id": "de6e96935f0b3321cf29416ec164482247b5035f1d2e12b36e203be8126ca8b8",
+    "file": "Email_Marketing_Upgrading_Your_Email_Marketing_Plan.txt",
+    "title": "Email Marketing: Upgrading Your Email Marketing Plan",
+    "url": "https://support.wix.com/en/article/email-marketing-upgrading-your-email-marketing-plan",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 757
+  },
+  {
+    "id": "a513a215c1798f329293330cb5f5e975a18978954b5ee27d84441e029f900d51",
+    "file": "Wix_Stores_About_Wix_Stores.txt",
+    "title": "Wix Stores: About Wix Stores",
+    "url": "https://support.wix.com/en/article/wix-stores-about-wix-stores",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4231
+  },
+  {
+    "id": "b9ba8c318ee75f49eaa89c1d5b8d461fa2b4c27167381b869aeb31027d7187f9",
+    "file": "Wix_Bookings_About_Wix_Bookings.txt",
+    "title": "Wix Bookings: About Wix Bookings",
+    "url": "https://support.wix.com/en/article/wix-bookings-about-wix-bookings",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 5911
+  },
+  {
+    "id": "8cc75fbcc571336d1ef1768e7727bd9d1e6c1333f22eeb5366232b9a1a066418",
+    "file": "Pricing_Plans_Creating_Discount_Coupons.txt",
+    "title": "Pricing Plans: Creating Discount Coupons",
+    "url": "https://support.wix.com/en/article/pricing-plans-creating-discount-coupons",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2406
+  },
+  {
+    "id": "f346781bc6cf23c95342ce003927de9d985a99eeb7561c69f03e65da7c10f2fb",
+    "file": "CMS_Managing_Your_Collection_Content.txt",
+    "title": "CMS: Managing Your Collection Content",
+    "url": "https://support.wix.com/en/article/cms-formerly-content-manager-managing-your-collections",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 13082
+  },
+  {
+    "id": "163d579af227160c8072dc465c81d8edea4b507d7e8789078b680f88633aefab",
+    "file": "CMS_Hiding_Sorting_and_Filtering_Fields_in_Your_Collection_View.txt",
+    "title": "CMS: Hiding, Sorting, and Filtering Fields in Your Collection View",
+    "url": "https://support.wix.com/en/article/cms-formerly-content-manager-hiding-sorting-and-filtering-fields-in-your-collection-view",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 7057
+  },
+  {
+    "id": "2df694686b70b35ed389ff590354cfaf19aafc07659b12b02078f2ebcf015ac8",
+    "file": "CMS_Mirroring_the_Order_of_Items_in_Your_Collection_to_Your_Sites_Connected_Elements.txt",
+    "title": "CMS: Mirroring the Order of Items in Your Collection to Your Site's Connected Elements",
+    "url": "https://support.wix.com/en/article/cms-mirroring-the-order-of-items-in-your-collection-to-your-sites-connected-elements",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4328
+  },
+  {
+    "id": "5f02fc2f8937d16a4d8cdca47da36ae34429e0b279fb0cc56af72e2d91991a28",
+    "file": "Importing_Reservations_from_an_External_Calendar_iCal_to_Wix_Hotels.txt",
+    "title": "Importing Reservations from an External Calendar (iCal) to Wix Hotels",
+    "url": "https://support.wix.com/en/article/importing-reservations-from-an-external-calendar-ical-to-wix-hotels",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1887
+  },
+  {
+    "id": "65806b123ff355cef16c8abe4301f1df982e2c3bddcd33b81ed446b92a79e336",
+    "file": "Google_Workspace_Manually_Verifying_Your_Domain_with_Google.txt",
+    "title": "Google Workspace: Manually Verifying Your Domain with Google",
+    "url": "https://support.wix.com/en/article/manually-verifying-your-domain-with-google-workspace-formerly-g-suite",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1795
+  },
+  {
+    "id": "db6a6c4be5c11fae531b4fdd546601bab6d4a26b669a8a7ea6063c62a045e9d4",
+    "file": "Google_Workspace_Connecting_a_Business_Email_for_a_Domain_Pointing_to_Wix.txt",
+    "title": "Google Workspace: Connecting a Business Email for a Domain Pointing to Wix",
+    "url": "https://support.wix.com/en/article/google-workspace-connecting-a-business-email-for-a-domain-pointing-to-wix",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1380
+  },
+  {
+    "id": "39158650c97235d1f9b98a71be41c5222ddb3ee3e497cfb1d10ef3bd0bc166cf",
+    "file": "Recovering_Your_Wix_Account.txt",
+    "title": "Recovering Your Wix Account",
+    "url": "https://support.wix.com/en/article/recovering-your-wix-account",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3905
+  },
+  {
+    "id": "e9366441d1e037a1470c9bad57455dbadc24db0ca931791edd0f3b026ea6a58f",
+    "file": "Changing_the_Email_Address_of_Your_Wix_Account.txt",
+    "title": "Changing the Email Address of Your Wix Account",
+    "url": "https://support.wix.com/en/article/changing-the-email-address-of-your-wix-account",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3501
+  },
+  {
+    "id": "6b97c2a01f5c925927be970c1f768a4b628c6b52071dec733aa3a1719d17332e",
+    "file": "Troubleshooting_Third_Party_Provider_Connection_Issues.txt",
+    "title": "Troubleshooting Third Party Provider Connection Issues",
+    "url": "https://support.wix.com/en/article/troubleshooting-third-party-provider-connection-issues",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3032
+  },
+  {
+    "id": "7a49619f637ed0508bca64c0995e2726276d8faba2907d97350e0f01384709af",
+    "file": "Connecting_PayPal_as_a_Payment_Provider.txt",
+    "title": "Connecting PayPal as a Payment Provider",
+    "url": "https://support.wix.com/en/article/connecting-paypal-as-a-payment-provider",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 7063
+  },
+  {
+    "id": "bec5870553814db329b6b83e73d059f0a42c2454b5bd4c4989b3b7110e29589c",
+    "file": "Google_Workspace_Troubleshooting_Login_Issues.txt",
+    "title": "Google Workspace: Troubleshooting Login Issues",
+    "url": "https://support.wix.com/en/article/google-workspace-troubleshooting-login-issues",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1639
+  },
+  {
+    "id": "359dab9e725658fc9407e34714d19da1fda7a8cb8c85c5c141968dd3775de044",
+    "file": "Wix_Editor_Saving_Previewing_and_Publishing_Your_Site.txt",
+    "title": "Wix Editor: Saving, Previewing and Publishing Your Site",
+    "url": "https://support.wix.com/en/article/wix-editor-saving-previewing-and-publishing-your-site",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2837
+  },
+  {
+    "id": "dd6385654e2bc9cc5fcaf350bc944449291fa2377a61e06052035a2f0605c5b5",
+    "file": "Wix_Editor_Differences_in_Live_Site_and_Editor.txt",
+    "title": "Wix Editor: Differences in Live Site and Editor",
+    "url": "https://support.wix.com/en/article/wix-editor-differences-in-live-site-and-editor",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2213
+  },
+  {
+    "id": "9dbf43e1a13c691c4ac016af067a723ca51613c639d878f7c556dd1a1fbc3018",
+    "file": "Receiving_Your_Payouts_from_Wix_Payments.txt",
+    "title": "Receiving Your Payouts from Wix Payments",
+    "url": "https://support.wix.com/en/article/receiving-your-payouts-from-wix-payments",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 6629
+  },
+  {
+    "id": "04997ca3b0a1736557e6895e2eecc51ccd581a1982afa647b5ebf835e68d4deb",
+    "file": "Wix_Payments_Failed_Payout.txt",
+    "title": "Wix Payments: Failed Payout",
+    "url": "https://support.wix.com/en/article/failed-payout-in-wix-payments",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2763
+  },
+  {
+    "id": "2de6c16958d89aee79f3d5e8f44686b80d74cfccf56b02bd14fecf96663e3c06",
+    "file": "Wix_Bookings_Editing_Your_Staff_Members_Working_Hours.txt",
+    "title": "Wix Bookings: Editing Your Staff Members' Working Hours",
+    "url": "https://support.wix.com/en/article/wix-bookings-editing-your-staff-members-working-hours",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 9520
+  },
+  {
+    "id": "8309620f90a06cbd6b28930591ae59e9f479687ecac060543c69b26214815aab",
+    "file": "Pricing_Plans_Allowing_Guest_Checkout_on_Your_Site.txt",
+    "title": "Pricing Plans: Allowing Guest Checkout on Your Site",
+    "url": "https://support.wix.com/en/article/pricing-plans-allowing-guest-checkout-on-your-site",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1936
+  },
+  {
+    "id": "3407d197c71652bee58835ba148794a8be7e70cf9e25c599044b823c82db29fd",
+    "file": "Pricing_Plans_Creating_a_Free_Plan.txt",
+    "title": "Pricing Plans: Creating a Free Plan",
+    "url": "https://support.wix.com/en/article/pricing-plans-creating-a-free-plan",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 8548
+  },
+  {
+    "id": "9b71e0c1c1101d626c050e2209b382430c36eb91644c25dc9016802164ea769f",
+    "file": "Wix_Bookings_Managing_Services_and_Categories.txt",
+    "title": "Wix Bookings: Managing Services and Categories",
+    "url": "https://support.wix.com/en/article/about-service-categories-in-wix-bookings",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4538
+  },
+  {
+    "id": "0edfb79224593e47a232c58687f04d0534cabe82e36a6af890f92830860b5b72",
+    "file": "Wix_Stores_Creating_and_Managing_Categories_Using_the_Wix_App.txt",
+    "title": "Wix Stores: Creating and Managing Categories Using the Wix App",
+    "url": "https://support.wix.com/en/article/wix-stores-creating-and-managing-categories-using-the-wix-owner-app",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2689
+  },
+  {
+    "id": "81815895cb357ab2acbf1da52c91beff481c88fe49d416c853b3fb88a4ae92ea",
+    "file": "Wix_Bookings_Blocking_Off_Time_in_Your_Calendar.txt",
+    "title": "Wix Bookings: Blocking Off Time in Your Calendar",
+    "url": "https://support.wix.com/en/article/wix-bookings-blocking-off-time-in-your-calendar",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1993
+  },
+  {
+    "id": "7f365d820565efdc168e39938b16e965ea0e70a394eaac7e926078ec3b562ceb",
+    "file": "CMS_Deleting_Items_in_a_Collection.txt",
+    "title": "CMS: Deleting Items in a Collection",
+    "url": "https://support.wix.com/en/article/cms-formerly-content-manager-deleting-items-in-a-collection",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1111
+  },
+  {
+    "id": "8c2e56296ddb7b441238ff06cfa9b38204aca9e27371386689b1fa4643cdfbff",
+    "file": "Google_Workspace_Setting_Up_Additional_Workspace_Users_from_Wix.txt",
+    "title": "Google Workspace: Setting Up Additional Workspace Users from Wix",
+    "url": "https://support.wix.com/en/article/google-workspace-setting-up-additional-workspace-users-from-wix",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2113
+  },
+  {
+    "id": "c8a54de5b540e9832be6e6468b5e498d532df9ea6af16ae83fcdcd15647e4c73",
+    "file": "Adding_Funds_to_Cover_Refunds_in_Your_Wix_Payments_Account.txt",
+    "title": "Adding Funds to Cover Refunds in Your Wix Payments Account",
+    "url": "https://support.wix.com/en/article/adding-funds-to-cover-refunds-in-your-wix-payments-account",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2279
+  },
+  {
+    "id": "add129d0bc54006961811dd5065b2a69281974d794e372f68bc07c93696113dd",
+    "file": "Changing_a_Domain_After_Purchase_Correcting_a_Typo.txt",
+    "title": "Changing a Domain After Purchase (Correcting a Typo)",
+    "url": "https://support.wix.com/en/article/changing-a-domain-after-purchase-correcting-a-typo",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 640
+  },
+  {
+    "id": "0a229edfd466b96f849627494fb95e837c7c603cb7fdc5faeadef815a4d24804",
+    "file": "Google_Ads_with_Wix_About_Google_Ads_Performance_Max_Shopping_Campaigns.txt",
+    "title": "Google Ads with Wix: About Google Ads Performance Max Shopping Campaigns",
+    "url": "https://support.wix.com/en/article/google-ads-with-wix-about-google-ads-performance-max-shopping-campaigns",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3867
+  },
+  {
+    "id": "035b36b995402d769a3117eb0ad63257a662e2eeef678b16ba740925985e7ef8",
+    "file": "Wix_Stores_Adding_and_Setting_Up_Google_Merchant_Solutions.txt",
+    "title": "Wix Stores: Adding and Setting Up Google Merchant Solutions",
+    "url": "https://support.wix.com/en/article/wix-stores-adding-and-setting-up-google-merchant-solutions",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 7989
+  },
+  {
+    "id": "b254fcee6b0ae875da5b74071a0d306ab6eabd8ec17634d257638716fb529809",
+    "file": "Wix_Stores_Changing_the_Order_of_Products_in_a_Category.txt",
+    "title": "Wix Stores: Changing the Order of Products in a Category",
+    "url": "https://support.wix.com/en/article/wix-stores-changing-the-order-of-products-in-a-category",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 913
+  },
+  {
+    "id": "42494683352ccb36b16ef52dc0b32ff1aab64f5f3a6fe90827c33e0252a59098",
+    "file": "Repurchasing_a_Site_Plan_Canceled_Due_to_Payment_Issues.txt",
+    "title": "Repurchasing a Site Plan Canceled Due to Payment Issues",
+    "url": "https://support.wix.com/en/article/repurchasing-a-premium-plan-canceled-due-to-payment-issues",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 654
+  },
+  {
+    "id": "f353775648c196649a0cf3bf26ddea340192587efe7c0813b798325f1c412d9f",
+    "file": "Wix_Stores_Request_Restoring_Deleted_Products.txt",
+    "title": "Wix Stores Request: Restoring Deleted Products",
+    "url": "https://support.wix.com/en/article/wix-stores-request-restoring-deleted-products",
+    "type": "feature_request",
+    "reason": "answers-test-question",
+    "chars": 445
+  },
+  {
+    "id": "13ae20110f373b7614a4594a0b47cd190eaecba13c74138551ee24f682b43f08",
+    "file": "CMS_Restoring_Collections_with_Backups.txt",
+    "title": "CMS: Restoring Collections with Backups",
+    "url": "https://support.wix.com/en/article/cms-formerly-content-manager-backing-up-your-collections",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4608
+  },
+  {
+    "id": "0d6bacf2646098a55162336b12fc8eeb56c6618febc7ad94a9c7d5d9bb71ba3f",
+    "file": "CMS_Restoring_a_Deleted_Collection.txt",
+    "title": "CMS: Restoring a Deleted Collection",
+    "url": "https://support.wix.com/en/article/cms-formerly-content-manager-restoring-a-deleted-collection",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2565
+  },
+  {
+    "id": "f3dbc14fb416feb03a8bcf6c1712d81cda4c6febe412e6acdfd8f471ed79adf8",
+    "file": "Request_Triggering_Automations_on_Your_Contacts_Birthdays.txt",
+    "title": "Request: Triggering Automations on Your Contacts' Birthdays",
+    "url": "https://support.wix.com/en/article/request-triggering-automations-on-your-contacts-birthdays",
+    "type": "feature_request",
+    "reason": "answers-test-question",
+    "chars": 531
+  },
+  {
+    "id": "8fd246f6ccd03e386abc914642c48d78e1e434c6895b6e98f7c690eb18f3a5a1",
+    "file": "Wix_Contacts_Creating_a_Segment.txt",
+    "title": "Wix Contacts: Creating a Segment",
+    "url": "https://support.wix.com/en/article/wix-contacts-creating-a-segment",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 7372
+  },
+  {
+    "id": "0dc521e6f3cba224285bf32a1a21752313474992f3be4ac874a7b93ca2f7dda6",
+    "file": "Wix_Automations_Creating_a_New_Automation.txt",
+    "title": "Wix Automations: Creating a New Automation",
+    "url": "https://support.wix.com/en/article/wix-automations-creating-a-new-automation",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 11359
+  },
+  {
+    "id": "11e6ff65a8bb2f65b29f9d2726561da8f5de81543fe3000fe40668f383c88489",
+    "file": "Completing_Your_Wix_Payments_Account_Setup.txt",
+    "title": "Completing Your Wix Payments Account Setup",
+    "url": "https://support.wix.com/en/article/completing-your-wix-payments-account-setup",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 27767
+  },
+  {
+    "id": "bce5e3d829fe6eebd5fb2585b008cac096b48072d7cc5971ff31e72941fef5ae",
+    "file": "Wix_Editor_Managing_Your_Quick_Action_Bar.txt",
+    "title": "Wix Editor: Managing Your Quick Action Bar",
+    "url": "https://support.wix.com/en/article/wix-editor-managing-your-quick-action-bar",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2102
+  },
+  {
+    "id": "a4bf9c1cccd5e7ae04d0fc890eaff145b933ab55a52c6cead06a9cd4caa8b6da",
+    "file": "Chargebacks_in_Wix_Payments.txt",
+    "title": "Chargebacks in Wix Payments",
+    "url": "https://support.wix.com/en/article/chargebacks-in-wix-payments",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 8364
+  },
+  {
+    "id": "7a2109a7643cefe52eaad4779d868dd6fc845b8ab32bc8f131c4c63d53cb7456",
+    "file": "Wix_Editor_Changing_Your_OgImage.txt",
+    "title": "Wix Editor: Changing Your Og:Image",
+    "url": "https://support.wix.com/en/article/wix-editor-changing-your-ogimage",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2002
+  },
+  {
+    "id": "d487a621f0535cd8d7c717d614c18d36b49841066c8dd641967d05be5205b6c9",
+    "file": "Getting_an_Overview_of_Your_Payments.txt",
+    "title": "Getting an Overview of Your Payments",
+    "url": "https://support.wix.com/en/article/getting-an-overview-of-your-transactions",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3633
+  },
+  {
+    "id": "2b832f8ff9989b6dede601a3c6452990cb582aed046dabac16fbc38d73e65ffd",
+    "file": "Email_Marketing_Using_Personalized_Content_in_Your_Campaigns.txt",
+    "title": "Email Marketing: Using Personalized Content in Your Campaigns",
+    "url": "https://support.wix.com/en/article/email-marketing-personalizing-your-campaigns-with-dynamic-values",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3318
+  },
+  {
+    "id": "b4717557702f3383d3d4d7bf071c2ab5558b34fc62860d2879f9d48f86ec2de8",
+    "file": "Wix_Stores_A_Guide_to_Setting_Up_Shipping_Delivery_and_Pickup.txt",
+    "title": "Wix Stores: A Guide to Setting Up Shipping, Delivery, and Pickup",
+    "url": "https://support.wix.com/en/article/wix-stores-a-guide-to-setting-up-shipping-delivery-and-pickup",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 12199
+  },
+  {
+    "id": "61ffa2b0a7c68212db74fe792ac05131ccc9a4b25309047f15b1d5f6f4bca55e",
+    "file": "Wix_Events_Changing_Your_Currency.txt",
+    "title": "Wix Events: Changing Your Currency",
+    "url": "https://support.wix.com/en/article/wix-events-changing-your-currency",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1610
+  },
+  {
+    "id": "26300cd857c9f66141d42e808c89f5d48534efcfb0c3392eae63a5245df92e8e",
+    "file": "Studio_Editor_Adding_Header_Scroll_Effects.txt",
+    "title": "Studio Editor: Adding Header Scroll Effects",
+    "url": "https://support.wix.com/en/article/studio-editor-adding-header-scroll-effects",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4722
+  },
+  {
+    "id": "1609e162350e7c1bb21e17a9e6a3b5e78a34d4dd9ff087188115313cb2d53d86",
+    "file": "Site_Members_Customizing_the_Member_Signup_Form.txt",
+    "title": "Site Members: Customizing the Member Signup Form",
+    "url": "https://support.wix.com/en/article/site-members-customizing-the-member-signup-form",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2762
+  },
+  {
+    "id": "76ae63aeb65260f8f2735b59718c74b58d2d364a65690e561675eb247b9eae7f",
+    "file": "Wix_Bookings_Customizing_Booking_Form_Fields.txt",
+    "title": "Wix Bookings: Customizing Booking Form Fields",
+    "url": "https://support.wix.com/en/article/wix-bookings-customizing-booking-form-fields",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3730
+  },
+  {
+    "id": "869c8a200a23aa567dbb783a8461a4f0857ee2ffeb38b296560268911e83b2cc",
+    "file": "Wix_Bookings_Creating_and_Setting_up_Your_Booking_Forms.txt",
+    "title": "Wix Bookings: Creating and Setting up Your Booking Forms",
+    "url": "https://support.wix.com/en/article/wix-bookings-creating-and-setting-up-your-booking-forms",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 6083
+  },
+  {
+    "id": "7ccd1a9278fc1868865563acc0217c1d235e1ce76037eafcde2c68cef64a8134",
+    "file": "Disconnecting_a_Payment_Provider.txt",
+    "title": "Disconnecting a Payment Provider",
+    "url": "https://support.wix.com/en/article/disconnecting-a-payment-provider",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 844
+  },
+  {
+    "id": "0b6d939e9e0d8599e895cad834a336ccec3f5e4c149645def2ea4d4d6091b356",
+    "file": "Wix_Stores_Allowing_Customers_to_Add_a_Message_When_Purchasing_a_Product.txt",
+    "title": "Wix Stores: Allowing Customers to Add a Message When Purchasing a Product",
+    "url": "https://support.wix.com/en/article/wix-stores-allowing-customers-to-add-a-message-when-purchasing-a-product",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1161
+  },
+  {
+    "id": "19cddc977e2dd448d6403b8fe556b2b49d482a160120d7ee807c908cd57016f3",
+    "file": "Wix_Forms_Adding_and_Setting_Up_a_Subscribe_Form.txt",
+    "title": "Wix Forms: Adding and Setting Up a Subscribe Form",
+    "url": "https://support.wix.com/en/article/wix-forms-adding-and-setting-up-a-subscribe-form",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4197
+  },
+  {
+    "id": "c71c2c71e9442d4007e45716aa6e8f4826f19a00e850c8b742bd10aa6090a1e5",
+    "file": "Wix_Stores_Managing_Inventory_Using_the_Wix_App.txt",
+    "title": "Wix Stores: Managing Inventory Using the Wix App",
+    "url": "https://support.wix.com/en/article/wix-stores-managing-inventory-using-the-wix-app",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 5210
+  },
+  {
+    "id": "674a8ee961c87e71e35bc7f786673c780ab0b522230ff5806aed8dac13989744",
+    "file": "Previewing_the_Checkout_Process.txt",
+    "title": "Previewing the Checkout Process",
+    "url": "https://support.wix.com/en/article/previewing-the-checkout-process-1420066",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2214
+  },
+  {
+    "id": "9127986712d7e0b33baf120a91ba5ea476a3b62e99269a561dd5e530db3df2b0",
+    "file": "Protecting_Your_Sites_Content.txt",
+    "title": "Protecting Your Site's Content",
+    "url": "https://support.wix.com/en/article/protecting-your-sites-content",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 6263
+  },
+  {
+    "id": "3a7ba684b5e7faa2655c89d099e584de6ee63108a373400a59695da8167db572",
+    "file": "About_Marketing_Integrations.txt",
+    "title": "About Marketing Integrations",
+    "url": "https://support.wix.com/en/article/about-marketing-integrations",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 7252
+  },
+  {
+    "id": "8cb92704d3a87aa92be4860f006c3f7a959143b5f8cf4f962940508288b0dc04",
+    "file": "Wix_Payments_Refunding_Customers.txt",
+    "title": "Wix Payments: Refunding Customers",
+    "url": "https://support.wix.com/en/article/refunding-customers-in-wix-payments",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2471
+  },
+  {
+    "id": "89e39fdcca5874eb36d1ac6e359aad2cd93b601cac1cf7b8743449ff7893ead8",
+    "file": "Assigning_a_Premium_Plan_to_a_Different_Site_in_Your_Wix_Account.txt",
+    "title": "Assigning a Premium Plan to a Different Site in Your Wix Account",
+    "url": "https://support.wix.com/en/article/assigning-a-premium-plan-to-a-different-site-in-your-wix-account",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1276
+  },
+  {
+    "id": "fd36cb06f2de70a197a60c3d2e28ec709fb884cad11153f4bb6086f82755bd5a",
+    "file": "Domain_Structure_after_Purchasing_a_Site_Plan.txt",
+    "title": "Domain Structure after Purchasing a Site Plan",
+    "url": "https://support.wix.com/en/article/domain-structure-after-purchasing-a-premium-plan",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 649
+  },
+  {
+    "id": "a58c7cf097e081353986990a4ed90f8045245be5295358d7e81a7475f1204e09",
+    "file": "Wix_Editor_Copying_and_Pasting_Elements_and_Pages_to_Another_Site.txt",
+    "title": "Wix Editor: Copying and Pasting Elements and Pages to Another Site",
+    "url": "https://support.wix.com/en/article/wix-editor-copying-and-pasting-elements-and-pages-to-another-site",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4640
+  },
+  {
+    "id": "5097c7944bbd290a11bf9dbf7624d475139d109ed0b33bc0449f53e8583be1f3",
+    "file": "Transferring_Your_Wix_Domain_Away_from_Wix.txt",
+    "title": "Transferring Your Wix Domain Away from Wix",
+    "url": "https://support.wix.com/en/article/transferring-your-wix-domain-away-from-wix-2477749",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3015
+  },
+  {
+    "id": "caa8c4985acb151b210db3cf155fab9318119c9bf80eaef6ad5c1cd971e675ae",
+    "file": "Transferring_a_couk_Domain_Away_from_Wix.txt",
+    "title": "Transferring a .co.uk Domain Away from Wix",
+    "url": "https://support.wix.com/en/article/transferring-a-couk-domain-away-from-wix",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1097
+  },
+  {
+    "id": "83dafaa7fb8598367f32ef2d9fb39c1aa49650ca2f64f1509f7823fc117b664a",
+    "file": "Wix_Editor_Customizing_Your_Site_Header.txt",
+    "title": "Wix Editor: Customizing Your Site Header",
+    "url": "https://support.wix.com/en/article/wix-editor-customizing-your-site-header",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3778
+  },
+  {
+    "id": "c5d82d4a0741f072da98db371148bfb349e37561fd94b32c1326dd77d44a4ca0",
+    "file": "Changing_the_Subscription_Period_of_Your_Plan.txt",
+    "title": "Changing the Subscription Period of Your Plan",
+    "url": "https://support.wix.com/en/article/changing-the-subscription-period-of-your-premium-plan",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 991
+  },
+  {
+    "id": "44ac80104f2840a040407f38c3c6ed70d6b93277419d8a5b16d34d60ed86423b",
+    "file": "Wix_Analytics_Downloading_Subscribing_to_Wix_Analytics_Reports.txt",
+    "title": "Wix Analytics: Downloading & Subscribing to Wix Analytics Reports",
+    "url": "https://support.wix.com/en/article/scheduling-wix-analytics-report-emails",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 6074
+  },
+  {
+    "id": "979c6547854102876ed45799be73f2318ec3d52c2705586f883e9d5f9b204a15",
+    "file": "Wix_Stores_Adding_and_Customizing_Product_Options.txt",
+    "title": "Wix Stores: Adding and Customizing Product Options",
+    "url": "https://support.wix.com/en/article/wix-stores-adding-and-customizing-product-options",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 9447
+  },
+  {
+    "id": "78dc0abf7cd09064c04990aea88a340dffa118def85ee43bf18ec4eb315d47fe",
+    "file": "Managing_Multiple_Sites_Under_One_Account.txt",
+    "title": "Managing Multiple Sites Under One Account",
+    "url": "https://support.wix.com/en/article/managing-multiple-sites-under-one-account",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 5724
+  },
+  {
+    "id": "fee90bfe3add5c0b9da4bf8c8c34b2d0ef79e802d7b8410b961c46df370ce336",
+    "file": "Customizing_the_Checkout_Page.txt",
+    "title": "Customizing the Checkout Page",
+    "url": "https://support.wix.com/en/article/customizing-the-checkout-page",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 10310
+  },
+  {
+    "id": "3c497f685ef01dea8fc0e5b2e4f848ed5306b1ebe2c6b291477269a4266d6d98",
+    "file": "Wix_Analytics_About_Your_Sales_Reports.txt",
+    "title": "Wix Analytics: About Your Sales Reports",
+    "url": "https://support.wix.com/en/article/wix-analytics-about-your-sales-reports-4815635",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 7479
+  },
+  {
+    "id": "33dfa4eb3abc1c459f4b8f24cb14757f39c1b9c7c13f598cf904b9d395cc6970",
+    "file": "Wix_Analytics_About_Your_Wix_Stores_Reports.txt",
+    "title": "Wix Analytics: About Your Wix Stores Reports",
+    "url": "https://support.wix.com/en/article/wix-analytics-about-your-wix-stores-reports",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 6577
+  },
+  {
+    "id": "bb528ecfbf28534c702f7e30e97e1709741bb421299f376de6cb2bc8d8226fc4",
+    "file": "Google_Workspace_Purchasing_and_Setting_up_a_Business_Email.txt",
+    "title": "Google Workspace: Purchasing and Setting up a Business Email",
+    "url": "https://support.wix.com/en/article/google-workspace-purchasing-a-personalized-business-email",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 6119
+  },
+  {
+    "id": "0cb65c6c64d2b1d3c54f04b08cd7c801334d1984fc5f07e6e1396b12fb9e1a08",
+    "file": "Wix_Editor_Unpublishing_Your_Site.txt",
+    "title": "Wix Editor: Unpublishing Your Site",
+    "url": "https://support.wix.com/en/article/wix-editor-unpublishing-your-site",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3416
+  },
+  {
+    "id": "4c851bd1efd1009bb75a387d406fb7914e906fda9016127529184916bd23aaf9",
+    "file": "Wix_Stores_Creating_Invoices_for_Store_Orders.txt",
+    "title": "Wix Stores: Creating Invoices for Store Orders",
+    "url": "https://support.wix.com/en/article/wix-stores-creating-invoices-for-store-orders",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 6991
+  },
+  {
+    "id": "8001def9f1cf8810f2685ae0f68ee4b4bca089212d77a99e0a129a1feb80370f",
+    "file": "Wix_Invoices_Managing_Your_Invoices_in_the_Wix_App.txt",
+    "title": "Wix Invoices: Managing Your Invoices in the Wix App",
+    "url": "https://support.wix.com/en/article/wix-invoices-managing-your-invoices-in-the-wix-owner-app",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 6291
+  },
+  {
+    "id": "040613a5d53923efc2955eb8cfaf4573d7543dd0236bf90be63e40613359e4cf",
+    "file": "Managing_Invoices_Paid_for_Wix_Services.txt",
+    "title": "Managing Invoices Paid for Wix Services",
+    "url": "https://support.wix.com/en/article/managing-invoices-paid-for-wix-services",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2956
+  },
+  {
+    "id": "1c468e44c3b2e17cc74bea4b83e6037bfd26c1b527d04f9641dd61c8fe54f551",
+    "file": "Wix_Stores_Customizing_Product_Galleries.txt",
+    "title": "Wix Stores: Customizing Product Galleries",
+    "url": "https://support.wix.com/en/article/wix-stores-customizing-product-galleries",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 12017
+  },
+  {
+    "id": "e4b87cd9f38d652e0a018619be5ab7f6065f07e1bd2556d629fb34e693feff91",
+    "file": "Wix_Stores_Customizing_Your_Product_Page.txt",
+    "title": "Wix Stores: Customizing Your Product Page",
+    "url": "https://support.wix.com/en/article/wix-stores-customizing-your-product-page",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 8202
+  },
+  {
+    "id": "13b7554664bd39da1825c1d396cefbb0afd2d9989c1a15659dd158b0a46b916c",
+    "file": "Wix_Stores_Adding_and_Setting_Up_a_Wishlist.txt",
+    "title": "Wix Stores: Adding and Setting Up a Wishlist",
+    "url": "https://support.wix.com/en/article/wix-stores-adding-and-setting-up-a-wishlist",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3522
+  },
+  {
+    "id": "88f6b5848f6f662d7fe9d69f2708f00c75067894320261c58578ad0ed732baa9",
+    "file": "Troubleshooting_Issues_for_Accepting_Payments.txt",
+    "title": "Troubleshooting Issues for Accepting Payments",
+    "url": "https://support.wix.com/en/article/troubleshooting-issues-for-accepting-payments",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3669
+  },
+  {
+    "id": "9bf18dc24fbe1699beea4ea50fe1ac0ccdfe811623662cd87c6dd78ac9100d78",
+    "file": "About_Wix_Payments.txt",
+    "title": "About Wix Payments",
+    "url": "https://support.wix.com/en/article/about-wix-payments",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3018
+  },
+  {
+    "id": "91eeefd48d7dcfda197a6162b7259e942579b5e6a53f50def1b09fecaad9ee1d",
+    "file": "Wix_Automations_Troubleshooting_Wix_Automations.txt",
+    "title": "Wix Automations: Troubleshooting Wix Automations",
+    "url": "https://support.wix.com/en/article/the-new-automation-builder-troubleshooting-wix-automations",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 9450
+  },
+  {
+    "id": "c767f27f3884550a922260527f188d9b32ded399a5f36d4f0b060253348764ed",
+    "file": "Wix_Forms_Creating_Automated_Responses_for_Form_Submissions.txt",
+    "title": "Wix Forms: Creating Automated Responses for Form Submissions",
+    "url": "https://support.wix.com/en/article/wix-forms-creating-automated-responses-for-form-submissions",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3056
+  },
+  {
+    "id": "be8f488cde5a1ed4c46d21398144c082d689a03c700094b17d1c9ebb1ee6902e",
+    "file": "Wix_Editor_Unable_to_Select_an_Element.txt",
+    "title": "Wix Editor: Unable to Select an Element",
+    "url": "https://support.wix.com/en/article/wix-editor-unable-to-select-an-element",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3137
+  },
+  {
+    "id": "dbe0a26325502a70afa42a8484e6e062fc31132896f4319cb0fc34f834551ee0",
+    "file": "Wix_Stores_Troubleshooting_Customer_are_Unable_to_Apply_Coupon.txt",
+    "title": "Wix Stores Troubleshooting: Customer are Unable to Apply Coupon",
+    "url": "https://support.wix.com/en/article/wix-stores-troubleshooting-customer-are-unable-to-apply-coupon",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4327
+  },
+  {
+    "id": "ad7a6f1f5851bf2c4bc738d6223bb1546e78c7b7f3317d721b67181cd675c5a8",
+    "file": "Using_a_Different_Account_with_the_Same_Payment_Provider.txt",
+    "title": "Using a Different Account with the Same Payment Provider",
+    "url": "https://support.wix.com/en/article/using-a-different-account-with-the-same-payment-provider",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2143
+  },
+  {
+    "id": "b3e00d9ee8731d8ba3a2b6a598661814748800e26861ceae1043dd13aedcf7be",
+    "file": "Renting_Multiple_Properties_in_Different_Locations.txt",
+    "title": "Renting Multiple Properties in Different Locations",
+    "url": "https://support.wix.com/en/article/renting-multiple-properties-in-different-locations",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1649
+  },
+  {
+    "id": "79455d545b2391bcf2def8c7df43ee5d3ae9aab18a36e789313c94e1f8765be8",
+    "file": "Wix_Editor_Customizing_the_Design_of_Your_Slideshow.txt",
+    "title": "Wix Editor: Customizing the Design of Your Slideshow",
+    "url": "https://support.wix.com/en/article/wix-editor-customizing-the-design-of-your-slideshow",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2574
+  },
+  {
+    "id": "261156aa199b397241f9cee31209331949be17ff75a2a42e53c561f2fd676951",
+    "file": "Wix_Editor_Displaying_Navigation_Buttons_and_Arrows_on_Your_Slideshow.txt",
+    "title": "Wix Editor: Displaying Navigation Buttons and Arrows on Your Slideshow",
+    "url": "https://support.wix.com/en/article/wix-editor-displaying-navigation-buttons-and-arrows-on-your-slideshow",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1887
+  },
+  {
+    "id": "be7dc55f18f09992ba827908f0e022346f4e05c76aabd81090798aa28714ff0d",
+    "file": "Wix_Editor_Changing_Your_Gallerys_Layout.txt",
+    "title": "Wix Editor: Changing Your Gallery's Layout",
+    "url": "https://support.wix.com/en/article/wix-editor-changing-your-gallerys-layout",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4262
+  },
+  {
+    "id": "2dc662f80a2af9aa209981a6aba1962f140573cba262184f4240b67a1d26772a",
+    "file": "Adding_Policies_Terms_Conditions_to_Your_Sites_Footer.txt",
+    "title": "Adding Policies, Terms & Conditions to Your Site's Footer",
+    "url": "https://support.wix.com/en/article/adding-policies-terms-conditions-to-your-sites-footer",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2788
+  },
+  {
+    "id": "5fbc47de05f77213b05973a3ad35aa082c84b11e939a70914ed66ab02fc8b617",
+    "file": "Enabling_Search_Engines_like_Google_to_Index_Your_Site.txt",
+    "title": "Enabling Search Engines like Google to Index Your Site",
+    "url": "https://support.wix.com/en/article/enabling-search-engines-like-google-to-index-your-site",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1406
+  },
+  {
+    "id": "c8783e7cee11b09c015c396cebcd60a7c1c93a4be6d73383d41d11369527cde3",
+    "file": "Wix_Payments_Guidelines_for_Uploading_Documentation.txt",
+    "title": "Wix Payments: Guidelines for Uploading Documentation",
+    "url": "https://support.wix.com/en/article/guidelines-for-uploading-documentation-for-wix-payments",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 7303
+  },
+  {
+    "id": "80f713366c2599da0c718797a8174799885289c8c050fccccb21442a90f0c03a",
+    "file": "Wix_Stores_Limits_Recommended_Guidelines.txt",
+    "title": "Wix Stores: Limits & Recommended Guidelines",
+    "url": "https://support.wix.com/en/article/wix-stores-limits-recommended-guidelines",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 938
+  },
+  {
+    "id": "db8689fb79cbb114d40d38ef89019ee4ee0498e18d25fcd9d53fc2fa42a27f80",
+    "file": "Wix_Payments_Service_Fees.txt",
+    "title": "Wix Payments: Service Fees",
+    "url": "https://support.wix.com/en/article/wix-payments-service-fees",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 6244
+  },
+  {
+    "id": "1403e3db0171995eea2a0db5b92dd93976f60c48784dbe752b45b337a386adf5",
+    "file": "Email_Marketing_Creating_a_Campaign_from_Start_to_Finish.txt",
+    "title": "Email Marketing: Creating a Campaign from Start to Finish",
+    "url": "https://support.wix.com/en/article/email-marketing-creating-and-sending-a-campaign-from-start-to-finish",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 7960
+  },
+  {
+    "id": "5641574289f2768293891471cfcc69b935623ef2723abd28fcb9dddf430ce5e8",
+    "file": "Requesting_a_Refund_for_a_Premium_or_Studio_Plan.txt",
+    "title": "Requesting a Refund for a Premium or Studio Plan",
+    "url": "https://support.wix.com/en/article/requesting-a-refund-for-a-premium-plan",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4327
+  },
+  {
+    "id": "c260289b0947792bce0e1eac376a70ecf0d3482c1cde01fa22d8f44e6f7c0ee0",
+    "file": "Hiring_a_Wix_Professional.txt",
+    "title": "Hiring a Wix Professional",
+    "url": "https://support.wix.com/en/article/hiring-a-wix-professional",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3652
+  },
+  {
+    "id": "9b19fff16487d6d81f188358b3be7959490e4d7291d43c35a71c5bb8b86814bc",
+    "file": "Wix_Bookings_Managing_Your_Outbound_Client_Emails.txt",
+    "title": "Wix Bookings: Managing Your Outbound Client Emails",
+    "url": "https://support.wix.com/en/article/wix-bookings-managing-your-outbound-client-emails",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 9112
+  },
+  {
+    "id": "5ffac2b71ea454640d6b2ff424935c68ca726a8d32036290d1c9f1a80d22667c",
+    "file": "Email_Marketing_Adding_Elements_to_Your_Campaign.txt",
+    "title": "Email Marketing: Adding Elements to Your Campaign",
+    "url": "https://support.wix.com/en/article/adding-elements-to-your-email-campaign",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 8880
+  },
+  {
+    "id": "6ac11c077e31c980c3de33be613fa8af2af6f78ed5da96ede5644a7195a1e866",
+    "file": "Wix_Stores_Creating_Popular_Store_Discounts.txt",
+    "title": "Wix Stores: Creating Popular Store Discounts",
+    "url": "https://support.wix.com/en/article/wix-stores-creating-popular-store-discounts",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 5703
+  },
+  {
+    "id": "571ab41fb9e80c99d0f10cfceae8b71ed3d426c5b13c9745655925b4161e8fd4",
+    "file": "Wix_Stores_Setting_Up_Free_Shipping_Above_a_Set_Price.txt",
+    "title": "Wix Stores: Setting Up Free Shipping Above a Set Price",
+    "url": "https://support.wix.com/en/article/wix-stores-setting-up-free-shipping-above-a-set-price",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1209
+  },
+  {
+    "id": "62b26d2236aba83295c706d5285e063a5fa09be6fc2d892d642540a04b1c4d85",
+    "file": "Wix_Payments_Receiving_Your_First_Payout.txt",
+    "title": "Wix Payments: Receiving Your First Payout",
+    "url": "https://support.wix.com/en/article/receiving-your-first-payout-in-wix-payments",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1009
+  },
+  {
+    "id": "21d0c4a48a5cb926c651d84555c943756b3c980010fff778098ebd5758e8dd10",
+    "file": "Wix_Editor_Adding_and_Setting_Up_a_Hamburger_Menu.txt",
+    "title": "Wix Editor: Adding and Setting Up a Hamburger Menu",
+    "url": "https://support.wix.com/en/article/wix-editor-adding-and-setting-up-a-hamburger-menu",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3767
+  },
+  {
+    "id": "7f54f872dcefc45fec8d7bcaabce47769bccfd8f4efa5ffe8e8232fe11aa24c0",
+    "file": "Assigning_a_Domain_to_a_Site_in_Your_Wix_Account.txt",
+    "title": "Assigning a Domain to a Site in Your Wix Account",
+    "url": "https://support.wix.com/en/article/assigning-a-domain-to-a-site-in-your-wix-account",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2119
+  },
+  {
+    "id": "68cbfcb0aff2ca1fdf344999c66e4d87d40a216564a892512ff8018cf2bfe253",
+    "file": "Connecting_a_Meta_Pixel_and_the_Conversions_API_to_Your_Wix_Site.txt",
+    "title": "Connecting a Meta Pixel and the Conversions API to Your Wix Site",
+    "url": "https://support.wix.com/en/article/connecting-a-facebook-pixel-and-the-conversions-api-to-your-wix-site-7351813",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 5378
+  },
+  {
+    "id": "7d8d492c5a4e6bf7d47764f9674e840b6fc652c98689d1791c3442f306478613",
+    "file": "Using_Meta_Pixel_with_Your_Wix_Stores.txt",
+    "title": "Using Meta Pixel with Your Wix Stores",
+    "url": "https://support.wix.com/en/article/using-facebook-pixel-with-your-wix-stores",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1314
+  },
+  {
+    "id": "fbe2efc44cd56402c42a2b443b654fc9332e94cc2bb5bcf5b206971ea1fe32aa",
+    "file": "Customizing_the_Cart_Page.txt",
+    "title": "Customizing the Cart Page",
+    "url": "https://support.wix.com/en/article/customizing-the-cart-page",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 8614
+  },
+  {
+    "id": "36e7c2a0419b630ed12f12697c3aa35b21e52ef790c3ce2bbce45a67fb04c52b",
+    "file": "Wix_Retail_POS_Using_Wix_Payments_as_Your_Payment_Provider.txt",
+    "title": "Wix Retail POS: Using Wix Payments as Your Payment Provider",
+    "url": "https://support.wix.com/en/article/wix-retail-pos-using-wix-payments-as-your-payment-provider",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2118
+  },
+  {
+    "id": "fa04af5bc8c305f900f1f6bcea2fe66b5a4e6b1a84450b1f6a980084d3d4addc",
+    "file": "Google_Workspace_Error_Message_Your_subscription_has_been_suspended_by_your_reseller.txt",
+    "title": "Google Workspace Error Message: \"Your subscription has been suspended by your reseller\"",
+    "url": "https://support.wix.com/en/article/google-workspace-error-message-your-subscription-has-been-suspended-by-your-reseller",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1288
+  },
+  {
+    "id": "51aca93604e8d423b3a87c0126335c5864f343205d7441aa23171523bb26c7aa",
+    "file": "Accepting_Payments_An_Overview.txt",
+    "title": "Accepting Payments: An Overview",
+    "url": "https://support.wix.com/en/article/accepting-payments-an-overview",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4857
+  },
+  {
+    "id": "a591b77f0a070d2ba56e5ec94f24cfbbe9890bb5260b49a533de802033741aa5",
+    "file": "Email_Marketing_Improving_the_Deliverability_of_Your_Campaign.txt",
+    "title": "Email Marketing: Improving the Deliverability of Your Campaign",
+    "url": "https://support.wix.com/en/article/improving-the-deliverability-of-your-campaign",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 7488
+  },
+  {
+    "id": "917dc0f5c250da8787fde5f21c192cd6906aa239bd4d2c499277c2606a93c974",
+    "file": "Email_Marketing_Preventing_Campaigns_from_Being_Marked_as_Spam.txt",
+    "title": "Email Marketing: Preventing Campaigns from Being Marked as Spam",
+    "url": "https://support.wix.com/en/article/email-marketing-campaigns-marked-as-spam",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 5823
+  },
+  {
+    "id": "7a2a95eef86788654dd78c208baa0f8adc5ba65cdf05d27b90ebf747d87ca171",
+    "file": "Submitting_Your_Sitemap_and_URLs_Directly_to_Search_Engines.txt",
+    "title": "Submitting Your Sitemap and URLs Directly to Search Engines",
+    "url": "https://support.wix.com/en/article/submitting-your-sitemap-and-urls-directly-to-search-engines",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 5298
+  },
+  {
+    "id": "24953d9f24a1cd711d55a2a3729dd74257e6de98ea882b8a9ae49e2d2720d1fa",
+    "file": "Removing_Pages_that_Incorrectly_Appear_in_Google_Search_Results.txt",
+    "title": "Removing Pages that Incorrectly Appear in Google Search Results",
+    "url": "https://support.wix.com/en/article/removing-pages-that-incorrectly-appear-in-google-search-results",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2646
+  },
+  {
+    "id": "568140964e5e7c1628d295e9991367ed4d3c2090a79105d435231030b620a506",
+    "file": "Site_or_Pages_Not_Appearing_in_Search_Engine_Results.txt",
+    "title": "Site or Pages Not Appearing in Search Engine Results",
+    "url": "https://support.wix.com/en/article/site-or-pages-not-appearing-in-search-engine-results",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 11199
+  },
+  {
+    "id": "8a5d43f98c713e756106a2550c8ead9e4a16c91d2b55f9a240f82bb75fd12782",
+    "file": "Troubleshooting_Your_SSL_Certificate.txt",
+    "title": "Troubleshooting Your SSL Certificate",
+    "url": "https://support.wix.com/en/article/troubleshooting-your-ssl-certificate",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4125
+  },
+  {
+    "id": "9fc70d88423ae68403ccb81a8aac36ddb5fd9a7ac9d57c35ba163e3dcb841417",
+    "file": "Wix_Domain_Assistant.txt",
+    "title": "Wix Domain Assistant",
+    "url": "https://support.wix.com/en/article/wix-domain-assistant-3777632",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 13620
+  },
+  {
+    "id": "d44da9f63404b7f277086f617efa87e65efc5cb8fd237e6d9470ffdcd38c9e46",
+    "file": "Wix_Bookings_Upgrading_Your_Site.txt",
+    "title": "Wix Bookings: Upgrading Your Site",
+    "url": "https://support.wix.com/en/article/wix-bookings-upgrading-wix-bookings-to-a-business-premium-plan",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1266
+  },
+  {
+    "id": "d43e89aeb2f79d5105520f40f84f47ad11f15dcf092e5fe3376bc368dd152b80",
+    "file": "Wix_Editor_Adding_and_Customizing_Images_on_Your_Mobile_Site.txt",
+    "title": "Wix Editor: Adding and Customizing Images on Your Mobile Site",
+    "url": "https://support.wix.com/en/article/wix-editor-adding-and-customizing-images-on-your-mobile-site",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 5846
+  },
+  {
+    "id": "e63fe24104428cb2bb94d1087fbb7a9c7136f0c028f7a441bbfeb33357069d25",
+    "file": "Upgrading_Universal_Analytics_to_Google_Analytics_4_GA4.txt",
+    "title": "Upgrading Universal Analytics to Google Analytics 4 (GA4)",
+    "url": "https://support.wix.com/en/article/upgrading-universal-analytics-to-google-analytics-4-ga4",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3644
+  },
+  {
+    "id": "7e10270b7ecd05d2573050a9ca7541e71edcb7b2b82220e5079404417d10d7dd",
+    "file": "Google_Ads_with_Wix_FAQs_About_Your_Monthly_Subscription_Daily_Spend_and_Ad_Credits.txt",
+    "title": "Google Ads with Wix: FAQs About Your Monthly Subscription, Daily Spend, and Ad Credits",
+    "url": "https://support.wix.com/en/article/google-ads-with-wix-faqs-about-your-monthly-subscription-daily-spend-and-ad-credits",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 10446
+  },
+  {
+    "id": "01e329b27ef95b8d6da00ab4ef5edde1b08837190925fefaaa23a1cbbc5bf855",
+    "file": "Google_Ads_with_Wix_Refund_Policy.txt",
+    "title": "Google Ads with Wix: Refund Policy",
+    "url": "https://support.wix.com/en/article/google-ads-with-wix-refund-policy",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2370
+  },
+  {
+    "id": "df9f74cf9a89d202a31987b14b341e2568b71e795d65c737c3cc7c8b1f19061a",
+    "file": "Wix_Editor_Adding_and_Setting_Up_Advanced_Menus.txt",
+    "title": "Wix Editor: Adding and Setting Up Advanced Menus",
+    "url": "https://support.wix.com/en/article/wix-editor-adding-and-setting-up-advanced-menus",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2732
+  },
+  {
+    "id": "8355a228e57d0a766b3bdfd591d86a12b060f7e7f7d4fd19c468cb8f1c336721",
+    "file": "Requiring_Customers_to_Sign_Up_Before_Making_Purchases.txt",
+    "title": "Requiring Customers to Sign Up Before Making Purchases",
+    "url": "https://support.wix.com/en/article/requiring-customers-to-sign-up-before-making-purchases",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3394
+  },
+  {
+    "id": "82e09fe1f4ab70ddd74290b51b6f3182ea71e460664d48ba6d550961e312bfd8",
+    "file": "Wix_Editor_Customizing_Your_Mobile_Menu.txt",
+    "title": "Wix Editor: Customizing Your Mobile Menu",
+    "url": "https://support.wix.com/en/article/wix-editor-customizing-your-mobile-menu",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 7650
+  },
+  {
+    "id": "6d5d61b21e2981893d50b1c101694cddc3c88c93e4f2b14b02143c0f19038687",
+    "file": "Wix_Editor_Troubleshooting_Font_Issues_on_Your_Mobile_Site.txt",
+    "title": "Wix Editor: Troubleshooting Font Issues on Your Mobile Site",
+    "url": "https://support.wix.com/en/article/wix-editor-troubleshooting-font-issues-on-your-mobile-site",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1741
+  },
+  {
+    "id": "50d02c7ce566adb08742f7cc810bfceab55f9a7c43fcd7fe73f932c2cd8c88b1",
+    "file": "Using_2_Step_Verification_for_Your_Wix_Account.txt",
+    "title": "Using 2-Step Verification for Your Wix Account",
+    "url": "https://support.wix.com/en/article/using-2-step-verification-for-your-wix-account",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 6590
+  },
+  {
+    "id": "3b3edb8700d3099ded98be8cb0c41785b964f5fc4c21db11cd1c6f96250b8f51",
+    "file": "Wix_Payments_Updating_Your_Account_Settings.txt",
+    "title": "Wix Payments: Updating Your Account Settings",
+    "url": "https://support.wix.com/en/article/updating-your-wix-payments-account-settings",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1334
+  },
+  {
+    "id": "f971216b06eba45cab4e5bdea5cea4196024af8360a81ed603a36266bbc6f926",
+    "file": "Changing_Your_Payment_Provider_for_Accepting_Credit_Card_Payments.txt",
+    "title": "Changing Your Payment Provider for Accepting Credit Card Payments",
+    "url": "https://support.wix.com/en/article/changing-your-payment-provider-for-accepting-credit-card-payments",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1499
+  },
+  {
+    "id": "085e4d36ca87e3caa5403c4a9fd6e2e147826bf93f1bb909f23e8f2f0167aab4",
+    "file": "Setting_up_Your_Payment_Method_in_Wix_Hotels.txt",
+    "title": "Setting up Your Payment Method in Wix Hotels",
+    "url": "https://support.wix.com/en/article/setting-up-your-payment-method-in-wix-hotels",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1672
+  },
+  {
+    "id": "ac52db95f0cfec00e71b43d37c7428fb694f9bc262cd7f2770fe661de581c8be",
+    "file": "Canceling_a_Wix_Premium_or_Studio_Plan.txt",
+    "title": "Canceling a Wix Premium or Studio Plan",
+    "url": "https://support.wix.com/en/article/canceling-a-wix-premium-plan",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 5250
+  },
+  {
+    "id": "fff4ccf96f0bf0a2c3b82d0734f384299bd9a621212087f9268941acd38f8d36",
+    "file": "Wix_Stores_Creating_Automatic_Discounts.txt",
+    "title": "Wix Stores: Creating Automatic Discounts",
+    "url": "https://support.wix.com/en/article/wix-stores-creating-automatic-discounts",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 11408
+  },
+  {
+    "id": "71c4af17a58608e6532561f6b5e39a52b765ec05704a8cefa4618255e00c35a3",
+    "file": "Wix_Blog_Adding_and_Setting_Up_Your_Blog.txt",
+    "title": "Wix Blog: Adding and Setting Up Your Blog",
+    "url": "https://support.wix.com/en/article/wix-blog-adding-and-setting-up-your-blog",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 11648
+  },
+  {
+    "id": "2d4fc8ead551a8cf2f64ffe33d48e2c4aff88693fe418e33d623296dd25a1de2",
+    "file": "Wix_Blog_Deleting_Your_Blog.txt",
+    "title": "Wix Blog: Deleting Your Blog",
+    "url": "https://support.wix.com/en/article/wix-blog-deleting-your-blog",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1317
+  },
+  {
+    "id": "1d9d696fc7b02666984ce70a49e3b106ce8bf6f4fefe351d2cd4d1ec98253aac",
+    "file": "Google_Ads_with_Wix_Creating_Multiple_Campaigns.txt",
+    "title": "Google Ads with Wix: Creating Multiple Campaigns",
+    "url": "https://support.wix.com/en/article/google-ads-with-wix-creating-multiple-campaigns",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 5444
+  },
+  {
+    "id": "e5d4d43fc8badaf4ce4f7f3a548fbda56f60f10e1dcc73c0a408d154c3a3608d",
+    "file": "Wix_Editor_Changing_Your_Page_URL.txt",
+    "title": "Wix Editor: Changing Your Page URL",
+    "url": "https://support.wix.com/en/article/wix-editor-changing-your-page-url",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1637
+  },
+  {
+    "id": "a64cacf41053234604e05d45255bae13d63974acbfe808ee003ee480107d14d8",
+    "file": "Customizing_the_Social_Share_Settings_for_Your_Sites_Pages.txt",
+    "title": "Customizing the Social Share Settings for Your Site's Pages",
+    "url": "https://support.wix.com/en/article/customizing-the-social-share-settings-for-your-sites-pages",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4752
+  },
+  {
+    "id": "cca1a826035f2460c3bcd3e68d4b52927f10be5f289de310f592625890e6f520",
+    "file": "Viewing_and_Managing_Your_Site_History.txt",
+    "title": "Viewing and Managing Your Site History",
+    "url": "https://support.wix.com/en/article/viewing-and-managing-your-site-history",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2099
+  },
+  {
+    "id": "67b2ea3d053a9791a200c8dbdded565fa8ccccb50d375cca1c745ecefba17e88",
+    "file": "Clearing_Your_Browsers_Cache.txt",
+    "title": "Clearing Your Browser's Cache",
+    "url": "https://support.wix.com/en/article/clearing-your-browsers-cache",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2108
+  },
+  {
+    "id": "908476ad8eae76bfa335531628978f33cf5967b3943a7d0898d94aa1bdea1f26",
+    "file": "Wix_Editor_Managing_Advanced_Menus.txt",
+    "title": "Wix Editor: Managing Advanced Menus",
+    "url": "https://support.wix.com/en/article/wix-editor-managing-advanced-menus",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4609
+  },
+  {
+    "id": "7be79d27b2ef237124f1629a4f23d8b41c90ebf31dc773ca90e86aadb95fa09f",
+    "file": "Wix_Editor_Managing_Your_Lightboxes.txt",
+    "title": "Wix Editor: Managing Your Lightboxes",
+    "url": "https://support.wix.com/en/article/wix-editor-managing-your-lightboxes",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3056
+  },
+  {
+    "id": "93b0b3e9143597ad88074cb36a60e73fc02d9d5e7ebe707b1537847cda6f2cb1",
+    "file": "Wix_Editor_Using_Undo_and_Redo.txt",
+    "title": "Wix Editor: Using Undo and Redo",
+    "url": "https://support.wix.com/en/article/wix-editor-using-undo-and-redo",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2286
+  },
+  {
+    "id": "ef059ae18c89167addcdbf182f654898434af7b6ca75577fdc7e006c65568be1",
+    "file": "Wix_Editor_Adding_and_Deleting_Elements.txt",
+    "title": "Wix Editor: Adding and Deleting Elements",
+    "url": "https://support.wix.com/en/article/wix-editor-adding-and-deleting-elements",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1733
+  },
+  {
+    "id": "73962a6c69a291d8a5d108b0a2116dd29341275b37c155084612574eb649c8d7",
+    "file": "Connecting_Your_Instagram_Feed_to_Your_Instagram_Business_Account.txt",
+    "title": "Connecting Your Instagram Feed to Your Instagram Business Account",
+    "url": "https://support.wix.com/en/article/connecting-your-instagram-feed-to-your-instagram-business-account",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 7341
+  },
+  {
+    "id": "59d93fe87c11976a1762f5f0b66281fa3abaa794311b4797740eb2fc17a04514",
+    "file": "Wix_Editor_Rebuilding_Your_Site_in_the_Studio_Editor.txt",
+    "title": "Wix Editor: Rebuilding Your Site in the Studio Editor",
+    "url": "https://support.wix.com/en/article/wix-editor-rebuilding-your-site-in-the-studio-editor",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 431
+  },
+  {
+    "id": "4410ec7a468ff3fbc16226eaed066aa4eedb099aec7d62d9190586d9b814cdf4",
+    "file": "Wix_Editor_Preventing_Search_Engines_from_Indexing_Your_Page.txt",
+    "title": "Wix Editor: Preventing Search Engines from Indexing Your Page",
+    "url": "https://support.wix.com/en/article/wix-editor-preventing-search-engines-from-indexing-your-page",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1575
+  },
+  {
+    "id": "52491d805ef26f5b0173acea8a0de24c75364577bf69eb1ba6442d8ae449b738",
+    "file": "Wix_Editor_Hiding_and_Unhiding_a_Page_From_Your_Site_Menu.txt",
+    "title": "Wix Editor: Hiding and Unhiding a Page From Your Site Menu",
+    "url": "https://support.wix.com/en/article/wix-editor-hiding-and-unhiding-a-page-from-your-site-menu",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1833
+  },
+  {
+    "id": "bd21131f1c6bf94859aa1162f8e4d7c1e91e5596a86e873f0a65a5b87dddfd58",
+    "file": "Wix_Editor_Managing_Your_Pages_in_the_Mobile_Editor.txt",
+    "title": "Wix Editor: Managing Your Pages in the Mobile Editor",
+    "url": "https://support.wix.com/en/article/wix-editor-managing-your-pages-in-the-mobile-editor",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2091
+  },
+  {
+    "id": "860274d1352a93de212e60fd6460b0bf658a82e9945ab967bc4069eec5f831e2",
+    "file": "Duplicating_Your_Site.txt",
+    "title": "Duplicating Your Site",
+    "url": "https://support.wix.com/en/article/duplicating-your-site-1472847",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1689
+  },
+  {
+    "id": "0f62233f56e2ec9872da8bf74fda8cf9af0dad4b186d40e3cd8284495d2027a3",
+    "file": "Third_Party_App_Blocky_IP_Country_Blocker_by_Effective_Apps.txt",
+    "title": "Third-Party App: Blocky IP & Country Blocker by Effective Apps",
+    "url": "https://support.wix.com/en/article/third-party-app-blocky-ip-country-blocker-by-effective-apps",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 972
+  },
+  {
+    "id": "63feacd4199e7305e277fb785d3ee7a86252a753036d619d4a940b4cc36d5f82",
+    "file": "Wix_Inbox_Managing_Your_Notification_Settings.txt",
+    "title": "Wix Inbox: Managing Your Notification Settings",
+    "url": "https://support.wix.com/en/article/wix-inbox-managing-your-notification-settings",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4768
+  },
+  {
+    "id": "c8ecc53ea0624b4a821db3a01ce700772ef6415db04a456ed9f06bd55e1d1fe6",
+    "file": "Switching_Your_Site_Template.txt",
+    "title": "Switching Your Site Template",
+    "url": "https://support.wix.com/en/article/switching-your-site-template",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4997
+  },
+  {
+    "id": "7702378a3ae3fe2d928d1610769855c7f506efa705b43039177cfcd85e93766a",
+    "file": "Wix_Editor_Adding_Renaming_and_Deleting_an_Anchor.txt",
+    "title": "Wix Editor: Adding, Renaming and Deleting an Anchor",
+    "url": "https://support.wix.com/en/article/wix-editor-adding-renaming-and-deleting-an-anchor",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1452
+  },
+  {
+    "id": "10d6ad17a475d203890657d1d3bde15f4e5534bc4b0c1f87ca79bd29f73fd2a7",
+    "file": "Wix_Editor_Request_Responsive_Sites.txt",
+    "title": "Wix Editor Request: Responsive Sites",
+    "url": "https://support.wix.com/en/article/wix-editor-request-responsive-sites",
+    "type": "feature_request",
+    "reason": "answers-test-question",
+    "chars": 2358
+  },
+  {
+    "id": "8f75535d9e4da125f409c551a9606beda8b8475d6c1351f783dd13914103962f",
+    "file": "Wix_Inbox_Connecting_Instagram_to_Inbox.txt",
+    "title": "Wix Inbox: Connecting Instagram to Inbox",
+    "url": "https://support.wix.com/en/article/wix-inbox-connecting-instagram-to-inbox",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 5229
+  },
+  {
+    "id": "b1294bb659f5a89d919117c0b9b00387752d0e8cbfdc681113616775aae5ef9b",
+    "file": "Opening_Your_Browser_in_IncognitoPrivate_Browsing_Mode.txt",
+    "title": "Opening Your Browser in Incognito/Private Browsing Mode",
+    "url": "https://support.wix.com/en/article/opening-your-browser-in-incognitoprivate-browsing-mode",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1727
+  },
+  {
+    "id": "77c054b29c894610643f474b8ddf92ab5d587006d3e23d13d38da92df7944d8e",
+    "file": "Live_Site_Error_Error_404_Not_Found.txt",
+    "title": "Live Site Error: Error 404 (Not Found)",
+    "url": "https://support.wix.com/en/article/live-site-error-error-404-not-found",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1789
+  },
+  {
+    "id": "82536ac2af6aa83c87762d382aa1e3d223101ddaca264de4e98e7d229b15e398",
+    "file": "Wix_Editor_Image_Issues.txt",
+    "title": "Wix Editor: Image Issues",
+    "url": "https://support.wix.com/en/article/wix-editor-image-issues",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 690
+  },
+  {
+    "id": "0585250f004dcd17b373021e5e3b007fe355250034fe47d554a98b3c448a5f06",
+    "file": "CMS_Troubleshooting_Dynamic_Pages_Issues.txt",
+    "title": "CMS: Troubleshooting Dynamic Pages Issues",
+    "url": "https://support.wix.com/en/article/cms-formerly-content-manager-troubleshooting-dynamic-pages-issues",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 8855
+  },
+  {
+    "id": "a3c3c5e722dc8315970e6716f6437f346b313e57b347f50df990006cea519384",
+    "file": "Live_Site_Error_Error_403_Forbidden.txt",
+    "title": "Live Site Error: Error 403 (Forbidden)",
+    "url": "https://support.wix.com/en/article/live-site-error-error-403-forbidden",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 539
+  },
+  {
+    "id": "76f467a6f07dedfe956e5c2587bdfbc6d1e75e955efafb23605310cb93b2a658",
+    "file": "Wix_Editor_Adding_a_New_Item_to_Your_Site_Menu.txt",
+    "title": "Wix Editor: Adding a New Item to Your Site Menu",
+    "url": "https://support.wix.com/en/article/wix-editor-adding-a-new-item-to-your-site-menu",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3250
+  },
+  {
+    "id": "da2dea4c3119a1a60712c89c0a28e6364574434e36bf8a40621a5f4af08da9a8",
+    "file": "Wix_Editor_Getting_a_New_Template_for_Your_Site.txt",
+    "title": "Wix Editor: Getting a New Template for Your Site",
+    "url": "https://support.wix.com/en/article/wix-editor-getting-a-new-template-for-your-site",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3733
+  },
+  {
+    "id": "869eb0229f712d95946eba23a8eb9aa28569a8c0122194b342135ced4d59c1fb",
+    "file": "Wix_Editor_Changing_the_Length_of_Your_Page.txt",
+    "title": "Wix Editor: Changing the Length of Your Page",
+    "url": "https://support.wix.com/en/article/wix-editor-changing-the-length-of-your-page",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2501
+  },
+  {
+    "id": "c1e76a9137405f2f62ea51a52f42bbf9fea7cb9b16938168117fd534a5ebb314",
+    "file": "Wix_Editor_Adding_and_Managing_Repeaters_Lists_Grids.txt",
+    "title": "Wix Editor: Adding and Managing Repeaters (Lists & Grids)",
+    "url": "https://support.wix.com/en/article/wix-editor-adding-and-managing-repeaters-lists-grids",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4196
+  },
+  {
+    "id": "dd1291f6b0918036ef572c2420931b0f24a2936fcdad9b187567cac915b00b33",
+    "file": "Wix_Editor_Elements_that_Cant_be_Added_to_Repeaters.txt",
+    "title": "Wix Editor: Elements that Can't be Added to Repeaters",
+    "url": "https://support.wix.com/en/article/wix-editor-elements-that-cant-be-added-to-repeaters",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 927
+  },
+  {
+    "id": "fc00aa38975e2ccdb0406699909a3fd7a4b50bbdba6bcdad41c83e28db994ab4",
+    "file": "Troubleshooting_iPad_and_Tablet_Live_Site_Issues.txt",
+    "title": "Troubleshooting iPad and Tablet Live Site Issues",
+    "url": "https://support.wix.com/en/article/troubleshooting-ipad-and-tablet-live-site-issues",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3866
+  },
+  {
+    "id": "f9cf92b16b6d02aa90ad11d717bbd3f75ff35b0fd1b9f8043f751413ff06a7ef",
+    "file": "Wix_Editor_Customizing_Your_Sections.txt",
+    "title": "Wix Editor: Customizing Your Sections",
+    "url": "https://support.wix.com/en/article/wix-editor-customizing-your-sections",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3718
+  },
+  {
+    "id": "75dba4f7b4602675735dcc63a86d7fc11c1b3005f66adfc2b4b346e7bf35dc7f",
+    "file": "Wix_Editor_Using_the_Editor_Toolbar_to_Adjust_Elements.txt",
+    "title": "Wix Editor: Using the Editor Toolbar to Adjust Elements",
+    "url": "https://support.wix.com/en/article/wix-editor-using-the-editor-toolbar-to-adjust-elements",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3532
+  },
+  {
+    "id": "0c7a0fe78a0902c8b6c608792cd420cad12d1930769664eb7cd6fbc776a5eef5",
+    "file": "Wix_Editor_Using_the_Layers_Panel.txt",
+    "title": "Wix Editor: Using the Layers Panel",
+    "url": "https://support.wix.com/en/article/wix-editor-using-the-layers-panel",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4093
+  },
+  {
+    "id": "61aecb220fb63759dba4322f38aee10901bd2b2e1634d2602a0a6077b18da072",
+    "file": "Changing_the_Title_Displayed_in_the_Browser_Tab.txt",
+    "title": "Changing the Title Displayed in the Browser Tab",
+    "url": "https://support.wix.com/en/article/changing-the-title-in-the-browser-tab",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2110
+  },
+  {
+    "id": "68ab3d953de53475aa5aac38c7e91c4c3db4364376bab1b1909747ffe2ddbeb1",
+    "file": "Wix_Editor_Adding_and_Setting_Up_a_Text_Icon_Button.txt",
+    "title": "Wix Editor: Adding and Setting Up a Text & Icon Button",
+    "url": "https://support.wix.com/en/article/wix-editor-adding-and-setting-up-a-text-icon-button",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2348
+  },
+  {
+    "id": "153d5a847abdb50f5a761f9051a4dd86544d59b3df8535dd1b0181fdad85b3ce",
+    "file": "Wix_Editor_Removing_Horizontal_Scroll_Bars_from_Your_Live_Site.txt",
+    "title": "Wix Editor: Removing Horizontal Scroll Bars from Your Live Site",
+    "url": "https://support.wix.com/en/article/wix-editor-removing-horizontal-scroll-bars-from-your-live-site",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1600
+  },
+  {
+    "id": "708a5fa702a563c41598a4d2b446735e9e382ecec5b1e8a9b63a23c20fca6b47",
+    "file": "Wix_Editor_Customizing_Your_Text.txt",
+    "title": "Wix Editor: Customizing Your Text",
+    "url": "https://support.wix.com/en/article/wix-editor-changing-your-text-font",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3667
+  },
+  {
+    "id": "2a73ce56cfb6d899bd155abfa319d863360de062a21d82959a45463086aee274",
+    "file": "Wix_Editor_Publishing_Your_Site.txt",
+    "title": "Wix Editor: Publishing Your Site",
+    "url": "https://support.wix.com/en/article/wix-editor-publishing-your-site",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4605
+  },
+  {
+    "id": "31b175af682a7a0437661ebdca352fb3a8bb648ca4b2c165ea92f9b6dc26b71f",
+    "file": "Wix_Editor_Getting_Started_with_the_Wix_Editor.txt",
+    "title": "Wix Editor: Getting Started with the Wix Editor",
+    "url": "https://support.wix.com/en/article/wix-editor-getting-started-with-the-wix-editor",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4265
+  },
+  {
+    "id": "e21d28bf471b3d8bff54d979e90a89561cc441d8e64f700edb9a90083b7fa4a8",
+    "file": "Wix_Mobile_POS_Setting_Up_a_Point_of_Sale_with_SumUp.txt",
+    "title": "Wix Mobile POS: Setting Up a Point of Sale with SumUp",
+    "url": "https://support.wix.com/en/article/wix-mobile-pos-setting-up-a-point-of-sale-with-sumup",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2259
+  },
+  {
+    "id": "64c2cd062c241c4f313d58c772508e30fe3b4d4a66a210a9f32661c22ad0b400",
+    "file": "Wix_Mobile_POS_Setting_Up_a_Point_of_Sale_with_Square.txt",
+    "title": "Wix Mobile POS: Setting Up a Point of Sale with Square",
+    "url": "https://support.wix.com/en/article/wix-mobile-pos-setting-up-a-point-of-sale-with-square",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2911
+  },
+  {
+    "id": "2c1cfbdffd686c067c718ba09df4f1be69152ef1944991c80ef7eee8502cc946",
+    "file": "Unable_to_Open_the_Wix_Editor.txt",
+    "title": "Unable to Open the Wix Editor",
+    "url": "https://support.wix.com/en/article/unable-to-open-the-wix-editor",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1274
+  },
+  {
+    "id": "c104d7065faf024029b59ab7eebe751d7c7b4a7a4b613d377a90ee7bf266a12d",
+    "file": "Connecting_Your_Site_to_Google_in_the_Wix_SEO_Setup_Checklist.txt",
+    "title": "Connecting Your Site to Google in the Wix SEO Setup Checklist",
+    "url": "https://support.wix.com/en/article/connecting-your-site-to-google-in-the-wix-seo-setup-checklist",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2937
+  },
+  {
+    "id": "37cb430372ab6f7343a726511cd84bb5657e8e536267aeaa653735240c20dd45",
+    "file": "Verifying_Your_Site_with_Google_Search_Console.txt",
+    "title": "Verifying Your Site with Google Search Console",
+    "url": "https://support.wix.com/en/article/verifying-your-site-with-google-search-console-5033765",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 5500
+  },
+  {
+    "id": "bd86afd5b4d032ce688e73d1d115f85b9ab1c811e5f87b02ae6b2ddb8174a2db",
+    "file": "Wix_Mobile_POS_Setting_Up_Receipt_Printing.txt",
+    "title": "Wix Mobile POS: Setting Up Receipt Printing",
+    "url": "https://support.wix.com/en/article/wix-mobile-pos-printing-receipts",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4340
+  },
+  {
+    "id": "69d173b727fb562910b949feaa4c69f6d0281dd20c0bdbecbe7414b74915f2c5",
+    "file": "Wix_Stores_Updating_Inventory.txt",
+    "title": "Wix Stores: Updating Inventory",
+    "url": "https://support.wix.com/en/article/wix-stores-updating-inventory",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1937
+  },
+  {
+    "id": "21b52231b7ae64ad316d4558d1972af4e12c9986a8ba096e466f9e033e31eb9a",
+    "file": "Site_Members_Deleting_Your_Members_Area.txt",
+    "title": "Site Members: Deleting Your Members Area",
+    "url": "https://support.wix.com/en/article/site-members-deleting-your-members-area",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1630
+  },
+  {
+    "id": "72b0e7a5966ce8cf8a16163fecc8ee33133e4cc5e72b04d3e108f004c6e622c3",
+    "file": "Wix_Stores_Setting_Up_a_Flat_Rate_Shipping_Rule.txt",
+    "title": "Wix Stores: Setting Up a Flat Rate Shipping Rule",
+    "url": "https://support.wix.com/en/article/wix-stores-setting-up-a-flat-rate-shipping-rule",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3295
+  },
+  {
+    "id": "8eb9087663e148864e022b06c70b4c81bda356bdf88cc2ba28dcf874ceff1d2c",
+    "file": "Wix_Editor_Adding_and_Customizing_Mobile_Only_Elements.txt",
+    "title": "Wix Editor: Adding and Customizing Mobile-Only Elements",
+    "url": "https://support.wix.com/en/article/wix-editor-adding-and-customizing-mobile-only-elements",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 5944
+  },
+  {
+    "id": "386e74ab93c52d0695c73f765d338c795de37dffd976c98b932bcd6a89fc3248",
+    "file": "Wix_Editor_Alignment_Issues_on_Your_Live_Mobile_Site.txt",
+    "title": "Wix Editor: Alignment Issues on Your Live Mobile Site",
+    "url": "https://support.wix.com/en/article/wix-editor-alignment-issues-on-your-live-mobile-site",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2316
+  },
+  {
+    "id": "89bd8fb2548fafd8d6efe52f176c2b81df7e40aa83b04cc87efc31ffe44ecc90",
+    "file": "Wix_Editor_Troubleshooting_Layout_Issues_on_Your_Mobile_Site.txt",
+    "title": "Wix Editor: Troubleshooting Layout Issues on Your Mobile Site",
+    "url": "https://support.wix.com/en/article/wix-editor-troubleshooting-layout-issues-on-your-mobile-site",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2439
+  },
+  {
+    "id": "79dc16843d8a0dfd5b12f8e260801c1f27e02c813cff37b75e04f023b01cee8c",
+    "file": "CMS_Adding_and_Setting_Up_a_Dynamic_Item_Page.txt",
+    "title": "CMS: Adding and Setting Up a Dynamic Item Page",
+    "url": "https://support.wix.com/en/article/cms-setting-up-a-dynamic-item-page",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 16232
+  },
+  {
+    "id": "32b870b67f3290a2bc22e736b2e2e84c3e5837be7ee447d88bd4efb73d4e8b00",
+    "file": "CMS_Controlling_Live_Site_Item_Visibility_from_Your_Collection.txt",
+    "title": "CMS: Controlling Live Site Item Visibility from Your Collection",
+    "url": "https://support.wix.com/en/article/cms-controlling-live-site-item-visibility-from-your-collection",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 8651
+  },
+  {
+    "id": "3e67c7354f82374d09126f1c6dbbd0cc6faf8b4f4ffda2f9dd8dd941a94900ce",
+    "file": "CMS_About_Filtering_and_Sorting_Live_Site_Content_with_Datasets.txt",
+    "title": "CMS: About Filtering and Sorting Live Site Content with Datasets",
+    "url": "https://support.wix.com/en/article/cms-formerly-content-manager-about-filtering-and-sorting-live-site-content-with-datasets",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 8116
+  },
+  {
+    "id": "bdcb95cf95836b146655fa214e21f1efbed7d11994679cba47d3b93230107c37",
+    "file": "Wix_Editor_Adding_a_Calendar.txt",
+    "title": "Wix Editor: Adding a Calendar",
+    "url": "https://support.wix.com/en/article/wix-editor-adding-a-calendar",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 657
+  },
+  {
+    "id": "c847ec20daef72ad69151d50ab17df712f69a345d67ad325f3cb79c7af1dd013",
+    "file": "Studio_Editor_Adding_and_Customizing_a_Table.txt",
+    "title": "Studio Editor: Adding and Customizing a Table",
+    "url": "https://support.wix.com/en/article/studio-editor-adding-and-customizing-a-table",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4876
+  },
+  {
+    "id": "80fcb5fecede003f96127d01abb7581d7064e1794c279cb679d2df6fa20085e6",
+    "file": "CMS_Adding_and_Setting_Up_Rich_Text_Fields.txt",
+    "title": "CMS: Adding and Setting Up Rich Text Fields",
+    "url": "https://support.wix.com/en/article/cms-formatting-a-text-element-connected-to-a-rich-text-collection-field",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 10999
+  },
+  {
+    "id": "0818abadd5ad83b3f396db90f9b5720cda7b873449c63b9e0518e668992f8545",
+    "file": "Wix_Video_Autoplay_for_Videos.txt",
+    "title": "Wix Video: Autoplay for Videos",
+    "url": "https://support.wix.com/en/article/wix-video-autoplay-for-videos",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1443
+  },
+  {
+    "id": "b4b30ce184e3ca7b78c04b615831ebaee8d5a029b95c2ea42fb30bdb2262e697",
+    "file": "Autoplay_on_Desktops_and_Laptops.txt",
+    "title": "Autoplay on Desktops and Laptops",
+    "url": "https://support.wix.com/en/article/autoplay-on-desktops-and-laptops",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 754
+  },
+  {
+    "id": "09f8a53674e864e3be35ec5133836085b662e5518598ccbf290d1f59ad8685dc",
+    "file": "Getting_Started_with_Wix.txt",
+    "title": "Getting Started with Wix",
+    "url": "https://support.wix.com/en/article/getting-started-with-wix",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 7072
+  },
+  {
+    "id": "01955178e4945f1c3254dd5819a9233ae17067c36da95e37c3c13be636a47e7b",
+    "file": "Purchasing_a_Domain_from_Wix.txt",
+    "title": "Purchasing a Domain from Wix",
+    "url": "https://support.wix.com/en/article/purchasing-a-domain-from-wix-3133977",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4714
+  },
+  {
+    "id": "90eae85f4fbd197949ba2e9df3bf31e05d40e77ffa0aa9022e4b1b0e44e5739a",
+    "file": "The_New_Automation_Builder_Customizing_Automated_Emails.txt",
+    "title": "The New Automation Builder: Customizing Automated Emails",
+    "url": "https://support.wix.com/en/article/the-new-automation-builder-customizing-automated-emails",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 10155
+  },
+  {
+    "id": "21c80886fc0ad5a0111af4ff34c8ceb490538aaad0023beefe9febe5a623ca37",
+    "file": "Wix_Editor_Fixing_Spacing_and_Alignment_Issues_on_Your_Site.txt",
+    "title": "Wix Editor: Fixing Spacing and Alignment Issues on Your Site",
+    "url": "https://support.wix.com/en/article/wix-editor-fixing-spacing-and-alignment-issues-on-your-site",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 6903
+  },
+  {
+    "id": "bf96e8499d7d40177f154c45cd2a0d6b030ce05011680f948720cac228907870",
+    "file": "CMS_Accessing_and_Syncing_Your_Sandbox_and_Live_Collections.txt",
+    "title": "CMS: Accessing and Syncing Your Sandbox and Live Collections",
+    "url": "https://support.wix.com/en/article/cms-accessing-and-syncing-your-sandbox-and-live-collections",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 5410
+  },
+  {
+    "id": "a4cc1ee6d897b9047536a42e242d8f3faecb8262b7e079e250c11c16ba055597",
+    "file": "Updating_Your_Payment_Details_in_Wix_for_Failed_or_Declined_Renewal_Payments.txt",
+    "title": "Updating Your Payment Details in Wix for Failed or Declined Renewal Payments",
+    "url": "https://support.wix.com/en/article/updating-payment-details-if-renewal-payment-failed-or-is-declined",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2161
+  },
+  {
+    "id": "7c0a599789c8ec5db8e5a8bea387803a28f09d070cb5ffb282f0ffcb571a01dd",
+    "file": "Roles_Permissions_Overview.txt",
+    "title": "Roles & Permissions: Overview",
+    "url": "https://support.wix.com/en/article/roles-permissions-overview",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 7524
+  },
+  {
+    "id": "703407f8c458eae47456d67598acf9d8074440e21c16467aac692c8a60d4c5e6",
+    "file": "Wix_Payments_Assigning_Payments_Roles.txt",
+    "title": "Wix Payments: Assigning Payments Roles",
+    "url": "https://support.wix.com/en/article/wix-payments-assigning-payments-roles",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3933
+  },
+  {
+    "id": "cb6b0342764eae6b79f220a5c257bd78c798cf2d3bb048b30f513593a44cd99c",
+    "file": "Wix_Editor_Editing_and_Customizing_Images.txt",
+    "title": "Wix Editor: Editing and Customizing Images",
+    "url": "https://support.wix.com/en/article/wix-editor-editing-and-customizing-images",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 5261
+  },
+  {
+    "id": "05734f0dc85daaba58f0356dbeaef40fa9e715d1d780a6da1d91538d96aea9aa",
+    "file": "Wix_Editor_Deleting_Something_From_Your_Site.txt",
+    "title": "Wix Editor: Deleting Something From Your Site",
+    "url": "https://support.wix.com/en/article/wix-editor-deleting-something-from-your-site",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3806
+  },
+  {
+    "id": "b0deddf5fd90fdbbc6bb0642864cd677ad15ce670b5e11c15c2d7e1866b20941",
+    "file": "Third_Party_App_Google_Reviews_by_Elfsight.txt",
+    "title": "Third-Party App: Google Reviews by Elfsight",
+    "url": "https://support.wix.com/en/article/third-party-app-google-reviews-by-elfsight",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 838
+  },
+  {
+    "id": "cfb55ec5149580885e427e55389dcc803ed2b069682e389617bd12f67b0a4779",
+    "file": "Wix_Editor_Hidden_Elements_in_Your_Mobile_Editor.txt",
+    "title": "Wix Editor: Hidden Elements in Your Mobile Editor",
+    "url": "https://support.wix.com/en/article/wix-editor-hidden-elements-in-your-mobile-editor",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3933
+  },
+  {
+    "id": "fcb6dbe7f29b0f8e6ccf54ff1eb1331935ed5e1584e258dd8e94973effd8f77f",
+    "file": "Wix_Editor_Removing_Gaps_on_Your_Mobile_Site.txt",
+    "title": "Wix Editor: Removing Gaps on Your Mobile Site",
+    "url": "https://support.wix.com/en/article/wix-editor-removing-gaps-on-your-mobile-site",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2444
+  },
+  {
+    "id": "e50de10192b5400200a660fbb369e74b41e34993d266575c850adb5f133ad8ec",
+    "file": "Wix_Editor_Adding_and_Setting_up_a_Lightbox.txt",
+    "title": "Wix Editor: Adding and Setting up a Lightbox",
+    "url": "https://support.wix.com/en/article/wix-editor-adding-and-setting-up-a-lightbox",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4861
+  },
+  {
+    "id": "72bbedcc2f035672c3f7d9857ddaf323f959d597fd2432048c8b9dc5880a22fb",
+    "file": "CMS_Content_Management_System_An_Overview.txt",
+    "title": "CMS (Content Management System): An Overview",
+    "url": "https://support.wix.com/en/article/cms-content-management-system-an-overview",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 6885
+  },
+  {
+    "id": "30e947f31d1aa3cce6c8a56a558ad7b26c8b832019ad1fc43a77c968948bc543",
+    "file": "Wix_Domains_Canceling_Your_Domain.txt",
+    "title": "Wix Domains: Canceling Your Domain",
+    "url": "https://support.wix.com/en/article/canceling-a-wix-domain",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1639
+  },
+  {
+    "id": "30f41b7d451c53585db833c12f8a4568182e2aaf91d7f336c643caca0f8497b8",
+    "file": "Sharing_Your_Wix_Analytics_Reports_with_Contributors.txt",
+    "title": "Sharing Your Wix Analytics Reports with Contributors",
+    "url": "https://support.wix.com/en/article/sharing-your-wix-analytics-reports-with-contributors",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2404
+  },
+  {
+    "id": "7d0da53c57e9fdef4a2e84fdbc3131664c9d589ccd3ba35b7204832ff649fe8e",
+    "file": "Wix_Bookings_Customizing_Your_Service_Pages.txt",
+    "title": "Wix Bookings: Customizing Your Service Pages",
+    "url": "https://support.wix.com/en/article/wix-bookings-customizing-your-service-pages",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 11898
+  },
+  {
+    "id": "274d6e98ad9fb6507f3b060889c3bfb9b970ce889712802ff5253321c473b320",
+    "file": "Wix_Stores_Receiving_Confirmation_Emails_When_Orders_Are_Placed.txt",
+    "title": "Wix Stores: Receiving Confirmation Emails When Orders Are Placed",
+    "url": "https://support.wix.com/en/article/wix-stores-receiving-confirmation-emails-when-orders-are-placed",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2326
+  },
+  {
+    "id": "115cf85cc17ded8ab766cad5991bc8d5d7089bc7302a5027bec17154302483c3",
+    "file": "Request_Allowing_Redirects_per_Language.txt",
+    "title": "Request: Allowing Redirects per Language",
+    "url": "https://support.wix.com/en/article/request-allowing-redirects-per-language",
+    "type": "feature_request",
+    "reason": "answers-test-question",
+    "chars": 409
+  },
+  {
+    "id": "0bc2a5a8a9b6e398472863b9b5d7a027402d49d1b5ac5337275dbf6d8b330174",
+    "file": "Wix_Multilingual_Automatically_Showing_Your_Site_to_Visitors_in_the_Language_of_their_Brow.txt",
+    "title": "Wix Multilingual: Automatically Showing Your Site to Visitors in the Language of their Browser",
+    "url": "https://support.wix.com/en/article/wix-multilingual-automatically-showing-your-site-to-visitors-in-the-language-of-their-browser",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3924
+  },
+  {
+    "id": "9b3ebf37d63abb6ffc84114331b6ff32acacbd15b093ffab40810ab334215538",
+    "file": "Wix_Multilingual_Managing_Languages_in_a_Multilingual_Site.txt",
+    "title": "Wix Multilingual: Managing Languages in a Multilingual Site",
+    "url": "https://support.wix.com/en/article/wix-multilingual-managing-languages-in-a-multilingual-site",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3855
+  },
+  {
+    "id": "1f3f1acae3379d74f0b08b9d75a47f2bb0a0c8d99836db0f054d8c6c974bf3e0",
+    "file": "Pricing_Plans_Reordering_How_You_Display_Your_Plans.txt",
+    "title": "Pricing Plans: Reordering How You Display Your Plans",
+    "url": "https://support.wix.com/en/article/pricing-plans-reordering-how-you-display-your-plans",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3072
+  },
+  {
+    "id": "7a41c2861f9b080e4c17b7dd870e5b3bdd92a9a8ba284b6f0018788f5d4abbbc",
+    "file": "Troubleshooting_Errors_When_Connecting_Your_Site_to_Google.txt",
+    "title": "Troubleshooting Errors When Connecting Your Site to Google",
+    "url": "https://support.wix.com/en/article/wix-seo-setup-checklist-troubleshooting-errors-when-connecting-your-site-to-google",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4558
+  },
+  {
+    "id": "5ce85d608b0f1f8b3e9341a3773f0ff23e44485a21dd9f23ae9a49553e4176cf",
+    "file": "Canceling_Your_Site_Plan_and_Domain.txt",
+    "title": "Canceling Your Site Plan and Domain",
+    "url": "https://support.wix.com/en/article/canceling-your-premium-plan-and-domain",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 380
+  },
+  {
+    "id": "77e0db48f8847cdf58336a331bd5070b8d6dc02c7372128f1f3c54b51fee20b6",
+    "file": "Changing_Your_Premium_or_Studio_Plan.txt",
+    "title": "Changing Your Premium or Studio Plan",
+    "url": "https://support.wix.com/en/article/changing-your-premium-plan-4954690",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2959
+  },
+  {
+    "id": "09c5b027c3bc064fce040e3026d4c53857ea73d1044bbe51bcf3de0dfa08efbc",
+    "file": "Managing_Your_Payment_Methods_for_Wix_Services.txt",
+    "title": "Managing Your Payment Methods for Wix Services",
+    "url": "https://support.wix.com/en/article/managing-your-payment-methods-for-wix-services",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2058
+  },
+  {
+    "id": "086889ad91fb2f346a1726ab309948ff3f13c8b82401780cd57d9eeed03d9846",
+    "file": "CMS_About_Dynamic_Pages.txt",
+    "title": "CMS: About Dynamic Pages",
+    "url": "https://support.wix.com/en/article/cms-about-dynamic-pages",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 12916
+  },
+  {
+    "id": "57f174d79dd398a4e383da8032d17a65e0b13464a772fd1bebdea4ec42c72356",
+    "file": "Wix_Editor_Customizing_Your_Lightbox.txt",
+    "title": "Wix Editor: Customizing Your Lightbox",
+    "url": "https://support.wix.com/en/article/wix-editor-customizing-your-lightbox",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 6364
+  },
+  {
+    "id": "056bff264f2a5f5a0812b24253519f1442441f3de5bb499edcbb9771042166a4",
+    "file": "Wix_Hotels_by_HotelRunner_Adding_and_Setting_up_Your_Hotel.txt",
+    "title": "Wix Hotels by HotelRunner: Adding and Setting up Your Hotel",
+    "url": "https://support.wix.com/en/article/wix-hotels-by-hotelrunner-adding-and-setting-up-your-hotel",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 7029
+  },
+  {
+    "id": "94f56a17d8ed9cdcbe129b8f738abb2a8bce8fc5df564cb10fc2b1cf6af8c947",
+    "file": "Wix_Hotels_by_Hotelrunner_Changing_the_Room_Text_on_Your_Site.txt",
+    "title": "Wix Hotels by Hotelrunner: Changing the ‘Room’ Text on Your Site",
+    "url": "https://support.wix.com/en/article/wix-hotels-by-hotelrunner-changing-the-room-text-on-your-site",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3586
+  },
+  {
+    "id": "9f2a29ed9ee07c2f4dd36e3b76e11d6db791d599c7c29c7fe150fb2ef7122e03",
+    "file": "Wix_Multilingual_Translating_Text_Buttons_and_Links.txt",
+    "title": "Wix Multilingual: Translating Text, Buttons and Links",
+    "url": "https://support.wix.com/en/article/wix-multilingual-translating-text-buttons-and-links",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2508
+  },
+  {
+    "id": "7bf278c3a8f1f253d6c335499e0bc07a63cd68d243da0acc1277aed78bdabee9",
+    "file": "Wix_Editor_Adding_and_Setting_Up_a_Hover_Box.txt",
+    "title": "Wix Editor: Adding and Setting Up a Hover Box",
+    "url": "https://support.wix.com/en/article/wix-editor-adding-and-setting-up-a-hover-box",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4562
+  },
+  {
+    "id": "b4ebdad50c19030ab2055b012c18112697eacfbfe74d225309af98b588ca7d21",
+    "file": "Wix_Forum_Moderating_Your_Forum.txt",
+    "title": "Wix Forum: Moderating Your Forum",
+    "url": "https://support.wix.com/en/article/wix-forum-moderating-your-forum",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2921
+  },
+  {
+    "id": "c21ef04773d3995942ebd402263a26bebac6fb680feaf41b5e6c84fdcfbef9e3",
+    "file": "Wix_Pro_Gallery_Adding_a_Scroll_Animation_to_Your_Gallery.txt",
+    "title": "Wix Pro Gallery: Adding a Scroll Animation to Your Gallery",
+    "url": "https://support.wix.com/en/article/wix-pro-gallery-adding-a-scroll-animation-to-your-gallery",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2745
+  },
+  {
+    "id": "bfba00a6b50e760754cf2f0488322ad185519a8764219f3593299bd4ae4bc287",
+    "file": "Online_Programs_An_Overview.txt",
+    "title": "Online Programs: An Overview",
+    "url": "https://support.wix.com/en/article/online-programs-an-overview",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3960
+  },
+  {
+    "id": "260c7a284c8fc47689ef1e442a56382767881fd051c1a6cfc1c0ee8f72fa3d09",
+    "file": "Connecting_Your_GoDaddy_Domain_to_Wix_via_Pointing.txt",
+    "title": "Connecting Your GoDaddy Domain to Wix via Pointing",
+    "url": "https://support.wix.com/en/article/connecting-your-godaddy-domain-to-wix-via-pointing-9528059",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2201
+  },
+  {
+    "id": "6c9f8ce23691b5f87e25b14e6b9f950ac6619083316594488e175318fcdc1b71",
+    "file": "Roles_Permissions_Inviting_People_to_Collaborate_on_Your_Site.txt",
+    "title": "Roles & Permissions: Inviting People to Collaborate on Your Site",
+    "url": "https://support.wix.com/en/article/inviting-people-to-contribute-to-your-site",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4951
+  },
+  {
+    "id": "58a8c12fee654106b4b102a102fc1849dd84c65307d7fd5631b11e425533d6ed",
+    "file": "Managing_DNS_Records_in_Your_Wix_Account.txt",
+    "title": "Managing DNS Records in Your Wix Account",
+    "url": "https://support.wix.com/en/article/managing-dns-records-in-your-wix-account",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4744
+  },
+  {
+    "id": "d4afd2e45e9e2c694bc53693d7442a2584c134d6f42115a0250735b186eae7b5",
+    "file": "Wix_Editor_Customizing_Your_Horizontal_Menu_Design.txt",
+    "title": "Wix Editor: Customizing Your Horizontal Menu Design",
+    "url": "https://support.wix.com/en/article/wix-editor-customizing-your-horizontal-menu-design",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 8492
+  },
+  {
+    "id": "b7a22176a4173e2a1edcb286710965d8c1c2afc70533d49c7607f210bc3d9c62",
+    "file": "Wix_Payments_Verifying_Your_Employer_Identification_Number_EIN.txt",
+    "title": "Wix Payments: Verifying Your Employer Identification Number (EIN)",
+    "url": "https://support.wix.com/en/article/verifying-your-employer-identification-number-ein",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1504
+  },
+  {
+    "id": "67a1ead59779fb94271c1d295e7fd159b79c78fe8baa8c628dc980c12818567c",
+    "file": "Adding_or_Updating_MX_Records_in_Your_Wix_Account.txt",
+    "title": "Adding or Updating MX Records in Your Wix Account",
+    "url": "https://support.wix.com/en/article/adding-or-updating-mx-records-in-your-wix-account",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3652
+  },
+  {
+    "id": "cf6bab02097f612b9037212b4466a5e775f50962fa391e0882e1cc7dbdab1dfb",
+    "file": "Connecting_a_Domain_to_the_Wix_Name_Servers.txt",
+    "title": "Connecting a Domain to the Wix Name Servers",
+    "url": "https://support.wix.com/en/article/connecting-a-domain-to-the-wix-name-servers",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 6066
+  },
+  {
+    "id": "54dc2d121b3355bf1cf57a7a2d23d216fa441bab3b10dcf427dc311a95fbe5fa",
+    "file": "Google_Workspace_Purchasing_Additional_Business_Emails_from_Wix.txt",
+    "title": "Google Workspace: Purchasing Additional Business Emails from Wix",
+    "url": "https://support.wix.com/en/article/google-workspace-purchasing-additional-business-emails-from-wix",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1101
+  },
+  {
+    "id": "5eb416fe9b1828587d4420cc44170ffbecf7cf59da5eba0826dcc8c88977d359",
+    "file": "Extending_Your_Wix_Domain_Subscription.txt",
+    "title": "Extending Your Wix Domain Subscription",
+    "url": "https://support.wix.com/en/article/extending-your-wix-domain-subscription",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1137
+  },
+  {
+    "id": "3bb5111e3b9e0c3242ed5a9fc25f4a5ac1d17d9afe5f6db59176a7022ba3ee0d",
+    "file": "Checking_Your_Domains_DNS_Records_Using_whatsmydnsnet.txt",
+    "title": "Checking Your Domain's DNS Records Using whatsmydns.net",
+    "url": "https://support.wix.com/en/article/checking-your-domains-dns-records-using-whatsmydnsnet",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4911
+  },
+  {
+    "id": "03a4b265f07434ae2902fea205586fc65e3a67157283b02fcd566e08d94c1925",
+    "file": "Wix_Media_Organizing_the_Files_in_Your_Media_Manager.txt",
+    "title": "Wix Media: Organizing the Files in Your Media Manager",
+    "url": "https://support.wix.com/en/article/wix-media-organizing-the-files-in-your-media-manager",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 10023
+  },
+  {
+    "id": "b04d70eee300e05d32a3690a44f947cdeb5bc389edf039bc8538873d2c5f5d01",
+    "file": "Resolving_Email_Issues.txt",
+    "title": "Resolving Email Issues",
+    "url": "https://support.wix.com/en/article/resolving-email-issues",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 912
+  },
+  {
+    "id": "e6c75e305dee6a7b7c825546d563986086aee0ccf497b6adda458d53cd0ef1ef",
+    "file": "Business_Email_General_Troubleshooting.txt",
+    "title": "Business Email: General Troubleshooting",
+    "url": "https://support.wix.com/en/article/business-email-general-troubleshooting",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4552
+  },
+  {
+    "id": "ed189fa2ace6f9fe82232bbcc7474e5fc0c59c52262a8ce3bb795f62a74f5a75",
+    "file": "Disconnecting_a_Domain_from_Your_Site.txt",
+    "title": "Disconnecting a Domain from Your Site",
+    "url": "https://support.wix.com/en/article/disconnecting-a-domain-from-your-site",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 549
+  },
+  {
+    "id": "eb89aff474f99df5060003e2ed1fac7d5e1d45b13f8fdd1cba21f01c395810b5",
+    "file": "Wix_Bookings_Setting_Default_Work_Hours.txt",
+    "title": "Wix Bookings: Setting Default Work Hours",
+    "url": "https://support.wix.com/en/article/wix-bookings-setting-default-work-hours",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1211
+  },
+  {
+    "id": "19880d4ce2e8d6a46be3168c67ae3be4fbef84ee6416b7d8f418a6b48abd774e",
+    "file": "Wix_Editor_About_the_Mobile_Version_of_Your_Site.txt",
+    "title": "Wix Editor: About the Mobile Version of Your Site",
+    "url": "https://support.wix.com/en/article/wix-editor-about-the-mobile-version-of-your-site",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3712
+  },
+  {
+    "id": "116fadba066537f8bce3108c75d3be41913f93663ba366c1cbcc41e61578543a",
+    "file": "Setting_Up_Manual_Offline_Payments.txt",
+    "title": "Setting Up Manual (Offline) Payments",
+    "url": "https://support.wix.com/en/article/setting-up-manual-offline-payments",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2029
+  },
+  {
+    "id": "433babaff419a5eb8f4382da82d0ce678a40213b164dd45d973a7c53fcb67baa",
+    "file": "Reporting_Copyright_Infringement.txt",
+    "title": "Reporting Copyright Infringement",
+    "url": "https://support.wix.com/en/article/reporting-copyright-infringement",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 560
+  },
+  {
+    "id": "eed9678f310cf8bb1b8a7a1823a142f07d5a796c993f3e2507cd5205480b01f9",
+    "file": "Contacts_vs_Subscribers.txt",
+    "title": "Contacts vs. Subscribers",
+    "url": "https://support.wix.com/en/article/contacts-vs-subscribers",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 891
+  },
+  {
+    "id": "40471df3893c34657f809704ef972c7856250e5cd15f8724e1569f72ffcf4d4a",
+    "file": "Wix_Editor_Managing_the_Slides_in_Your_Slideshow.txt",
+    "title": "Wix Editor: Managing the Slides in Your Slideshow",
+    "url": "https://support.wix.com/en/article/wix-editor-managing-the-slides-in-your-slideshow",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2195
+  },
+  {
+    "id": "f31827e591d6d7e78f82fed298e8ef5a2539c2adb892efd9e2b36571d2ed28e3",
+    "file": "Connecting_a_Wix_Domain_to_an_External_Site.txt",
+    "title": "Connecting a Wix Domain to an External Site",
+    "url": "https://support.wix.com/en/article/connecting-a-wix-domain-to-an-external-site",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3992
+  },
+  {
+    "id": "f0f64c4ba9bdd2ebadc288ccb120418926fd81c27b5f3646d76b437bc74a7421",
+    "file": "Wix_Stores_Adding_and_Optimizing_a_Search_Box_for_Stores.txt",
+    "title": "Wix Stores: Adding and Optimizing a Search Box for Stores",
+    "url": "https://support.wix.com/en/article/wix-stores-adding-and-optimizing-a-search-box-for-stores",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4526
+  },
+  {
+    "id": "b54fcc3f9518e850f59e6eb131b94cab4596c2e113953f9add9eab86d6ef5495",
+    "file": "Wix_Apps_Adding_and_Setting_Up_the_PDF_Viewer_App.txt",
+    "title": "Wix Apps: Adding and Setting Up the PDF Viewer App",
+    "url": "https://support.wix.com/en/article/wix-apps-adding-and-setting-up-the-pdf-viewer-app",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3035
+  },
+  {
+    "id": "5968b19fa7b995ef64c9412c8f4579b7480995a1f78571f104a206a6a6b072da",
+    "file": "Wix_Payments_The_Difference_Between_Account_Types.txt",
+    "title": "Wix Payments: The Difference Between Account Types",
+    "url": "https://support.wix.com/en/article/the-difference-between-individual-and-business-accounts-in-wix-payments",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 7653
+  },
+  {
+    "id": "a523339043576f53538adc22688f8a186f08fc11d65ed5a9815c4a45a32876b0",
+    "file": "About_VAT_in_UAE.txt",
+    "title": "About VAT in UAE",
+    "url": "https://support.wix.com/en/article/about-vat-in-uae",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1674
+  },
+  {
+    "id": "956bbf707c268c79e6569bcd9b8f8cb3cbcf85eedc7a1b6e265057eda71b17fc",
+    "file": "Google_Workspace_Transferring_Your_Business_Email_to_Another_Wix_Account.txt",
+    "title": "Google Workspace: Transferring Your Business Email to Another Wix Account",
+    "url": "https://support.wix.com/en/article/google-workspace-transferring-your-business-email-to-another-wix-account",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3499
+  },
+  {
+    "id": "fdae3364818e3eb427af9977833abbd9ade819d0e0653ac801b0d537ed0870e0",
+    "file": "Google_Workspace_FAQs.txt",
+    "title": "Google Workspace: FAQs",
+    "url": "https://support.wix.com/en/article/google-workspace-faqs",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1208
+  },
+  {
+    "id": "3f18e67ea2bccc600c1e980728eaaf0ac1f6d5a479c746659b71dc335a69610d",
+    "file": "Pricing_Plans_Editing_an_Existing_Plan.txt",
+    "title": "Pricing Plans: Editing an Existing Plan",
+    "url": "https://support.wix.com/en/article/pricing-plans-editing-an-existing-plan",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1789
+  },
+  {
+    "id": "689192b42afe23d3b986d4da6cec1b0021eb230bdcc798c7e73f16a98f6be216",
+    "file": "Wix_Editor_Managing_Your_Site_Pages.txt",
+    "title": "Wix Editor: Managing Your Site Pages",
+    "url": "https://support.wix.com/en/article/wix-editor-managing-your-sites-pages",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4820
+  },
+  {
+    "id": "6f6ae57fef0e4a673bacf3026b4536cffc110ca6b41b9eea84ce4b713da56bc9",
+    "file": "Switching_Your_Domains_Connection_Method.txt",
+    "title": "Switching Your Domain's Connection Method",
+    "url": "https://support.wix.com/en/article/switching-your-domains-connection-method",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3047
+  },
+  {
+    "id": "897d73c3084173d159d367aa61cce9023498b0442335cec40e899aa310bcd14d",
+    "file": "Upgrading_an_Existing_Plan.txt",
+    "title": "Upgrading an Existing Plan",
+    "url": "https://support.wix.com/en/article/upgrading-an-existing-premium-plan",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2919
+  },
+  {
+    "id": "5af9f8d065ffc9499873f23f912e41b1e3adcbb03ad072cc7f7f1ee4eb011b76",
+    "file": "Google_Workspace_Reducing_Your_Yearly_Business_Email_Users.txt",
+    "title": "Google Workspace: Reducing Your Yearly Business Email Users",
+    "url": "https://support.wix.com/en/article/google-workspace-reducing-your-yearly-business-email-users",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1408
+  },
+  {
+    "id": "bf71ae25a6b15ccac0ddbdba904381067035fbaeb6a521019040765d6b4e76cf",
+    "file": "Wix_Studio_FAQs_Using_the_Wix_Editor.txt",
+    "title": "Wix Studio FAQs: Using the Wix Editor",
+    "url": "https://support.wix.com/en/article/wix-studio-faqs-using-the-wix-editor",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2643
+  },
+  {
+    "id": "d262c28f3f0024e0dfb60eb25002640afa800a29d6b4263c4158996b59cd3b51",
+    "file": "Refund_Policy_for_Wix_Domains.txt",
+    "title": "Refund Policy for Wix Domains",
+    "url": "https://support.wix.com/en/article/refund-policy-for-wix-domains",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 623
+  },
+  {
+    "id": "342d28a33c5d389b3c95e85b92edf70ef645f4b4847cce4834926b25bf4fb5a0",
+    "file": "Wix_Bookings_Scheduling_and_Managing_Multi_Service_Appointments.txt",
+    "title": "Wix Bookings: Scheduling and Managing Multi-Service Appointments",
+    "url": "https://support.wix.com/en/article/wix-bookings-scheduling-and-managing-multi-service-appointments",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 14733
+  },
+  {
+    "id": "03db5358176ca06a9fcf2354b3ce13d9f084ddd595f105104190e31b8931fb4a",
+    "file": "Google_Workspace_Reducing_Your_Monthly_Business_Email_Users.txt",
+    "title": "Google Workspace: Reducing Your Monthly Business Email Users",
+    "url": "https://support.wix.com/en/article/google-workspace-reducing-your-monthly-business-email-users",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2272
+  },
+  {
+    "id": "33546053092c64ba24d5a9fcc8366fb3c2424e6d92e160bef79dcca0813a6e15",
+    "file": "Wix_Forms_Adding_and_Setting_Up_a_Donation_Form.txt",
+    "title": "Wix Forms: Adding and Setting Up a Donation Form",
+    "url": "https://support.wix.com/en/article/wix-forms-adding-and-setting-up-a-donation-form",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3602
+  },
+  {
+    "id": "34a0d0a099c177940e46f01882f4be430c8209244b45aa402985dd010acb7ea8",
+    "file": "Wix_Forms_Adding_Payments_to_a_Site_Form.txt",
+    "title": "Wix Forms: Adding Payments to a Site Form",
+    "url": "https://support.wix.com/en/article/wix-forms-adding-payments-to-a-site-form",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 9397
+  },
+  {
+    "id": "df7977d0b847a2f0def6a94393456b07647a43b691260d35e4bfc568431d8ee7",
+    "file": "Closing_Your_Wix_Account.txt",
+    "title": "Closing Your Wix Account",
+    "url": "https://support.wix.com/en/article/closing-your-wix-account",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 5002
+  },
+  {
+    "id": "5d91682a3ccf89e0b666cd84cf7ce3ffa54627a528f9fd22a30fe9f3166f01ab",
+    "file": "Wix_Editor_Request_Switching_an_Existing_Sites_Template_No_Content.txt",
+    "title": "Wix Editor Request: Switching an Existing Site's Template (No Content)",
+    "url": "https://support.wix.com/en/article/wix-editor-request-switching-an-existing-sites-template-no-content",
+    "type": "feature_request",
+    "reason": "answers-test-question",
+    "chars": 620
+  },
+  {
+    "id": "24c9dc3527c72792a1fad6b1e797d7076ae164d3b713c883981b0d3d436b483d",
+    "file": "Wix_Editor_Adding_a_Page_to_Your_Site.txt",
+    "title": "Wix Editor: Adding a Page to Your Site",
+    "url": "https://support.wix.com/en/article/wix-editor-adding-a-page-to-your-site",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4596
+  },
+  {
+    "id": "557cbe7c324c9e230e9aa7c457aaacefa52aa267155f011a63c7153b8d5478d9",
+    "file": "About_Wixs_AI_Tools.txt",
+    "title": "About Wix's AI Tools",
+    "url": "https://support.wix.com/en/article/about-wixs-ai-tools",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 5946
+  },
+  {
+    "id": "4a2853d7fa4660c1214cc9ead8ade3c206435e28e89aab97ec577f78768a0597",
+    "file": "Wix_Gift_Cards_Request_Purchasing_Gift_Cards_with_Other_Products.txt",
+    "title": "Wix Gift Cards Request: Purchasing Gift Cards with Other Products",
+    "url": "https://support.wix.com/en/article/wix-gift-cards-request-purchasing-gift-cards-with-other-products",
+    "type": "feature_request",
+    "reason": "answers-test-question",
+    "chars": 542
+  },
+  {
+    "id": "b641c07ad43b492a7868f722ecc0d71960832f05f33a39d791733c6c35435299",
+    "file": "Accessing_Your_Sites_Dashboard.txt",
+    "title": "Accessing Your Site's Dashboard",
+    "url": "https://support.wix.com/en/article/accessing-your-sites-dashboard",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3464
+  },
+  {
+    "id": "26f430a890330f28e45b56a877d2fee2be3fbe1165f32e27fc9a8dca06f44362",
+    "file": "Wix_Invoices_Managing_Your_Invoices.txt",
+    "title": "Wix Invoices: Managing Your Invoices",
+    "url": "https://support.wix.com/en/article/wix-invoices-managing-your-invoices",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 9025
+  },
+  {
+    "id": "f5c9f44a576976e96ae75ac06e549213af0178daa4bdfd6c89e1bd4fce5fbc95",
+    "file": "Connecting_a_Domain_to_Wix_Using_the_Pointing_Method.txt",
+    "title": "Connecting a Domain to Wix Using the Pointing Method",
+    "url": "https://support.wix.com/en/article/connecting-a-domain-to-wix-using-the-pointing-method",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 7162
+  },
+  {
+    "id": "3c320b202ff1f99736e929fd26fcd07567debe89ee52d76ef2cca0491240133e",
+    "file": "Resolving_Payment_Issues_for_Wix_Services.txt",
+    "title": "Resolving Payment Issues for Wix Services",
+    "url": "https://support.wix.com/en/article/payment-issues",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2189
+  },
+  {
+    "id": "32b11f1254391b3d9f790bc190ce04afa1ad34efdbcbe24571dbad88aa59d193",
+    "file": "Wix_Media_Adding_and_Setting_Up_the_Right_Click_Protect_App.txt",
+    "title": "Wix Media: Adding and Setting Up the Right Click Protect App",
+    "url": "https://support.wix.com/en/article/wix-media-adding-and-setting-up-the-right-click-protect-app",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3344
+  },
+  {
+    "id": "2aafb440281975f6bfd5db9cbd330351606924c2f917cd0f331426a9149bd4bb",
+    "file": "Exporting_or_Embedding_Your_Wix_Site_Elsewhere.txt",
+    "title": "Exporting or Embedding Your Wix Site Elsewhere",
+    "url": "https://support.wix.com/en/article/exporting-or-embedding-your-wix-site-elsewhere",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2510
+  },
+  {
+    "id": "2df3cc9ca1ef3aa264a5a49b71a62079762b49ec6893c8c14de44775b9d47eef",
+    "file": "Using_Wix_Promotions_for_Premium_Plan_Renewals.txt",
+    "title": "Using Wix Promotions for Premium Plan Renewals",
+    "url": "https://support.wix.com/en/article/using-wix-promotions-for-premium-plan-renewals",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 628
+  },
+  {
+    "id": "3a298780639ec3835829c6f157c3abdb350758b67332ee656cfb75c86a89b509",
+    "file": "About_Domain_Privacy_and_Protection.txt",
+    "title": "About Domain Privacy and Protection",
+    "url": "https://support.wix.com/en/article/about-domain-privacy",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 6332
+  },
+  {
+    "id": "2d2313593a6d93ceed58105a0fdfd7e6f26d15274c36d51281940fe0de1d87ea",
+    "file": "Turning_Off_Auto_Renewal_for_a_Wix_Site_Plan.txt",
+    "title": "Turning Off Auto Renewal for a Wix Site Plan",
+    "url": "https://support.wix.com/en/article/turning-off-the-auto-renewal-for-a-wix-premium-plan",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1733
+  },
+  {
+    "id": "b2ee19ed6bc8216453d78e92e12ac445d164ea29a5e8ec272ff2f972143c8b9d",
+    "file": "Setting_Up_Tax_Calculation_Using_the_Manual_Method.txt",
+    "title": "Setting Up Tax Calculation Using the Manual Method",
+    "url": "https://support.wix.com/en/article/setting-up-tax-calculation-using-the-manual-method",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 7445
+  },
+  {
+    "id": "dd928666c281f2c1098a788033437eb22154ccccaae34fb4dfe1427e16d2615b",
+    "file": "Third_Party_App_Shippo_by_Shippo.txt",
+    "title": "Third-Party App: Shippo by Shippo",
+    "url": "https://support.wix.com/en/article/third-party-app-shippo-by-shippo",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 983
+  },
+  {
+    "id": "929c2196ff712329e76515643b314c0aca00e1e554d568ee32295e2532f90af6",
+    "file": "Wix_Editor_Adding_and_Setting_Up_Collapsible_Text.txt",
+    "title": "Wix Editor: Adding and Setting Up Collapsible Text",
+    "url": "https://support.wix.com/en/article/adding-and-setting-up-collapsible-text",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3378
+  },
+  {
+    "id": "6972e00a444818846c8a01ae4b9034c331de3e25b76e8d88d90d8056d1c69b5e",
+    "file": "Wix_Bookings_About_the_Wix_Booking_Calendar.txt",
+    "title": "Wix Bookings: About the Wix Booking Calendar",
+    "url": "https://support.wix.com/en/article/wix-bookings-about-the-wix-booking-calendar",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4283
+  },
+  {
+    "id": "d3642a56325a2f02f8eb896a7928901fb0010cedfe15a2ea5cf49144cfd13db2",
+    "file": "About_Domain_Propagation.txt",
+    "title": "About Domain Propagation",
+    "url": "https://support.wix.com/en/article/about-domain-propagation",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1431
+  },
+  {
+    "id": "a4e961a185fa6ceaa1bce7766f2ae55a7b1a1e337493f07fa6cf68a10834bb1c",
+    "file": "Unable_to_View_Your_Live_Site.txt",
+    "title": "Unable to View Your Live Site",
+    "url": "https://support.wix.com/en/article/unable-to-view-your-live-site",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2982
+  },
+  {
+    "id": "97282c7c34f69da255d53de75f6ab455935538a1f3b487d6e12839768aa7e123",
+    "file": "Managing_Your_Site_Transfers.txt",
+    "title": "Managing Your Site Transfers",
+    "url": "https://support.wix.com/en/article/managing-your-site-transfers",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3234
+  },
+  {
+    "id": "926ba4f78520f3519fcd7d16f8e657a98913593ffe974a4d0acfa2b899706cbf",
+    "file": "Wix_Editor_About_Buttons.txt",
+    "title": "Wix Editor: About Buttons",
+    "url": "https://support.wix.com/en/article/wix-editor-about-buttons",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 6451
+  },
+  {
+    "id": "fc77f819a1aa63b79ce1da3773d855ad14d1469c0ecd351abed9a7645a8ee08a",
+    "file": "Wix_Editor_Adding_a_Link_to_a_Button.txt",
+    "title": "Wix Editor: Adding a Link to a Button",
+    "url": "https://support.wix.com/en/article/wix-editor-adding-a-link-to-a-button",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2628
+  },
+  {
+    "id": "ca8580cca10d5bd3fb0257e79a60d30785eca79e1917a033692f47dbfffc1f5a",
+    "file": "Using_the_Wix_Whois_Lookup_Tool_to_Find_Domain_Registration_Details.txt",
+    "title": "Using the Wix Whois Lookup Tool to Find Domain Registration Details",
+    "url": "https://support.wix.com/en/article/using-the-wix-whois-lookup-tool-to-find-domain-registration-details",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 939
+  },
+  {
+    "id": "cd971374b10725bed95dd234503cb892ce38b2363d73586abfbca59afd78917a",
+    "file": "Branded_App_Creating_and_Connecting_a_Google_Developer_Account.txt",
+    "title": "Branded App: Creating and Connecting a Google Developer Account",
+    "url": "https://support.wix.com/en/article/branded-app-creating-and-connecting-a-google-developer-account",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 7479
+  },
+  {
+    "id": "3b1f8740cf430811f1b642145d1245e0a4500fe90c2b59a8059b02bc627007d4",
+    "file": "Wix_Promotions.txt",
+    "title": "Wix Promotions",
+    "url": "https://support.wix.com/en/article/current-promotions",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 389
+  },
+  {
+    "id": "5ac8b5aca71fd129fee573d34097f56d7027fee87759363b598173604794f1a9",
+    "file": "Studio_Editor_Editing_and_Customizing_Images.txt",
+    "title": "Studio Editor: Editing and Customizing Images",
+    "url": "https://support.wix.com/en/article/studio-editor-editing-and-customizing-images",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 5559
+  },
+  {
+    "id": "a5bc5c2e9c8a6e8e6488d016f792e13d2b075ec5b291ea09c850b266ca62bb83",
+    "file": "Wix_Editor_Changing_the_Background_Image_Scaling_Position_and_Opacity.txt",
+    "title": "Wix Editor: Changing the Background Image Scaling, Position and Opacity",
+    "url": "https://support.wix.com/en/article/wix-editor-changing-the-background-image-scaling-and-position",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3384
+  },
+  {
+    "id": "632c76ceafa75fe3671fe691c866c41009a232f2b3e92f0aa85ff2f393d69cff",
+    "file": "Updating_Your_Invoices_for_Wix_Services.txt",
+    "title": "Updating Your Invoices for Wix Services",
+    "url": "https://support.wix.com/en/article/updating-your-invoices-for-wix-services",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1784
+  },
+  {
+    "id": "5df765f27e402dd2e156eeaeb16e25293a22d659550de4c9a71c67772e1f332b",
+    "file": "Wix_Editor_Adding_and_Setting_Up_a_Gallery.txt",
+    "title": "Wix Editor: Adding and Setting Up a Gallery",
+    "url": "https://support.wix.com/en/article/wix-editor-adding-and-setting-up-a-gallery",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2718
+  },
+  {
+    "id": "0c4ff19f8d9cda739e12a432072ac0b8a1f89d86e4a028329fd84e3323fe8dc9",
+    "file": "Setting_Permissions_for_Google_Drive_Files_and_Folders.txt",
+    "title": "Setting Permissions for Google Drive Files and Folders",
+    "url": "https://support.wix.com/en/article/setting-permissions-for-google-drive-files-and-folders",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2095
+  },
+  {
+    "id": "6df741a295688302a762c57d2684ad2c05b612e7e7b8fcec2336d4deab5b5749",
+    "file": "Studio_Editor_Creating_Sticky_Elements_and_Sections.txt",
+    "title": "Studio Editor: Creating Sticky Elements and Sections",
+    "url": "https://support.wix.com/en/article/studio-editor-creating-sticky-elements-and-sections",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2268
+  },
+  {
+    "id": "964f4190b53b1be8c7430bd644c09828f1d3388a565971c233bcba06e041bb2c",
+    "file": "Google_Workspace_Canceling_Your_Business_Email_Renewal.txt",
+    "title": "Google Workspace: Canceling Your Business Email Renewal",
+    "url": "https://support.wix.com/en/article/google-workspace-canceling-your-business-email-renewal",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2108
+  },
+  {
+    "id": "a55fda434b65c6594e2e7a4633b11271519f114e58c5fc06e69088c8be9149cc",
+    "file": "Managing_Your_Sites_Notification_Preferences.txt",
+    "title": "Managing Your Site's Notification Preferences",
+    "url": "https://support.wix.com/en/article/managing-your-sites-notification-settings",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4036
+  },
+  {
+    "id": "ac1d41e53213609c876db96af301e2ede86f2821c76772ade31c04bb67574327",
+    "file": "Using_Wix_Forms_to_Receive_Explicit_Consent.txt",
+    "title": "Using Wix Forms to Receive Explicit Consent",
+    "url": "https://support.wix.com/en/article/using-wix-forms-to-receive-explicit-consent",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2135
+  },
+  {
+    "id": "dae8c63e84d73a8c4816fc6137396a6e384a0d10bfddd7fc43fea983f95824a0",
+    "file": "Moving_a_Site_to_Trash.txt",
+    "title": "Moving a Site to Trash",
+    "url": "https://support.wix.com/en/article/moving-a-site-to-trash",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3241
+  },
+  {
+    "id": "ba3d0013f5be977b6dec0864e55228406bd1d4c6870fdf342e2eaad681609671",
+    "file": "Wix_Stores_Deleting_Wix_Stores.txt",
+    "title": "Wix Stores: Deleting Wix Stores",
+    "url": "https://support.wix.com/en/article/wix-stores-deleting-wix-stores",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 873
+  },
+  {
+    "id": "c46a87559179be8c7da03a856a180cbe420362437f129969782ae7718a498bc5",
+    "file": "Wix_Stores_Delivering_Digital_Products.txt",
+    "title": "Wix Stores: Delivering Digital Products",
+    "url": "https://support.wix.com/en/article/wix-stores-delivering-digital-products",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1577
+  },
+  {
+    "id": "c154e50f9638b4b0ca9e6d08713ba6b329633327144200427a0cd87d31fb9fe6",
+    "file": "Downloading_Invoices_for_Wix_Subscriptions.txt",
+    "title": "Downloading Invoices for Wix Subscriptions",
+    "url": "https://support.wix.com/en/article/downloading-invoices-for-wix-subscriptions",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 738
+  },
+  {
+    "id": "bfea4b80bdf769ab6fab69e9af1957a5b56ba9e96edb45674982aca7ec2f6f9b",
+    "file": "CMS_Connecting_Elements_to_a_Collection_Using_a_Dataset.txt",
+    "title": "CMS: Connecting Elements to a Collection Using a Dataset",
+    "url": "https://support.wix.com/en/article/cms-connecting-elements-to-a-collection-using-a-dataset",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3189
+  },
+  {
+    "id": "ef19b1f40e1ae5d10ef2f7b9de5f92c0d6371584dd4ba8d6d8273af406d94375",
+    "file": "Renaming_Your_Site.txt",
+    "title": "Renaming Your Site",
+    "url": "https://support.wix.com/en/article/renaming-your-site",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 870
+  },
+  {
+    "id": "cf18d0def5791d095b0b422d562fa99eae8e40d0821d65ae59ea60fb51de48d2",
+    "file": "Connecting_Email_Purchased_Outside_of_Wix.txt",
+    "title": "Connecting Email Purchased Outside of Wix",
+    "url": "https://support.wix.com/en/article/connecting-an-email-purchased-outside-of-wix",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 6315
+  },
+  {
+    "id": "23eae82e9cf478eb99fb3209b8b0fc8e293350496808ea360600808902270228",
+    "file": "Request_Transferring_Your_Existing_Email_to_Wix.txt",
+    "title": "Request: Transferring Your Existing Email to Wix",
+    "url": "https://support.wix.com/en/article/request-transferring-your-existing-email-to-wix",
+    "type": "feature_request",
+    "reason": "answers-test-question",
+    "chars": 731
+  },
+  {
+    "id": "b93cbc4952c105873cf38ae77156a80f0c496dd6f33befae0d98988755637cce",
+    "file": "Wix_Stores_Managing_Product_Ribbons.txt",
+    "title": "Wix Stores: Managing Product Ribbons",
+    "url": "https://support.wix.com/en/article/wix-stores-managing-product-ribbons",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 6119
+  },
+  {
+    "id": "ec5bf4142222e9313d9d0d1931b71b5c9bf0e812e6708a09e323202c4a546ac6",
+    "file": "Pricing_Plans_Customizing_the_Look_of_Your_Pricing_Plans_Page.txt",
+    "title": "Pricing Plans: Customizing the Look of Your Pricing Plans Page",
+    "url": "https://support.wix.com/en/article/customizing-the-design-of-your-pricing-plans-page",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 7231
+  },
+  {
+    "id": "760311bacf4dc91b50a4168e47c62b25b277eda986ed8101f9bf791734cb12b7",
+    "file": "Wix_Editor_Moving_Elements_Between_the_Mobile_Menu_Header_and_Footer.txt",
+    "title": "Wix Editor: Moving Elements Between the Mobile Menu, Header and Footer",
+    "url": "https://support.wix.com/en/article/wix-editor-moving-elements-between-the-mobile-menu-header-and-footer",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 892
+  },
+  {
+    "id": "a8a2c200fba069d4a86ee6456ae825fdf963dddd98d823d50d928f5f3fbda16c",
+    "file": "Wix_Bookings_Managing_Email_Notifications_You_Receive.txt",
+    "title": "Wix Bookings: Managing Email Notifications You Receive",
+    "url": "https://support.wix.com/en/article/wix-bookings-managing-email-notifications-you-receive",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2010
+  },
+  {
+    "id": "3aeb9d7b8d9a9289280fbac55cc41995f07de2ce3e71687040e443d2c802fbce",
+    "file": "Wix_Bookings_Syncing_Bookings_and_Google_Calendars.txt",
+    "title": "Wix Bookings: Syncing Bookings and Google Calendars",
+    "url": "https://support.wix.com/en/article/wix-bookings-syncing-bookings-and-google-calendars",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 5152
+  },
+  {
+    "id": "07f6bfabc9072e3da52b359c8f83cfc485f2de700cc246955a65fc5db2ad8357",
+    "file": "Request_Directing_Domains_or_Subdomains_to_Specific_Pages_on_my_Wix_Site.txt",
+    "title": "Request: Directing Domains or Subdomains to Specific Pages on my Wix Site",
+    "url": "https://support.wix.com/en/article/request-directing-domains-or-subdomains-to-specific-pages-on-my-wix-site",
+    "type": "feature_request",
+    "reason": "answers-test-question",
+    "chars": 534
+  },
+  {
+    "id": "f995b4841c7848460bcd56134d0ce98406a20104364229e89b6b8a12190e0a6e",
+    "file": "Reactivating_a_Canceled_Premium_or_Studio_Site_Plan.txt",
+    "title": "Reactivating a Canceled Premium or Studio Site Plan",
+    "url": "https://support.wix.com/en/article/reactivating-a-canceled-premium-plan",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 745
+  },
+  {
+    "id": "ec8f72aa903614901593a38336bb9d82c594bd75c6cf3a34cfaed687c8fa0eb8",
+    "file": "Wix_Stores_Setting_Up_Free_Shipping.txt",
+    "title": "Wix Stores: Setting Up Free Shipping",
+    "url": "https://support.wix.com/en/article/wix-stores-setting-up-free-shipping",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2994
+  },
+  {
+    "id": "ca085d423ac48ea06e1c9af8b5811a44265d87ec112d4ff64111045933214164",
+    "file": "Choosing_a_Premium_Plan.txt",
+    "title": "Choosing a Premium Plan",
+    "url": "https://support.wix.com/en/article/choosing-a-premium-plan",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 6505
+  },
+  {
+    "id": "8fd4c40c8dcc70e52c32b23e8ae0ec665e9fb64103b1f139d8f21ffd94c80f90",
+    "file": "Request_Deleting_a_Business_Email_from_Your_Wix_Account.txt",
+    "title": "Request: Deleting a Business Email from Your Wix Account",
+    "url": "https://support.wix.com/en/article/request-deleting-a-business-email-from-your-wix-account",
+    "type": "feature_request",
+    "reason": "answers-test-question",
+    "chars": 533
+  },
+  {
+    "id": "aaeac809b69520cb72635db0fcec66c4382ee2f6f37d8527f67fd5517eb54728",
+    "file": "Unable_to_View_Images_on_Your_Site.txt",
+    "title": "Unable to View Images on Your Site",
+    "url": "https://support.wix.com/en/article/unable-to-view-images-on-your-site",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 1356
+  },
+  {
+    "id": "97534def842c827007f03f8d88409da2cc9612d0f87af413f40540bbc15251fc",
+    "file": "Wix_Analytics_Understanding_the_Traffic_Overview.txt",
+    "title": "Wix Analytics: Understanding the Traffic Overview",
+    "url": "https://support.wix.com/en/article/wix-analytics-traffic-sales-and-behavior-overviews",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 4660
+  },
+  {
+    "id": "c0340e1f21ef28e1ce5b34e4bf226ddfea24371366f8471ce93e8c406f847f83",
+    "file": "Site_Members_Making_a_Member_Profile_Public.txt",
+    "title": "Site Members: Making a Member Profile Public",
+    "url": "https://support.wix.com/en/article/site-members-making-a-member-profile-public",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3049
+  },
+  {
+    "id": "99e60cdf0ec57f1ca1cc201794adebf9679f9f3e596d89a7794c4b1f0dcf5f85",
+    "file": "Building_a_Website_for_Free.txt",
+    "title": "Building a Website for Free",
+    "url": "https://support.wix.com/en/article/building-a-website-for-free",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 5429
+  },
+  {
+    "id": "63792e00e3ab8e527ebc7a7233aaec2b6ae2ff8742547764db7b572403763dff",
+    "file": "Wix_Groups_Adding_and_Managing_Your_Group_Members.txt",
+    "title": "Wix Groups: Adding and Managing Your Group Members",
+    "url": "https://support.wix.com/en/article/wix-groups-adding-new-members-to-your-group",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 14632
+  },
+  {
+    "id": "b06d44237139bd878d9e8958dee2369cb0b0ea9f98ac0d6eaa40cba38a92088a",
+    "file": "Wix_Forum_About_Wix_Forum.txt",
+    "title": "Wix Forum: About Wix Forum",
+    "url": "https://support.wix.com/en/article/wix-forum-about-wix-forum",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3935
+  },
+  {
+    "id": "501e36854daad9734507fe4018e52a61843b992b523e7725f8f0024117d856d0",
+    "file": "Resetting_Your_Default_A_and_CNAME_Records.txt",
+    "title": "Resetting Your Default A and CNAME Records",
+    "url": "https://support.wix.com/en/article/resetting-your-default-a-and-cname-records",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 2516
+  },
+  {
+    "id": "2051f5ae38a64fba6031c1de9330ede2dde1a3edffa1f4cde7d5adcc3ebe8861",
+    "file": "Business_Phone_Number_Getting_a_Phone_Number.txt",
+    "title": "Business Phone Number: Getting a Phone Number",
+    "url": "https://support.wix.com/en/article/business-phone-number-getting-a-phone-number",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 7576
+  },
+  {
+    "id": "ffaaf313a97814dd8efb425857a3f05bfa5a7dd5a7ec6ae5eccb9d6bb32d79ea",
+    "file": "Viewing_and_Updating_Your_Wix_Domain_Contact_Information.txt",
+    "title": "Viewing and Updating Your Wix Domain Contact Information",
+    "url": "https://support.wix.com/en/article/viewing-and-updating-your-wix-domain-contact-information",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3460
+  },
+  {
+    "id": "e4ca27f7596f17c593c3b87e29d09b1bd68b614c03ea7d9b06c63394adb1d0c6",
+    "file": "Pricing_Plans_Changing_the_Payment_Date_for_Recurring_Subscriptions.txt",
+    "title": "Pricing Plans: Changing the Payment Date for Recurring Subscriptions",
+    "url": "https://support.wix.com/en/article/pricing-plans-changing-the-payment-date-for-recurring-subscriptions",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 6800
+  },
+  {
+    "id": "bef3f28eee94edd10f02f6fec491e4fe6795234a49ba975db9870dd0ac8b942a",
+    "file": "Request_Downgrading_a_Google_Workspace_Subscription.txt",
+    "title": "Request: Downgrading a Google Workspace Subscription",
+    "url": "https://support.wix.com/en/article/request-downgrade-a-google-workspace-formerly-g-suite-subscription",
+    "type": "feature_request",
+    "reason": "answers-test-question",
+    "chars": 417
+  },
+  {
+    "id": "19c646352aff99a496a337e57ec2609112a136102d1246d92cfd823b6c0ef460",
+    "file": "Search_Engine_Optimization_SEO.txt",
+    "title": "Search Engine Optimization (SEO)",
+    "url": "https://support.wix.com/en/article/search-engine-optimization-seo",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 3104
+  },
+  {
+    "id": "f1ea7e9d3ffa1285fcad6b15128b3a8fe222452d5c7f2f4fa140fe81fcca9cc0",
+    "file": "Transferring_a_Premium_Site_to_Another_Wix_Account.txt",
+    "title": "Transferring a Premium Site to Another Wix Account",
+    "url": "https://support.wix.com/en/article/transferring-a-premium-site-to-another-wix-account",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 7625
+  },
+  {
+    "id": "2bc6896a0b1b74ba70ee4d71b01d4104f55f81c93fb5e3573066af86c00b38af",
+    "file": "Transferring_a_Free_Site_to_Another_Wix_Account.txt",
+    "title": "Transferring a Free Site to Another Wix Account",
+    "url": "https://support.wix.com/en/article/transferring-a-free-site-to-another-wix-account",
+    "type": "article",
+    "reason": "answers-test-question",
+    "chars": 5722
+  },
+  {
+    "id": "a69910d0eaed16e26d26724aa14f0a7496964d749cb5d41fd39f7b8c4e0a99d7",
+    "file": "Translating_Your_Cookie_Consent_Banner_Using_Wix_Multilingual.txt",
+    "title": "Translating Your Cookie Consent Banner Using Wix Multilingual",
+    "url": "https://support.wix.com/en/article/translating-your-cookie-banner-using-wix-multilingual",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 3116
+  },
+  {
+    "id": "ebdc527534c63d18975965f6130420063d27910732b1754d34a350aa3be58416",
+    "file": "Wix_Retail_POS_Issuing_Refunds.txt",
+    "title": "Wix Retail POS: Issuing Refunds",
+    "url": "https://support.wix.com/en/article/wix-retail-pos-issuing-refunds",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 4698
+  },
+  {
+    "id": "eefa364831fdb01ae86ee46473e7ed3e349b9f9ee1a86702844b2d9d475ae921",
+    "file": "Wix_Photo_Albums_Test_Ordering_Your_Printed_Merchandise_in_the_Wix_Photo_Album_Store.txt",
+    "title": "Wix Photo Albums: Test Ordering Your Printed Merchandise in the Wix Photo Album Store",
+    "url": "https://support.wix.com/en/article/wix-photo-albums-test-ordering-your-printed-merchandise-in-the-wix-photo-album-store",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1209
+  },
+  {
+    "id": "551757e7b766200645624b4f34ed936ae71ca9f885acca3f0766a06e3566b950",
+    "file": "Wix_SEO_Setup_Checklist_Adding_Missing_Alt_Text_to_Your_Images.txt",
+    "title": "Wix SEO Setup Checklist: Adding Missing Alt Text to Your Images",
+    "url": "https://support.wix.com/en/article/wix-seo-wiz-adding-missing-alt-text-to-your-images",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 4087
+  },
+  {
+    "id": "63de92fc93bab44c29952e19348d15dd5ee56c3ca2ef9cb7aa0baafa23eb5a48",
+    "file": "ADI_Adding_and_Setting_Up_the_HTML_Embed_Element.txt",
+    "title": "ADI: Adding and Setting Up the HTML Embed Element",
+    "url": "https://support.wix.com/en/article/adi-adding-and-setting-up-the-html-embed-element",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1677
+  },
+  {
+    "id": "be16f1b1aebaca882957350f9515afd2180839154c2bf1c8cd6420bc83d30848",
+    "file": "Wix_Retail_POS_Troubleshooting_Your_Tablet.txt",
+    "title": "Wix Retail POS: Troubleshooting Your Tablet",
+    "url": "https://support.wix.com/en/article/wix-retail-pos-troubleshooting-your-tablet",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1382
+  },
+  {
+    "id": "640a0be05b019b446a8c6e514fb2b066263315660653106e1cf7dab454cb7602",
+    "file": "Wix_Editor_Adjusting_the_Layout_of_Your_Columns.txt",
+    "title": "Wix Editor: Adjusting the Layout of Your Columns",
+    "url": "https://support.wix.com/en/article/wix-editor-adjusting-the-layout-of-your-columns",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1936
+  },
+  {
+    "id": "8dfd44413e61a9e372584c06017bbaa5c7c80fff27acea05ab555d4c74e9a8f5",
+    "file": "Wix_Member_Apps_Permanently_Deleting_a_Members_Data.txt",
+    "title": "Wix Member Apps: Permanently Deleting a Member's Data",
+    "url": "https://support.wix.com/en/article/wix-mobile-apps-permanently-deleting-a-members-data",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1807
+  },
+  {
+    "id": "7e28ec3b0a3b998e8cf5640d37a44c1185d1dfe2e3ffe8e3912c6504caf053a0",
+    "file": "Wix_Bookings_Adding_and_Setting_Up_the_Map_Plugin_on_the_Service_Page.txt",
+    "title": "Wix Bookings: Adding and Setting Up the Map Plugin on the Service Page",
+    "url": "https://support.wix.com/en/article/wix-bookings-adding-and-setting-up-the-map-plugin-on-the-service-page",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 3839
+  },
+  {
+    "id": "90d4f47af1efa41e59fca4682b8950cc5ffecebd6f94caf1c158113db36ce5ec",
+    "file": "Wix_Bookings_Understanding_Your_Bookings_Analytics_Reports.txt",
+    "title": "Wix Bookings: Understanding Your Bookings Analytics Reports",
+    "url": "https://support.wix.com/en/article/understanding-wix-bookings-analytics-reports",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 3932
+  },
+  {
+    "id": "6b525af2756942688ba20055f6adb1c58b3599f6844659c8f0ed8a011bef4314",
+    "file": "Hopp_by_Wix_Managing_Your_Pro_Plan.txt",
+    "title": "Hopp by Wix: Managing Your Pro Plan",
+    "url": "https://support.wix.com/en/article/hopp-by-wix-managing-your-pro-plan-3670499",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 2065
+  },
+  {
+    "id": "b9bc3dd4ac3805b022c731ce5ea120655f768479bb3ff15eab48b25146008175",
+    "file": "Wix_Blog_Adding_Notes_to_Your_Posts.txt",
+    "title": "Wix Blog: Adding Notes to Your Posts",
+    "url": "https://support.wix.com/en/article/wix-blog-adding-notes-to-your-posts",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 3682
+  },
+  {
+    "id": "2e6afe1fc44db12e62512eab3f28d16373d85662f5825e447517e20ee0919e2d",
+    "file": "Adding_Your_Privacy_Policy_or_Terms_and_Conditions_to_Your_Sites_Footer.txt",
+    "title": "Adding Your Privacy Policy or Terms and Conditions to Your Site's Footer",
+    "url": "https://support.wix.com/en/article/adding-your-privacy-policy-or-terms-and-conditions-to-your-sites-footer",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 4181
+  },
+  {
+    "id": "66bef98d32fa5ef78a6b5695fe226d703bf458a61d3b0bd948b431232df66450",
+    "file": "Wix_Stores_Product_Gallery_Images_Appear_Cropped_on_Mobile_Devices.txt",
+    "title": "Wix Stores: Product Gallery Images Appear Cropped on Mobile Devices",
+    "url": "https://support.wix.com/en/article/wix-stores-product-gallery-images-appear-cropped-on-mobile-devices",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1072
+  },
+  {
+    "id": "afdabb1bcefed973812c358f328b5a6e7fcde5bcb651609042fc567683e2417f",
+    "file": "Wix_Bookings_Refunding_Clients.txt",
+    "title": "Wix Bookings: Refunding Clients",
+    "url": "https://support.wix.com/en/article/refunding-clients-in-wix-bookings",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1824
+  },
+  {
+    "id": "a75d156d946364a49e7fc28a4ff2308a93a72cd9cdd51df7c8511749b0be2118",
+    "file": "Wix_Stores_Adding_Store_Products_to_Your_TikTok_for_Business_Catalog.txt",
+    "title": "Wix Stores: Adding Store Products to Your TikTok for Business Catalog",
+    "url": "https://support.wix.com/en/article/wix-stores-adding-store-products-to-your-tiktok-for-business-catalog",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 3566
+  },
+  {
+    "id": "35bb023caf8d093c06e7e071d64d2fe7bfa5449657e0560d1fc939661671352e",
+    "file": "Google_Search_Console_Excluded_Crawl_Anomaly.txt",
+    "title": "Google Search Console: Excluded (Crawl Anomaly)",
+    "url": "https://support.wix.com/en/article/google-search-console-excluded-crawl-anomaly",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 841
+  },
+  {
+    "id": "d8922b9fdbebbcc5e5041ba1ecf3296cc858e43dd2bef6c26ee875211a6894a0",
+    "file": "Online_Programs_Approving_Requests_to_Join_Your_Program.txt",
+    "title": "Online Programs: Approving Requests to Join Your Program",
+    "url": "https://support.wix.com/en/article/online-programs-approving-requests-to-join-your-program",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 750
+  },
+  {
+    "id": "8accd8909f4f3a5e52c163634e7fd0da61fc8f61072e4fac828d5308f9a8bf64",
+    "file": "Connecting_an_Israeli_il_Domain_to_Your_Wix_Site.txt",
+    "title": "Connecting an Israeli (.il) Domain to Your Wix Site",
+    "url": "https://support.wix.com/en/article/connecting-an-israeli-il-domain-to-your-wix-site",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1033
+  },
+  {
+    "id": "acf570d971ebd77f8bf8193419343b0de43fe078e4bae03f26620d3e930c1e32",
+    "file": "Wix_Stores_Offering_Real_Time_Shipping_Rates_via_Third_Party_Apps.txt",
+    "title": "Wix Stores: Offering Real Time Shipping Rates via Third-Party Apps",
+    "url": "https://support.wix.com/en/article/wix-stores-offering-real-time-shipping-rates-via-third-party-apps",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 3947
+  },
+  {
+    "id": "eaf11086c1b0760da88fdd08ba69f56ea894aacef5f7bd00b6cc6bd109452c4f",
+    "file": "Wix_Stores_Displaying_Available_Payment_Methods_on_Your_Live_Site.txt",
+    "title": "Wix Stores: Displaying Available Payment Methods on Your Live Site",
+    "url": "https://support.wix.com/en/article/wix-stores-displaying-available-payment-methods-on-your-live-site",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 816
+  },
+  {
+    "id": "cc61446a4963aeefffd410707169810ae69d6ba8c942e468b8f1784cc66bbf36",
+    "file": "Wix_Forms_Removing_a_Form_from_Your_Site.txt",
+    "title": "Wix Forms: Removing a Form from Your Site",
+    "url": "https://support.wix.com/en/article/wix-forms-removing-a-form-from-your-site",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 2923
+  },
+  {
+    "id": "2db514dd82a78fad6887699aaef835299e6e0786f73190b0f747a799ad22eabc",
+    "file": "Accessibility_Making_Document_Files_Accessible.txt",
+    "title": "Accessibility: Making Document Files Accessible",
+    "url": "https://support.wix.com/en/article/accessibility-making-document-files-accessible",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 639
+  },
+  {
+    "id": "96b1849e43ab23a9ef45333f6688868193ffd896c2c2ed31fde7e400ff4b8707",
+    "file": "Wix_Editor_Uploading_and_Using_Your_Own_Fonts.txt",
+    "title": "Wix Editor: Uploading and Using Your Own Fonts",
+    "url": "https://support.wix.com/en/article/wix-editor-uploading-and-using-your-own-fonts",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 2801
+  },
+  {
+    "id": "e895a04642dc5b6a5cee293185f1a1c77395eba100760ccac8b0e0f734ba098a",
+    "file": "Wix_Restaurants_Setting_Up_Delivery_Areas_for_Orders.txt",
+    "title": "Wix Restaurants: Setting Up Delivery Areas for Orders",
+    "url": "https://support.wix.com/en/article/wix-restaurants-setting-up-delivery-areas-for-orders",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 2953
+  },
+  {
+    "id": "8a88a6d440ece80139839d5159e412f48f7326f7c028d52af642c7bda64cbfed",
+    "file": "Wix_POS_Terms_of_Service.txt",
+    "title": "Wix POS Terms of Service",
+    "url": "https://support.wix.com/en/article/wix-pos-terms-of-service",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 452
+  },
+  {
+    "id": "d284b11d448af02a0d584bb97285f1494d233f9ff3f760a8c1cc7063d073795b",
+    "file": "Connecting_PayItMonthly_as_a_Payment_Provider.txt",
+    "title": "Connecting PayItMonthly as a Payment Provider",
+    "url": "https://support.wix.com/en/article/connecting-payitmonthly-as-a-payment-provider",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 3873
+  },
+  {
+    "id": "db9b8f95520bd66408fc707325f564bda43a4f859a72cda23fc0effcbf7ef176",
+    "file": "Updating_an_Editor_X_Site_to_the_Studio_Editor.txt",
+    "title": "Updating an Editor X Site to the Studio Editor",
+    "url": "https://support.wix.com/en/article/updating-an-editor-x-site-to-the-studio-editor",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 9216
+  },
+  {
+    "id": "c815da4f332eedd7ef646072e1e1c690f5d9f4fe13beec589eb4966c77f21e95",
+    "file": "Wix_Editor_Working_With_the_Editor_Gridlines.txt",
+    "title": "Wix Editor: Working With the Editor Gridlines",
+    "url": "https://support.wix.com/en/article/wix-editor-working-with-the-editor-gridlines",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 3569
+  },
+  {
+    "id": "ccb6c053b4ce3f3d82310e6c841c0cd2cc09bf80dbb5badbd026f9d6b7492a91",
+    "file": "Wix_Video_Unavailable_Videos_in_Your_Video_Library.txt",
+    "title": "Wix Video: Unavailable Videos in Your Video Library",
+    "url": "https://support.wix.com/en/article/unavailable-videos-in-your-video-library",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 640
+  },
+  {
+    "id": "0be42f0789dce91e0d3675a074031aad455be413de78523d1508c3a3f369fe3d",
+    "file": "Connecting_Your_Hotel_to_Booking_Channels_Using_the_Channel_Manager.txt",
+    "title": "Connecting Your Hotel to Booking Channels Using the Channel Manager",
+    "url": "https://support.wix.com/en/article/connecting-your-hotel-to-booking-channels-using-the-channel-manager",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 2677
+  },
+  {
+    "id": "b7eb5cd9a46c89066d15302397be367a7d5f12db12cf63d7b225a1fbfa31864d",
+    "file": "About_Google_Analytics_and_the_GDPR.txt",
+    "title": "About Google Analytics and the GDPR",
+    "url": "https://support.wix.com/en/article/about-google-analytics-and-the-gdpr",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1430
+  },
+  {
+    "id": "04b939634310cd78083a58d42d9779f411fd0964ef013b6344b046e7b08be9e8",
+    "file": "Editor_Error_Error_30003.txt",
+    "title": "Editor Error: Error 30003",
+    "url": "https://support.wix.com/en/article/editor-error-error-30003",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 475
+  },
+  {
+    "id": "8777d9904f643c0323aaea1fe6c69c6ceaa6bb2fe4e69cf37c64ac748f7dad0d",
+    "file": "Adding_and_Setting_Up_the_Open_for_Business_App.txt",
+    "title": "Adding and Setting Up the Open for Business App",
+    "url": "https://support.wix.com/en/article/adding-and-setting-up-the-open-for-business-app",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1464
+  },
+  {
+    "id": "3ee784bd8912888e97b4e792c6fe3e39bc1ce11ed88dd671670aa416762df319",
+    "file": "Wix_Stores_Designing_Your_Storefront.txt",
+    "title": "Wix Stores: Designing Your Storefront",
+    "url": "https://support.wix.com/en/article/wix-stores-designing-your-storefront",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 909
+  },
+  {
+    "id": "c88160bcf39f45978dc5e6f64f083adfb44e3889a339b102f1731e07e65c7085",
+    "file": "Wix_Editor_Facebook_Like_Button_vs_Facebook_Page_Like_Box.txt",
+    "title": "Wix Editor: Facebook Like Button vs. Facebook Page Like Box",
+    "url": "https://support.wix.com/en/article/wix-editor-facebook-like-button-vs-facebook-page-like-box",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 834
+  },
+  {
+    "id": "da857dc3f547537903ca6dc5b2d08cf8b060e35d7037484e757fd10a1b247a7d",
+    "file": "Facebook_Ads_Getting_Admin_Permissions_for_Facebook_Business_Manager.txt",
+    "title": "Facebook Ads: Getting Admin Permissions for Facebook Business Manager",
+    "url": "https://support.wix.com/en/article/facebook-ads-getting-admin-permissions-for-facebook-business-manager",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 3016
+  },
+  {
+    "id": "9f443389e1dc06a4137aa9985e56321467186c558ffa354918f295e851884b55",
+    "file": "Wix_Editor_Close_Icon_Overlapping_the_Menu_Items_on_Your_Mobile_Site.txt",
+    "title": "Wix Editor: Close Icon Overlapping the Menu Items on Your Mobile Site",
+    "url": "https://support.wix.com/en/article/wix-editor-close-icon-overlapping-the-menu-items-on-your-mobile-site",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 653
+  },
+  {
+    "id": "5e50faafe5e320342d16e1872365bfe48a80527a157cd8ed493007a4b5f3edca",
+    "file": "Costs_Associated_with_Transferring_Domains_to_Wix.txt",
+    "title": "Costs Associated with Transferring Domains to Wix",
+    "url": "https://support.wix.com/en/article/costs-associated-with-transferring-domains-to-wix",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 984
+  },
+  {
+    "id": "408f0528e1f512cfb06069f0f38498d92a5672d8f7a96a69152a8bcd552a07c8",
+    "file": "ADI_Customizing_Your_Menu_For_Your_Mobile_View.txt",
+    "title": "ADI: Customizing Your Menu For Your Mobile View",
+    "url": "https://support.wix.com/en/article/adi-customizing-your-menu-for-your-mobile-view",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1310
+  },
+  {
+    "id": "28384fe0fab1a6e3d39c8ac206dc45ef31bdf3d8cb0467ed965f8b22ea81092b",
+    "file": "Wix_Music_Customizing_Your_Music_Player.txt",
+    "title": "Wix Music: Customizing Your Music Player",
+    "url": "https://support.wix.com/en/article/wix-music-changing-the-design-colors-and-fonts-of-your-wix-music-player",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 5045
+  },
+  {
+    "id": "0ea50f58101794387210b6d78ee408810ae194bfc29148f64ea92e47f2dcde84",
+    "file": "Wix_Hotels_by_HotelRunner_Managing_Your_Site_Languages.txt",
+    "title": "Wix Hotels by HotelRunner: Managing Your Site Languages",
+    "url": "https://support.wix.com/en/article/wix-hotels-by-hotelrunner-managing-your-site-languages",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 7366
+  },
+  {
+    "id": "4ea5a3de1976637b3dbe7205ea6ceb064565ce0bee863a4be21b855a932b5b8c",
+    "file": "Wix_Editor_Creating_a_Floating_Menu.txt",
+    "title": "Wix Editor: Creating a Floating Menu",
+    "url": "https://support.wix.com/en/article/wix-editor-creating-a-floating-menu",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 920
+  },
+  {
+    "id": "a6158faef529be3a806c2c48a9ff25a1346aa7587e4a29c21d14d74a4f7b8e4e",
+    "file": "Wix_Media_Creating_a_Promotional_Video_in_the_Wix_App.txt",
+    "title": "Wix Media: Creating a Promotional Video in the Wix App",
+    "url": "https://support.wix.com/en/article/wix-media-creating-a-promotional-video-in-the-wix-owner-app",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 2406
+  },
+  {
+    "id": "92e06e762bbb9eab0d4ec0a840b5b3c4fb6cc691b67afe15223e625bdb8625d9",
+    "file": "Wix_Hotels_by_HotelRunner_Creating_and_Managing_Your_Rate_Plans.txt",
+    "title": "Wix Hotels by HotelRunner: Creating and Managing Your Rate Plans",
+    "url": "https://support.wix.com/en/article/wix-hotels-by-hotelrunner-creating-and-managing-your-rate-plans",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 4952
+  },
+  {
+    "id": "c7d7d218067248e9261a72d9496c899e6f12d28df4e5f5a659b02e2527aad95e",
+    "file": "Wix_Bookings_Marking_Attendance_for_Classes.txt",
+    "title": "Wix Bookings: Marking Attendance for Classes",
+    "url": "https://support.wix.com/en/article/wix-bookings-marking-attendance-for-classes",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1199
+  },
+  {
+    "id": "612669d156145180ae557b8fb6ef5878ae25af3c73664028b26647a6140ca14b",
+    "file": "Wix_Editor_About_Gallery_Image_Text.txt",
+    "title": "Wix Editor: About Gallery Image Text",
+    "url": "https://support.wix.com/en/article/wix-editor-about-gallery-image-text",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 3635
+  },
+  {
+    "id": "c702474ebc1688d329962b389f0298b0bc34c5a7e1d9ff2be91409c986f2ad74",
+    "file": "Accepting_Donation_Payments.txt",
+    "title": "Accepting Donation Payments",
+    "url": "https://support.wix.com/en/article/accepting-donation-payments",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 2855
+  },
+  {
+    "id": "e7b80ba2b7207933dcd40a2efb9f247017a548b4508f5b2ccc1dc3dd0b9d9724",
+    "file": "Customizing_your_Pages_URL_Structure_in_SEO_Settings.txt",
+    "title": "Customizing your Page's URL Structure in SEO Settings",
+    "url": "https://support.wix.com/en/article/customizing-your-pages-url-structure-in-seo-settings",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 3578
+  },
+  {
+    "id": "d64c133a66a7d80bed82cd091e4f3b0d84eef2182690f010f63b09318046c370",
+    "file": "Studio_Editor_Adding_and_Customizing_Lottie_Animation_Files.txt",
+    "title": "Studio Editor: Adding and Customizing Lottie Animation Files",
+    "url": "https://support.wix.com/en/article/studio-editor-adding-and-customizing-lottie-animation-files",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 3217
+  },
+  {
+    "id": "a81ac0ee9bf66bd5d38d6f1ca66bafcba530fd34f2367bf7285292eb6cf23350",
+    "file": "Moving_Files_and_Folders_in_the_File_Share_App.txt",
+    "title": "Moving Files and Folders in the File Share App",
+    "url": "https://support.wix.com/en/article/moving-files-and-folders-in-the-file-share-app",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1053
+  },
+  {
+    "id": "d91ea33172db30db127a6ea9b06cf6ec67ebc10f42a93de91bd709fbc938815c",
+    "file": "Wix_Studio_Setting_Up_Custom_Branding.txt",
+    "title": "Wix Studio: Setting Up Custom Branding",
+    "url": "https://support.wix.com/en/article/wix-studio-setting-up-custom-branding",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 3084
+  },
+  {
+    "id": "7f16238a17bdc9a509c914332912f7d245f59929a1a9a8e1b5ac57da13564759",
+    "file": "Wix_Events_Translating_Your_Event.txt",
+    "title": "Wix Events: Translating Your Event",
+    "url": "https://support.wix.com/en/article/wix-events-translating-your-event",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 5474
+  },
+  {
+    "id": "fce6fbbda7a133b4ea82fc9f66e929e29a184c8dc0adc3802e12a7b1ea3c9875",
+    "file": "Wix_Restaurants_Setting_Up_DoorDash_Drive_for_Your_Restaurant.txt",
+    "title": "Wix Restaurants: Setting Up DoorDash Drive for Your Restaurant",
+    "url": "https://support.wix.com/en/article/wix-restaurants-setting-up-doordash-drive-for-your-restaurant",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 4873
+  },
+  {
+    "id": "348b931caf4ad9e71f83a3f8c1c27acf545758121c42504db7c4bb5d363ebba7",
+    "file": "About_the_Wix_App_Market.txt",
+    "title": "About the Wix App Market",
+    "url": "https://support.wix.com/en/article/about-the-wix-app-market",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 2150
+  },
+  {
+    "id": "358f8559886fa3846cc907dae531b975435adc174bf0ced0acc645ad5c89f544",
+    "file": "Wix_Referral_Program_Adding_and_Setting_Up_Your_Referral_Program.txt",
+    "title": "Wix Referral Program: Adding and Setting Up Your Referral Program",
+    "url": "https://support.wix.com/en/article/wix-referral-program-adding-and-setting-up-your-referral-program",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 11179
+  },
+  {
+    "id": "16bbaba061631aa62b33a66ef24be84538ed40b3f7714bd347b5e99f93956b9f",
+    "file": "Paying_for_Wix_Services_Strong_Customer_Authentication_SCA_and_3D_Secure_3DS.txt",
+    "title": "Paying for Wix Services: Strong Customer Authentication (SCA) and 3D Secure (3DS)",
+    "url": "https://support.wix.com/en/article/paying-for-wix-services-strong-customer-authentication-sca-and-3d-secure-3ds",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 4258
+  },
+  {
+    "id": "3312972142d9534dea3e5a71f5dae2b297b7219766589ede99aa91f0ac8627f2",
+    "file": "Wix_Editor_Changing_the_Layout_of_Your_Mobile_Menu.txt",
+    "title": "Wix Editor: Changing the Layout of Your Mobile Menu",
+    "url": "https://support.wix.com/en/article/wix-editor-changing-the-layout-of-your-mobile-menu",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1991
+  },
+  {
+    "id": "63a2fe5c6cc165d157dfbe29e5b24a121d63b5acbae294cb2aa81d6a2473b1b4",
+    "file": "About_the_Wix_Hotels_Checkout_Process.txt",
+    "title": "About the Wix Hotels Checkout Process",
+    "url": "https://support.wix.com/en/article/about-the-wix-hotels-checkout-process",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 3049
+  },
+  {
+    "id": "e794c331975103a7ef80b7c31f7a0cf21c29503579b88bb3677f6cf5c41c61eb",
+    "file": "Wix_Media_Connecting_or_Disconnecting_Your_Instagram_Google_Photo_Account_in_the_Wix_App.txt",
+    "title": "Wix Media: Connecting or Disconnecting Your Instagram / Google Photo Account in the Wix App",
+    "url": "https://support.wix.com/en/article/wix-media-connecting-disconnecting-your-instagram-google-photo-account-in-the-wix-owner-app",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1473
+  },
+  {
+    "id": "87f245c3aef1672112f14ed83d4ff0dd930438d9659ebbfd445ff6da8fc3d953",
+    "file": "Editor_X_Using_Containers.txt",
+    "title": "Editor X: Using Containers",
+    "url": "https://support.wix.com/en/article/editor-x-using-containers",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 4049
+  },
+  {
+    "id": "7108586df74dcafa87ddb4b8dd86861b20ef6445d9d3898abbe77bcba1d5a5dc",
+    "file": "Wix_Forum_Becoming_a_Forum_Member_and_Joining_the_Community.txt",
+    "title": "Wix Forum: Becoming a Forum Member and Joining the Community",
+    "url": "https://support.wix.com/en/article/wix-forum-becoming-a-forum-member-and-joining-the-community",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1888
+  },
+  {
+    "id": "42fbbe6bf725f5ec17c5450855fb35c4f915dd650e6de110cb6035aa48957ca6",
+    "file": "Service_List_Title_Image_Navigates_to_Calendar_Page_Instead_of_Service_Page.txt",
+    "title": "Service List Title / Image Navigates to Calendar Page Instead of Service Page",
+    "url": "https://support.wix.com/en/article/service-list-title-image-navigates-to-calendar-page-instead-of-service-page",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 792
+  },
+  {
+    "id": "6ee05822e09f119ec86efb096622a3f06a2dfeec4a3b8b13794e0ab83f456dbc",
+    "file": "Wix_Bookings_Extending_the_Duration_of_a_Membership_Plan_or_Package.txt",
+    "title": "Wix Bookings: Extending the Duration of a Membership Plan or Package",
+    "url": "https://support.wix.com/en/article/extending-the-duration-of-a-membership-plan-or-package",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1526
+  },
+  {
+    "id": "e3ebb61318e08c56056f48e215176659efa1c0b237d2e4bb40cd855ff1c04716",
+    "file": "Wix_Stores_Offering_Delivery_to_Pickup_Points_with_Boxtal.txt",
+    "title": "Wix Stores: Offering Delivery to Pickup Points with Boxtal",
+    "url": "https://support.wix.com/en/article/wix-stores-offering-delivery-to-pickup-points-with-boxtal",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 6411
+  },
+  {
+    "id": "980e541460695158ebe5680a64a0dd3678db609686b91b2186643b294fb8a4cb",
+    "file": "Revamping_Your_Site.txt",
+    "title": "Revamping Your Site",
+    "url": "https://support.wix.com/en/article/revamping-your-site-5984263",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 3346
+  },
+  {
+    "id": "70156c0f761948a1ae2ab2bd19b27e860dd8ba0e9a978c9d58d9193c67d6244e",
+    "file": "Wix_Bookings_Rescheduling_a_Session.txt",
+    "title": "Wix Bookings: Rescheduling a Session",
+    "url": "https://support.wix.com/en/article/wix-bookings-rescheduling-a-session",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 5246
+  },
+  {
+    "id": "0d53259555e9707cb2ec01a287fa5f8498d3922278989662fca30c055c007b0b",
+    "file": "Site_Members_Setting_Permissions_for_a_Member_Badge.txt",
+    "title": "Site Members: Setting Permissions for a Member Badge",
+    "url": "https://support.wix.com/en/article/setting-permissions-for-a-member-badge",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1330
+  },
+  {
+    "id": "4b29b07b92dea0e64d5c3901de758127b10fe5949a9814e66690c2c8fd5f22d1",
+    "file": "Wix_Blog_Hiding_the_View_Counter_on_Your_Posts.txt",
+    "title": "Wix Blog: Hiding the View Counter on Your Posts",
+    "url": "https://support.wix.com/en/article/wix-blog-hiding-the-view-counter-on-your-posts",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 3004
+  },
+  {
+    "id": "2ece0420296c4c791adc2a3cf63cef2646b4cdae8c21863bc204293db792ea9c",
+    "file": "About_Wix_Hotels.txt",
+    "title": "About Wix Hotels",
+    "url": "https://support.wix.com/en/article/about-wix-hotels",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1609
+  },
+  {
+    "id": "74437a3924bb6daed0c825d666211a437c5d6d834ee8f63864462eb944e7b417",
+    "file": "Using_the_Wix_Free_Invoice_Generator.txt",
+    "title": "Using the Wix Free Invoice Generator",
+    "url": "https://support.wix.com/en/article/using-the-wix-free-invoice-generator",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 2849
+  },
+  {
+    "id": "564961a496faa267fbe2bd8a9d3776fb22e7140f6ef3191c35a10556e5fe796d",
+    "file": "Wix_Bookings_Promoting_Your_Services.txt",
+    "title": "Wix Bookings: Promoting Your Services",
+    "url": "https://support.wix.com/en/article/wix-bookings-about-promoting-your-services",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 5170
+  },
+  {
+    "id": "b315accbc4fd6067dc839cdb6dd605e9a865831a1e70f82db84dc98976d04fff",
+    "file": "Changing_Your_Page_URL_After_Updating_Your_Site_URLs.txt",
+    "title": "Changing Your Page URL After Updating Your Site URLs",
+    "url": "https://support.wix.com/en/article/changing-your-page-url-after-updating-your-site-urls",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 858
+  },
+  {
+    "id": "656e678493ca085980f62fc798d17f5fb807e119b31a7e12223156fc0606cbad",
+    "file": "Wix_Art_Store_Available_Print_Sizes.txt",
+    "title": "Wix Art Store: Available Print Sizes",
+    "url": "https://support.wix.com/en/article/wix-art-store-available-print-sizes",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 951
+  },
+  {
+    "id": "a7b84ce1b34fed6b710be9a9a0355f71800a42c5c42057a7ea348f9c69a255ed",
+    "file": "Wix_Video_Adding_a_YouTube_Feed.txt",
+    "title": "Wix Video: Adding a YouTube Feed",
+    "url": "https://support.wix.com/en/article/wix-video-adding-a-youtube-feed",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 3249
+  },
+  {
+    "id": "58549150b89bdfd6611e761c04ffa923aa0754a245d6da382be33b80fe922041",
+    "file": "Google_Workspace_Turning_Off_Auto_Renewal_for_a_Business_Email.txt",
+    "title": "Google Workspace: Turning Off Auto Renewal for a Business Email",
+    "url": "https://support.wix.com/en/article/google-workspace-turning-off-auto-renewal-for-a-business-email",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1679
+  },
+  {
+    "id": "b3f3800fbc1cb116b447ce6860a7f7fc834e18ae4f1184094f94412b872a7df7",
+    "file": "Renewing_Your_Premium_or_Studio_Plan.txt",
+    "title": "Renewing Your Premium or Studio Plan",
+    "url": "https://support.wix.com/en/article/renewing-your-yearly-premium-plan",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1329
+  },
+  {
+    "id": "a1a6124b31d03dc97101e07db964e64723baae95d7d33c9989b2147189c5f2cb",
+    "file": "Enterprise_Solution_Adding_and_Setting_Up_Security_Headers.txt",
+    "title": "Enterprise Solution: Adding and Setting Up Security Headers",
+    "url": "https://support.wix.com/en/article/wix-enterprise-adding-and-setting-up-security-headers",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 7693
+  },
+  {
+    "id": "5a6c89caf3a94f88d2a094d0c5995a986b1cd5b6b901adc7eb44998ef6e2d163",
+    "file": "Wix_Stores_Setting_When_Inventory_Gets_Updated.txt",
+    "title": "Wix Stores: Setting When Inventory Gets Updated",
+    "url": "https://support.wix.com/en/article/wix-stores-setting-when-inventory-gets-updated",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 2891
+  },
+  {
+    "id": "5c0c4848714fd26f8fb328d2a43f7696039352f7b5c8b7b3f87e5e5f13b8c11f",
+    "file": "Recommended_Apps_to_Help_You_Interact_with_Site_Visitors.txt",
+    "title": "Recommended Apps to Help You Interact with Site Visitors",
+    "url": "https://support.wix.com/en/article/recommended-apps-to-help-you-interact-with-site-visitors",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1111
+  },
+  {
+    "id": "dca94f11a710d056ab95a08a41a6fe13e3d8b39856e263a397fa0fa54848df41",
+    "file": "Editor_X_Managing_Your_Site_Styles.txt",
+    "title": "Editor X: Managing Your Site Styles",
+    "url": "https://support.wix.com/en/article/editor-x-managing-your-site-styles",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 2325
+  },
+  {
+    "id": "6112ce4341631d0cf3aab74f27c8a17916e322c3bc55b2969d637eed77f9507e",
+    "file": "Wix_Stores_Setting_Up_Affiliate_Marketing_with_the_Goaffpro_App.txt",
+    "title": "Wix Stores: Setting Up Affiliate Marketing with the Goaffpro App",
+    "url": "https://support.wix.com/en/article/wix-stores-setting-up-affiliate-marketing-with-the-goaffpro-app",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1785
+  },
+  {
+    "id": "796ce29651350c2fbf6b137c5fc0732ffe187e9d7cc5a057a3cf54ab96d109f6",
+    "file": "Wix_Groups_About_the_Groups_Feed.txt",
+    "title": "Wix Groups: About the Groups Feed",
+    "url": "https://support.wix.com/en/article/wix-groups-about-the-groups-feed",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 2173
+  },
+  {
+    "id": "8294cc8c05474028c2d7e70833c3af7bae525bf651d3fe41e36ee7f973320f31",
+    "file": "Studio_Editor_About_Site_Styles.txt",
+    "title": "Studio Editor: About Site Styles",
+    "url": "https://support.wix.com/en/article/studio-editor-about-site-styles",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1815
+  },
+  {
+    "id": "03c028d6a24d33eb7a49567cfa7f9633bb1f1e74b5fe215cd533140640d3e856",
+    "file": "Wix_Editor_Setting_Up_Your_Video_for_Your_Mobile_Site.txt",
+    "title": "Wix Editor: Setting Up Your Video for Your Mobile Site",
+    "url": "https://support.wix.com/en/article/wix-editor-setting-up-your-video-for-your-mobile-site",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1266
+  },
+  {
+    "id": "919c11fd9474fe8ff819ac11740688c6914898f5676f983a4cdbf92ee52cc40a",
+    "file": "Connecting_PostFinance_as_a_Payment_Provider.txt",
+    "title": "Connecting PostFinance as a Payment Provider",
+    "url": "https://support.wix.com/en/article/connecting-postfinance-as-a-payment-provider",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 3817
+  },
+  {
+    "id": "12533040a3808dd3f41636d66a79258970444873f76035ba6d8f207c0a2408b6",
+    "file": "Wix_Stores_Adding_Wix_Stores.txt",
+    "title": "Wix Stores: Adding Wix Stores",
+    "url": "https://support.wix.com/en/article/wix-stores-adding-wix-stores",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 2296
+  },
+  {
+    "id": "cfb2ebb4503692943e93b7b789b5569a4628959a91a0b91981495169701833aa",
+    "file": "Wix_Blog_Adding_Links_and_Buttons_in_Your_Blog.txt",
+    "title": "Wix Blog: Adding Links and Buttons in Your Blog",
+    "url": "https://support.wix.com/en/article/wix-blog-adding-links-in-your-blog",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 3387
+  },
+  {
+    "id": "c2c6f68c32feb3d60bc097f39180121f539b181b9f3e2ae6f3a2d3d5b9f41aa7",
+    "file": "Wix_Member_Apps_Adding_Content_Boxes_to_Your_App.txt",
+    "title": "Wix Member Apps: Adding Content Boxes to Your App",
+    "url": "https://support.wix.com/en/article/wix-member-apps-adding-content-boxes-to-your-app",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 4408
+  },
+  {
+    "id": "7b954b95bbd5a4a8e22e66c075dd1835ef4526280ae36102de66011a487f3af0",
+    "file": "Wix_Forum_Adding_and_Setting_Up_Your_Forum.txt",
+    "title": "Wix Forum: Adding and Setting Up Your Forum",
+    "url": "https://support.wix.com/en/article/wix-forum-adding-and-setting-up-your-forum",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 12271
+  },
+  {
+    "id": "e530011e595ed4617e927ff2ee31a33765a1ef00e99108f7cc61f4511c55097f",
+    "file": "Wix_Multilingual_Troubleshooting_Alignment_Issues_on_Your_Multilingual_Site_in_the_Wix_Edi.txt",
+    "title": "Wix Multilingual: Troubleshooting Alignment Issues on Your Multilingual Site in the Wix Editor",
+    "url": "https://support.wix.com/en/article/wix-multilingual-troubleshooting-alignment-issues-on-your-multilingual-site",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 3996
+  },
+  {
+    "id": "8bde09e00c5853b7acd36ddbc8442c040024d2398b15434815194f44cdb70b44",
+    "file": "ADI_Connecting_the_Pricing_Plans_App_to_Wix_Bookings_Services.txt",
+    "title": "ADI: Connecting the Pricing Plans App to Wix Bookings Services",
+    "url": "https://support.wix.com/en/article/adi-connecting-the-pricing-plans-app-to-wix-bookings-services",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1963
+  },
+  {
+    "id": "70ea870d694f9e930842c111debd12ebc226a5b712e5afc8359f4d634c51deea",
+    "file": "Site_Performance_Using_Third_Party_Code_on_Your_Site.txt",
+    "title": "Site Performance: Using Third Party Code on Your Site",
+    "url": "https://support.wix.com/en/article/site-performance-using-third-party-code-on-your-site",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 2421
+  },
+  {
+    "id": "aca44d30117e8d3ba62cc6b8c710e561899355298ea55f673d56e2785e85f549",
+    "file": "Adding_and_Setting_Up_the_Google_Drive_App.txt",
+    "title": "Adding and Setting Up the Google Drive App",
+    "url": "https://support.wix.com/en/article/adding-and-setting-up-the-google-drive-app-9434397",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 7909
+  },
+  {
+    "id": "acf782eb8fedd9bf413443d1e44fa409ae36080ec5c7d7ae01ccd702ee5025eb",
+    "file": "Wix_Blog_Customizing_Your_Blog_Post_Page.txt",
+    "title": "Wix Blog: Customizing Your Blog Post Page",
+    "url": "https://support.wix.com/en/article/wix-blog-customizing-your-blog-post-page",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 5380
+  },
+  {
+    "id": "0813aa987d77d93cae266b4b34cae0aecafa0eb13655dcd48aaef8914a37323d",
+    "file": "Wix_Proposals_Managing_Your_Proposals_on_the_Wix_App.txt",
+    "title": "Wix Proposals: Managing Your Proposals on the Wix App",
+    "url": "https://support.wix.com/en/article/wix-proposals-managing-your-proposals-on-the-wix-owner-app",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 6336
+  },
+  {
+    "id": "9ae4c5d1717e01150175d3ef1e5a89b9d84e9311b91ed2bc7a22566e58b2552b",
+    "file": "Wix_Blog_Managing_Comments_for_Your_Posts.txt",
+    "title": "Wix Blog: Managing Comments for Your Posts",
+    "url": "https://support.wix.com/en/article/wix-blog-managing-comments-for-your-posts",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 2791
+  },
+  {
+    "id": "1581ac98383e622f9e79d0784a8ad1aeb7e22b8dfba944f40e2e06026e154101",
+    "file": "Wix_Stores_Adding_a_Tracking_Number_to_a_Store_Order.txt",
+    "title": "Wix Stores: Adding a Tracking Number to a Store Order",
+    "url": "https://support.wix.com/en/article/wix-stores-adding-a-tracking-number-to-a-store-order",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 3418
+  },
+  {
+    "id": "ece9e20f41078a11d2842b8cf4212cd72ffc93cc93cbb173d28cf0b96c0ccb17",
+    "file": "Wix_Studio_App_An_Overview.txt",
+    "title": "Wix Studio App: An Overview",
+    "url": "https://support.wix.com/en/article/wix-studio-app-an-overview",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 3320
+  },
+  {
+    "id": "c2966af95532d182f6b046772a9954f842a1ffad516b18c0d593622f8e0a1bf7",
+    "file": "Wix_Stores_Featuring_a_Single_Product.txt",
+    "title": "Wix Stores: Featuring a Single Product",
+    "url": "https://support.wix.com/en/article/wix-stores-featuring-a-single-product",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1678
+  },
+  {
+    "id": "b92509371842844cdd07a5dd36ffcbd0d342935122bb2b61e6eac5aefa5e6583",
+    "file": "Wix_Stores_Setting_Up_Dropshipping_with_Modalyst.txt",
+    "title": "Wix Stores: Setting Up Dropshipping with Modalyst",
+    "url": "https://support.wix.com/en/article/wix-stores-setting-up-dropshipping-with-modalyst",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 6367
+  },
+  {
+    "id": "6b1c9fd8d22289a705acc8666e053ef82aa778e1b020154edd9149807d3883db",
+    "file": "Setting_Up_a_Grace_Period_for_Subscriptions_eg_Stores_Pricing_Plans_Recurring_Invoices.txt",
+    "title": "Setting Up a Grace Period for Subscriptions (e.g. Stores, Pricing Plans, Recurring Invoices)",
+    "url": "https://support.wix.com/en/article/setting-up-a-grace-period-for-subscriptions-eg-stores-pricing-plans-recurring-invoices",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 7769
+  },
+  {
+    "id": "112abdd04d04defac952a2077b23baf7789ee4c0a81ef4c7d1b29e94144a8e25",
+    "file": "Wix_Music_An_Overview.txt",
+    "title": "Wix Music: An Overview",
+    "url": "https://support.wix.com/en/article/about-wix-music",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 2455
+  },
+  {
+    "id": "a93bbb83b442dbe92a68b320e6c5d6adb670e876ab0d87ed6220d4e4ccea48ff",
+    "file": "Editor_X_Adding_Wix_Multilingual.txt",
+    "title": "Editor X: Adding Wix Multilingual",
+    "url": "https://support.wix.com/en/article/editor-x-adding-and-setting-up-wix-multilingual",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 2328
+  },
+  {
+    "id": "bc40e4f6da9e3c89036d1f3690683e61bfe89880e401f38650772a38138f2531",
+    "file": "Wix_Media_Free_Wix_Media_Terms_of_Use.txt",
+    "title": "Wix Media: Free Wix Media Terms of Use",
+    "url": "https://support.wix.com/en/article/free-wix-media-terms-of-use",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 696
+  },
+  {
+    "id": "2c9d8d77e791b2a9bc53db47d2eed41e873b1e939753310741835cef1926cdf8",
+    "file": "Third_Party_App_Modalyst_Dropshipping_by_Modalyst.txt",
+    "title": "Third-Party App: Modalyst - Dropshipping by Modalyst",
+    "url": "https://support.wix.com/en/article/third-party-app-modalyst-dropshipping-by-modalyst",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1141
+  },
+  {
+    "id": "4d4c867e7010f3292318e3bbfdb2eebdcd705738ee08211eea149df1b472fa55",
+    "file": "Upgrading_an_App_from_the_Wix_App_Market.txt",
+    "title": "Upgrading an App from the Wix App Market",
+    "url": "https://support.wix.com/en/article/upgrading-an-app-from-the-wix-app-market",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1760
+  },
+  {
+    "id": "033ef2db166c000f23cfe35b383fdd293eea3bcb99c443adb0b06e512e700d1e",
+    "file": "The_New_Automation_Builder_Creating_an_Automation.txt",
+    "title": "The New Automation Builder: Creating an Automation",
+    "url": "https://support.wix.com/en/article/wix-automations-creating-an-automation-with-the-new-builder",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 11439
+  },
+  {
+    "id": "2fe1b0f1d11156372dec99ad9214cc71a3b59e15c59422f936dfe16781aeff15",
+    "file": "Wix_Editor_Background_Displays_Incorrectly_on_Tablets_or_iPads.txt",
+    "title": "Wix Editor: Background Displays Incorrectly on Tablets or iPads",
+    "url": "https://support.wix.com/en/article/wix-editor-background-displays-incorrectly-on-tablets-or-ipads",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1357
+  },
+  {
+    "id": "0a94c27eb742903986796444bb19c941cf6fcd57ed83f6eee80ad88e8f7a8966",
+    "file": "Disabling_the_Mozilla_Firefox_Pop_Up_Blocker_Option.txt",
+    "title": "Disabling the Mozilla Firefox Pop-Up Blocker Option",
+    "url": "https://support.wix.com/en/article/disabling-the-mozilla-firefox-pop-up-blocker-option",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 623
+  },
+  {
+    "id": "6286f36c98c989be5dbb0d74487b214c2609a4aa2eddb82ebe8076dd0568c3b5",
+    "file": "CMS_Creating_Custom_Roles_and_Permissions.txt",
+    "title": "CMS: Creating Custom Roles and Permissions",
+    "url": "https://support.wix.com/en/article/cms-formerly-content-manager-creating-custom-roles-and-permissions",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1955
+  },
+  {
+    "id": "35f691b86705ed5f81267f65faf5f7047e3f32dc5c8faa1651eda0c5a74c23b2",
+    "file": "Wix_Stores_About_Your_Basic_Site_Info.txt",
+    "title": "Wix Stores: About Your Basic Site Info",
+    "url": "https://support.wix.com/en/article/wix-stores-about-your-basic-site-info",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 2468
+  },
+  {
+    "id": "e7afd751c5080f7233f91a1af20788664786ef7cd347afbcd762a1500bd83d6a",
+    "file": "Studio_Editor_Troubleshooting_Gaps_and_Horizontal_Scroll_Bars.txt",
+    "title": "Studio Editor: Troubleshooting Gaps and Horizontal Scroll Bars",
+    "url": "https://support.wix.com/en/article/studio-editor-troubleshooting-gaps-and-horizontal-scroll-bars",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 2849
+  },
+  {
+    "id": "da162602d42c5102dfcfbb2cc572fcced741a12c212472b09330529920ba1922",
+    "file": "Wix_Retail_POS_Accepting_Exchanges_from_Customers.txt",
+    "title": "Wix Retail POS: Accepting Exchanges from Customers",
+    "url": "https://support.wix.com/en/article/wix-retail-pos-accepting-exchanges-from-customers",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 3918
+  },
+  {
+    "id": "051d64bf12928a4117b7c6c45a5fd7dde3560c6f841df1251cd057c28a6da016",
+    "file": "Dayful_by_Wix_Creating_Your_Services.txt",
+    "title": "Dayful by Wix: Creating Your Services",
+    "url": "https://support.wix.com/en/article/dayful-by-wix-creating-your-services",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 3072
+  },
+  {
+    "id": "abf1ded5115d6f95a73bd7544a16b146edfd7fe02eec56a36ffd24ead7eab949",
+    "file": "Wix_Bookings_Adding_a_Time_Buffer_Between_Appointments.txt",
+    "title": "Wix Bookings: Adding a Time Buffer Between Appointments",
+    "url": "https://support.wix.com/en/article/wix-bookings-adding-a-time-buffer-between-appointments",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 2321
+  },
+  {
+    "id": "f4fe48da164113a0cdbe6cba871fd2c3e451873629708b03f0f39a1ea375a18a",
+    "file": "Connecting_Pay_Easy_as_a_Payment_Method_Through_KOMOJU.txt",
+    "title": "Connecting Pay-Easy as a Payment Method (Through KOMOJU)",
+    "url": "https://support.wix.com/en/article/connecting-pay-easy-as-a-payment-method-through-komoju",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 4174
+  },
+  {
+    "id": "99ac2273073b59f5ba8e5191c2b180f8aaa7ada41f00942c6a711bc2e1db0bd1",
+    "file": "Wix_Stores_An_Overview_of_Store_Features.txt",
+    "title": "Wix Stores: An Overview of Store Features",
+    "url": "https://support.wix.com/en/article/wix-stores-an-overview-of-store-features",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 5154
+  },
+  {
+    "id": "fb9017bd3b86b4acf9f652f788418f86ae3975101c272647ae63cdd0fe841e9c",
+    "file": "Wix_Donations_Adding_and_Setting_Up_Wix_Donations.txt",
+    "title": "Wix Donations: Adding and Setting Up Wix Donations",
+    "url": "https://support.wix.com/en/article/wix-donations-adding-and-setting-up-wix-donations",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 9299
+  },
+  {
+    "id": "294a03ee71a0e0c95006c7a0e8c97a919677509af0c5f5138a5d8cade9902a60",
+    "file": "Connecting_easypay_as_a_Payment_Provider.txt",
+    "title": "Connecting easypay as a Payment Provider",
+    "url": "https://support.wix.com/en/article/connecting-easypay-as-a-payment-provider",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 4003
+  },
+  {
+    "id": "9f56dc0861c9fe92dff671f4d2fd2a44963a3bfac57003f4eaa659a17214f731",
+    "file": "Wix_Bookings_Manually_Marking_a_Service_as_Paid.txt",
+    "title": "Wix Bookings: Manually Marking a Service as Paid",
+    "url": "https://support.wix.com/en/article/wix-bookings-manually-marking-a-service-as-paid",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1912
+  },
+  {
+    "id": "50990919ffaed4cb5a41921fedb30bd37d8a9082d6c817d0912e2b9fe0ba5801",
+    "file": "Wix_Logo_Getting_Help_with_Your_Printed_Merchandise_Order_from_Order_a_Print.txt",
+    "title": "Wix Logo: Getting Help with Your Printed Merchandise Order from Order a Print",
+    "url": "https://support.wix.com/en/article/wix-logo-getting-help-with-your-printed-merchandise-order-from-order-a-print",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 969
+  },
+  {
+    "id": "9ef0942831c7f4ed649a7707d564b3bc8eb34f7631b174ae3968b58733818c8f",
+    "file": "Wix_Bookings_The_Essential_Checklist_for_Professional_Bookings_Site_Owners.txt",
+    "title": "Wix Bookings: The Essential Checklist for Professional Bookings Site Owners",
+    "url": "https://support.wix.com/en/article/wix-bookings-the-essential-checklist-for-professional-bookings-site-owners",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 5282
+  },
+  {
+    "id": "31dfef5256a1f2304905ee8c2eab136f484d7f33473ac9222b127d019fb2b2ef",
+    "file": "Wix_Analytics_About_Your_Accounting_Reports.txt",
+    "title": "Wix Analytics: About Your Accounting Reports",
+    "url": "https://support.wix.com/en/article/wix-analytics-about-your-accounting-reports",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1581
+  },
+  {
+    "id": "637e60f4d4e8521d9b83ff12da4be46e6af5f2eb48f06b2fcc13e8263f603017",
+    "file": "Wix_Events_Understanding_Different_Types_of_Events.txt",
+    "title": "Wix Events: Understanding Different Types of Events",
+    "url": "https://support.wix.com/en/article/wix-events-understanding-different-types-of-events",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 4991
+  },
+  {
+    "id": "16d5921db11ab10ecbf3a0b1c3a7f81f02deb5b122ffb29ec2b0f24fdeb1a43a",
+    "file": "ADI_Setting_Up_Notifications_for_Form_Submissions.txt",
+    "title": "ADI: Setting Up Notifications for Form Submissions",
+    "url": "https://support.wix.com/en/article/adi-receiving-notifications-when-a-visitor-submits-your-form",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 2537
+  },
+  {
+    "id": "07564c7fe10e8fb62903e79419984aa430f49ac996d624c97172dff5f2a67189",
+    "file": "Editor_X_Checking_Your_Sites_Health.txt",
+    "title": "Editor X: Checking Your Site's Health",
+    "url": "https://support.wix.com/en/article/editor-x-checking-your-sites-health",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 9071
+  },
+  {
+    "id": "fe2b0d32c08a6519ed3b6065d901f26c0aaaca74a73a1a5cdd005367c78bb3a7",
+    "file": "Requesting_Additional_Payment_Providers_Methods.txt",
+    "title": "Requesting Additional Payment Providers & Methods",
+    "url": "https://support.wix.com/en/article/requesting-additional-payment-providers-methods",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1206
+  },
+  {
+    "id": "29f472f2ed06a1da208a06bbdbfa1c3a71d87a24e982982be5b459ebd9643a95",
+    "file": "Wix_Stores_Adding_the_Multiorders_Etsy_eBay_Sync_App.txt",
+    "title": "Wix Stores: Adding the \"Multiorders Etsy & eBay Sync\" App",
+    "url": "https://support.wix.com/en/article/wix-stores-adding-etsy-or-ebay-with-the-multiorders-marketplace-sync-app",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1282
+  },
+  {
+    "id": "8f5bf3b60990109d3591c1336214ed30ddf4e3fb449a1369d7acab3c5f15cc07",
+    "file": "Wix_Photo_Albums_Changing_the_Album_URL.txt",
+    "title": "Wix Photo Albums: Changing the Album URL",
+    "url": "https://support.wix.com/en/article/wix-photo-albums-changing-the-album-url",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 3355
+  },
+  {
+    "id": "68a921a506229113423ae7094ba55b19287e8b8f340cf9c3fbbebe1cea6768a1",
+    "file": "Wix_Forum_Adding_and_Setting_Up_Forum_Notifications.txt",
+    "title": "Wix Forum: Adding and Setting Up Forum Notifications",
+    "url": "https://support.wix.com/en/article/wix-forum-adding-and-setting-up-forum-notifications",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 5109
+  },
+  {
+    "id": "020f99d4f54a6469506415e0ad8241f7daa0e796cf3172694f272ce9a32bb241",
+    "file": "Wix_Multilingual_Changing_the_Regional_Settings_of_a_Language_in_a_Multilingual_Site.txt",
+    "title": "Wix Multilingual: Changing the Regional Settings of a Language in a Multilingual Site",
+    "url": "https://support.wix.com/en/article/changing-the-locale-of-a-language-in-a-multilingual-site",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1967
+  },
+  {
+    "id": "f0db1871672565eefc093ad3bafcdff7e0a6eb58104edf17ab88d6ccb3003e5b",
+    "file": "Wix_Media_Supported_Media_File_Types_and_File_Sizes.txt",
+    "title": "Wix Media: Supported Media File Types and File Sizes",
+    "url": "https://support.wix.com/en/article/wix-media-supported-media-file-types-and-file-sizes",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 5791
+  },
+  {
+    "id": "2505e607b3f35e92758d1e778c0ba1f394e8fa6bf82bfb6efe5753abb60df315",
+    "file": "Studio_Editor_Adding_an_HTML_iFrame_Element.txt",
+    "title": "Studio Editor: Adding an HTML iFrame Element",
+    "url": "https://support.wix.com/en/article/studio-editor-adding-an-html-iframe-element",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 4070
+  },
+  {
+    "id": "8353cf7dcd9c615ea97904d1c098052803ddd0a925559d13b16c335ce9324f1c",
+    "file": "Enterprise_Solution_Using_Wix_API_Keys.txt",
+    "title": "Enterprise Solution: Using Wix API Keys",
+    "url": "https://support.wix.com/en/article/wix-enterprise-using-wix-api-keys",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 9403
+  },
+  {
+    "id": "70f54db707c0daaae1bf66447d5e8913a3d094163b6b781c0cbc9a2f5099d6c7",
+    "file": "Wix_Art_Store_Changing_Your_Currency_in_Wix_Art_Store.txt",
+    "title": "Wix Art Store: Changing Your Currency in Wix Art Store",
+    "url": "https://support.wix.com/en/article/wix-art-store-changing-your-currency-in-wix-art-store",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1983
+  },
+  {
+    "id": "eb9aec01a5b5fdd151b84c1ca03afb228618be5953eae90a6ffbdb602e1b7bd5",
+    "file": "Connecting_KZ_Domains_to_Wix.txt",
+    "title": "Connecting .KZ Domains to Wix",
+    "url": "https://support.wix.com/en/article/connecting-kz-domains-to-wix",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 922
+  },
+  {
+    "id": "1c243bf206546efbb197fba3f9803cd60726afef7c863ff6c1f1edce6eec5c21",
+    "file": "Incorrect_Page_Title_Tags_and_Meta_Descriptions_in_Search_Engine_Results.txt",
+    "title": "Incorrect Page Title Tags and Meta Descriptions in Search Engine Results",
+    "url": "https://support.wix.com/en/article/incorrect-page-title-tags-and-meta-descriptions-in-search-engine-results",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 2825
+  },
+  {
+    "id": "cca6b5a2919be01f4686d188b2f4b1391310b7665bad00b2992b464c2453fca1",
+    "file": "Associating_Your_YouTube_Channel_with_Your_Wix_Site.txt",
+    "title": "Associating Your YouTube Channel with Your Wix Site",
+    "url": "https://support.wix.com/en/article/associating-your-youtube-channel-with-your-wix-site",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 595
+  },
+  {
+    "id": "6e7cace4e34c8efcc8b8e6362f4421b749ce1e602967095436cd75c827ecc3e2",
+    "file": "Site_Performance_How_Wix_Improves_a_Sites_Loading_Time.txt",
+    "title": "Site Performance: How Wix Improves a Site's Loading Time",
+    "url": "https://support.wix.com/en/article/site-performance-how-wix-improves-a-sites-loading-time",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 2294
+  },
+  {
+    "id": "5b564cafde46306eaafaeda3a5c42dcf6134d67c389b68b36cf36e1c1d6b935e",
+    "file": "Email_Marketing_Understanding_Your_Campaign_Statistics_in_the_Wix_App.txt",
+    "title": "Email Marketing: Understanding Your Campaign Statistics in the Wix App",
+    "url": "https://support.wix.com/en/article/email-marketing-understanding-your-campaign-statistics-in-the-wix-owner-app",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 5296
+  },
+  {
+    "id": "001f4796bfb07724db0116084dfd2f980343b05732d8bfa7a9e3604a8a5cf203",
+    "file": "Wix_Bookings_Collecting_Payments_and_Managing_Sessions_Using_the_Booking_List_on_the_Wix_A.txt",
+    "title": "Wix Bookings: Collecting Payments and Managing Sessions Using the Booking List on the Wix App",
+    "url": "https://support.wix.com/en/article/wix-bookings-collecting-payments-and-managing-sessions-using-the-booking-list-on-the-wix-app",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 10493
+  },
+  {
+    "id": "1296a6b744e7275cec639cfcac16a1ae7b4e42ba06e35d535780e8e6e0f240f1",
+    "file": "Wix_Chat_Designing_Your_Chatbox.txt",
+    "title": "Wix Chat: Designing Your Chatbox",
+    "url": "https://support.wix.com/en/article/wix-chat-designing-your-chatbox",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 4729
+  },
+  {
+    "id": "15da415ca884cd31381461c29e820f4f10d76bfc424da10e9a8853051c669d4e",
+    "file": "Wix_Events_Customizing_Events_Displayed_in_the_Member_Apps.txt",
+    "title": "Wix Events: Customizing Events Displayed in the Member Apps",
+    "url": "https://support.wix.com/en/article/wix-events-customizing-events-display-in-the-member-apps",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 6348
+  },
+  {
+    "id": "8680e27e09753674a11d86a0d804d6a2026e89fb87f5d53f716f4c833f21812f",
+    "file": "Email_Marketing_Customizing_the_Footer_of_Your_Campaign.txt",
+    "title": "Email Marketing: Customizing the Footer of Your Campaign",
+    "url": "https://support.wix.com/en/article/email-marketing-customizing-the-footer-of-your-campaign",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 3934
+  },
+  {
+    "id": "41dbc171d9b278f8d3be87a74a76f652aaeed18294741ce58d60338d0799cb13",
+    "file": "Third_Party_App_Online_Store_by_Ecwid_Inc.txt",
+    "title": "Third-Party App: Online Store by Ecwid Inc.",
+    "url": "https://support.wix.com/en/article/third-party-app-online-store-by-ecwid-inc",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 919
+  },
+  {
+    "id": "e49f45e423a15c56640045978356cb2f4cb1f3671170b488df926b62e12397a2",
+    "file": "Wix_Multilingual_Deleting_Wix_Multilingual_from_Your_Site.txt",
+    "title": "Wix Multilingual: Deleting Wix Multilingual from Your Site",
+    "url": "https://support.wix.com/en/article/wix-multilingual-deleting-wix-multilingual-from-your-site",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 2989
+  },
+  {
+    "id": "60b8bcfc67ff7655408e9ead171be3c0fcfa4ed498870632c7520bdebefc0eb0",
+    "file": "Connecting_Pelecard_as_a_Payment_Provider.txt",
+    "title": "Connecting Pelecard as a Payment Provider",
+    "url": "https://support.wix.com/en/article/connecting-pelecard-as-a-payment-provider",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 3456
+  },
+  {
+    "id": "bd10074323be425b000e0a414268b184960a4111feb06247993df69da9c3eba0",
+    "file": "Wix_Stores_Adding_Store_Elements.txt",
+    "title": "Wix Stores: Adding Store Elements",
+    "url": "https://support.wix.com/en/article/wix-stores-adding-store-elements",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 3288
+  },
+  {
+    "id": "281ebd6f74ccdd709ec58830db08c3b6db268c96f2cd7b0f1ccb8e444cb10389",
+    "file": "Email_Marketing_Creating_a_New_Campaign.txt",
+    "title": "Email Marketing: Creating a New Campaign",
+    "url": "https://support.wix.com/en/article/email-marketing-creating-a-new-campaign",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 855
+  },
+  {
+    "id": "819c883ecb4bf1c461d2b3cf34366a6345b56e7a55637156b18246586acbbd74",
+    "file": "Wix_Multilingual_Languages_Available.txt",
+    "title": "Wix Multilingual: Languages Available",
+    "url": "https://support.wix.com/en/article/wix-multilingual-languages-available",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1996
+  },
+  {
+    "id": "2b1603faa804617d7c1d00f9cc6e91e6dc17b13ff4d603c9e798d31612daea7b",
+    "file": "Wix_Groups_Customizing_Your_Group_Page_from_the_Wix_App.txt",
+    "title": "Wix Groups: Customizing Your Group Page from the Wix App",
+    "url": "https://support.wix.com/en/article/wix-groups-customizing-your-group-page-from-the-wix-owner-app",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 4718
+  },
+  {
+    "id": "5ae22297cb705c64c60e90fee3bd67be1991fa8621b04127eb977bd8e761bbff",
+    "file": "Connecting_a_Spanish_es_Domain_to_Your_Wix_Site.txt",
+    "title": "Connecting a Spanish (.es) Domain to Your Wix Site",
+    "url": "https://support.wix.com/en/article/connecting-a-spanish-es-domain-to-your-wix-site",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1030
+  },
+  {
+    "id": "787e658f2d0d44b828288b339febd903896da08ef94d3716102405f02bb46af2",
+    "file": "Wix_Restaurants_Sending_Confirmation_Emails_for_Orders.txt",
+    "title": "Wix Restaurants: Sending Confirmation Emails for Orders",
+    "url": "https://support.wix.com/en/article/wix-restaurants-sending-confirmation-emails-for-orders",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 906
+  },
+  {
+    "id": "f02bd108c91c6fe456f4fbe613888d5436ee83963f076dc3739590345203c76f",
+    "file": "Wix_Stores_Adding_Filters_and_Sorting_Options_to_Your_Product_Gallery.txt",
+    "title": "Wix Stores: Adding Filters and Sorting Options to Your Product Gallery",
+    "url": "https://support.wix.com/en/article/wix-stores-adding-filters-and-sorting-options-to-your-product-gallery",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 3347
+  },
+  {
+    "id": "5382d4922c0030a847faee1db59839b9c45bf028381d9b4ca719298756a1764a",
+    "file": "Troubleshooting_Pending_PayPal_Payments.txt",
+    "title": "Troubleshooting Pending PayPal Payments",
+    "url": "https://support.wix.com/en/article/troubleshooting-pending-paypal-payments",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 2514
+  },
+  {
+    "id": "a4fefa43c7cb2a6388d99103af87d34773e5afe20de77f30e8c0a403a0c75e66",
+    "file": "Wix_Restaurants_Translating_Your_Restaurant_Reservations.txt",
+    "title": "Wix Restaurants: Translating Your Restaurant Reservations",
+    "url": "https://support.wix.com/en/article/wix-restaurants-translating-your-restaurant-reservations",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 2691
+  },
+  {
+    "id": "a7dd9519403780d4266ea1232df0d2268f459da05a64c4a27fbc17db2163aa85",
+    "file": "Wix_App_Assigning_a_Contact_to_a_Collaborator.txt",
+    "title": "Wix App: Assigning a Contact to a Collaborator",
+    "url": "https://support.wix.com/en/article/wix-owner-app-assigning-a-contact-to-a-collaborator",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 864
+  },
+  {
+    "id": "be8c6ffdfa084bbefb12daef5463042d92718b1ef96618677689b1636625ac08",
+    "file": "Connecting_Authorizenet_Powered_by_Bankful_as_a_Payment_Provider.txt",
+    "title": "Connecting Authorize.net Powered by Bankful as a Payment Provider",
+    "url": "https://support.wix.com/en/article/connecting-authorizenet-powered-by-bankful-as-a-payment-provider",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 3959
+  },
+  {
+    "id": "2a1cf6f6395d8d155af589fc523ee3ab6af0a80c9f220e405fe44addf26073fd",
+    "file": "Wix_Video_Customizing_the_Design_of_your_Video_Player.txt",
+    "title": "Wix Video: Customizing the Design of your Video Player",
+    "url": "https://support.wix.com/en/article/wix-video-customizing-the-design-of-your-video-player",
+    "type": "article",
+    "reason": "distractor",
+    "chars": 1025
+  }
+]

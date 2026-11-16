@@ -1,0 +1,8 @@
+Wix Stores: Delivering Digital Products
+Source: https://support.wix.com/en/article/wix-stores-delivering-digital-products
+
+Wix Stores: Delivering Digital Products
+Digital products are downloadable files such as music files, illustrations, images, or ebooks.Important:Taxation regulations for digital goods vary by location. Check with your local tax authority to see what taxes apply.In this article, learn more about:
+Delivering digital files Resending digital filesDelivering digital filesWhen you sell a digital product, the file is delivered to your customer as soon as the payment is received.
+Immediate payment received: As soon as you receive online payment (e.g. credit card, PayPal, etc.), a confirmation email is sent to the customer with a download link. The link also appears on the Thank You page. Delayed payment: When payment does not arrive immediately (e.g. manual payment or echeck), a download link is not included in the confirmation email. After you receive payment and manually mark the order as Paid, a second email is sent to your customer with the download link.Sales with both digital and physical products:A sale that includes digital and physical products is marked as fulfilled only after the physical products are shipped. Resending digital filesThe download link sent to customers is active for 30 days. After that, it no longer works. You can resend a file to your customer at any time.To resend a digital file:
+Go to Orders in your site's dashboard. Click to select the relevant order. Click the More Actions icon . Click Resend Download Link.

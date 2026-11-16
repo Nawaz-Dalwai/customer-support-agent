@@ -1,0 +1,10 @@
+Wix Bookings: Manually Marking a Service as Paid
+Source: https://support.wix.com/en/article/wix-bookings-manually-marking-a-service-as-paid
+
+Wix Bookings: Manually Marking a Service as Paid
+When clients pay you offline for a service (e.g. cash, check), you can mark their payment manually from the Booking Calendar. You can also set reminders about partial payments for services, assigning a task to yourself or your staff to follow up with the client. In this article, learn more about:
+Marking a service as paid Setting reminder tasks for partial paymentsMarking a service as paidWhen clients pay for services in-person, you can mark them as paid from the participants list for the relevant service. To mark a service as paid:
+Go to Booking Calendar in your site's dashboard. Click on the relevant session.  Click Manage next to the Participants List. 
+Find the relevant client in the list.  Select the relevant option from the Payment Status drop-down. 
+Note: Selecting Paid in person cannot be undone.Note:We are in the process of releasing a new version of the Booking Calendar, so it's not available to everyone yet. Your version may appear slightly different than pictured in this article.Setting reminder tasks for partial paymentsReceived partial payment from your client in person? You can mark it as paid, while creating a task for yourself to follow-up and collect the rest of the payment. To set a reminder task for partial payments:
+Go to the Contacts tab in your dashboard.  Click the relevant client. Scroll down the Overview tab to Tasks & reminders. Click Add next to Tasks & Reminders.  Enter your note explaining the partial payment.  Assign the follow-up task to yourself or a staff member.  Click the calendar icon  to set when the follow up reminder appears.  Click Done.  When the client completes payment, you can then mark them as paid in the participants list of the relevant service.

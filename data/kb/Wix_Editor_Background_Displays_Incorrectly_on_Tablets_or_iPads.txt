@@ -1,0 +1,8 @@
+Wix Editor: Background Displays Incorrectly on Tablets or iPads
+Source: https://support.wix.com/en/article/wix-editor-background-displays-incorrectly-on-tablets-or-ipads
+
+Wix Editor: Background Displays Incorrectly on Tablets or iPads
+If you upload an image of insufficient size, your background image may appear too small or too large when viewed on a tablet or iPad. This problem can be solved by uploading an image of the correct size.Important:Your background image must be at least as large as your monitor size. For example, if your monitor is 1920 x 1080 pixels, then your background image must be at least 1920 x 1080 pixels.To make sure your background displays correctly on all devices:
+Go to the relevant page in your Editor.  Click Site Design  on the left side of the Editor. Hover over Page Background and click Customize. Click Image. (In the Media Manager) Click + Upload Media at the top left.
+    
+Select an image on your computer that is at least as large as your monitor size. Click Open.   Select the image that you uploaded and click Change Background. Click Settings  on the image background preview. Select Original size from the How's the image scaled? drop-down menu.. Select the top center position under Where's the image positioned?. Publish your site.Note:You may need to clear your tablet or iPad's cache to view the changes.

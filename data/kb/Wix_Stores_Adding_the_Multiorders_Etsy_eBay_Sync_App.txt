@@ -1,0 +1,8 @@
+Wix Stores: Adding the "Multiorders Etsy & eBay Sync" App
+Source: https://support.wix.com/en/article/wix-stores-adding-etsy-or-ebay-with-the-multiorders-marketplace-sync-app
+
+Wix Stores: Adding the "Multiorders Etsy & eBay Sync" App
+With the "Multiorders Etsy & eBay Sync" app you can connect to Etsy or eBay and list your product catalog on those channels. After setup, you can manage orders in your Wix store. Learn more about using the Multiorders Etsy & eBay Sync app.Wix EditorStudio EditorDashboard
+Go to your editor. Click Add Apps  on the left side of the editor. Search for the Multiorders: Wix to Etsy eBay app in the search bar. Click Add to Site.
+Go to your editor. Click App Market  on the left side of the editor. Click App Market. Search for the Multiorders Etsy & eBay Sync app in the search bar. Click Add to Site.
+Go to the Wix App Market in your site's dashboard. Search for the Multiorders Etsy & eBay Sync app in the search bar. Click Add to Site.FAQsClick a question below to learn more.How many products can I list?There is no limit to the number of products you can list on Etsy or eBay using the app. How often does inventory sync?Inventory syncs instantaneously.In which dashboard can I fulfill orders?You can fulfill orders right from your Wix dashboard.

@@ -1,0 +1,5 @@
+Changing Your Page URL After Updating Your Site URLs
+Source: https://support.wix.com/en/article/changing-your-page-url-after-updating-your-site-urls
+
+Changing Your Page URL After Updating Your Site URLs
+If you change your page URL after updating your site URLs, the new URL will be treated as a new page and your old page will no longer work. This means that any existing links to the old page URL that you have previously shared on social media will stop working and your existing page SEO rankings will be lost. This is because search engines will always treat a different URL as a new page. You can choose to let Wix automatically create a redirect for your page when you update the URL slug, or use the URL Redirect Manager to manually create your own redirect. Important:To set up 301 redirects you need to upgrade your site and connect it to a domain.

@@ -1,0 +1,8 @@
+Email Marketing: Creating a New Campaign
+Source: https://support.wix.com/en/article/email-marketing-creating-a-new-campaign
+
+Email Marketing: Creating a New Campaign
+Use Wix Email Marketing to create engaging email campaigns, newsletters, and more. You can choose from a list of templates, or create your own email campaigns from scratch. The number of emails you can send each month depends on your monthly balance.Important:Before sending any email campaigns, make sure you read the Wix Email Marketing Terms of Use.To create a new email campaign:
+Go to Email Marketing in your site's dashboard.  Choose what you want to do: 
+    
+Use a template: Select the template you want to use.  Start from scratch: Click Start Email from Scratch or click More Templates, then click Start from Scratch.  Next: Learn how to customize the elements in your campaign.

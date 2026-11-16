@@ -1,0 +1,7 @@
+Wix Editor: Facebook Like Button vs. Facebook Page Like Box
+Source: https://support.wix.com/en/article/wix-editor-facebook-like-button-vs-facebook-page-like-box
+
+Wix Editor: Facebook Like Button vs. Facebook Page Like Box
+Learn the difference between the Facebook Like button and the Facebook Page Like box:​Facebook Like Button:The Facebook Like button lets your visitors share your site with their Facebook friends. Their Facebook friends can see that they have liked or recommended your site. The button counts the site visitors that click it on your site. 
+
+​Facebook Page Like BoxThe Facebook Page Like box lets you to promote your business' Facebook page on your site. It lets visitors like your Facebook business page directly from your site.Just retrieve your page ID, and start getting likes on your Facebook page. Learn how

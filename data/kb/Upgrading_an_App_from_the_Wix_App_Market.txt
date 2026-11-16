@@ -1,0 +1,10 @@
+Upgrading an App from the Wix App Market
+Source: https://support.wix.com/en/article/upgrading-an-app-from-the-wix-app-market
+
+Upgrading an App from the Wix App Market
+Many of the apps in the Wix App Market are completely free for you to use. Some apps offer a free version along with an upgrade option to a premium version to access the full range of features.You can upgrade your apps in your site's Editor or in your dashboard. In this article, learn how to upgrade an app:
+In your site's Editor In your dashboard Frequently asked questions (FAQs)Upgrading an app in your site's Editor
+Click the app in your Editor. Click Settings. Click Upgrade.
+Select your payment plan. Select your subscription period. Click Next. Enter your payment information. Click Submit Purchase.Upgrading an app in your dashboard
+Go to Manage Apps in your site's dashboard. Click Upgrade next to the app you want to upgrade.
+Select your payment plan. Select your subscription period. Click Next. Enter your payment information. Click Submit Purchase.Important:After submitting your purchase, your bank may require you to verify your identity. If you're experiencing any issues with the authentication process, contact your bank directly. FAQsClick a question below to learn more about upgrading a third-party app. How am I charged for an app upgrade?Upgrading a third-party app is a subscription service that is renewed automatically, on a monthly basis. You are charged for the app subscription each month, until you decide to cancel the service.Are these upgrades included in my Premium plan?No. Many of the apps in the Wix App Market have been developed by third-party developers. As such, the upgraded versions of these apps are not included in the Wix Premium plan offerings.

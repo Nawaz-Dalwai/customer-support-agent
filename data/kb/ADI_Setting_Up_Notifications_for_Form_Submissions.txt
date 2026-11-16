@@ -1,0 +1,12 @@
+ADI: Setting Up Notifications for Form Submissions
+Source: https://support.wix.com/en/article/adi-receiving-notifications-when-a-visitor-submits-your-form
+
+ADI: Setting Up Notifications for Form Submissions
+Choose how you want to be notified when someone submits a form on your site (e.g. contact forms, feedback forms and price quotes). As the site owner, you are automatically notified by email but you can also get notified on the Wix app and Wix Inbox.If you have a team working with you on your site, you can also choose which site collaborators should be notified when a form is submitted.Before you begin:Site collaborators need Wix Inbox permissions before they can get notified about form submissions. Go to Roles & Permissions in your dashboard and add Wix Inbox permissions to the relevant collaborator(s).To set up notifications for form submissions:
+Click the relevant form in ADI. Click Edit next to Form on the left.
+Click Form Settings at the bottom. Click Set Notifications under Email Notifications. Choose how you want to be notified. The Inbox, email & mobile app option is recommended as all conversations from the form submission are saved in Wix Inbox for all collaborators to see and respond to:Inbox, Email & Mobile AppYou as well as any site collaborators are notified via multiple channels: personal emails, Wix Inbox, and in the Wix app. This is the recommended option.
+Select Inbox, email & mobile app. Click the Choose collaborators from the list drop-down and select a collaborator to notify when someone submits this form. You can also click Add Collaborator to create a new site collaborator. (Optional) Click the drop-down again to add another collaborator.Note: If you don't see the collaborator you're looking for, they might not have Wix Inbox permissions. Click Manage Roles next to the drop-down to edit their permissions.Email OnlyThe Email Only option allows you to notify any external email addresses that are not part of your site team. This isn't recommended, as any conversations from these emails are not tracked in your dashboard. 
+Select Email Only. Click Add Email under Notify these emails. Enter the email address you want to receive a notification and press Enter on your keyboard. Repeat this step to add more email addresses. 
+
+If you choose 'Email Only' please note the following:
+Form submissions appear in Wix Inbox, but any replies or further correspondence do not. These email addresses do not get notifications from their desktop or the Wix mobile apps about form submissions.

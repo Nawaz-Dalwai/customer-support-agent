@@ -1,0 +1,10 @@
+Managing Your Payment Methods for Wix Services
+Source: https://support.wix.com/en/article/managing-your-payment-methods-for-wix-services
+
+Managing Your Payment Methods for Wix Services
+Manage your saved card information and other payment methods from the Payment Methods page on your Wix account. Update your existing card details, add a new card or payment method, or remove a payment method that you no longer need.   The payment methods saved to your account can be used to purchase premium subscriptions such as site upgrade plans, domains and business email. In this article, learn how to:
+Add a payment method Update a payment method Remove a payment methodAdding a Payment MethodAdd a new payment method to use for your future purchases. You can choose one of your saved payment methods on the checkout page.  To add a new payment method:
+Go to Payment Methods in your Wix account. Click Add a Payment Method. Enter your card/payment method details. Click Save.Updating a Payment MethodUpdate an existing payment method being used for existing subscriptions. Any changes you make are automatically applied to the subscriptions connected to your payment method. To update a payment method:
+Go to Payment Methods in your Wix account. Click Actions. Click Update. Click Next. Update Your card/payment method details. Click Update.Removing a Payment MethodRemove a payment method you no longer use. You can remove a payment method as long as it's not connected to an active subscription.To remove a payment method:
+Go to Payment Methods in your Wix account. Click Actions. Click Remove.  Click Remove to confirm. Notes:
+If you are in Brazil, please note that you cannot add Boleto as a payment method, but you can use it at the checkout. If you remove a payment method you, or anyone else with billing permissions, can no longer use that payment method for future purchases. You can choose to pay via PayPal at the checkout. You are brought to the PayPal portal in order to complete your payment.  Once finished, you are brought back to your Wix account.

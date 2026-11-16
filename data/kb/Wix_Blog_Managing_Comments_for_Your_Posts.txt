@@ -1,0 +1,15 @@
+Wix Blog: Managing Comments for Your Posts
+Source: https://support.wix.com/en/article/wix-blog-managing-comments-for-your-posts
+
+Wix Blog: Managing Comments for Your Posts
+Improve engagement on your blog by enabling your community to add comments to your posts. Visitors can also edit their comments, add media to them, reply to other comments, 'like' comments, and sort comments to show the newest or oldest first.You can choose to only allow your site members to add comments, or also let site visitors comment on posts as guests without needing to sign up.Comments are enabled on your posts by default. Blog owners, admins, and editors can enable, disable, and delete comments for any post on your blog. Writers can only manage comments for their own posts. Learn more about roles and permissionsIn this article, learn more about:
+Enabling comments for all posts Enabling comments for specific posts Deleting comments on postsEnabling comments for all postsYou can enable or disable comments for all of your blog posts directly from your dashboard. Important:You may be legally responsible for any comments on your site that are the subject of criminal activity, including hate speech, racism, sexism, etc. Visitors who guest comment will be able to comment without accepting your site's terms of use, if it has any.To enable or disable commenting for all posts:
+Go to Blog in your site's dashboard. Click the More Actions drop-down.  Click Blog settings.  Enable the Comments toggle. Choose who can leave comments on your blog posts:
+    
+Members only: Only members can leave comments on your blog posts.  Everyone: Anyone that visits your site can leave a comment.
+Note: You may see more spam with this option. This is why the ability to upload images within comments is limited to Members only.   Click the Ratings toggle:
+    
+Enabled: Visitors can leave a star rating when they leave a comment.  Disabled: Visitors cannot leave a star rating when they leave a comment.   Tip:Enable the comments counter in the Blog Feed Display settings to show the number of comments in your posts.Enabling comments for a specific postYou can enable or disable comments for a specific post on your blog in the Blog section of your site's dashboard. To enable comments for a specific post:
+Go to Blog in your site's dashboard. Click the Posts tab. Click Edit next to the relevant post. Click Settings in the panel on the left. Enable the Allow commenting on this post toggle.
+Click Publish.Deleting a comment on a postYou can delete post comments from the live version of your blog on your site. To delete a comment:
+Go to your blog on your live site. Log in using the email address associated with your Wix account. Click the More Actions icon  next to the comment you want to delete. Click Delete.

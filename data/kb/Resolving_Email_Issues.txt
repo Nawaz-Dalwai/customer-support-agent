@@ -1,0 +1,6 @@
+Resolving Email Issues
+Source: https://support.wix.com/en/article/resolving-email-issues
+
+Resolving Email Issues
+Important:Make sure your domain is connected properly to Wix before taking any actions below. To resolve email issues:
+If your domain is connected to Wix via name servers: Ask your domain host for the MX records and enter them in the domains section of your Wix account. Learn more about adding or updating MX records. If your domain is connected to Wix via pointing: Contact your domain host for assistance with managing your mail-related records as your DNS records are managed by them. If you purchased personalized business email(s) from Wix: Check that your domain is active, your MX records are correct, and your business email is set up properly. If you're still having difficulties, click here. Note:It may take up to 48 hours for DNS changes to update. Learn more about domain propagation.

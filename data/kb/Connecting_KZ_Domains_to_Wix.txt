@@ -1,0 +1,5 @@
+Connecting .KZ Domains to Wix
+Source: https://support.wix.com/en/article/connecting-kz-domains-to-wix
+
+Connecting .KZ Domains to Wix
+From Feb 1, 2021, the Kazakh government has enacted a new data localization regulation. This regulation states that all .kz domains must be hosted within Kazakhstan.Wix does not have any hosting facilities in Kazakhstan and, as a result, Wix users cannot connect their .kz domain to their Wix site. If you are an existing Wix user with a .kz domain, you will have to connect a domain with a different domain extension to keep using your Wix site.For new Wix users in Kazakhstan, we recommend you purchase /connect a domain extension other than .kz for your Wix site to be accessible. Tip:Upgrade your site and receive a free domain voucher valid for the following extensions: .art, .com, .net, .org, .info, .biz, .rocks, .pictures, .club, .space, .shop, .store, .online, .co.uk, and .xyz.

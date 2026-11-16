@@ -1,0 +1,9 @@
+Wix Bookings: Extending the Duration of a Membership Plan or Package
+Source: https://support.wix.com/en/article/extending-the-duration-of-a-membership-plan-or-package
+
+Wix Bookings: Extending the Duration of a Membership Plan or Package
+Want to give your client extra time to take advantage of a membership plan or a package? You can extend the period of time a valid plan is good for. This can come in handy if you temporarily weren't able to provide services or your client was sick and wasn't able to make use of the plan. Notes:When you extend a plan, no additional money is collected.You cannot edit an expired plan. You cannot edit a recurring plan.DashboardWix appWix Studio app
+Go to Subscriptions in your site's dashboard. Click the relevant subscription. Click Manage Subscription. Select Extend subscription. Click the date and select a new end date for the plan. Click Save.
+Go to your site in the Wix app. Tap Manage  at the bottom. Tap Sales and select Subscriptions. Tap the relevant subscription.  Tap the More Actions icon  at the top right. Tap Extend subscription. Tap the End date drop-down. Select a new end date for the plan. Tap the Checkmark icon . Tap Save
+Tap Yes, Extend to confirm.
+Go to your site in the Wix Studio app. Tap Manage. Tap Sales and select Subscriptions. Tap the relevant subscription.  Tap the More Actions icon  at the top right. Tap Extend subscription. Tap the End date drop-down. Select a new end date for the plan. Tap the Checkmark icon . Tap Save. Tap Yes, Extend to confirm.
