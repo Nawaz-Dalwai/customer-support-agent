@@ -1,0 +1,15 @@
+{
+  "name": "customer-support-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "test:anthropic": "node --env-file-if-exists=.env.local scripts/test-anthropic.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.8.0"
+  }
+}
