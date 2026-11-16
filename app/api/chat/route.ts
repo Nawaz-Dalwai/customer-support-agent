@@ -1,0 +1,205 @@
+import Anthropic from "@anthropic-ai/sdk";
+import { betaZodOutputFormat } from "@anthropic-ai/sdk/helpers/beta/zod";
+import { z } from "zod/v4";
+import crypto from "crypto";
+import { retrieveContext } from "@/app/lib/utils";
+import { MODELS } from "@/app/lib/models";
+import customerSupportCategories from "@/app/lib/customer_support_categories.json";
+
+const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+
+const CATEGORY_IDS = customerSupportCategories.categories.map((c) => c.id) as [string, ...string[]];
+const MAX_MESSAGES = 40;
+const MAX_MESSAGE_CHARS = 4000;
+
+// ---- Request validation (everything from the browser is untrusted) ----------------------
+const requestSchema = z.object({
+  messages: z
+    .array(
+      z.object({
+        role: z.enum(["user", "assistant"]),
+        content: z.string().max(20000),
+      }),
+    )
+    .min(1)
+    .max(MAX_MESSAGES),
+  model: z.string(),
+});
+
+// ---- Structured output: Claude's reply must match this schema ----------------------------
+// (Replaces the original "prefill `{` and hope" approach - prefill returns a 400 on current models.)
+const responseSchema = z.object({
+  thinking: z.string().describe("One or two sentences on how you approached the user's question"),
+  response: z.string().describe("Your reply to the user, in Markdown"),
+  user_mood: z.enum(["positive", "neutral", "negative", "curious", "frustrated", "confused"]),
+  suggested_questions: z
+    .array(z.string())
+    .describe("Up to 3 short follow-up questions the user might ask next; empty when redirecting"),
+  debug: z.object({
+    context_used: z.boolean().describe("True if the retrieved help articles were used in the answer"),
+  }),
+  matched_categories: z.array(z.enum(CATEGORY_IDS)),
+  redirect_to_agent: z.object({
+    should_redirect: z.boolean(),
+    reason: z.string().describe("Why a human agent is needed; empty string when should_redirect is false"),
+  }),
+});
+type SupportResponse = z.infer<typeof responseSchema>;
+
+// Earlier assistant turns are stored by the client as the whole JSON reply; send Claude only the text.
+const toHistoryText = (role: string, content: string) => {
+  if (role !== "assistant") return content;
+  try {
+    const parsed = JSON.parse(content);
+    return typeof parsed?.response === "string" && parsed.response ? parsed.response : content;
+  } catch {
+    return content;
+  }
+};
+
+const categoryList = customerSupportCategories.categories
+  .map((c) => `- ${c.id} (${c.name}): ${c.keywords.join(", ")}`)
+  .join("\n");
+
+// Stable instructions first; the per-request retrieved articles go in a second block.
+const SYSTEM_INSTRUCTIONS = `You are the customer support assistant in the help chat of a website-building platform (sites, online stores, bookings, domains, email and payments). You are the first point of contact for the person you're chatting with.
+
+Answer only from the help articles provided with each request. They are retrieved automatically and may not all be relevant. If they don't answer the question, say so plainly and offer to connect the user with a human agent rather than guessing. Do not invent prices, policies, menu paths or links. When you rely on an article, you may link its Source URL.
+
+Keep replies concise, friendly and practical: lead with the answer, then the steps. Use short Markdown lists for multi-step instructions.
+
+Set redirect_to_agent.should_redirect to true when the user asks for a person, when the issue needs account access or a decision you can't make (refund disputes, account recovery, legal or security concerns), when the question is unrelated to the platform, or when the articles don't cover it. Otherwise set it to false with an empty reason.
+
+Also classify each inquiry for internal reporting: put every matching category id in matched_categories (empty if none fit).
+Categories:
+${categoryList}`;
+
+const debugHeader = (data: Record<string, unknown>) =>
+  JSON.stringify({ msg: "chat route", data, timestamp: new Date().toISOString() })
+    .replace(/[^\x20-\x7E]/g, "")
+    .slice(0, 1000);
+
+const jsonResponse = (body: unknown, status = 200, debug?: Record<string, unknown>) =>
+  new Response(JSON.stringify(body), {
+    status,
+    headers: {
+      "Content-Type": "application/json",
+      ...(debug ? { "X-Debug-Data": debugHeader(debug) } : {}),
+    },
+  });
+
+const fallbackReply = (response: string, reason: string, redirect = false): SupportResponse & { id: string } => ({
+  id: crypto.randomUUID(),
+  thinking: reason,
+  response,
+  user_mood: "neutral",
+  suggested_questions: [],
+  debug: { context_used: false },
+  matched_categories: [],
+  redirect_to_agent: { should_redirect: redirect, reason: redirect ? reason : "" },
+});
+
+export async function POST(req: Request) {
+  const started = performance.now();
+  const elapsed = () => Number(((performance.now() - started) / 1000).toFixed(2));
+
+  // 1. Validate input
+  const parsedRequest = requestSchema.safeParse(await req.json().catch(() => null));
+  if (!parsedRequest.success) {
+    return jsonResponse({ error: "Invalid request" }, 400);
+  }
+  const { messages, model } = parsedRequest.data;
+  const modelConfig = MODELS.find((m) => m.id === model);
+  if (!modelConfig) {
+    return jsonResponse({ error: "Unsupported model" }, 400);
+  }
+  const latest = messages[messages.length - 1];
+  if (latest.role !== "user" || !latest.content.trim() || latest.content.length > MAX_MESSAGE_CHARS) {
+    return jsonResponse({ error: "Invalid message" }, 400);
+  }
+
+  // 2. Retrieve help articles for the latest question (knowledge base ID comes from the server env)
+  const rag = await retrieveContext(latest.content, process.env.KNOWLEDGE_BASE_ID);
+  const ragSeconds = elapsed();
+
+  const articlesBlock = rag.isRagWorking && rag.context
+    ? `Help articles retrieved for the user's latest message:\n<documents>\n${rag.context}\n</documents>`
+    : "No help articles were found for the user's latest message.";
+
+  // 3. Ask Claude for a structured reply
+  try {
+    const response = await client.beta.messages.parse({
+      model: modelConfig.id,
+      max_tokens: 16000,
+      system: [
+        { type: "text", text: SYSTEM_INSTRUCTIONS },
+        { type: "text", text: articlesBlock },
+      ],
+      messages: messages.map((m) => ({ role: m.role, content: toHistoryText(m.role, m.content) })),
+      output_config: {
+        format: betaZodOutputFormat(responseSchema),
+        effort: "low", // chat: low effort keeps replies fast; raise if answers need more reasoning
+      },
+      ...(modelConfig.serverFallback
+        ? { betas: ["server-side-fallback-2026-07-01"], fallbacks: "default" as const }
+        : {}),
+    });
+
+    const debug = {
+      model: response.model,
+      stop_reason: response.stop_reason,
+      rag_working: rag.isRagWorking,
+      rag_seconds: ragSeconds,
+      total_seconds: elapsed(),
+      input_tokens: response.usage.input_tokens,
+      output_tokens: response.usage.output_tokens,
+    };
+    console.log("💬 chat", debug);
+
+    if (response.stop_reason === "refusal") {
+      return jsonResponse(
+        fallbackReply(
+          "I'm not able to help with that here. Let me connect you with a member of our support team.",
+          `Declined by safety checks (${response.stop_details?.category ?? "unspecified"})`,
+          true,
+        ),
+        200,
+        debug,
+      );
+    }
+    if (!response.parsed_output) {
+      console.error("No parsed output; stop_reason:", response.stop_reason);
+      return jsonResponse(
+        fallbackReply("Sorry, I couldn't put together a reply. Please try again.", "Reply did not match the schema"),
+        502,
+        debug,
+      );
+    }
+
+    if (response.parsed_output.redirect_to_agent.should_redirect) {
+      console.log("🚨 Agent redirect:", response.parsed_output.redirect_to_agent.reason);
+    }
+
+    return jsonResponse(
+      { id: crypto.randomUUID(), ...response.parsed_output, rag_sources: rag.ragSources },
+      200,
+      debug,
+    );
+  } catch (error) {
+    let status = 500;
+    let message = "Sorry, there was an issue processing your request. Please try again later.";
+    if (error instanceof Anthropic.AuthenticationError) {
+      console.error("Anthropic API key rejected");
+    } else if (error instanceof Anthropic.RateLimitError) {
+      status = 429;
+      message = "We're getting a lot of questions right now. Please try again in a moment.";
+    } else if (error instanceof Anthropic.BadRequestError) {
+      console.error("Bad request to Claude:", error.message);
+    } else if (error instanceof Anthropic.APIError) {
+      console.error(`Claude API error ${error.status}:`, error.message);
+    } else {
+      console.error("Chat route error:", error);
+    }
+    return jsonResponse(fallbackReply(message, "Error during message generation"), status);
+  }
+}
