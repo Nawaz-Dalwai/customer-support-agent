@@ -139,5 +139,9 @@ export async function retrieveContext(
     ];
   });
 
+  // Display order only: with two searches the scores come from different queries, so list the
+  // shown sources by score (best match first) rather than by merged rank. Claude's context is unchanged.
+  ragSources.sort((a, b) => b.score - a.score);
+
   return { context, isRagWorking: true, ragSources };
 }
