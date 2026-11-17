@@ -4,6 +4,14 @@ import { z } from "zod/v4";
 import crypto from "crypto";
 import { retrieveContext } from "@/app/lib/utils";
 import { MODELS } from "@/app/lib/models";
+import {
+  OWNER_MAX_MESSAGE_CHARS,
+  PUBLIC_MAX_MESSAGE_CHARS,
+  PUBLIC_MODEL_ID,
+  clientIp,
+  consumePublicRequest,
+  isOwner,
+} from "@/app/lib/access";
 import customerSupportCategories from "@/app/lib/customer_support_categories.json";
 
 // Opus replies can take ~10-20s; give the serverless function room beyond short platform defaults
@@ -13,7 +21,6 @@ const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
 const CATEGORY_IDS = customerSupportCategories.categories.map((c) => c.id) as [string, ...string[]];
 const MAX_MESSAGES = 40;
-const MAX_MESSAGE_CHARS = 4000;
 
 // ---- Request validation (everything from the browser is untrusted) ----------------------
 const requestSchema = z.object({
@@ -77,6 +84,15 @@ Also classify each inquiry for internal reporting: put every matching category i
 Categories:
 ${categoryList}`;
 
+const PUBLIC_DAILY_LABEL = "10 questions per 24 hours";
+// 10 exchanges of a 500-char question plus a typical reply fit comfortably under this
+const PUBLIC_MAX_HISTORY_CHARS = 40000;
+
+const hoursUntil = (resetMs: number) => {
+  const hours = Math.max(1, Math.ceil((resetMs - Date.now()) / 3_600_000));
+  return hours === 1 ? "about an hour" : `about ${hours} hours`;
+};
+
 // Shown when the Claude API spend limit (or account credit) is used up
 const USAGE_LIMIT_MESSAGE =
   "This demo has reached its monthly AI usage limit, so I can't answer right now. Please check back later.";
@@ -127,14 +143,54 @@ export async function POST(req: Request) {
   if (!parsedRequest.success) {
     return jsonResponse({ error: "Invalid request" }, 400);
   }
-  const { messages, model } = parsedRequest.data;
+  const { messages } = parsedRequest.data;
+
+  // Owner (signed-in browser): any allowed model, no limits. Public visitors: Haiku only,
+  // short messages, and a per-IP request quota - all enforced here, not just in the UI.
+  const owner = isOwner(req);
+  const model = owner ? parsedRequest.data.model : PUBLIC_MODEL_ID;
   const modelConfig = MODELS.find((m) => m.id === model);
   if (!modelConfig) {
     return jsonResponse({ error: "Unsupported model" }, 400);
   }
   const latest = messages[messages.length - 1];
-  if (latest.role !== "user" || !latest.content.trim() || latest.content.length > MAX_MESSAGE_CHARS) {
+  if (latest.role !== "user" || !latest.content.trim()) {
     return jsonResponse({ error: "Invalid message" }, 400);
+  }
+  const maxChars = owner ? OWNER_MAX_MESSAGE_CHARS : PUBLIC_MAX_MESSAGE_CHARS;
+  if (latest.content.length > maxChars) {
+    return jsonResponse(
+      fallbackReply(
+        `Please keep your message under ${maxChars} characters (this one has ${latest.content.length}).`,
+        "Message too long",
+      ),
+      400,
+    );
+  }
+
+  // Visitors could otherwise send a long fabricated history to inflate each request's cost
+  const historyChars = messages.reduce((n, m) => n + m.content.length, 0);
+  if (!owner && historyChars > PUBLIC_MAX_HISTORY_CHARS) {
+    return jsonResponse(
+      fallbackReply("This conversation is getting long. Please refresh the page to start a new one.", "History too long"),
+      400,
+    );
+  }
+
+  let remaining: number | null = null;
+  if (!owner) {
+    const limit = await consumePublicRequest(clientIp(req));
+    if (!limit.allowed) {
+      const message =
+        limit.reset === null
+          ? "The demo is temporarily unavailable. Please try again later."
+          : `You've used all ${PUBLIC_DAILY_LABEL} for this demo. Please come back in ${hoursUntil(limit.reset)}.`;
+      return jsonResponse(
+        { ...fallbackReply(message, "Visitor rate limit"), limits: { remaining: 0 } },
+        limit.reset === null ? 503 : 429,
+      );
+    }
+    remaining = limit.remaining;
   }
 
   // 2. Retrieve help articles for the latest question (knowledge base ID comes from the server env)
@@ -200,7 +256,12 @@ export async function POST(req: Request) {
     }
 
     return jsonResponse(
-      { id: crypto.randomUUID(), ...response.parsed_output, rag_sources: rag.ragSources },
+      {
+        id: crypto.randomUUID(),
+        ...response.parsed_output,
+        rag_sources: rag.ragSources,
+        limits: { remaining },
+      },
       200,
       debug,
     );
