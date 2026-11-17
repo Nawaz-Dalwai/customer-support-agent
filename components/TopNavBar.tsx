@@ -91,18 +91,6 @@ const TopNavBar = () => {
         </h1>
         <p className="text-xs text-muted-foreground">
           Unofficial concept demo. Not affiliated with or endorsed by Wix.
-          <span className="hidden sm:inline">
-            {" · "}
-            Built on{" "}
-            <a
-              href="https://github.com/anthropics/claude-quickstarts"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline underline-offset-2 hover:text-foreground"
-            >
-              Anthropic&apos;s claude-quickstarts
-            </a>
-          </span>
         </p>
       </div>
       <div className="flex items-center gap-2">

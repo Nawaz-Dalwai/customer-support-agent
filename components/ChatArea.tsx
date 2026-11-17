@@ -205,12 +205,31 @@ interface Message {
   content: string;
 }
 
+// What this browser may do, from GET /api/session (the server enforces the same rules)
+type SessionInfo = {
+  owner: boolean;
+  models: Pick<ChatModel, "id" | "name">[];
+  maxMessageChars: number;
+  remaining: number | null;
+  dailyLimit: number | null;
+};
+
+// Until /api/session answers, assume the most restrictive (public) settings
+const PUBLIC_SESSION: SessionInfo = {
+  owner: false,
+  models: MODELS.filter((m) => m.id === DEFAULT_MODEL_ID),
+  maxMessageChars: 500,
+  remaining: null,
+  dailyLimit: 10,
+};
+
 // The knowledge base is chosen on the server (KNOWLEDGE_BASE_ID), so only the model is selectable here.
 interface ConversationHeaderProps {
   selectedModel: string;
   setSelectedModel: (modelId: string) => void;
-  models: ChatModel[];
+  models: Pick<ChatModel, "id" | "name">[];
   showAvatar: boolean;
+  session: SessionInfo;
 }
 
 const ConversationHeader: React.FC<ConversationHeaderProps> = ({
@@ -218,6 +237,7 @@ const ConversationHeader: React.FC<ConversationHeaderProps> = ({
   setSelectedModel,
   models,
   showAvatar,
+  session,
 }) => (
   <div className="p-0 flex flex-col sm:flex-row items-start sm:items-center justify-between pb-2 animate-fade-in">
     <div className="flex items-center space-x-4 mb-2 sm:mb-0">
@@ -231,29 +251,42 @@ const ConversationHeader: React.FC<ConversationHeaderProps> = ({
         </>
       )}
     </div>
-    <div className="flex space-x-2 w-full sm:w-auto">
-      <DropdownMenu>
-        <DropdownMenuTrigger asChild>
-          <Button
-            variant="outline"
-            size="sm"
-            className="flex-grow text-muted-foreground sm:flex-grow-0"
-          >
-            {models.find((m) => m.id === selectedModel)?.name}
-            <ChevronDown className="ml-2 h-4 w-4" />
-          </Button>
-        </DropdownMenuTrigger>
-        <DropdownMenuContent>
-          {models.map((model) => (
-            <DropdownMenuItem
-              key={model.id}
-              onSelect={() => setSelectedModel(model.id)}
+    <div className="flex items-center gap-2 w-full sm:w-auto">
+      <span className="text-xs text-muted-foreground whitespace-nowrap">
+        {session.owner
+          ? "Owner mode"
+          : session.remaining !== null && session.dailyLimit !== null
+            ? `Demo · ${session.remaining} of ${session.dailyLimit} questions left today`
+            : "Demo mode"}
+      </span>
+      {models.length > 1 ? (
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button
+              variant="outline"
+              size="sm"
+              className="flex-grow text-muted-foreground sm:flex-grow-0"
             >
-              {model.name}
-            </DropdownMenuItem>
-          ))}
-        </DropdownMenuContent>
-      </DropdownMenu>
+              {models.find((m) => m.id === selectedModel)?.name}
+              <ChevronDown className="ml-2 h-4 w-4" />
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent>
+            {models.map((model) => (
+              <DropdownMenuItem
+                key={model.id}
+                onSelect={() => setSelectedModel(model.id)}
+              >
+                {model.name}
+              </DropdownMenuItem>
+            ))}
+          </DropdownMenuContent>
+        </DropdownMenu>
+      ) : (
+        <span className="text-xs text-muted-foreground border rounded-md px-2 py-1">
+          {models[0]?.name}
+        </span>
+      )}
     </div>
   </div>
 );
@@ -265,8 +298,25 @@ function ChatArea() {
   const [showHeader, setShowHeader] = useState(false);
   const [selectedModel, setSelectedModel] = useState(DEFAULT_MODEL_ID);
   const [showAvatar, setShowAvatar] = useState(false);
+  const [session, setSession] = useState<SessionInfo>(PUBLIC_SESSION);
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    fetch("/api/session", { cache: "no-store" })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((s: SessionInfo | null) => {
+        if (!s) return;
+        setSession(s);
+        if (!s.models.some((m) => m.id === selectedModel) && s.models[0]) {
+          setSelectedModel(s.models[0].id);
+        }
+      })
+      .catch(() => {});
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const outOfQuestions = !session.owner && session.remaining === 0;
 
   useEffect(() => {
     console.log("🔍 Messages changed! Count:", messages.length);
@@ -406,6 +456,10 @@ function ChatArea() {
 
       // Error responses still carry a user-facing `response` message; show it instead of a spinner.
       const data = await response.json().catch(() => ({}));
+      if (typeof data?.limits?.remaining === "number") {
+        const left = data.limits.remaining;
+        setSession((s) => ({ ...s, remaining: left }));
+      }
       if (!response.ok || !data.response) {
         throw new Error(
           data.response || `API request failed with status ${response.status}`,
@@ -500,7 +554,8 @@ function ChatArea() {
   };
 
   const handleSuggestedQuestionClick = (question: string) => {
-    handleSubmit(question);
+    if (outOfQuestions) return;
+    handleSubmit(question.slice(0, session.maxMessageChars));
   };
 
   return (
@@ -509,8 +564,9 @@ function ChatArea() {
         <ConversationHeader
           selectedModel={selectedModel}
           setSelectedModel={setSelectedModel}
-          models={MODELS}
+          models={session.models}
           showAvatar={showAvatar}
+          session={session}
         />
         <div className="flex-1 overflow-y-auto p-4 space-y-4">
           {messages.length === 0 ? (
@@ -600,18 +656,28 @@ function ChatArea() {
             value={input}
             onChange={handleInputChange}
             onKeyDown={handleKeyDown}
-            placeholder="Type your message here..."
-            disabled={isLoading}
+            placeholder={
+              outOfQuestions
+                ? "You've used today's demo questions. Please come back tomorrow."
+                : "Type your message here..."
+            }
+            disabled={isLoading || outOfQuestions}
+            maxLength={session.maxMessageChars}
             className="resize-none min-h-[44px] bg-background  border-0 p-3 rounded-xl shadow-none focus-visible:ring-0"
             rows={1}
           />
           <div className="flex justify-between items-center p-3">
             <span className="text-xs text-muted-foreground">
               Powered by Claude
+              {!session.owner && (
+                <span className="ml-2">
+                  · {input.length}/{session.maxMessageChars}
+                </span>
+              )}
             </span>
             <Button
               type="submit"
-              disabled={isLoading || input.trim() === ""}
+              disabled={isLoading || outOfQuestions || input.trim() === ""}
               className="gap-2"
               size="sm"
             >
