@@ -1,0 +1,13 @@
+# Never upload secrets
+.env
+.env*.local
+*.pem
+
+# Not needed to run the app
+node_modules
+.next
+data/
+infra/
+scripts/
+.cursor/
+CLAUDE.md
