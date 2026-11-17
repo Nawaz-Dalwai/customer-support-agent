@@ -1,0 +1,10 @@
+{"id":"q091","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Explains subscribed/unsubscribed as consent status (plus double opt-in), consistent with the expert."}
+{"id":"q092","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same transfer flow and options."}
+{"id":"q093","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Leads with domain assignment but also gives the expert's plan-reassignment path."}
+{"id":"q094","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same autoplay-mute explanation and 'turn off autoplay' fix."}
+{"id":"q095","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Includes the expert's Payment Methods update steps plus other interpretations."}
+{"id":"q096","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same disable mobile-friendly steps and caveats."}
+{"id":"q097","correctness":1,"completeness":0,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":true,"note":"Retrieval missed; interprets as Google results (hedged) while the expert addresses site search not searching product descriptions."}
+{"id":"q098","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Billing History and Premium Subscriptions, matching the expert's main pointer."}
+{"id":"q099","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same delete-user then Customer Care path (yearly), plus the monthly self-serve path."}
+{"id":"q100","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same DMCA complaint route."}

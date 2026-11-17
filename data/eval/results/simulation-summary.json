@@ -1,0 +1,249 @@
+{
+  "note": "Offline simulation: answers written by the evaluator model (not the app's Haiku/Sonnet/Opus) using the app's prompt and the same retrieved articles, then graded against WixQA expert answers by the same model. Treat as an estimate of answer quality given retrieval, not a measurement of the deployed app.",
+  "completeness": {
+    "answers": 100,
+    "grades": 100,
+    "missing_answers": [],
+    "missing_grades": []
+  },
+  "overall": {
+    "questions": 100,
+    "mean_correctness_0_2": 1.9,
+    "mean_completeness_0_2": 1.68,
+    "fully_correct_pct": 90,
+    "correct_and_complete_pct": 76,
+    "wrong_answer_pct": 0,
+    "unsupported_claims_pct": 0,
+    "escalation_appropriate_pct": 100,
+    "escalated_pct": 10,
+    "expert_used_info_beyond_retrieved_pct": 26
+  },
+  "by_set": {
+    "expertwritten": {
+      "questions": 50,
+      "mean_correctness_0_2": 1.96,
+      "mean_completeness_0_2": 1.74,
+      "fully_correct_pct": 96,
+      "correct_and_complete_pct": 76,
+      "wrong_answer_pct": 0,
+      "unsupported_claims_pct": 0,
+      "escalation_appropriate_pct": 100,
+      "escalated_pct": 6,
+      "expert_used_info_beyond_retrieved_pct": 28
+    },
+    "simulated": {
+      "questions": 50,
+      "mean_correctness_0_2": 1.84,
+      "mean_completeness_0_2": 1.62,
+      "fully_correct_pct": 84,
+      "correct_and_complete_pct": 76,
+      "wrong_answer_pct": 0,
+      "unsupported_claims_pct": 0,
+      "escalation_appropriate_pct": 100,
+      "escalated_pct": 14,
+      "expert_used_info_beyond_retrieved_pct": 24
+    }
+  },
+  "by_retrieval": {
+    "right_article_in_top3": {
+      "questions": 89,
+      "mean_correctness_0_2": 1.97,
+      "mean_completeness_0_2": 1.79,
+      "fully_correct_pct": 96.6,
+      "correct_and_complete_pct": 82,
+      "wrong_answer_pct": 0,
+      "unsupported_claims_pct": 0,
+      "escalation_appropriate_pct": 100,
+      "escalated_pct": 9,
+      "expert_used_info_beyond_retrieved_pct": 20.2
+    },
+    "right_article_missed": {
+      "questions": 11,
+      "mean_correctness_0_2": 1.36,
+      "mean_completeness_0_2": 0.82,
+      "fully_correct_pct": 36.4,
+      "correct_and_complete_pct": 27.3,
+      "wrong_answer_pct": 0,
+      "unsupported_claims_pct": 0,
+      "escalation_appropriate_pct": 100,
+      "escalated_pct": 18.2,
+      "expert_used_info_beyond_retrieved_pct": 72.7
+    }
+  },
+  "by_area": {
+    "account": {
+      "questions": 11,
+      "mean_correctness_0_2": 2,
+      "mean_completeness_0_2": 1.73,
+      "fully_correct_pct": 100,
+      "correct_and_complete_pct": 81.8,
+      "wrong_answer_pct": 0,
+      "unsupported_claims_pct": 0,
+      "escalation_appropriate_pct": 100,
+      "escalated_pct": 9.1,
+      "expert_used_info_beyond_retrieved_pct": 18.2
+    },
+    "apps_commerce": {
+      "questions": 17,
+      "mean_correctness_0_2": 1.88,
+      "mean_completeness_0_2": 1.76,
+      "fully_correct_pct": 88.2,
+      "correct_and_complete_pct": 82.4,
+      "wrong_answer_pct": 0,
+      "unsupported_claims_pct": 0,
+      "escalation_appropriate_pct": 100,
+      "escalated_pct": 0,
+      "expert_used_info_beyond_retrieved_pct": 23.5
+    },
+    "billing": {
+      "questions": 16,
+      "mean_correctness_0_2": 2,
+      "mean_completeness_0_2": 1.88,
+      "fully_correct_pct": 100,
+      "correct_and_complete_pct": 87.5,
+      "wrong_answer_pct": 0,
+      "unsupported_claims_pct": 0,
+      "escalation_appropriate_pct": 100,
+      "escalated_pct": 12.5,
+      "expert_used_info_beyond_retrieved_pct": 12.5
+    },
+    "domains_email": {
+      "questions": 16,
+      "mean_correctness_0_2": 2,
+      "mean_completeness_0_2": 1.75,
+      "fully_correct_pct": 100,
+      "correct_and_complete_pct": 75,
+      "wrong_answer_pct": 0,
+      "unsupported_claims_pct": 0,
+      "escalation_appropriate_pct": 100,
+      "escalated_pct": 6.3,
+      "expert_used_info_beyond_retrieved_pct": 31.3
+    },
+    "other": {
+      "questions": 10,
+      "mean_correctness_0_2": 1.8,
+      "mean_completeness_0_2": 1.5,
+      "fully_correct_pct": 80,
+      "correct_and_complete_pct": 70,
+      "wrong_answer_pct": 0,
+      "unsupported_claims_pct": 0,
+      "escalation_appropriate_pct": 100,
+      "escalated_pct": 10,
+      "expert_used_info_beyond_retrieved_pct": 30
+    },
+    "payments": {
+      "questions": 15,
+      "mean_correctness_0_2": 1.87,
+      "mean_completeness_0_2": 1.73,
+      "fully_correct_pct": 86.7,
+      "correct_and_complete_pct": 80,
+      "wrong_answer_pct": 0,
+      "unsupported_claims_pct": 0,
+      "escalation_appropriate_pct": 100,
+      "escalated_pct": 26.7,
+      "expert_used_info_beyond_retrieved_pct": 20
+    },
+    "site_editor": {
+      "questions": 15,
+      "mean_correctness_0_2": 1.73,
+      "mean_completeness_0_2": 1.33,
+      "fully_correct_pct": 73.3,
+      "correct_and_complete_pct": 53.3,
+      "wrong_answer_pct": 0,
+      "unsupported_claims_pct": 0,
+      "escalation_appropriate_pct": 100,
+      "escalated_pct": 6.7,
+      "expert_used_info_beyond_retrieved_pct": 46.7
+    }
+  },
+  "weakest_answers": [
+    {
+      "id": "q025",
+      "set": "expertwritten",
+      "retrieval_hit_at_3": false,
+      "correctness": 1,
+      "completeness": 1,
+      "note": "Retrieval missed the document-guidelines article: format list omits HEIC, and it misses the 12-month document age and business name-change case."
+    },
+    {
+      "id": "q032",
+      "set": "expertwritten",
+      "retrieval_hit_at_3": false,
+      "correctness": 1,
+      "completeness": 0,
+      "note": "Retrieval missed the dynamic-page article; generic gap fixes don't address the expert's cause (design for the shortest item page, use strips)."
+    },
+    {
+      "id": "q057",
+      "set": "simulated",
+      "retrieval_hit_at_3": false,
+      "correctness": 1,
+      "completeness": 0,
+      "note": "Retrieval missed the delete-site article; the answer honestly declines and escalates instead of giving the Move to Trash steps."
+    },
+    {
+      "id": "q059",
+      "set": "simulated",
+      "retrieval_hit_at_3": false,
+      "correctness": 1,
+      "completeness": 1,
+      "note": "Retrieval missed; offers 'show free time slots' but not that the Booking Calendar itself shows all taken appointments."
+    },
+    {
+      "id": "q069",
+      "set": "simulated",
+      "retrieval_hit_at_3": false,
+      "correctness": 1,
+      "completeness": 0,
+      "note": "Retrieval missed the business phone number article; the answer guesses other registrations (hedged and asks which one), so it misses the real topic."
+    },
+    {
+      "id": "q070",
+      "set": "simulated",
+      "retrieval_hit_at_3": false,
+      "correctness": 1,
+      "completeness": 0,
+      "note": "Retrieval missed the Payment Methods article; escalates instead of giving the Actions > Remove steps (correctly flags subscriptions)."
+    },
+    {
+      "id": "q071",
+      "set": "simulated",
+      "retrieval_hit_at_3": true,
+      "correctness": 1,
+      "completeness": 0,
+      "note": "Assumes the slant comes from a hover effect; misses the expert's fixes (drag handles / Inspector size, rotation handle on the text box in hover mode), which weren't in the articles."
+    },
+    {
+      "id": "q072",
+      "set": "simulated",
+      "retrieval_hit_at_3": true,
+      "correctness": 2,
+      "completeness": 0,
+      "note": "Honestly says it's not covered and escalates; doesn't give the expert's answer (can't be disconnected; transfer via Google)."
+    },
+    {
+      "id": "q084",
+      "set": "simulated",
+      "retrieval_hit_at_3": true,
+      "correctness": 1,
+      "completeness": 1,
+      "note": "Offers slide background and gallery images; misses the expert's method of dragging an image element onto the slide."
+    },
+    {
+      "id": "q088",
+      "set": "simulated",
+      "retrieval_hit_at_3": true,
+      "correctness": 1,
+      "completeness": 0,
+      "note": "The retrieved chunk lacked the 'Moderate posts for sensitive content' toggle, so the answer implies no such setting exists and escalates."
+    },
+    {
+      "id": "q097",
+      "set": "simulated",
+      "retrieval_hit_at_3": false,
+      "correctness": 1,
+      "completeness": 0,
+      "note": "Retrieval missed; interprets as Google results (hedged) while the expert addresses site search not searching product descriptions."
+    }
+  ]
+}

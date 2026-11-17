@@ -1,0 +1,10 @@
+{"id":"q031","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same checklist and 7-business-day rule; hand-off matches the expert's 'contact Customer Care' advice."}
+{"id":"q032","correctness":1,"completeness":0,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":true,"note":"Retrieval missed the dynamic-page article; generic gap fixes don't address the expert's cause (design for the shortest item page, use strips)."}
+{"id":"q033","correctness":2,"completeness":1,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":true,"note":"Indexing toggle and checklist correct; misses URL inspection tools and 301-redirect check the expert gives."}
+{"id":"q034","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same sort + Mirror on Site steps, and flags dataset sorts overriding the order, as expert does."}
+{"id":"q035","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same cancel steps and 14-day outcome."}
+{"id":"q036","correctness":2,"completeness":1,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":true,"note":"Covers DNS, propagation, HTTPS-only code and old OS; misses DNSSEC and the specific pointing record values."}
+{"id":"q037","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Covers verification, schedule, timing and failed-payout checks the expert lists."}
+{"id":"q038","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same right-click Delete instruction and data-loss warning; adds removing individual actions."}
+{"id":"q039","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same copy/paste steps; correctly explains it doesn't overwrite."}
+{"id":"q040","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same 72-hour approval and Live/Visible requirements."}

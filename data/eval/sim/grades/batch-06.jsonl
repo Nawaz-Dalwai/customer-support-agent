@@ -1,0 +1,10 @@
+{"id":"q051","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same 'check your role's analytics permission' answer, with the exact path."}
+{"id":"q052","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same conclusion (members only) for the forum; expert generalizes to groups and galleries."}
+{"id":"q053","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Reaches the expert's conclusion (plans apply to Wix sites), appropriately hedged."}
+{"id":"q054","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same add-existing-domain flow and 48-hour propagation."}
+{"id":"q055","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Identical rename steps plus the app method."}
+{"id":"q056","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same: renewals not covered, turn off auto-renew, human review for exceptions."}
+{"id":"q057","correctness":1,"completeness":0,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":true,"note":"Retrieval missed the delete-site article; the answer honestly declines and escalates instead of giving the Move to Trash steps."}
+{"id":"q058","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same 'no, invite as collaborator' answer with steps."}
+{"id":"q059","correctness":1,"completeness":1,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":true,"note":"Retrieval missed; offers 'show free time slots' but not that the Booking Calendar itself shows all taken appointments."}
+{"id":"q060","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same 14-day policy, with how to claim it."}

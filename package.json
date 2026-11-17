@@ -20,7 +20,9 @@
     "build:right": "NEXT_PUBLIC_INCLUDE_LEFT_SIDEBAR=false NEXT_PUBLIC_INCLUDE_RIGHT_SIDEBAR=true next build",
     "build:chat": "NEXT_PUBLIC_INCLUDE_LEFT_SIDEBAR=false NEXT_PUBLIC_INCLUDE_RIGHT_SIDEBAR=false next build",
     "test:anthropic": "node --env-file-if-exists=.env.local scripts/test-anthropic.mjs",
-    "test:kb": "AWS_PROFILE= node --env-file-if-exists=.env.local scripts/test-kb.mjs"
+    "test:kb": "AWS_PROFILE= node --env-file-if-exists=.env.local scripts/test-kb.mjs",
+    "eval:retrieval": "AWS_PROFILE= node --env-file-if-exists=.env.local scripts/eval-retrieval.mjs",
+    "eval:sim:prepare": "AWS_PROFILE= node --env-file-if-exists=.env.local scripts/eval-sim-prepare.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.8.0",

@@ -1,0 +1,10 @@
+{"id":"q021","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Includes the expert's cookie step within a fuller, accurate troubleshooting list."}
+{"id":"q022","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Identical restore steps plus accurate caveats."}
+{"id":"q023","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Correctly says renewals aren't covered and routes to a human review, as the expert does."}
+{"id":"q024","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same renew / update-payment steps."}
+{"id":"q025","correctness":1,"completeness":1,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":true,"note":"Retrieval missed the document-guidelines article: format list omits HEIC, and it misses the 12-month document age and business name-change case."}
+{"id":"q026","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Covers Write mode, Mirror on Site and publishing, as expert does; adds permissions and sandbox checks."}
+{"id":"q027","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same prerequisites and Instagram Feed steps."}
+{"id":"q028","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same Control item visibility steps plus setting status to Hidden."}
+{"id":"q029","correctness":2,"completeness":1,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":true,"note":"Covers Wix Invoices and order invoices; doesn't give the Billing History page for invoices from Wix (not in retrieved articles)."}
+{"id":"q030","correctness":2,"completeness":1,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":true,"note":"Covers spam, active/valid recipient, form and trigger checks; misses trigger app, email field type and contact-list sync steps not in the articles."}
