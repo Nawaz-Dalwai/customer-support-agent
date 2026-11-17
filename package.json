@@ -23,6 +23,7 @@
     "test:kb": "AWS_PROFILE= node --env-file-if-exists=.env.local scripts/test-kb.mjs",
     "eval:retrieval": "AWS_PROFILE= node --env-file-if-exists=.env.local scripts/eval-retrieval.mjs",
     "eval:retrieval:sweep": "AWS_PROFILE= node --env-file-if-exists=.env.local scripts/eval-retrieval-sweep.mjs",
+    "eval:followups": "AWS_PROFILE= node --env-file-if-exists=.env.local scripts/eval-followups.mjs",
     "eval:sim:prepare": "AWS_PROFILE= node --env-file-if-exists=.env.local scripts/eval-sim-prepare.mjs"
   },
   "dependencies": {

@@ -193,8 +193,10 @@ export async function POST(req: Request) {
     remaining = limit.remaining;
   }
 
-  // 2. Retrieve help articles for the latest question (knowledge base ID comes from the server env)
-  const rag = await retrieveContext(latest.content, process.env.KNOWLEDGE_BASE_ID);
+  // 2. Retrieve help articles (knowledge base ID comes from the server env). For a follow-up,
+  //    the user's previous message is searched alongside it so "what if that fails?" keeps its topic.
+  const previousUser = messages.slice(0, -1).findLast((m) => m.role === "user")?.content;
+  const rag = await retrieveContext({ latest: latest.content, previous: previousUser }, process.env.KNOWLEDGE_BASE_ID);
   const ragSeconds = elapsed();
 
   const articlesBlock = rag.isRagWorking && rag.context
