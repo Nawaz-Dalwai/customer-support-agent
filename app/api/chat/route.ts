@@ -77,7 +77,23 @@ Also classify each inquiry for internal reporting: put every matching category i
 Categories:
 ${categoryList}`;
 
-const debugHeader = (data: Record<string, unknown>) =>
+// Shown when the Claude API spend limit (or account credit) is used up
+const USAGE_LIMIT_MESSAGE =
+  "This demo has reached its monthly AI usage limit, so I can't answer right now. Please check back later.";
+
+// The API reports billing problems as a 402 `billing_error`. A Console spend limit or empty
+// credit balance has also been reported as a 400 with an explanatory message, so check both.
+// (No typed SDK class covers these, so the 400 case falls back to the message text.)
+function isUsageLimitError(error: unknown): boolean {
+  if (!(error instanceof Anthropic.APIError)) return false;
+  if (error.status === 402 || error.type === "billing_error") return true;
+  return (
+    error.status === 400 &&
+    /usage limit|spend limit|credit balance is too low/i.test(error.message)
+  );
+}
+
+const debugHeader =(data: Record<string, unknown>) =>
   JSON.stringify({ msg: "chat route", data, timestamp: new Date().toISOString() })
     .replace(/[^\x20-\x7E]/g, "")
     .slice(0, 1000);
@@ -191,7 +207,11 @@ export async function POST(req: Request) {
   } catch (error) {
     let status = 500;
     let message = "Sorry, there was an issue processing your request. Please try again later.";
-    if (error instanceof Anthropic.AuthenticationError) {
+    if (isUsageLimitError(error)) {
+      status = 503;
+      message = USAGE_LIMIT_MESSAGE;
+      console.error("Claude API usage/spend limit reached:", (error as Error).message);
+    } else if (error instanceof Anthropic.AuthenticationError) {
       console.error("Anthropic API key rejected");
     } else if (error instanceof Anthropic.RateLimitError) {
       status = 429;

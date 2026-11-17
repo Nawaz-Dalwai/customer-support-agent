@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import config from "@/config";
 import { MODELS, DEFAULT_MODEL_ID, type ChatModel } from "@/app/lib/models";
 import { Button } from "@/components/ui/button";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import ReactMarkdown from "react-markdown";
 import rehypeHighlight from "rehype-highlight";
 import rehypeRaw from "rehype-raw";
@@ -15,11 +15,11 @@ import {
   BookOpenText,
   ChevronDown,
   Send,
+  Bot,
 } from "lucide-react";
 import "highlight.js/styles/atom-one-dark.css";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Textarea } from "@/components/ui/textarea";
-import Image from "next/image";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -27,7 +27,22 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-const TypedText = ({ text = "", delay = 5 }) => {
+// Neutral assistant avatar (no third-party logos)
+const BotAvatar = ({
+  className = "",
+  iconClassName = "w-5 h-5",
+}: {
+  className?: string;
+  iconClassName?: string;
+}) => (
+  <Avatar className={`border ${className}`}>
+    <AvatarFallback className="bg-primary text-primary-foreground">
+      <Bot className={iconClassName} aria-label="Support assistant" />
+    </AvatarFallback>
+  </Avatar>
+);
+
+const TypedText =({ text = "", delay = 5 }) => {
   const [displayedText, setDisplayedText] = useState("");
 
   useEffect(() => {
@@ -208,15 +223,7 @@ const ConversationHeader: React.FC<ConversationHeaderProps> = ({
     <div className="flex items-center space-x-4 mb-2 sm:mb-0">
       {showAvatar && (
         <>
-          <Avatar className="w-10 h-10 border">
-            <AvatarImage
-              src="/ant-logo.svg"
-              alt="AI Assistant Avatar"
-              width={40}
-              height={40}
-            />
-            <AvatarFallback>AI</AvatarFallback>
-          </Avatar>
+          <BotAvatar className="w-10 h-10" />
           <div>
             <h3 className="text-sm font-medium leading-none">AI Agent</h3>
             <p className="text-sm text-muted-foreground">Customer support</p>
@@ -508,14 +515,7 @@ function ChatArea() {
         <div className="flex-1 overflow-y-auto p-4 space-y-4">
           {messages.length === 0 ? (
             <div className="flex flex-col items-center justify-center h-full animate-fade-in-up">
-              <Avatar className="w-10 h-10 mb-4 border">
-                <AvatarImage
-                  src="/ant-logo.svg"
-                  alt="AI Assistant Avatar"
-                  width={40}
-                  height={40}
-                />
-              </Avatar>
+              <BotAvatar className="w-10 h-10 mb-4" />
               <h2 className="text-2xl font-semibold mb-8">
                 Here&apos;s how I can help
               </h2>
@@ -559,13 +559,7 @@ function ChatArea() {
                     }}
                   >
                     {message.role === "assistant" && (
-                      <Avatar className="w-8 h-8 mr-2 border">
-                        <AvatarImage
-                          src="/ant-logo.svg"
-                          alt="AI Assistant Avatar"
-                        />
-                        <AvatarFallback>AI</AvatarFallback>
-                      </Avatar>
+                      <BotAvatar className="w-8 h-8 mr-2" iconClassName="w-4 h-4" />
                     )}
                     <div
                       className={`p-3 rounded-md text-sm max-w-[65%] ${
@@ -612,15 +606,9 @@ function ChatArea() {
             rows={1}
           />
           <div className="flex justify-between items-center p-3">
-            <div>
-              <Image
-                src="/claude-icon.svg"
-                alt="Claude Icon"
-                width={0}
-                height={14}
-                className="w-auto h-[14px] mt-1"
-              />
-            </div>
+            <span className="text-xs text-muted-foreground">
+              Powered by Claude
+            </span>
             <Button
               type="submit"
               disabled={isLoading || input.trim() === ""}

@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 import { Moon, Sun, Check } from "lucide-react";
 import { useTheme } from "next-themes";
 import { themes } from "@/styles/themes";
@@ -86,13 +85,25 @@ const TopNavBar = () => {
 
   return (
     <nav className="text-foreground p-4 flex justify-between items-center">
-      <div className="font-bold text-xl flex gap-2 items-center">
-        <Image
-          src={theme === "dark" ? "/wordmark-dark.svg" : "/wordmark.svg"}
-          alt="Company Wordmark"
-          width={112}
-          height={20}
-        />
+      <div className="flex flex-col gap-0.5 min-w-0">
+        <h1 className="font-semibold text-lg leading-tight">
+          Support Agent for Wix (Concept)
+        </h1>
+        <p className="text-xs text-muted-foreground">
+          Unofficial concept demo. Not affiliated with or endorsed by Wix.
+          <span className="hidden sm:inline">
+            {" · "}
+            Built on{" "}
+            <a
+              href="https://github.com/anthropics/claude-quickstarts"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-2 hover:text-foreground"
+            >
+              Anthropic&apos;s claude-quickstarts
+            </a>
+          </span>
+        </p>
       </div>
       <div className="flex items-center gap-2">
         <DropdownMenu>

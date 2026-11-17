@@ -7,8 +7,9 @@ import { ThemeProvider } from "@/components/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Support Assistant",
-  description: "Customer support chat powered by Claude and a help-article knowledge base",
+  title: "Support Agent for Wix (Concept)",
+  description:
+    "Unofficial concept demo of an AI customer support agent. Not affiliated with or endorsed by Wix.",
 };
 
 export default function RootLayout({
