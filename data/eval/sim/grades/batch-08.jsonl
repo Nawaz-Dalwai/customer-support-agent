@@ -1,0 +1,10 @@
+{"id":"q071","correctness":1,"completeness":0,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":true,"note":"Assumes the slant comes from a hover effect; misses the expert's fixes (drag handles / Inspector size, rotation handle on the text box in hover mode), which weren't in the articles."}
+{"id":"q072","correctness":2,"completeness":0,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":true,"note":"Honestly says it's not covered and escalates; doesn't give the expert's answer (can't be disconnected; transfer via Google)."}
+{"id":"q073","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Includes the expert's Delete path plus toggle-off and per-product options."}
+{"id":"q074","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same 14-day vs renewal distinction, with cancel steps."}
+{"id":"q075","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same: cancel the site plan, keep the domain; adds the free-URL consequence."}
+{"id":"q076","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same Wix Marketplace steps and filters."}
+{"id":"q077","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same edit-price steps and 'new purchases only' note, plus coupon alternative."}
+{"id":"q078","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Covers email, desktop and mobile notifications as the expert does, with more detail."}
+{"id":"q079","correctness":2,"completeness":1,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":true,"note":"Same 'must buy separately' answer; misses the expert's third-party Gifted app workaround."}
+{"id":"q080","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Identical reassignment steps plus caveats."}

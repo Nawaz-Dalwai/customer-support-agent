@@ -1,0 +1,10 @@
+{"id":"q001","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Matches expert; 'no fixed limit' sits slightly awkwardly next to the free-site limit but both come from the article."}
+{"id":"q002","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same steps as expert; mentions the 2-field limit instead of the explicit Add Another step."}
+{"id":"q003","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Covers the 14-day guarantee and timing; adds accurate after-14-days and exclusions detail."}
+{"id":"q004","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":true,"note":"Key point (buy plan first, voucher appears in Premium Vouchers, 2 months) matches; misses expert's eligibility troubleshooting, which isn't in the articles."}
+{"id":"q005","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same per-browser steps as expert, condensed."}
+{"id":"q006","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same answer as expert plus accurate verification timelines."}
+{"id":"q007","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Identical steps plus accurate caveats."}
+{"id":"q008","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Identifies Pro Gallery can't be copied (the expert's point), though it leads with the Upload option the user said is missing."}
+{"id":"q009","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Dashboard steps match; omits the Wix app method the expert also lists (not asked for)."}
+{"id":"q010","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Covers subscription, 15% fee, top-ups and management; omits that pausing the last campaign turns off auto-renew."}

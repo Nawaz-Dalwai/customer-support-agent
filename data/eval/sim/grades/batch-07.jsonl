@@ -1,0 +1,10 @@
+{"id":"q061","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Uses the dedicated Add Users flow for an existing domain (expert uses Get a Business Email); both are valid paths."}
+{"id":"q062","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same conclusion: progress is tracked and saved, participants continue where they left off."}
+{"id":"q063","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same Custom price approach with min/max, plus the old-forms path."}
+{"id":"q064","correctness":2,"completeness":1,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":true,"note":"Pro Gallery steps correct, but doesn't say the standard Slider Gallery can't do this and that switching to Pro Gallery is needed."}
+{"id":"q065","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same 'Anyone with the link' sharing setting."}
+{"id":"q066","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same Pages & Menu > Store Pages > Cart Page path with Settings, Design and Text."}
+{"id":"q067","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same Change Plan steps, plus billing-cycle and missing-button cases."}
+{"id":"q068","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same Edit MX Records flow."}
+{"id":"q069","correctness":1,"completeness":0,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":true,"note":"Retrieval missed the business phone number article; the answer guesses other registrations (hedged and asks which one), so it misses the real topic."}
+{"id":"q070","correctness":1,"completeness":0,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":true,"note":"Retrieval missed the Payment Methods article; escalates instead of giving the Actions > Remove steps (correctly flags subscriptions)."}

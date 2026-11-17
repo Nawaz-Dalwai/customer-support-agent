@@ -1,0 +1,10 @@
+{"id":"q011","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same path as expert, plus sender details and template switching."}
+{"id":"q012","correctness":2,"completeness":1,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":true,"note":"Covers Wix Video and mobile; misses the single video player method (Change Video > Autoplay), which wasn't in the retrieved articles."}
+{"id":"q013","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same 3-5 business day explanation; adds sensible next steps and an offer to escalate later."}
+{"id":"q014","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Matches expert's page and site og:image steps (search ranked a different article first, but the og:image article was retrieved)."}
+{"id":"q015","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same copy/paste page steps and limitations."}
+{"id":"q016","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":true,"note":"Wix Editor method matches; expert also lists ADI, Editor X and HubSpot routes not in the retrieved articles."}
+{"id":"q017","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same delete steps plus publish reminder."}
+{"id":"q018","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Covers editing text and dynamic values; expert adds text-element formatting tips."}
+{"id":"q019","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same refund steps; adds app method and an alternative menu path."}
+{"id":"q020","correctness":2,"completeness":1,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":true,"note":"Indexing toggle and checklist correct; misses the site: check and the manual Google Search Console sitemap submission steps (not in retrieved chunks)."}

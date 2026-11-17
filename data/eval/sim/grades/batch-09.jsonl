@@ -1,0 +1,10 @@
+{"id":"q081","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Identical Add Users steps."}
+{"id":"q082","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Includes the expert's VAT-number exemption reason plus billing-address and timing."}
+{"id":"q083","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same remove steps and active-subscription restriction."}
+{"id":"q084","correctness":1,"completeness":1,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":true,"note":"Offers slide background and gallery images; misses the expert's method of dragging an image element onto the slide."}
+{"id":"q085","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same Categories drag-and-drop steps."}
+{"id":"q086","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same Delete Store and Cancel Plan steps."}
+{"id":"q087","correctness":2,"completeness":1,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":true,"note":"Correct that plan downgrades aren't possible and routes to support; misses deleting the extra user first."}
+{"id":"q088","correctness":1,"completeness":0,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":true,"note":"The retrieved chunk lacked the 'Moderate posts for sensitive content' toggle, so the answer implies no such setting exists and escalates."}
+{"id":"q089","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Like the expert: no documented way to change the date, so routes to Customer Care."}
+{"id":"q090","correctness":2,"completeness":2,"unsupported":false,"escalation_ok":true,"expert_beyond_kb":false,"note":"Same connect, preview and publish flow, plus live-site troubleshooting."}
