@@ -15,7 +15,7 @@ Browser (Next.js chat UI)
    │  question
    ▼
 /api/chat  (Vercel serverless function)
-   ├─ 1. Search: Amazon Bedrock Managed Knowledge Base  ──►  top 5 article chunks
+   ├─ 1. Search: Amazon Bedrock Managed Knowledge Base  ──►  10 chunks, kept to the top 5 articles
    │        (500 help articles stored in S3)
    ├─ 2. Answer: Claude (Messages API, structured output)
    │        answers only from those chunks
@@ -59,12 +59,15 @@ The 400 test questions come from WixQA: 200 written by experts and 200 simulated
 
 **Search (all 400 questions, measured):**
 
-| Measure | Result |
-|---|---|
-| Correct article ranked first | 69% |
-| Correct article in the 3 sources shown | 89% |
-| Correct article anywhere in the 5 chunks retrieved | 90.5% |
-| Mean reciprocal rank | 0.78 |
+| Measure | 5 chunks (first version) | 10 chunks, top 5 articles (current) |
+|---|---|---|
+| Correct article ranked first | 69% | 69% |
+| Correct article in the 3 sources shown | 89% | 89.8% |
+| Correct article anywhere in what Claude reads | 90.5% | 95% |
+| Questions needing several articles: all of them found | 49% | 70% |
+| Article text sent to Claude per question | ~5,900 chars | ~10,900 chars |
+
+The current setting came from a sweep (`npm run eval:retrieval:sweep`) that tried 5, 10, 15 and 20 chunks. Going past 10 added text without finding more articles. Fetching more chunks doesn't change which article ranks first.
 
 **Answer quality (100-question sample, simulated):**
 
@@ -76,7 +79,7 @@ The 400 test questions come from WixQA: 200 written by experts and 200 simulated
 | Fully correct when search found the right article | 97% |
 | Fully correct when search missed it | 36% |
 
-The answer quality numbers are an **offline simulation**, not a test of the live app. One model wrote answers using the app's prompt and the same retrieved articles, and the same model then graded them against the expert answers. Treat them as an estimate. The main finding still holds: most weak answers come from search misses, so better search is the next improvement.
+The answer quality numbers are an **offline simulation** of the first version (5 chunks), not a test of the live app. One model wrote answers using the app's prompt and the same retrieved articles, and the same model then graded them against the expert answers. Treat them as an estimate. The main finding still holds: most weak answers come from search misses, so better search is the next improvement.
 
 Full results are in `data/eval/results/`.
 
@@ -135,7 +138,8 @@ npm run dev              # http://localhost:3000
 | `npm run typecheck` / `lint` | TypeScript and ESLint checks |
 | `npm run test:anthropic` | One small Claude call to confirm the API key |
 | `npm run test:kb` | 10 sample searches against the knowledge base |
-| `npm run eval:retrieval` | Search evaluation on all 400 questions (AWS only, no Claude cost) |
+| `npm run eval:retrieval` | Search evaluation on all 400 questions at 5 chunks (AWS only, no Claude cost) |
+| `npm run eval:retrieval:sweep` | One 20-chunk search per question, scored at 5/10/15/20 chunks and 3/5 articles |
 | `npm run eval:sim:prepare` | Builds the input for the offline answer simulation |
 
 ## Cost

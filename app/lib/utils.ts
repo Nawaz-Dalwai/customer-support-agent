@@ -43,10 +43,14 @@ const prettyFileName = (uri: string, index: number) =>
 // Each article file starts with "Title\nSource: <url>" - pull the URL out for citations.
 const sourceUrl = (text: string) => text.match(/^Source: (https?:\/\/\S+)/m)?.[1];
 
+// Defaults come from the retrieval sweep (data/eval/results/retrieval-sweep-summary.json):
+// 10 chunks kept to the top 5 articles put the right article in Claude's context for 95% of
+// test questions (vs 90.5% with 5 chunks); fetching 15 or 20 added text but no accuracy.
 export async function retrieveContext(
   query: string,
   knowledgeBaseId: string | undefined,
-  numberOfResults = 5,
+  numberOfResults = 10,
+  maxArticles = 5,
   maxSources = 3,
 ): Promise<{ context: string; isRagWorking: boolean; ragSources: RAGSource[] }> {
   const empty = { context: "", isRagWorking: false, ragSources: [] };
@@ -71,13 +75,14 @@ export async function retrieveContext(
 
     // Several chunks often come from the same article: show each article once (best score first)
     const seen = new Set<string>();
-    const ragSources: RAGSource[] = [];
+    const ragSources: (RAGSource & { key: string })[] = [];
     results.forEach((r, i) => {
       const uri = r.location?.s3Location?.uri ?? "";
       const key = uri || `chunk-${i}`;
       if (seen.has(key)) return;
       seen.add(key);
       ragSources.push({
+        key,
         id: String(r.metadata?._chunk_id ?? r.metadata?.["x-amz-bedrock-kb-chunk-id"] ?? key),
         fileName: prettyFileName(uri, i),
         snippet: r.content.text,
@@ -86,11 +91,19 @@ export async function retrieveContext(
       });
     });
 
+    // Send Claude every fetched chunk from the top articles only (in search order), so extra
+    // chunks bring in more distinct articles without padding the prompt with weak matches.
+    const keptArticles = new Set(ragSources.slice(0, maxArticles).map((s) => s.key));
     const context = results
+      .filter((r, i) => keptArticles.has(r.location?.s3Location?.uri || `chunk-${i}`))
       .map((r, i) => `<document index="${i + 1}">\n${r.content.text}\n</document>`)
       .join("\n");
 
-    return { context, isRagWorking: true, ragSources: ragSources.slice(0, maxSources) };
+    return {
+      context,
+      isRagWorking: true,
+      ragSources: ragSources.slice(0, maxSources).map(({ key: _key, ...source }) => source),
+    };
   } catch (error) {
     console.error("RAG Error:", error);
     return empty;
