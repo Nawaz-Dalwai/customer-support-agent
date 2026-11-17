@@ -92,6 +92,8 @@ The trade-off is that 45% of topic changes also bring in an article from the ear
 | Fully correct when search found the right article | 97% |
 | Fully correct when search missed it | 36% |
 
+**After the search changes (simulation, 11 questions):** the 11 sample questions where the first version's search missed the right article were re-answered with the current search. Fully correct answers went from 36% to 91% (4 to 10 of 11). The other 89 questions weren't re-run. If they're unchanged, the estimate for all 100 rises from 90% to 96% fully correct. Details are in `data/eval/results/simulation-v2-subset-summary.json`.
+
 The answer quality numbers are an **offline simulation** of the first version (5 chunks), not a test of the live app. One model wrote answers using the app's prompt and the same retrieved articles, and the same model then graded them against the expert answers. Treat them as an estimate. The main finding still holds: most weak answers come from search misses, so better search is the next improvement.
 
 Full results are in `data/eval/results/`.

@@ -79,8 +79,8 @@ export async function retrieveContext(
   { latest, previous }: { latest: string; previous?: string },
   knowledgeBaseId: string | undefined,
   { numberOfResults = 10, maxArticles = 5, maxSources = 3 } = {},
-): Promise<{ context: string; isRagWorking: boolean; ragSources: RAGSource[] }> {
-  const empty = { context: "", isRagWorking: false, ragSources: [] };
+): Promise<{ context: string; isRagWorking: boolean; ragSources: RAGSource[]; articles: string[] }> {
+  const empty = { context: "", isRagWorking: false, ragSources: [], articles: [] };
   if (!knowledgeBaseId) {
     console.error("KNOWLEDGE_BASE_ID is not set");
     return empty;
@@ -143,5 +143,8 @@ export async function retrieveContext(
   // shown sources by score (best match first) rather than by merged rank. Claude's context is unchanged.
   ragSources.sort((a, b) => b.score - a.score);
 
-  return { context, isRagWorking: true, ragSources };
+  // articles: every kept article's name in merged order (used by the evaluation scripts)
+  const articles = kept.map((key, i) => prettyFileName(key.startsWith("chunk-") ? "" : key, i));
+
+  return { context, isRagWorking: true, ragSources, articles };
 }

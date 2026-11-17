@@ -1,0 +1,130 @@
+{
+  "note": "Re-run of the offline simulation for the 11 questions the first run search missed, using the app search at the time (10 chunks, top 5 articles). Answers and grades by the same evaluator model as the first run (Claude in a Claude Code session), not the deployed Haiku. The other 89 questions were not re-run.",
+  "run_at": "2026-11-17T12:27:58.468Z",
+  "first_run_same_questions": {
+    "questions": 11,
+    "mean_correctness_0_2": 1.36,
+    "mean_completeness_0_2": 0.82,
+    "fully_correct_pct": 36.4,
+    "correct_and_complete_pct": 27.3,
+    "wrong_answer_pct": 0,
+    "unsupported_claims_pct": 0
+  },
+  "rerun": {
+    "questions": 11,
+    "mean_correctness_0_2": 1.91,
+    "mean_completeness_0_2": 1.09,
+    "fully_correct_pct": 90.9,
+    "correct_and_complete_pct": 36.4,
+    "wrong_answer_pct": 0,
+    "unsupported_claims_pct": 9.1
+  },
+  "rerun_by_retrieval": {
+    "right_article_now_in_context": {
+      "questions": 5,
+      "mean_correctness_0_2": 2,
+      "mean_completeness_0_2": 1.4,
+      "fully_correct_pct": 100,
+      "correct_and_complete_pct": 60,
+      "wrong_answer_pct": 0,
+      "unsupported_claims_pct": 0
+    },
+    "right_article_still_missing": {
+      "questions": 6,
+      "mean_correctness_0_2": 1.83,
+      "mean_completeness_0_2": 0.83,
+      "fully_correct_pct": 83.3,
+      "correct_and_complete_pct": 16.7,
+      "wrong_answer_pct": 0,
+      "unsupported_claims_pct": 16.7
+    }
+  },
+  "estimate_all_100_if_other_89_unchanged": {
+    "questions": 100,
+    "mean_correctness_0_2": 1.96,
+    "mean_completeness_0_2": 1.71,
+    "fully_correct_pct": 96,
+    "correct_and_complete_pct": 77,
+    "wrong_answer_pct": 0,
+    "unsupported_claims_pct": 1
+  },
+  "per_question": [
+    {
+      "id": "q014",
+      "first_run": "2/2",
+      "rerun": "2/2",
+      "right_article_in_context_now": true,
+      "note": "Same page and site og:image steps as the expert, including publishing; adds the 1.91:1 ratio and page-over-site precedence from the articles."
+    },
+    {
+      "id": "q025",
+      "first_run": "1/1",
+      "rerun": "2/1",
+      "right_article_in_context_now": true,
+      "note": "Covers matching company details, formats and sizes; misses that the company document must be from the last 12 months, HEIC, and the business name-change case."
+    },
+    {
+      "id": "q032",
+      "first_run": "1/0",
+      "rerun": "1/0",
+      "right_article_in_context_now": false,
+      "note": "Generic page-height and footer fixes; the expert's cause (dynamic item pages: design for the shortest item, use strips) isn't addressed and wasn't in the articles."
+    },
+    {
+      "id": "q042",
+      "first_run": "2/1",
+      "rerun": "2/1",
+      "right_article_in_context_now": false,
+      "note": "Correct path (add the domain, assign it, replace the primary domain); misses the name servers vs pointing choice and the recommendation to use name servers."
+    },
+    {
+      "id": "q053",
+      "first_run": "2/2",
+      "rerun": "2/1",
+      "right_article_in_context_now": false,
+      "note": "Says plans are for Wix sites and apply to one site, but doesn't state plainly that they can't be used for other platforms; escalates instead."
+    },
+    {
+      "id": "q057",
+      "first_run": "1/0",
+      "rerun": "2/2",
+      "right_article_in_context_now": false,
+      "note": "Same Move to Trash steps as the expert, plus the accurate reminder to cancel premium services first."
+    },
+    {
+      "id": "q059",
+      "first_run": "1/1",
+      "rerun": "2/2",
+      "right_article_in_context_now": true,
+      "note": "Booking Calendar views show booked sessions and free slots, matching the expert; doesn't mention blocked times."
+    },
+    {
+      "id": "q069",
+      "first_run": "1/0",
+      "rerun": "2/0",
+      "right_article_in_context_now": false,
+      "note": "Honestly says the articles don't cover number registration and escalates; doesn't give the expert's 'a few business days, third-party regulators'."
+    },
+    {
+      "id": "q070",
+      "first_run": "1/0",
+      "rerun": "2/2",
+      "right_article_in_context_now": true,
+      "note": "Identical to the expert: Payment Methods > Actions > Remove, only if not tied to an active subscription."
+    },
+    {
+      "id": "q091",
+      "first_run": "2/2",
+      "rerun": "2/1",
+      "right_article_in_context_now": false,
+      "note": "Consent and opt-in reasons are consistent with the expert, but 'only subscribe forms subscribe automatically' is an inference; doesn't say unsubscribed means opted out."
+    },
+    {
+      "id": "q097",
+      "first_run": "1/0",
+      "rerun": "2/0",
+      "right_article_in_context_now": true,
+      "note": "Asks which search is meant and covers both; says the articles don't cover searching descriptions but not the expert's point that site search doesn't support it."
+    }
+  ]
+}

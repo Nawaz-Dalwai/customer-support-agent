@@ -1,12 +1,14 @@
 // Summarize the offline answer simulation (all numbers computed here, not by hand).
-// Run: node scripts/eval-sim-summary.mjs
-// Out: data/eval/results/simulation-summary.json
+// Run: node scripts/eval-sim-summary.mjs                 (first run -> results/simulation-summary.json)
+//      SIM_DIR=data/eval/sim-v2 node scripts/eval-sim-summary.mjs   (re-run -> results/simulation-v2-summary.json)
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const SIM = path.join(ROOT, "data/eval/sim");
+const SIM_DIR = process.env.SIM_DIR || "data/eval/sim";
+const SIM = path.join(ROOT, SIM_DIR);
+const OUT_NAME = SIM_DIR.endsWith("sim-v2") ? "simulation-v2-summary.json" : "simulation-summary.json";
 const readJsonl = (f) => fs.readFileSync(f, "utf8").trim().split("\n").map((l) => JSON.parse(l));
 const readDir = (d) =>
   fs.readdirSync(path.join(SIM, d)).filter((f) => f.endsWith(".jsonl")).sort().flatMap((f) => readJsonl(path.join(SIM, d, f)));
@@ -56,5 +58,5 @@ const summary = {
     .map((r) => ({ id: r.id, set: r.set, retrieval_hit_at_3: r.retrieval_hit_at_3, correctness: r.correctness, completeness: r.completeness, note: r.note })),
 };
 
-fs.writeFileSync(path.join(ROOT, "data/eval/results/simulation-summary.json"), JSON.stringify(summary, null, 2) + "\n");
+fs.writeFileSync(path.join(ROOT, "data/eval/results", OUT_NAME), JSON.stringify(summary, null, 2) + "\n");
 console.log(JSON.stringify(summary, null, 2));
