@@ -1,0 +1,51 @@
+{
+  "run_at": "2026-11-17T11:45:00.958Z",
+  "knowledge_base_id": "T9853AVPOT",
+  "settings": {
+    "chunks_retrieved": 10,
+    "articles_kept": 5,
+    "sources_shown": 3,
+    "sample": 100,
+    "seed": 20261117
+  },
+  "searches_made": 303,
+  "by_mode": {
+    "default": {
+      "questions": 100,
+      "hit_at_1_pct": 69,
+      "hit_at_3_shown_pct": 92,
+      "hit_in_kept_articles_pct": 98,
+      "mrr": 0.806,
+      "median_latency_ms": 1497.5
+    },
+    "MANAGED": {
+      "questions": 100,
+      "hit_at_1_pct": 69,
+      "hit_at_3_shown_pct": 92,
+      "hit_in_kept_articles_pct": 98,
+      "mrr": 0.806,
+      "median_latency_ms": 1498.5
+    },
+    "NONE": {
+      "questions": 100,
+      "hit_at_1_pct": 66,
+      "hit_at_3_shown_pct": 89,
+      "hit_in_kept_articles_pct": 94,
+      "mrr": 0.774,
+      "median_latency_ms": 1396.5
+    }
+  },
+  "default_compared_with": {
+    "MANAGED": {
+      "same_top_5_article_order_pct": 100,
+      "same_first_article_pct": 100,
+      "same_scores_pct": 100
+    },
+    "NONE": {
+      "same_top_5_article_order_pct": 3,
+      "same_first_article_pct": 82,
+      "same_scores_pct": 0
+    }
+  },
+  "wall_clock_seconds": 154
+}
