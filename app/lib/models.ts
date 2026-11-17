@@ -13,4 +13,4 @@ export const MODELS: ChatModel[] = [
   { id: "claude-haiku-5-5", name: "Claude Haiku 5.5", serverFallback: false },
 ];
 
-export const DEFAULT_MODEL_ID = MODELS[0].id;
+export const DEFAULT_MODEL_ID = "claude-haiku-5-5";
