@@ -69,6 +69,8 @@ The 400 test questions come from WixQA: 200 written by experts and 200 simulated
 
 The current setting came from a sweep (`npm run eval:retrieval:sweep`) that tried 5, 10, 15 and 20 chunks. Going past 10 added text without finding more articles. Fetching more chunks doesn't change which article ranks first.
 
+**Reranking is already on.** A check on 100 questions (`npm run eval:reranking`) found that leaving `rerankingModelType` out gives exactly the same order and scores as `MANAGED`. Turning reranking off (`NONE`) lowered "right article first" from 69% to 66%.
+
 **Follow-up questions (80 two-message cases, measured):**
 
 A follow-up like "what if that fails?" doesn't name its topic. For the 2nd and later messages, the app makes two searches: one with the newest message alone, and one with the newest message plus the visitor's previous one. It merges the results by reciprocal rank fusion.
@@ -152,6 +154,7 @@ npm run dev              # http://localhost:3000
 | `npm run eval:retrieval` | Search evaluation on all 400 questions at 5 chunks (AWS only, no Claude cost) |
 | `npm run eval:retrieval:sweep` | One 20-chunk search per question, scored at 5/10/15/20 chunks and 3/5 articles |
 | `npm run eval:followups` | Two-message cases: newest message only vs. combined vs. merged searches |
+| `npm run eval:reranking` | 100 questions searched with reranking left out, `MANAGED` and `NONE` |
 | `npm run eval:sim:prepare` | Builds the input for the offline answer simulation |
 
 ## Cost
