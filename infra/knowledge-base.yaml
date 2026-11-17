@@ -7,6 +7,12 @@ Parameters:
   KnowledgeBaseName:
     Type: String
     Default: customer-support-kb
+  BudgetAlertEmail:
+    Type: String
+    Description: Email that receives AWS cost alerts (passed at deploy time, not stored in git)
+  MonthlyBudgetUsd:
+    Type: Number
+    Default: 5
 
 Resources:
   # 1. Private, encrypted bucket that holds the help-article .txt files
@@ -136,6 +142,45 @@ Resources:
       Tags:
         - Key: project
           Value: customer-support-agent
+
+  # 6. Account-wide monthly cost alert (alert-only budgets are free). Bedrock search has no
+  #    hard spend cap, so this is the early warning for unexpected AWS costs.
+  MonthlyCostBudget:
+    Type: AWS::Budgets::Budget
+    Properties:
+      Budget:
+        # No fixed BudgetName: changing the alert email replaces the budget, which only
+        # works when CloudFormation generates the name
+        BudgetType: COST
+        TimeUnit: MONTHLY
+        BudgetLimit:
+          Amount: !Ref MonthlyBudgetUsd
+          Unit: USD
+      NotificationsWithSubscribers:
+        - Notification:
+            NotificationType: ACTUAL
+            ComparisonOperator: GREATER_THAN
+            Threshold: 80
+            ThresholdType: PERCENTAGE
+          Subscribers:
+            - SubscriptionType: EMAIL
+              Address: !Ref BudgetAlertEmail
+        - Notification:
+            NotificationType: ACTUAL
+            ComparisonOperator: GREATER_THAN
+            Threshold: 100
+            ThresholdType: PERCENTAGE
+          Subscribers:
+            - SubscriptionType: EMAIL
+              Address: !Ref BudgetAlertEmail
+        - Notification:
+            NotificationType: FORECASTED
+            ComparisonOperator: GREATER_THAN
+            Threshold: 100
+            ThresholdType: PERCENTAGE
+          Subscribers:
+            - SubscriptionType: EMAIL
+              Address: !Ref BudgetAlertEmail
 
 Outputs:
   AppUserName:
