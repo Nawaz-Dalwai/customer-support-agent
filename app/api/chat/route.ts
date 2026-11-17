@@ -44,7 +44,9 @@ const responseSchema = z.object({
   user_mood: z.enum(["positive", "neutral", "negative", "curious", "frustrated", "confused"]),
   suggested_questions: z
     .array(z.string())
-    .describe("Up to 3 short follow-up questions the user might ask next; empty when redirecting"),
+    .describe(
+      "Up to 3 short follow-up questions the user might ask next that the provided help articles answer; fewer or none if the articles don't support them; empty when redirecting",
+    ),
   debug: z.object({
     context_used: z.boolean().describe("True if the retrieved help articles were used in the answer"),
   }),
@@ -77,6 +79,8 @@ const SYSTEM_INSTRUCTIONS = `You are the customer support assistant in the help 
 Answer only from the help articles provided with each request. They are retrieved automatically and may not all be relevant. If they don't answer the question, say so plainly and offer to connect the user with a human agent rather than guessing. Do not invent prices, policies, menu paths or links. When you rely on an article, you may link its Source URL.
 
 Keep replies concise, friendly and practical: lead with the answer, then the steps. Use short Markdown lists for multi-step instructions.
+
+Only offer a suggested follow-up question if the help articles provided with this request contain its answer, so that clicking it gets a real answer. Base each one on specific details in those articles. Fewer than three, or none, is better than a question the articles don't cover.
 
 Set redirect_to_agent.should_redirect to true when the user asks for a person, when the issue needs account access or a decision you can't make (refund disputes, account recovery, legal or security concerns), when the question is unrelated to the platform, or when the articles don't cover it. Otherwise set it to false with an empty reason.
 
