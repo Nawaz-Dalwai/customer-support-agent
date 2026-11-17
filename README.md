@@ -16,7 +16,7 @@ Browser (Next.js chat UI)
    ▼
 /api/chat  (Vercel serverless function)
    ├─ 1. Search: Amazon Bedrock Managed Knowledge Base  ──►  10 chunks, kept to the top 5 articles
-   │        (500 help articles stored in S3)
+   │        (500 help articles stored in S3; follow-ups also search with the previous question)
    ├─ 2. Answer: Claude (Messages API, structured output)
    │        answers only from those chunks
    └─ 3. Reply: answer + top 3 sources + mood, categories, "needs a human?" flag
@@ -68,6 +68,17 @@ The 400 test questions come from WixQA: 200 written by experts and 200 simulated
 | Article text sent to Claude per question | ~5,900 chars | ~10,900 chars |
 
 The current setting came from a sweep (`npm run eval:retrieval:sweep`) that tried 5, 10, 15 and 20 chunks. Going past 10 added text without finding more articles. Fetching more chunks doesn't change which article ranks first.
+
+**Follow-up questions (80 two-message cases, measured):**
+
+A follow-up like "what if that fails?" doesn't name its topic. For the 2nd and later messages, the app makes two searches: one with the newest message alone, and one with the newest message plus the visitor's previous one. It merges the results by reciprocal rank fusion.
+
+| Right article reaches Claude | Newest message only | Merged (current) |
+|---|---|---|
+| Follow-ups that depend on the previous message (40) | 72.5% | 97.5% |
+| Complete new question on a different topic (40) | 100% | 92.5% |
+
+The trade-off is that 45% of topic changes also bring in an article from the earlier topic. Claude sees the whole conversation, so it can tell which articles apply. These cases were written by Claude from WixQA questions, not taken from real conversations (`data/eval/followups.jsonl`).
 
 **Answer quality (100-question sample, simulated):**
 
@@ -140,6 +151,7 @@ npm run dev              # http://localhost:3000
 | `npm run test:kb` | 10 sample searches against the knowledge base |
 | `npm run eval:retrieval` | Search evaluation on all 400 questions at 5 chunks (AWS only, no Claude cost) |
 | `npm run eval:retrieval:sweep` | One 20-chunk search per question, scored at 5/10/15/20 chunks and 3/5 articles |
+| `npm run eval:followups` | Two-message cases: newest message only vs. combined vs. merged searches |
 | `npm run eval:sim:prepare` | Builds the input for the offline answer simulation |
 
 ## Cost

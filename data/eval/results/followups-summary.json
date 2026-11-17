@@ -1,0 +1,111 @@
+{
+  "run_at": "2026-11-17T10:10:44.860Z",
+  "knowledge_base_id": "T9853AVPOT",
+  "note": "Synthetic two-message cases (see data/eval/followups.jsonl). current = latest message only; combined = latest + previous user message; merged = reciprocal rank fusion of the two searches.",
+  "settings": {
+    "chunks_retrieved": 10,
+    "articles_kept": 5,
+    "sources_shown": 3,
+    "rrf_k": 60
+  },
+  "searches_made": 160,
+  "by_type": {
+    "followup": {
+      "current": {
+        "cases": 40,
+        "hit_at_1_pct": 42.5,
+        "hit_at_3_shown_pct": 62.5,
+        "hit_in_kept_articles_pct": 72.5,
+        "mrr": 0.54,
+        "multi_article_cases": 7,
+        "multi_article_all_found_pct": 42.9,
+        "cases_with_old_topic_article_pct": 0
+      },
+      "combined": {
+        "cases": 40,
+        "hit_at_1_pct": 85,
+        "hit_at_3_shown_pct": 97.5,
+        "hit_in_kept_articles_pct": 100,
+        "mrr": 0.909,
+        "multi_article_cases": 7,
+        "multi_article_all_found_pct": 57.1,
+        "cases_with_old_topic_article_pct": 0
+      },
+      "merged": {
+        "cases": 40,
+        "hit_at_1_pct": 52.5,
+        "hit_at_3_shown_pct": 90,
+        "hit_in_kept_articles_pct": 97.5,
+        "mrr": 0.71,
+        "multi_article_cases": 7,
+        "multi_article_all_found_pct": 42.9,
+        "cases_with_old_topic_article_pct": 0
+      }
+    },
+    "topic_switch": {
+      "current": {
+        "cases": 40,
+        "hit_at_1_pct": 75,
+        "hit_at_3_shown_pct": 95,
+        "hit_in_kept_articles_pct": 100,
+        "mrr": 0.854,
+        "multi_article_cases": 6,
+        "multi_article_all_found_pct": 66.7,
+        "cases_with_old_topic_article_pct": 0
+      },
+      "combined": {
+        "cases": 40,
+        "hit_at_1_pct": 47.5,
+        "hit_at_3_shown_pct": 70,
+        "hit_in_kept_articles_pct": 75,
+        "mrr": 0.579,
+        "multi_article_cases": 6,
+        "multi_article_all_found_pct": 33.3,
+        "cases_with_old_topic_article_pct": 60
+      },
+      "merged": {
+        "cases": 40,
+        "hit_at_1_pct": 77.5,
+        "hit_at_3_shown_pct": 92.5,
+        "hit_in_kept_articles_pct": 92.5,
+        "mrr": 0.842,
+        "multi_article_cases": 6,
+        "multi_article_all_found_pct": 83.3,
+        "cases_with_old_topic_article_pct": 45
+      }
+    }
+  },
+  "overall": {
+    "current": {
+      "cases": 80,
+      "hit_at_1_pct": 58.8,
+      "hit_at_3_shown_pct": 78.8,
+      "hit_in_kept_articles_pct": 86.3,
+      "mrr": 0.697,
+      "multi_article_cases": 13,
+      "multi_article_all_found_pct": 53.8,
+      "cases_with_old_topic_article_pct": 0
+    },
+    "combined": {
+      "cases": 80,
+      "hit_at_1_pct": 66.3,
+      "hit_at_3_shown_pct": 83.8,
+      "hit_in_kept_articles_pct": 87.5,
+      "mrr": 0.744,
+      "multi_article_cases": 13,
+      "multi_article_all_found_pct": 46.2,
+      "cases_with_old_topic_article_pct": 30
+    },
+    "merged": {
+      "cases": 80,
+      "hit_at_1_pct": 65,
+      "hit_at_3_shown_pct": 91.3,
+      "hit_in_kept_articles_pct": 95,
+      "mrr": 0.776,
+      "multi_article_cases": 13,
+      "multi_article_all_found_pct": 61.5,
+      "cases_with_old_topic_article_pct": 22.5
+    }
+  },
+  "wall_clock_seconds": 33
+}
