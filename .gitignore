@@ -17,3 +17,6 @@ next-env.d.ts
 .DS_Store
 npm-debug.log*
 .vercel
+
+# Full re-run batches (article text for all 100 questions; only the 11-question subset is kept)
+/data/eval/sim-v2/batches/
