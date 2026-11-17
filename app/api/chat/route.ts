@@ -6,6 +6,9 @@ import { retrieveContext } from "@/app/lib/utils";
 import { MODELS } from "@/app/lib/models";
 import customerSupportCategories from "@/app/lib/customer_support_categories.json";
 
+// Opus replies can take ~10-20s; give the serverless function room beyond short platform defaults
+export const maxDuration = 60;
+
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
 const CATEGORY_IDS = customerSupportCategories.categories.map((c) => c.id) as [string, ...string[]];
