@@ -134,6 +134,14 @@ aws bedrock-agent start-ingestion-job \
   --knowledge-base-id <KnowledgeBaseId> --data-source-id <DataSourceId>
 ```
 
+Indexing takes a few minutes (about 3.5 for the 500 articles), and searches return nothing until it finishes. Check its progress with the `ingestionJobId` from the previous command, and wait for `COMPLETE`:
+
+```bash
+aws bedrock-agent get-ingestion-job \
+  --knowledge-base-id <KnowledgeBaseId> --data-source-id <DataSourceId> \
+  --ingestion-job-id <ingestionJobId> --query "ingestionJob.[status,statistics]"
+```
+
 **4. Create an access key for the app user** (`AppUserName` in the outputs) and fill in `.env.local`. Every variable is described in `.env.local.example`.
 
 **5. Check the connections, then start the app**
