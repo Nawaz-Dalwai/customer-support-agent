@@ -10,16 +10,17 @@ import rehypeHighlight from "rehype-highlight";
 import rehypeRaw from "rehype-raw";
 import {
   HandHelping,
-  WandSparkles,
   LifeBuoyIcon,
-  BookOpenText,
   ChevronDown,
+  ChevronRight,
+  MessageSquare,
   Send,
   Bot,
   CircleCheck,
   ThumbsUp,
   ThumbsDown,
 } from "lucide-react";
+import { cn } from "@/lib/utils";
 import type { HandoffTicket } from "@/app/lib/handoff";
 import { FEEDBACK_REASONS, type FeedbackReason } from "@/app/lib/feedback-reasons";
 import { STARTER_QUESTIONS } from "@/app/lib/starter-questions";
@@ -241,6 +242,52 @@ const ratableReply = (content: string): { id: string; handedOff: boolean } | nul
     return null;
   }
 };
+
+const StarterQuestionPrompts = ({
+  questions,
+  onSelect,
+  disabled,
+}: {
+  questions: readonly string[];
+  onSelect: (question: string) => void;
+  disabled: boolean;
+}) => (
+  <div className="mt-8 w-full max-w-xl">
+    <p className="text-sm font-medium text-foreground mb-3 text-center">Try asking</p>
+    <ul className="flex flex-col gap-2" role="list">
+      {questions.map((question) => (
+        <li key={question}>
+          <button
+            type="button"
+            disabled={disabled}
+            onClick={() => onSelect(question)}
+            className={cn(
+              "group w-full flex items-center gap-3 rounded-lg border-2 border-border bg-card px-4 py-3 text-left text-sm font-normal text-foreground shadow-sm cursor-pointer transition-all",
+              "hover:border-primary/50 hover:bg-accent hover:shadow-md active:scale-[0.99]",
+              "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
+              "disabled:pointer-events-none disabled:opacity-50",
+            )}
+          >
+            <span
+              className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-primary/10 text-primary group-hover:bg-primary/15"
+              aria-hidden
+            >
+              <MessageSquare className="h-4 w-4" />
+            </span>
+            <span className="flex-1 leading-snug">{question}</span>
+            <ChevronRight
+              className="h-4 w-4 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-0.5 group-hover:text-primary"
+              aria-hidden
+            />
+          </button>
+        </li>
+      ))}
+    </ul>
+    <p className="mt-2.5 text-center text-xs text-muted-foreground">
+      Click a question to fill the message box below
+    </p>
+  </div>
+);
 
 const SuggestedQuestions = ({
   questions,
@@ -811,41 +858,12 @@ function ChatArea() {
                     resources.
                   </p>
                 </div>
-                <div className="flex items-center gap-3">
-                  <WandSparkles className="text-muted-foreground" />
-                  <p className="text-muted-foreground">
-                    I&apos;m a whiz at finding information! I can dig through
-                    your knowledge base.
-                  </p>
-                </div>
-                <div className="flex items-center gap-3">
-                  <BookOpenText className="text-muted-foreground" />
-                  <p className="text-muted-foreground">
-                    I&apos;m always learning! The more you share, the better I
-                    can assist you.
-                  </p>
-                </div>
               </div>
-              <div className="mt-8 w-full max-w-lg text-center">
-                <p className="text-sm text-muted-foreground mb-3">
-                  Try asking:
-                </p>
-                <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-2">
-                  {STARTER_QUESTIONS.map((question) => (
-                    <Button
-                      key={question}
-                      type="button"
-                      variant="outline"
-                      size="sm"
-                      className="text-sm text-muted-foreground shadow-sm h-auto py-2 px-3 whitespace-normal text-left sm:text-center"
-                      disabled={isLoading || outOfQuestions}
-                      onClick={() => handleStarterQuestionClick(question)}
-                    >
-                      {question}
-                    </Button>
-                  ))}
-                </div>
-              </div>
+              <StarterQuestionPrompts
+                questions={STARTER_QUESTIONS}
+                onSelect={handleStarterQuestionClick}
+                disabled={isLoading || outOfQuestions}
+              />
             </div>
           ) : (
             <div className="space-y-4">
