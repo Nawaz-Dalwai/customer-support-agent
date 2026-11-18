@@ -4,8 +4,6 @@ RAG support chat: Bedrock Knowledge Base retrieval, Claude structured answers, p
 
 **Live demo:** https://customer-support-agent-coral.vercel.app
 
-> Learning prototype, not affiliated with Wix. Help articles from [WixQA](https://huggingface.co/datasets/Wix/WixQA) (MIT). Rebuild of Anthropic's [customer-support-agent quickstart](https://github.com/anthropics/claude-quickstarts/tree/main/customer-support-agent).
-
 ## Product brief
 
 **User:** Small business owner stuck mid-task who wants steps, not article links.
