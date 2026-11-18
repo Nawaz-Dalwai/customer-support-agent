@@ -16,7 +16,9 @@ import {
   ChevronDown,
   Send,
   Bot,
+  CircleCheck,
 } from "lucide-react";
+import type { HandoffTicket } from "@/app/lib/handoff";
 import "highlight.js/styles/atom-one-dark.css";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Textarea } from "@/components/ui/textarea";
@@ -64,35 +66,100 @@ type ThinkingContent = {
   matched_categories?: string[];
 };
 
+type HandoffState =
+  | { status: "loading" }
+  | { status: "done"; ticket: HandoffTicket; stored: boolean }
+  | { status: "error"; message: string };
+
+const PRIORITY_STYLES: Record<HandoffTicket["priority"], string> = {
+  urgent: "bg-red-100 text-red-800",
+  high: "bg-amber-100 text-amber-800",
+  normal: "bg-gray-100 text-gray-800",
+};
+
+const HandoffTicketCard = ({ ticket, stored }: { ticket: HandoffTicket; stored: boolean }) => (
+  <div className="mt-3 rounded-md border bg-background p-3 text-sm">
+    <div className="flex items-center gap-2 font-medium">
+      <CircleCheck className="w-4 h-4 text-green-600" />
+      You&apos;re in the queue for the {ticket.queue} team
+    </div>
+    <div className="mt-2 flex flex-wrap items-center gap-2 text-xs">
+      <span className="font-mono">{ticket.id}</span>
+      <span className={`rounded-full px-2 py-0.5 ${PRIORITY_STYLES[ticket.priority]}`}>
+        {ticket.priority} priority
+      </span>
+    </div>
+    <p className="mt-2 text-muted-foreground">
+      The agent receives this whole conversation, so you won&apos;t need to repeat yourself.
+    </p>
+    <p className="mt-1 text-xs text-muted-foreground">
+      This is a demo: no agents are staffed, so nobody will reply.
+      {!stored && " The ticket was not saved."}
+    </p>
+    <details className="mt-2 text-xs">
+      <summary className="cursor-pointer text-muted-foreground">What the agent sees</summary>
+      <dl className="mt-2 space-y-1">
+        <div>
+          <dt className="inline font-medium">Why it was handed off: </dt>
+          <dd className="inline">{ticket.escalation_reason}</dd>
+        </div>
+        <div>
+          <dt className="inline font-medium">Priority: </dt>
+          <dd className="inline">
+            {ticket.priority} ({ticket.priority_reason})
+          </dd>
+        </div>
+        <div>
+          <dt className="inline font-medium">Mood: </dt>
+          <dd className="inline">{ticket.user_mood}</dd>
+        </div>
+        <div>
+          <dt className="font-medium">Summary:</dt>
+          <dd className="whitespace-pre-wrap">{ticket.summary}</dd>
+        </div>
+        <div>
+          <dt className="inline font-medium">Transcript: </dt>
+          <dd className="inline">{ticket.transcript.length} messages attached</dd>
+        </div>
+      </dl>
+    </details>
+  </div>
+);
+
 const UISelector = ({
   redirectToAgent,
+  handoff,
+  onRequestHandoff,
 }: {
   redirectToAgent: { should_redirect: boolean; reason: string };
+  handoff?: HandoffState;
+  onRequestHandoff?: () => void;
 }) => {
-  if (redirectToAgent.should_redirect) {
+  if (!redirectToAgent.should_redirect || !onRequestHandoff) return null;
+
+  if (handoff?.status === "done") {
+    return <HandoffTicketCard ticket={handoff.ticket} stored={handoff.stored} />;
+  }
+
+  if (handoff?.status === "error") {
     return (
-      <Button
-        size="sm"
-        className="mt-2 flex items-center space-x-2"
-        onClick={() => {
-          console.log("🔥 Human Agent Connection Requested!", redirectToAgent);
-          const event = new CustomEvent("humanAgentRequested", {
-            detail: {
-              reason: redirectToAgent.reason || "Unknown",
-              mood: "frustrated",
-              timestamp: new Date().toISOString(),
-            },
-          });
-          window.dispatchEvent(event);
-        }}
-      >
-        <LifeBuoyIcon className="w-4 h-4" />
-        <small className="text-sm leading-none">Talk to a human</small>
-      </Button>
+      <>
+        <p className="mt-2 text-xs text-red-600">{handoff.message}</p>
+        <Button size="sm" className="mt-2 flex items-center space-x-2" onClick={onRequestHandoff}>
+          <LifeBuoyIcon className="w-4 h-4" />
+          <small className="text-sm leading-none">Try again</small>
+        </Button>
+      </>
     );
   }
 
-  return null;
+  // The ticket is requested automatically as soon as the reply arrives
+  return (
+    <div className="mt-2 flex items-center text-xs text-muted-foreground">
+      <div className="animate-spin rounded-full h-3 w-3 border-b-2 border-gray-500 mr-2" />
+      Opening a ticket with our support team…
+    </div>
+  );
 };
 
 const SuggestedQuestions = ({
@@ -127,9 +194,13 @@ const SuggestedQuestions = ({
 const MessageContent = ({
   content,
   role,
+  handoff,
+  onRequestHandoff,
 }: {
   content: string;
   role: string;
+  handoff?: HandoffState;
+  onRequestHandoff?: () => void;
 }) => {
   const [thinking, setThinking] = useState(true);
   const [parsed, setParsed] = useState<{
@@ -193,7 +264,11 @@ const MessageContent = ({
         {parsed.response || content}
       </ReactMarkdown>
       {parsed.redirect_to_agent && (
-        <UISelector redirectToAgent={parsed.redirect_to_agent} />
+        <UISelector
+          redirectToAgent={parsed.redirect_to_agent}
+          handoff={handoff}
+          onRequestHandoff={onRequestHandoff}
+        />
       )}
     </>
   );
@@ -299,6 +374,38 @@ function ChatArea() {
   const [selectedModel, setSelectedModel] = useState(DEFAULT_MODEL_ID);
   const [showAvatar, setShowAvatar] = useState(false);
   const [session, setSession] = useState<SessionInfo>(PUBLIC_SESSION);
+  // Keyed by the id of the assistant message whose "Talk to a human" button was clicked
+  const [handoffs, setHandoffs] = useState<Record<string, HandoffState>>({});
+
+  // history: the conversation up to and including the assistant message that handed off
+  const requestHandoff = async (messageId: string, history: Message[]) => {
+    setHandoffs((h) => ({ ...h, [messageId]: { status: "loading" } }));
+    try {
+      const response = await fetch("/api/handoff", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          messages: history.map(({ role, content }) => ({ role, content })),
+        }),
+      });
+      const data = await response.json().catch(() => ({}));
+      if (!response.ok || !data.ticket) {
+        throw new Error(data.error || "Couldn't reach an agent. Please try again.");
+      }
+      setHandoffs((h) => ({
+        ...h,
+        [messageId]: { status: "done", ticket: data.ticket, stored: !!data.stored },
+      }));
+    } catch (error) {
+      setHandoffs((h) => ({
+        ...h,
+        [messageId]: {
+          status: "error",
+          message: error instanceof Error ? error.message : "Couldn't reach an agent. Please try again.",
+        },
+      }));
+    }
+  };
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
@@ -483,18 +590,21 @@ function ChatArea() {
       const readyToRender = performance.now();
       logDuration("Response Processing", readyToRender - responseReceived);
 
+      // Sources go to the sidebar only; keep them out of the stored (and re-sent) history
+      const { rag_sources: _sources, ...reply } = data;
+      const assistantMessage: Message = {
+        id: crypto.randomUUID(),
+        role: "assistant",
+        content: JSON.stringify(reply),
+      };
       setMessages((prevMessages) => {
         const newMessages = [...prevMessages];
-        const lastIndex = newMessages.length - 1;
-        // Sources go to the sidebar only; keep them out of the stored (and re-sent) history
-        const { rag_sources: _sources, ...reply } = data;
-        newMessages[lastIndex] = {
-          id: crypto.randomUUID(),
-          role: "assistant",
-          content: JSON.stringify(reply),
-        };
+        newMessages[newMessages.length - 1] = assistantMessage;
         return newMessages;
       });
+      if (data.redirect_to_agent?.should_redirect) {
+        requestHandoff(assistantMessage.id, [...messages, userMessage, assistantMessage]);
+      }
 
       const sidebarEvent = new CustomEvent("updateSidebar", {
         detail: {
@@ -627,6 +737,10 @@ function ChatArea() {
                       <MessageContent
                         content={message.content}
                         role={message.role}
+                        handoff={handoffs[message.id]}
+                        onRequestHandoff={() =>
+                          requestHandoff(message.id, messages.slice(0, index + 1))
+                        }
                       />
                     </div>
                   </div>

@@ -1,0 +1,85 @@
+{
+  "run_at": "2026-11-18T02:21:18.269Z",
+  "model": "claude-haiku-5-5",
+  "base_url": "http://localhost:3000",
+  "note": "Hand-written cases (data/eval/escalation.jsonl) sent through the app's /api/chat route. Labels follow the system prompt's escalation rules and what the help articles cover.",
+  "cases": 33,
+  "errors": [],
+  "accuracy_pct": 97,
+  "handoff_recall_pct": 100,
+  "handoff_precision_pct": 94.4,
+  "false_handoff_rate_pct": 6.3,
+  "missed_handoffs": [],
+  "false_handoffs": [
+    "n08"
+  ],
+  "by_kind": {
+    "asks_for_human": {
+      "cases": 4,
+      "correct": 4,
+      "should_escalate": true,
+      "correct_pct": 100
+    },
+    "refund_dispute": {
+      "cases": 2,
+      "correct": 2,
+      "should_escalate": true,
+      "correct_pct": 100
+    },
+    "account_security": {
+      "cases": 2,
+      "correct": 2,
+      "should_escalate": true,
+      "correct_pct": 100
+    },
+    "account_specific": {
+      "cases": 2,
+      "correct": 2,
+      "should_escalate": true,
+      "correct_pct": 100
+    },
+    "legal": {
+      "cases": 2,
+      "correct": 2,
+      "should_escalate": true,
+      "correct_pct": 100
+    },
+    "off_topic": {
+      "cases": 2,
+      "correct": 2,
+      "should_escalate": true,
+      "correct_pct": 100
+    },
+    "not_covered": {
+      "cases": 3,
+      "correct": 3,
+      "should_escalate": true,
+      "correct_pct": 100
+    },
+    "how_to": {
+      "cases": 6,
+      "correct": 6,
+      "should_escalate": false,
+      "correct_pct": 100
+    },
+    "sensitive_but_covered": {
+      "cases": 7,
+      "correct": 6,
+      "should_escalate": false,
+      "correct_pct": 85.7
+    },
+    "frustrated_but_covered": {
+      "cases": 2,
+      "correct": 2,
+      "should_escalate": false,
+      "correct_pct": 100
+    },
+    "follow_up": {
+      "cases": 1,
+      "correct": 1,
+      "should_escalate": false,
+      "correct_pct": 100
+    }
+  },
+  "wall_clock_seconds": 58
+}

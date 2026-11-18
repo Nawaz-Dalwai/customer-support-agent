@@ -52,21 +52,51 @@ export function clientIp(req: Request): string {
 }
 
 // ---- Public visitor rate limit (Upstash Redis) ----------------------------------------
+let redis: Redis | null | undefined;
+
+// Shared by the rate limiters and the handoff ticket queue; null when no store is configured.
+export function getRedis(): Redis | null {
+  if (redis !== undefined) return redis;
+  const configured =
+    (process.env.UPSTASH_REDIS_REST_URL || process.env.KV_REST_API_URL) &&
+    (process.env.UPSTASH_REDIS_REST_TOKEN || process.env.KV_REST_API_TOKEN);
+  redis = configured ? Redis.fromEnv() : null;
+  return redis;
+}
+
 let ratelimit: Ratelimit | null | undefined;
 
 function getRatelimit(): Ratelimit | null {
   if (ratelimit !== undefined) return ratelimit;
-  const configured =
-    (process.env.UPSTASH_REDIS_REST_URL || process.env.KV_REST_API_URL) &&
-    (process.env.UPSTASH_REDIS_REST_TOKEN || process.env.KV_REST_API_TOKEN);
-  ratelimit = configured
+  const store = getRedis();
+  ratelimit = store
     ? new Ratelimit({
-        redis: Redis.fromEnv(),
+        redis: store,
         limiter: Ratelimit.slidingWindow(PUBLIC_REQUESTS_PER_WINDOW, PUBLIC_WINDOW),
         prefix: "csa:visitor",
       })
     : null;
   return ratelimit;
+}
+
+// Handoff requests have their own, smaller quota so they can't be used to fill the ticket queue.
+export const PUBLIC_HANDOFFS_PER_WINDOW = 3;
+let handoffLimit: Ratelimit | null | undefined;
+
+export async function consumePublicHandoff(ip: string): Promise<LimitResult> {
+  if (handoffLimit === undefined) {
+    const store = getRedis();
+    handoffLimit = store
+      ? new Ratelimit({
+          redis: store,
+          limiter: Ratelimit.slidingWindow(PUBLIC_HANDOFFS_PER_WINDOW, PUBLIC_WINDOW),
+          prefix: "csa:handoff-limit",
+        })
+      : null;
+  }
+  if (!handoffLimit) return { allowed: false, remaining: 0, reset: null };
+  const { success, remaining, reset } = await handoffLimit.limit(ip);
+  return { allowed: success, remaining, reset };
 }
 
 export type LimitResult = { allowed: boolean; remaining: number; reset: number | null };
