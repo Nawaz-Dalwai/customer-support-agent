@@ -94,12 +94,23 @@ export async function consumePublicHandoff(ip: string): Promise<LimitResult> {
         })
       : null;
   }
-  if (!handoffLimit) return { allowed: false, remaining: 0, reset: null };
+  if (!handoffLimit) {
+    return { allowed: false, remaining: 0, reset: null, denyReason: "store_unavailable" };
+  }
   const { success, remaining, reset } = await handoffLimit.limit(ip);
-  return { allowed: success, remaining, reset };
+  return success
+    ? { allowed: true, remaining, reset }
+    : { allowed: false, remaining, reset, denyReason: "quota_exceeded" };
 }
 
-export type LimitResult = { allowed: boolean; remaining: number; reset: number | null };
+export type LimitDenyReason = "store_unavailable" | "quota_exceeded";
+
+export type LimitResult = {
+  allowed: boolean;
+  remaining: number;
+  reset: number | null;
+  denyReason?: LimitDenyReason;
+};
 
 // Counts one request. Fails closed: without a configured store, public visitors are refused
 // rather than allowed to run up unbounded costs.
@@ -107,10 +118,12 @@ export async function consumePublicRequest(ip: string): Promise<LimitResult> {
   const rl = getRatelimit();
   if (!rl) {
     console.error("Rate limit store not configured (UPSTASH_REDIS_REST_URL / KV_REST_API_URL)");
-    return { allowed: false, remaining: 0, reset: null };
+    return { allowed: false, remaining: 0, reset: null, denyReason: "store_unavailable" };
   }
   const { success, remaining, reset } = await rl.limit(ip);
-  return { allowed: success, remaining, reset };
+  return success
+    ? { allowed: true, remaining, reset }
+    : { allowed: false, remaining, reset, denyReason: "quota_exceeded" };
 }
 
 export async function peekPublicRemaining(ip: string): Promise<number | null> {

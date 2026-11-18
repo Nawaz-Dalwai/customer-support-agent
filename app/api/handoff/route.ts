@@ -32,14 +32,13 @@ export async function POST(req: Request) {
   if (!owner) {
     const limit = await consumePublicHandoff(clientIp(req));
     if (!limit.allowed) {
+      const error =
+        limit.denyReason === "store_unavailable"
+          ? "Connecting to an agent is unavailable right now. Please try again later."
+          : "You've reached the demo's limit for agent requests today. Please try again tomorrow.";
       return Response.json(
-        {
-          error:
-            limit.reset === null
-              ? "Connecting to an agent is unavailable right now. Please try again later."
-              : "You've reached the demo's limit for agent requests today. Please try again tomorrow.",
-        },
-        { status: limit.reset === null ? 503 : 429 },
+        { error },
+        { status: limit.denyReason === "store_unavailable" ? 503 : 429 },
       );
     }
   }
