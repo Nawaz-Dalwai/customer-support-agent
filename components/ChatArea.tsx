@@ -17,8 +17,11 @@ import {
   Send,
   Bot,
   CircleCheck,
+  ThumbsUp,
+  ThumbsDown,
 } from "lucide-react";
 import type { HandoffTicket } from "@/app/lib/handoff";
+import { FEEDBACK_REASONS, type FeedbackReason } from "@/app/lib/feedback-reasons";
 import "highlight.js/styles/atom-one-dark.css";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Textarea } from "@/components/ui/textarea";
@@ -160,6 +163,82 @@ const UISelector = ({
       Opening a ticket with our support team…
     </div>
   );
+};
+
+type FeedbackState = {
+  rating: "up" | "down";
+  reason: FeedbackReason | null;
+  status: "saving" | "saved" | "error";
+};
+
+const ReplyFeedback = ({
+  handedOff,
+  feedback,
+  onRate,
+}: {
+  handedOff: boolean;
+  feedback?: FeedbackState;
+  onRate: (rating: "up" | "down", reason: FeedbackReason | null) => void;
+}) => {
+  const reasons = (Object.keys(FEEDBACK_REASONS) as FeedbackReason[]).filter((r) =>
+    handedOff ? r !== "needed_person" : r !== "unneeded_handoff",
+  );
+  const iconButton = (rating: "up" | "down") => {
+    const Icon = rating === "up" ? ThumbsUp : ThumbsDown;
+    const active = feedback?.rating === rating;
+    return (
+      <Button
+        variant="ghost"
+        size="sm"
+        className={`h-7 w-7 p-0 ${active ? "text-foreground" : "text-muted-foreground"}`}
+        aria-label={rating === "up" ? "Helpful" : "Not helpful"}
+        aria-pressed={active}
+        onClick={() => onRate(rating, null)}
+      >
+        <Icon className="h-3.5 w-3.5" fill={active ? "currentColor" : "none"} />
+      </Button>
+    );
+  };
+
+  return (
+    <div className="mt-1 pl-10 text-xs text-muted-foreground">
+      <div className="flex items-center gap-1">
+        {iconButton("up")}
+        {iconButton("down")}
+        {feedback?.status === "error" && <span className="ml-1 text-red-600">Couldn&apos;t save your feedback</span>}
+        {feedback?.status === "saved" && (feedback.rating === "up" || feedback.reason) && (
+          <span className="ml-1">Thanks for the feedback</span>
+        )}
+      </div>
+      {feedback?.rating === "down" && !feedback.reason && feedback.status !== "error" && (
+        <div className="mt-1 flex flex-wrap items-center gap-2">
+          <span>What went wrong?</span>
+          {reasons.map((r) => (
+            <Button
+              key={r}
+              variant="outline"
+              size="sm"
+              className="h-6 px-2 text-xs"
+              onClick={() => onRate("down", r)}
+            >
+              {FEEDBACK_REASONS[r]}
+            </Button>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
+
+// Only real model replies carry the server's id; placeholders and error messages can't be rated
+const ratableReply = (content: string): { id: string; handedOff: boolean } | null => {
+  try {
+    const reply = JSON.parse(content);
+    if (typeof reply?.id !== "string" || !reply.response) return null;
+    return { id: reply.id, handedOff: !!reply.redirect_to_agent?.should_redirect };
+  } catch {
+    return null;
+  }
 };
 
 const SuggestedQuestions = ({
@@ -376,6 +455,25 @@ function ChatArea() {
   const [session, setSession] = useState<SessionInfo>(PUBLIC_SESSION);
   // Keyed by the id of the assistant message whose "Talk to a human" button was clicked
   const [handoffs, setHandoffs] = useState<Record<string, HandoffState>>({});
+
+  // Keyed by the server's reply id, which is what the feedback is stored against
+  const [feedback, setFeedback] = useState<Record<string, FeedbackState>>({});
+
+  const rateReply = async (replyId: string, rating: "up" | "down", reason: FeedbackReason | null) => {
+    setFeedback((f) => ({ ...f, [replyId]: { rating, reason, status: "saving" } }));
+    try {
+      const response = await fetch("/api/feedback", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id: replyId, rating, reason }),
+      });
+      if (!response.ok) throw new Error(`Feedback failed with status ${response.status}`);
+      setFeedback((f) => ({ ...f, [replyId]: { rating, reason, status: "saved" } }));
+    } catch (error) {
+      console.error("Feedback not saved:", error);
+      setFeedback((f) => ({ ...f, [replyId]: { rating, reason, status: "error" } }));
+    }
+  };
 
   // history: the conversation up to and including the assistant message that handed off
   const requestHandoff = async (messageId: string, history: Message[]) => {
@@ -744,6 +842,17 @@ function ChatArea() {
                       />
                     </div>
                   </div>
+                  {message.role === "assistant" &&
+                    (() => {
+                      const reply = ratableReply(message.content);
+                      return reply ? (
+                        <ReplyFeedback
+                          handedOff={reply.handedOff}
+                          feedback={feedback[reply.id]}
+                          onRate={(rating, reason) => rateReply(reply.id, rating, reason)}
+                        />
+                      ) : null;
+                    })()}
                   {message.role === "assistant" && (
                     <SuggestedQuestions
                       questions={
@@ -782,7 +891,7 @@ function ChatArea() {
           />
           <div className="flex justify-between items-center p-3">
             <span className="text-xs text-muted-foreground">
-              Powered by Claude
+              Powered by Claude · Questions and ratings are kept for 30 days to improve answers
               {!session.owner && (
                 <span className="ml-2">
                   · {input.length}/{session.maxMessageChars}

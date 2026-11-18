@@ -13,6 +13,8 @@ import {
   isOwner,
 } from "@/app/lib/access";
 import customerSupportCategories from "@/app/lib/customer_support_categories.json";
+import { clip, saveSignal } from "@/app/lib/signals";
+import { after } from "next/server";
 
 // Opus replies can take ~10-20s; give the serverless function room beyond short platform defaults
 export const maxDuration = 60;
@@ -239,16 +241,40 @@ export async function POST(req: Request) {
     };
     console.log("💬 chat", debug);
 
-    if (response.stop_reason === "refusal") {
-      return jsonResponse(
-        fallbackReply(
-          "I'm not able to help with that here, so I've passed this conversation to our support team.",
-          `Declined by safety checks (${response.stop_details?.category ?? "unspecified"})`,
-          true,
-        ),
-        200,
-        debug,
+    // Logged after the response is sent, so a slow or missing store never delays the reply
+    const logReply = (reply: SupportResponse & { id: string }, refused: boolean) =>
+      after(() =>
+        saveSignal({
+          id: reply.id,
+          created_at: new Date().toISOString(),
+          requested_by: owner ? "owner" : "visitor",
+          model: response.model,
+          turn: messages.filter((m) => m.role === "user").length,
+          question: clip(latest.content, 1000),
+          response: clip(reply.response, 4000),
+          user_mood: reply.user_mood,
+          matched_categories: reply.matched_categories,
+          handed_off: reply.redirect_to_agent.should_redirect,
+          handoff_reason: reply.redirect_to_agent.reason,
+          context_used: reply.debug.context_used,
+          refused,
+          rag_working: rag.isRagWorking,
+          sources: rag.ragSources.map((s) => ({ file: s.fileName, score: Number(s.score.toFixed(3)) })),
+          search_seconds: ragSeconds,
+          total_seconds: debug.total_seconds,
+          input_tokens: debug.input_tokens,
+          output_tokens: debug.output_tokens,
+        }).catch((error) => console.error("Reply signal not saved:", error)),
       );
+
+    if (response.stop_reason === "refusal") {
+      const reply = fallbackReply(
+        "I'm not able to help with that here, so I've passed this conversation to our support team.",
+        `Declined by safety checks (${response.stop_details?.category ?? "unspecified"})`,
+        true,
+      );
+      logReply(reply, true);
+      return jsonResponse(reply, 200, debug);
     }
     if (!response.parsed_output) {
       console.error("No parsed output; stop_reason:", response.stop_reason);
@@ -263,10 +289,12 @@ export async function POST(req: Request) {
       console.log("🚨 Agent redirect:", response.parsed_output.redirect_to_agent.reason);
     }
 
+    const reply = { id: crypto.randomUUID(), ...response.parsed_output };
+    logReply(reply, false);
+
     return jsonResponse(
       {
-        id: crypto.randomUUID(),
-        ...response.parsed_output,
+        ...reply,
         rag_sources: rag.ragSources,
         limits: { remaining },
       },
