@@ -3,6 +3,7 @@
 // limits) and listed for the owner at GET /api/handoff; no real agent is notified.
 import crypto from "crypto";
 import { getRedis } from "@/app/lib/access";
+import { clip } from "@/app/lib/signals";
 import customerSupportCategories from "@/app/lib/customer_support_categories.json";
 
 export type HandoffPriority = "urgent" | "high" | "normal";
@@ -58,8 +59,6 @@ export function parseReply(content: string): ReplyFields | null {
     return null;
   }
 }
-
-const clip = (text: string, max: number) => (text.length > max ? `${text.slice(0, max - 1)}…` : text);
 
 function pickPriority(
   userText: string,

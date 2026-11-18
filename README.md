@@ -35,7 +35,7 @@ Not measured yet: plain keyword search, and how human agents perform on the same
 1. **Test against the full WixQA article set.** Every other decision depends on numbers I can trust, and the current test set is too easy.
 2. **Evaluate the model that actually ships.** Run the answer eval with Haiku at low effort, and have a person grade 30 answers to check the AI grader. Haiku is the default for cost reasons, and there's no evidence yet that its quality is good enough.
 3. **Make the handoff to a human real, and test it.** The costliest failure is a user who stays stuck. *Done as a mock:* when the assistant decides a person is needed, it now opens a routed, prioritized ticket automatically, and a 33-case escalation test set runs against the live app (see [Handoff to a human](#handoff-to-a-human)). Still open: whether a refund request the articles say Customer Care reviews should go straight to a person.
-4. **Log the signals and add thumbs up/down.** Each reply already includes mood, categories and the escalation flag, but they only go to the server log. Storing them is how a wrong answer turns into a help article fix and a new eval case.
+4. **Log the signals and add thumbs up/down.** Each reply already includes mood, categories and the escalation flag, but they only went to the server log. Storing them is how a wrong answer turns into a help article fix and a new eval case. *Done:* every reply is logged with its feedback, and thumbs-down replies export to a triage file (see [Signals and feedback](#signals-and-feedback)). Not measured yet: real visitor ratings.
 5. **Measure time to answer and cost per conversation.** Both are needed for the business case, and neither is measured from start to finish yet.
 
 New features and more models wait until steps 1 to 3 are done, because until then I can't tell whether a change helps.
@@ -75,6 +75,36 @@ The ticket is what a help desk agent would pick up (`app/lib/handoff.ts`):
 - **Summary and transcript:** the first and latest customer messages, why the assistant handed off, and the whole conversation, so the customer doesn't have to repeat themselves.
 
 This is a mock help desk. Tickets are saved in Upstash Redis (the newest 100), and the owner can list them at `GET /api/handoff`. No real agent is notified, and the card tells visitors so. Visitors can create 3 tickets per 24 hours.
+
+## Signals and feedback
+
+Every reply is logged once it has been sent, so logging never slows the chat (`app/lib/signals.ts`). Each record holds:
+
+- the question and the reply
+- what Claude returned: mood, categories, whether it handed off and why, and whether it used the articles
+- the sources shown, with their scores
+- search and total time, token counts, and the model
+- whether it was a safety refusal
+
+Under each reply, visitors can give a thumbs up or down. A thumbs down asks what went wrong:
+
+- Incorrect
+- Didn't answer my question
+- Missing steps
+- Should have connected me to a person, or Didn't need a person if the reply handed off
+
+The rating is saved on that reply's record, and a later vote replaces an earlier one. Records are kept in Upstash Redis for 30 days (the newest 1,000), and the chat footer tells visitors so.
+
+**Closing the loop:**
+
+1. `GET /api/feedback` (owner only) reports the share of replies rated, the thumbs-up rate, and the handoff rate, plus how often the articles weren't used, broken down by category, mood and model. It also lists every thumbs-down reply. The owner's own test chats are left out unless you add `?include_owner=1`.
+2. `npm run feedback:export` saves that report and writes each thumbs-down reply to `data/feedback/triage-<date>.jsonl`, with a suggested cause:
+   - **Escalation:** the visitor said it should or shouldn't have handed off. Add the case to `data/eval/escalation.jsonl`.
+   - **Search miss or missing article:** the articles weren't used, or the visitor said it didn't answer. If an article answers it, add the question to the search eval; if not, it's a content gap.
+   - **Answer quality:** the right sources were shown, but the reply was wrong or incomplete. Look at the prompt or the model.
+3. After fixing, re-run the matching eval to confirm the fix and to catch regressions.
+
+`data/feedback/` is git-ignored because it holds real visitor questions.
 
 ## Tech stack
 
@@ -224,6 +254,7 @@ npm run dev              # http://localhost:3000
 | `npm run eval:retrieval:sweep` | One 20-chunk search per question, scored at 5/10/15/20 chunks and 3/5 articles |
 | `npm run eval:followups` | Two-message cases: newest message only vs. combined vs. merged searches |
 | `npm run eval:escalation` | Sends the 33 escalation cases through the running app as the owner (`BASE_URL`, default `http://localhost:3000`; optional model id argument). Costs one Claude call per message |
+| `npm run feedback:export` | Pulls the owner feedback report (`BASE_URL`, default the live demo) and writes thumbs-down replies to a triage file; `-- --include-owner` adds your own test chats |
 | `npm run eval:reranking` | 100 questions searched with reranking left out, `MANAGED` and `NONE` |
 | `npm run eval:sim:prepare` | Builds the input for the offline answer simulation |
 
@@ -237,6 +268,7 @@ npm run dev              # http://localhost:3000
 
 ```
 app/api/chat/route.ts     chat endpoint: search, Claude call, response schema
+app/api/feedback/route.ts thumbs up/down on a reply; owner report over the logged reply signals
 app/api/handoff/route.ts  human handoff: creates a mock support ticket; owner lists tickets
 app/api/session/route.ts  tells the UI whether the viewer is the owner or a visitor
 app/owner/route.ts        owner sign-in

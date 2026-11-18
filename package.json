@@ -24,6 +24,7 @@
     "eval:retrieval": "AWS_PROFILE= node --env-file-if-exists=.env.local scripts/eval-retrieval.mjs",
     "eval:retrieval:sweep": "AWS_PROFILE= node --env-file-if-exists=.env.local scripts/eval-retrieval-sweep.mjs",
     "eval:followups": "AWS_PROFILE= node --env-file-if-exists=.env.local scripts/eval-followups.mjs",
+    "feedback:export": "node --env-file-if-exists=.env.local scripts/feedback-export.mjs",
     "eval:escalation": "node --env-file-if-exists=.env.local scripts/eval-escalation.mjs",
     "eval:reranking": "AWS_PROFILE= node --env-file-if-exists=.env.local scripts/eval-reranking.mjs",
     "eval:sim:prepare": "AWS_PROFILE= node --env-file-if-exists=.env.local scripts/eval-sim-prepare.mjs",
