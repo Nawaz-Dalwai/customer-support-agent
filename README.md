@@ -8,6 +8,38 @@ A customer support chat assistant that answers questions from a library of help 
 
 This project rebuilds Anthropic's [`customer-support-agent`](https://github.com/anthropics/claude-quickstarts/tree/main/customer-support-agent) quickstart from scratch, updated for current models and APIs.
 
+## Product brief
+
+**The user.** A small business owner who built their site on a website platform and is stuck partway through a task, such as connecting a domain, setting up payments, or fixing the mobile layout. They usually aren't technical, and they want the exact steps for their situation right now, not a list of articles to read.
+
+**The problem.** A help center search returns articles, not answers. The user has to pick the right article, read it, and work out how it applies to them. When that fails, they contact support, and a paid human answers a question the help articles already covered. Meanwhile, the questions that really need a person (refund disputes, account recovery, security) wait in the same queue.
+
+The assistant answers from the help articles when they cover the question. When they don't, it says so and offers a human instead of guessing.
+
+**The success metric.**
+
+- **In production:** the share of conversations resolved correctly without a human. A conversation counts as resolved when there's no escalation, no repeat contact on the same topic within 7 days, and no negative feedback. Two guardrails come with it: the wrong-answer rate on a human-reviewed weekly sample (proposed bar: under 2%), and how often escalations were actually needed. A bot that never escalates can hit the main metric while failing users.
+- **In this prototype (no real users yet):** two stand-ins measured on the 400 WixQA test questions. The first is how often the right article reaches Claude: **95%**, measured. The second is how often the answer is fully correct: **90%**, simulated on the first version.
+
+**The baseline.** Without the assistant, the user gets search results over the same articles. On the same test set, search alone puts the right article first **69%** of the time and in the top 3 **89.8%** of the time. So about a third of users would need to look past the first result, and about 1 in 10 wouldn't find it in the top 3 at all. To be worth building, the assistant has to beat "read the top article yourself." That means a correct answer when the article is found (97% fully correct, simulated) and a handoff instead of a guess when it isn't.
+
+These numbers are optimistic, for two reasons:
+
+- 340 of the 500 articles in the knowledge base answer a test question, so search has far fewer wrong articles to get past than in a real help center.
+- The answer-quality figures come from a stronger model grading its own answers, not from the Haiku model the demo uses.
+
+Not measured yet: plain keyword search, and how human agents perform on the same questions.
+
+**What I'd do next, and why** (in order):
+
+1. **Test against the full WixQA article set.** Every other decision depends on numbers I can trust, and the current test set is too easy.
+2. **Evaluate the model that actually ships.** Run the answer eval with Haiku at low effort, and have a person grade 30 answers to check the AI grader. Haiku is the default for cost reasons, and there's no evidence yet that its quality is good enough.
+3. **Make the handoff to a human real, and test it.** The costliest failure is a user who stays stuck. *Done as a mock:* when the assistant decides a person is needed, it now opens a routed, prioritized ticket automatically, and a 33-case escalation test set runs against the live app (see [Handoff to a human](#handoff-to-a-human)). Still open: whether a refund request the articles say Customer Care reviews should go straight to a person.
+4. **Log the signals and add thumbs up/down.** Each reply already includes mood, categories and the escalation flag, but they only go to the server log. Storing them is how a wrong answer turns into a help article fix and a new eval case.
+5. **Measure time to answer and cost per conversation.** Both are needed for the business case, and neither is measured from start to finish yet.
+
+New features and more models wait until steps 1 to 3 are done, because until then I can't tell whether a change helps.
+
 ## How it works
 
 ```
@@ -32,6 +64,18 @@ Each reply is a JSON object that has to match a schema (`app/api/chat/route.ts`)
 
 The right panel shows which help articles were used for each answer.
 
+## Handoff to a human
+
+When a reply sets `redirect_to_agent`, the chat hands off right away, with no extra click. It sends the conversation to `/api/handoff`, which creates a support ticket, and shows a confirmation card under the reply: the ticket ID, the team queue, and the priority. The card also has a "What the agent sees" view. The system prompt tells Claude that the handoff is automatic, so the reply says the conversation has been passed on instead of asking the user to confirm or wait. If creating the ticket fails, the card offers a "Try again" button.
+
+The ticket is what a help desk agent would pick up (`app/lib/handoff.ts`):
+
+- **Queue:** chosen from the first matched category, for example `account` goes to Account & Security and `billing` to Billing. Anything else goes to General Support.
+- **Priority:** `urgent` if the conversation mentions things like "hacked", "fraud" or "lawyer"; `high` if the customer seems frustrated or it's a billing or payments issue; otherwise `normal`. The reason is stored with the ticket.
+- **Summary and transcript:** the first and latest customer messages, why the assistant handed off, and the whole conversation, so the customer doesn't have to repeat themselves.
+
+This is a mock help desk. Tickets are saved in Upstash Redis (the newest 100), and the owner can list them at `GET /api/handoff`. No real agent is notified, and the card tells visitors so. Visitors can create 3 tickets per 24 hours.
+
 ## Tech stack
 
 | Part | What's used |
@@ -48,6 +92,7 @@ The right panel shows which help articles were used for each answer.
 The public demo is open to everyone, so usage is capped:
 
 - Visitors can use only **Claude Haiku 5.5**, with **500 characters** per question and **10 questions per 24 hours** per IP address.
+- Visitors can be handed to a human **3 times per 24 hours**, so the mock ticket queue can't be flooded.
 - If the rate limiter is unavailable, requests are refused rather than let through unlimited.
 - The owner signs in at `/owner` to unlock all models with no limits. A signed cookie keeps them signed in.
 - If the Claude API spend limit is reached, the chat shows a friendly "usage limit reached" message.
@@ -95,6 +140,20 @@ The trade-off is that 45% of topic changes also bring in an article from the ear
 **After the search changes (simulation, 11 questions):** the 11 sample questions where the first version's search missed the right article were re-answered with the current search. Fully correct answers went from 36% to 91% (4 to 10 of 11). The other 89 questions weren't re-run. If they're unchanged, the estimate for all 100 rises from 90% to 96% fully correct. Details are in `data/eval/results/simulation-v2-subset-summary.json`.
 
 The answer quality numbers are an **offline simulation** of the first version (5 chunks), not a test of the live app. One model wrote answers using the app's prompt and the same retrieved articles, and the same model then graded them against the expert answers. Treat them as an estimate. The main finding still holds: most weak answers come from search misses, so better search is the next improvement.
+
+**Escalation (33 hand-written cases, measured on the app with Claude Haiku 5.5):**
+
+`data/eval/escalation.jsonl` has 17 cases that must go to a human and 16 that must not. The first group covers asking for a person, refund disputes, account takeover, account-specific questions, legal issues, off-topic requests, and questions the articles don't cover. The second group includes sensitive-sounding questions the articles do answer, such as refund policy, account recovery and chargebacks. `npm run eval:escalation` sends every case through the real `/api/chat` route and checks the `redirect_to_agent` flag on the last reply.
+
+| Measure | First prompt (handoff offered) | Current prompt (handoff automatic) |
+|---|---|---|
+| Cases that needed a human and got the handoff | 100% (17 of 17) | 100% (17 of 17) |
+| Handoffs that were needed | 89.5% (17 of 19) | 94.4% (17 of 18) |
+| Answerable questions handed off anyway | 12.5% (2 of 16) | 6.3% (1 of 16) |
+
+With the first prompt, both false handoffs gave a complete self-service answer and then *also* offered a human: domain refunds and account recovery. That prompt listed "refund disputes, account recovery" as reasons to hand off. Once the handoff became automatic, each of these would open a ticket nobody needed. So the prompt now says to answer, without handing off, when the articles fully cover the question, even on sensitive topics. Account recovery is now answered with the self-service steps. Domain refunds still hand off, because the article itself says Customer Care reviews refund requests, so this is a borderline case.
+
+Results vary between runs: in an earlier run with the first prompt, the account recovery case was answered without a handoff. One case was relabeled after the first run because the article didn't actually cover it (what to do when the email-change code never arrives). Results are in `data/eval/results/escalation-summary.json`.
 
 Full results are in `data/eval/results/`.
 
@@ -164,6 +223,7 @@ npm run dev              # http://localhost:3000
 | `npm run eval:retrieval` | Search evaluation on all 400 questions at 5 chunks (AWS only, no Claude cost) |
 | `npm run eval:retrieval:sweep` | One 20-chunk search per question, scored at 5/10/15/20 chunks and 3/5 articles |
 | `npm run eval:followups` | Two-message cases: newest message only vs. combined vs. merged searches |
+| `npm run eval:escalation` | Sends the 33 escalation cases through the running app as the owner (`BASE_URL`, default `http://localhost:3000`; optional model id argument). Costs one Claude call per message |
 | `npm run eval:reranking` | 100 questions searched with reranking left out, `MANAGED` and `NONE` |
 | `npm run eval:sim:prepare` | Builds the input for the offline answer simulation |
 
@@ -177,6 +237,7 @@ npm run dev              # http://localhost:3000
 
 ```
 app/api/chat/route.ts     chat endpoint: search, Claude call, response schema
+app/api/handoff/route.ts  human handoff: creates a mock support ticket; owner lists tickets
 app/api/session/route.ts  tells the UI whether the viewer is the owner or a visitor
 app/owner/route.ts        owner sign-in
 app/lib/                  access rules, model list, knowledge base search, categories

@@ -1,0 +1,68 @@
+// Mock human handoff. POST turns the conversation into a queued ticket; GET lists recent
+// tickets for the owner (the "agent queue"). No real agent is notified.
+import { z } from "zod/v4";
+import { clientIp, consumePublicHandoff, isOwner } from "@/app/lib/access";
+import { buildTicket, listTickets, saveTicket } from "@/app/lib/handoff";
+
+export const dynamic = "force-dynamic";
+
+const requestSchema = z.object({
+  messages: z
+    .array(
+      z.object({
+        role: z.enum(["user", "assistant"]),
+        content: z.string().max(20000),
+      }),
+    )
+    .min(2)
+    .max(40),
+});
+
+export async function POST(req: Request) {
+  const parsed = requestSchema.safeParse(await req.json().catch(() => null));
+  if (!parsed.success) {
+    return Response.json({ error: "Invalid request" }, { status: 400 });
+  }
+  const { messages } = parsed.data;
+  if (!messages.some((m) => m.role === "user")) {
+    return Response.json({ error: "Invalid request" }, { status: 400 });
+  }
+
+  const owner = isOwner(req);
+  if (!owner) {
+    const limit = await consumePublicHandoff(clientIp(req));
+    if (!limit.allowed) {
+      return Response.json(
+        {
+          error:
+            limit.reset === null
+              ? "Connecting to an agent is unavailable right now. Please try again later."
+              : "You've reached the demo's limit for agent requests today. Please try again tomorrow.",
+        },
+        { status: limit.reset === null ? 503 : 429 },
+      );
+    }
+  }
+
+  const ticket = buildTicket(messages, owner ? "owner" : "visitor");
+  let stored = false;
+  try {
+    stored = await saveTicket(ticket);
+  } catch (error) {
+    console.error("Handoff ticket not stored:", error);
+  }
+  console.log("🎫 Handoff ticket", { id: ticket.id, queue: ticket.queue, priority: ticket.priority, stored });
+
+  return Response.json({ ticket, stored });
+}
+
+export async function GET(req: Request) {
+  if (!isOwner(req)) {
+    return Response.json({ error: "Owner sign-in required" }, { status: 401 });
+  }
+  const tickets = await listTickets();
+  if (tickets === null) {
+    return Response.json({ error: "Ticket store is not configured" }, { status: 503 });
+  }
+  return Response.json({ tickets }, { headers: { "Cache-Control": "no-store" } });
+}
