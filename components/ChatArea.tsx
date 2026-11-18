@@ -22,6 +22,7 @@ import {
 } from "lucide-react";
 import type { HandoffTicket } from "@/app/lib/handoff";
 import { FEEDBACK_REASONS, type FeedbackReason } from "@/app/lib/feedback-reasons";
+import { STARTER_QUESTIONS } from "@/app/lib/starter-questions";
 import "highlight.js/styles/atom-one-dark.css";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Textarea } from "@/components/ui/textarea";
@@ -506,6 +507,7 @@ function ChatArea() {
   };
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
 
   useEffect(() => {
     fetch("/api/session", { cache: "no-store" })
@@ -661,9 +663,11 @@ function ChatArea() {
 
       // Error responses still carry a user-facing `response` message; show it instead of a spinner.
       const data = await response.json().catch(() => ({}));
-      if (typeof data?.limits?.remaining === "number") {
-        const left = data.limits.remaining;
-        setSession((s) => ({ ...s, remaining: left }));
+      if (
+        (response.ok || response.status === 429) &&
+        typeof data?.limits?.remaining === "number"
+      ) {
+        setSession((s) => ({ ...s, remaining: data.limits.remaining }));
       }
       if (!response.ok || !data.response) {
         throw new Error(
@@ -744,6 +748,11 @@ function ChatArea() {
     }
   };
 
+  const resizeTextarea = (textarea: HTMLTextAreaElement) => {
+    textarea.style.height = "auto";
+    textarea.style.height = `${Math.min(textarea.scrollHeight, 300)}px`;
+  };
+
   const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
@@ -756,14 +765,25 @@ function ChatArea() {
   const handleInputChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     const textarea = event.target;
     setInput(textarea.value);
-
-    textarea.style.height = "auto";
-    textarea.style.height = `${Math.min(textarea.scrollHeight, 300)}px`;
+    resizeTextarea(textarea);
   };
 
   const handleSuggestedQuestionClick = (question: string) => {
     if (outOfQuestions) return;
     handleSubmit(question.slice(0, session.maxMessageChars));
+  };
+
+  const handleStarterQuestionClick = (question: string) => {
+    if (outOfQuestions || isLoading) return;
+    const value = question.slice(0, session.maxMessageChars);
+    setInput(value);
+    requestAnimationFrame(() => {
+      const textarea = textareaRef.current;
+      if (!textarea) return;
+      resizeTextarea(textarea);
+      textarea.focus();
+      textarea.setSelectionRange(value.length, value.length);
+    });
   };
 
   return (
@@ -804,6 +824,26 @@ function ChatArea() {
                     I&apos;m always learning! The more you share, the better I
                     can assist you.
                   </p>
+                </div>
+              </div>
+              <div className="mt-8 w-full max-w-lg text-center">
+                <p className="text-sm text-muted-foreground mb-3">
+                  Try asking:
+                </p>
+                <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-2">
+                  {STARTER_QUESTIONS.map((question) => (
+                    <Button
+                      key={question}
+                      type="button"
+                      variant="outline"
+                      size="sm"
+                      className="text-sm text-muted-foreground shadow-sm h-auto py-2 px-3 whitespace-normal text-left sm:text-center"
+                      disabled={isLoading || outOfQuestions}
+                      onClick={() => handleStarterQuestionClick(question)}
+                    >
+                      {question}
+                    </Button>
+                  ))}
                 </div>
               </div>
             </div>
@@ -876,6 +916,7 @@ function ChatArea() {
           className="flex flex-col w-full relative bg-background border rounded-xl focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2"
         >
           <Textarea
+            ref={textareaRef}
             value={input}
             onChange={handleInputChange}
             onKeyDown={handleKeyDown}
@@ -891,7 +932,7 @@ function ChatArea() {
           />
           <div className="flex justify-between items-center p-3">
             <span className="text-xs text-muted-foreground">
-              Powered by Claude · Questions and ratings are kept for 30 days to improve answers
+              Questions and ratings kept for 30 days
               {!session.owner && (
                 <span className="ml-2">
                   · {input.length}/{session.maxMessageChars}

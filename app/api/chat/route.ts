@@ -189,13 +189,22 @@ export async function POST(req: Request) {
   if (!owner) {
     const limit = await consumePublicRequest(clientIp(req));
     if (!limit.allowed) {
+      if (limit.denyReason === "store_unavailable") {
+        return jsonResponse(
+          fallbackReply(
+            "The demo is temporarily unavailable. Please try again later.",
+            "Rate limit store unavailable",
+          ),
+          503,
+        );
+      }
       const message =
-        limit.reset === null
-          ? "The demo is temporarily unavailable. Please try again later."
-          : `You've used all ${PUBLIC_DAILY_LABEL} for this demo. Please come back in ${hoursUntil(limit.reset)}.`;
+        limit.reset != null
+          ? `You've used all ${PUBLIC_DAILY_LABEL} for this demo. Please come back in ${hoursUntil(limit.reset)}.`
+          : "You've used today's demo questions. Please come back tomorrow.";
       return jsonResponse(
         { ...fallbackReply(message, "Visitor rate limit"), limits: { remaining: 0 } },
-        limit.reset === null ? 503 : 429,
+        429,
       );
     }
     remaining = limit.remaining;
