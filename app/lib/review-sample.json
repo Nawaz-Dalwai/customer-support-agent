@@ -1,0 +1,61 @@
+{
+ "note": "SAMPLE - 3 of 13 findings from a real review run (Claude Sonnet 5.5) over the simulated sample replies, 2026-11-24.",
+ "last_run": {
+  "id": "sample",
+  "finished_at": "2026-11-24T07:17:14.465Z",
+  "trigger": "manual",
+  "reviewed": 17,
+  "candidates": 17,
+  "findings": 13,
+  "cost_usd": 0.2048,
+  "model": "claude-sonnet-5-5",
+  "errors": []
+ },
+ "findings": [
+  {
+   "type": "handoff_policy",
+   "title": "Cautious policy hands off plan questions the articles fully answer",
+   "reply_ids": [
+    "74aafa6a-1aa4-46d3-823f-1a0fc86b174f",
+    "2814cf62-e82f-45d0-83ea-19fc3c17fb92"
+   ],
+   "evidence": "Both replies gave complete steps from the right articles (Assigning a Premium Plan to a Different Site; Changing Your Premium or Studio Plan). The cautious rule 'when the question involves billing, payments, refunds, account access or security, even if the articles cover it' still triggered a handoff, and the customers said it wasn't needed.",
+   "proposed_fix": "Change the cautious rule from \"when the question involves billing, payments, refunds, account access or security, even if the articles cover it\" to \"when the question involves a charge dispute, a refund decision, or account access the user can't recover with the self-service steps. Routine how-to questions about plans (change, assign, cancel, upgrade) that the articles fully answer should be answered with should_redirect false.\" Keep the other cautious triggers, such as a user asking for a person or saying an answer didn't work.",
+   "confidence": "high",
+   "id": "sample-1",
+   "status": "pending",
+   "run_id": "sample",
+   "run_at": "2026-11-24T07:17:14.465Z"
+  },
+  {
+   "type": "article_gap",
+   "title": "Forum moderation article has no step for turning off post approval",
+   "reply_ids": [
+    "db152732-9093-4c97-9d72-18248af33585",
+    "5547e5a8-8ac7-441a-b1f1-acd39b5fa01e"
+   ],
+   "evidence": "Both replies gave steps, including a \"More Actions\" drop-down and a \"Moderate posts for sensitive content\" toggle. The Wix_Forum_Moderating_Your_Forum article lists only reCAPTCHA, post limit, attachment size and word filter, and says Moderation Settings is at the top, not under More Actions. The answer isn't supported by the retrieved article, and customers ticked few steps and asked for a person.",
+   "proposed_fix": "Check with the Forum team whether a post approval setting exists. If it does, add its name, location and steps to Wix_Forum_Moderating_Your_Forum. If it doesn't, state that in the article. Also have the assistant say the articles don't cover approval instead of naming a toggle they don't list.",
+   "confidence": "medium",
+   "id": "sample-2",
+   "status": "pending",
+   "run_id": "sample",
+   "run_at": "2026-11-24T07:17:14.465Z"
+  },
+  {
+   "type": "search_miss",
+   "title": "Notification email question answered with unrelated articles",
+   "reply_ids": [
+    "1fb0f732-a37d-4338-b7f2-1315877f967e"
+   ],
+   "evidence": "The assistant had Inbox notification settings, Google Workspace, phone number, TikTok and image articles, none about routing site messages to another address. It told the customer to add a collaborator, and the customer followed all 4 steps without a fix. A fresh search finds automation articles with relevant steps (sending to a collaborator, reply-to address), which the assistant never had.",
+   "proposed_fix": "Tune retrieval so questions about where site or form messages and notifications are sent surface the automation emails articles (recipients, reply-to address) and the notification settings article. Check that the retrieved set contains an article whose steps match the request. If none does, the assistant should say so and hand off rather than build steps from loosely related articles. Also check whether Wix_Inbox_Managing_Your_Notification_Settings covers changing the notification email address, and add those steps if not.",
+   "confidence": "medium",
+   "id": "sample-3",
+   "status": "pending",
+   "run_id": "sample",
+   "run_at": "2026-11-24T07:17:14.465Z"
+  }
+ ],
+ "rejected_hidden": 0
+}

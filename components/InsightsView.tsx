@@ -74,6 +74,36 @@ type Insights = {
   };
   eval_tradeoffs: Partial<Record<EscalationLevel, EvalResult>>;
   recent_negative: NegativeReply[];
+  review: Review;
+};
+type FindingType = "article_gap" | "search_miss" | "prompt_rule" | "handoff_policy" | "no_fix_needed";
+type ReviewFinding = {
+  id: string;
+  run_id: string;
+  run_at: string;
+  type: FindingType;
+  title: string;
+  reply_ids: string[];
+  evidence: string;
+  proposed_fix: string;
+  confidence: "low" | "medium" | "high";
+  status: "pending" | "approved" | "rejected" | "applied";
+  applied_commit?: string;
+};
+type Review = {
+  note?: string;
+  last_run: {
+    finished_at: string;
+    trigger: "cron" | "manual";
+    reviewed: number;
+    candidates: number;
+    findings: number;
+    cost_usd: number;
+    model: string;
+    errors: string[];
+  } | null;
+  findings: ReviewFinding[];
+  rejected_hidden: number;
 };
 
 // ---- Labels ----
@@ -192,6 +222,188 @@ function RateTable({ groups, nameOf, extra }: {
   );
 }
 
+// ---- Self-review: suggested fixes ----
+const FINDING_TYPES: { id: FindingType; label: string }[] = [
+  { id: "handoff_policy", label: "Handoff policy" },
+  { id: "prompt_rule", label: "Assistant instructions" },
+  { id: "article_gap", label: "Missing from help articles" },
+  { id: "search_miss", label: "Search found the wrong article" },
+  { id: "no_fix_needed", label: "No fix needed" },
+];
+
+function SuggestedFixes({
+  review,
+  canAct,
+  includeOwner,
+  onChanged,
+}: {
+  review: Review;
+  canAct: boolean; // owner viewing live data
+  includeOwner: boolean;
+  onChanged: () => void;
+}) {
+  const [running, setRunning] = useState(false);
+  const [busyId, setBusyId] = useState<string | null>(null);
+  const [message, setMessage] = useState<string | null>(null);
+  const last = review.last_run;
+
+  const call = async (method: "POST" | "PATCH", body: object) => {
+    const res = await fetch("/api/review", {
+      method,
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body),
+    });
+    const data = await res.json().catch(() => null);
+    if (!res.ok) throw new Error(data?.error ?? `Request failed (${res.status})`);
+    return data;
+  };
+
+  const runNow = async () => {
+    setRunning(true);
+    setMessage(null);
+    try {
+      const run = await call("POST", { source: "live", include_owner: includeOwner });
+      setMessage(
+        run.reviewed_ids.length
+          ? `Reviewed ${run.reviewed_ids.length} problem replies: ${run.findings.length} findings, ${usd(run.cost_usd)}.`
+          : "Nothing new to review.",
+      );
+      onChanged();
+    } catch (e) {
+      setMessage((e as Error).message);
+    } finally {
+      setRunning(false);
+    }
+  };
+
+  const setStatus = async (f: ReviewFinding, status: ReviewFinding["status"]) => {
+    setBusyId(f.id);
+    setMessage(null);
+    try {
+      await call("PATCH", { run_id: f.run_id, finding_id: f.id, status });
+      onChanged();
+    } catch (e) {
+      setMessage((e as Error).message);
+    } finally {
+      setBusyId(null);
+    }
+  };
+
+  return (
+    <Section
+      title="Suggested fixes"
+      hint="Once a month, Claude reviews the problem replies, works out why each failed and proposes a fix. Nothing changes until the owner approves it."
+    >
+      <div className="mb-3 flex flex-wrap items-center justify-between gap-2 text-xs text-muted-foreground">
+        <span>
+          {last
+            ? `Last review ${day(last.finished_at)} (${last.trigger === "cron" ? "monthly" : "run by owner"}): ${last.reviewed} replies, ${last.findings} findings, ${usd(last.cost_usd)}.`
+            : "No review has run yet."}{" "}
+          Next automatic review: 1st of the month, 03:00–03:59 UTC.
+        </span>
+        {canAct && (
+          <button
+            type="button"
+            onClick={runNow}
+            disabled={running}
+            className="inline-flex items-center gap-1.5 rounded-md border px-2.5 py-1 text-foreground transition-colors hover:bg-accent disabled:opacity-50"
+          >
+            {running && <Loader2 className="h-3 w-3 animate-spin" />}
+            {running ? "Reviewing… up to a minute" : "Run review now"}
+          </button>
+        )}
+      </div>
+      {review.note && <p className="mb-3 text-xs text-muted-foreground">{review.note}</p>}
+      {message && <p className="mb-3 text-sm">{message}</p>}
+      {last && last.errors.length > 0 && (
+        <p className="mb-3 text-xs text-destructive">{last.errors.join(" · ")}</p>
+      )}
+
+      {review.findings.length === 0 ? (
+        <p className="text-sm text-muted-foreground">No open findings.</p>
+      ) : (
+        <div className="space-y-4">
+          {FINDING_TYPES.map(({ id, label }) => {
+            const group = review.findings.filter((f) => f.type === id);
+            if (group.length === 0) return null;
+            return (
+              <div key={id}>
+                <h3 className="mb-1.5 text-xs font-medium uppercase tracking-wide text-muted-foreground">
+                  {label} · {group.length}
+                </h3>
+                <ul className="space-y-2">
+                  {group.map((f) => (
+                    <li key={f.id} className="rounded-md border p-3 text-sm">
+                      <div className="flex flex-wrap items-start justify-between gap-2">
+                        <p className="font-medium">{f.title}</p>
+                        <span className="text-xs text-muted-foreground">
+                          {capitalize(f.confidence)} confidence · {f.reply_ids.length}{" "}
+                          {f.reply_ids.length === 1 ? "reply" : "replies"}
+                        </span>
+                      </div>
+                      <p className="mt-1 text-muted-foreground">{f.evidence}</p>
+                      {f.proposed_fix && (
+                        <p className="mt-2 whitespace-pre-wrap">
+                          <span className="font-medium">Proposed fix: </span>
+                          {f.proposed_fix}
+                        </p>
+                      )}
+                      <div className="mt-2 flex flex-wrap items-center gap-2 text-xs">
+                        {f.status === "applied" ? (
+                          <span className="text-muted-foreground">
+                            Applied{f.applied_commit ? ` in ${f.applied_commit.slice(0, 7)}` : ""}
+                          </span>
+                        ) : f.status === "approved" ? (
+                          <span className="text-muted-foreground">Approved, waiting to be applied</span>
+                        ) : (
+                          <span className="text-muted-foreground">Waiting for review</span>
+                        )}
+                        {canAct && f.status === "pending" && (
+                          <>
+                            <button
+                              type="button"
+                              disabled={busyId === f.id}
+                              onClick={() => setStatus(f, "approved")}
+                              className="rounded-md bg-primary px-2 py-0.5 text-primary-foreground disabled:opacity-50"
+                            >
+                              Approve
+                            </button>
+                            <button
+                              type="button"
+                              disabled={busyId === f.id}
+                              onClick={() => setStatus(f, "rejected")}
+                              className="rounded-md border px-2 py-0.5 hover:bg-accent disabled:opacity-50"
+                            >
+                              Reject
+                            </button>
+                          </>
+                        )}
+                        {canAct && f.status === "approved" && (
+                          <button
+                            type="button"
+                            disabled={busyId === f.id}
+                            onClick={() => setStatus(f, "pending")}
+                            className="rounded-md border px-2 py-0.5 hover:bg-accent disabled:opacity-50"
+                          >
+                            Undo
+                          </button>
+                        )}
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
+        </div>
+      )}
+      {review.rejected_hidden > 0 && (
+        <p className="mt-3 text-xs text-muted-foreground">{review.rejected_hidden} rejected findings hidden.</p>
+      )}
+    </Section>
+  );
+}
+
 // ---- Page ----
 export default function InsightsView() {
   const [source, setSource] = useState<"sample" | "live">("sample");
@@ -199,6 +411,7 @@ export default function InsightsView() {
   const [data, setData] = useState<Insights | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
+  const [reloadKey, setReloadKey] = useState(0); // bumped after a review run or a finding update
 
   useEffect(() => {
     const params = new URLSearchParams();
@@ -219,7 +432,7 @@ export default function InsightsView() {
     return () => {
       cancelled = true;
     };
-  }, [source, includeOwner]);
+  }, [source, includeOwner, reloadKey]);
 
   const isOwner = data?.is_owner ?? false;
   const o = data?.overall;
@@ -344,6 +557,13 @@ export default function InsightsView() {
               <Stat label="Retry ended with a person" value={String(data.retries.went_to_person)} detail="handed off, or asked after" />
             </div>
           </Section>
+
+          <SuggestedFixes
+            review={data.review}
+            canAct={isOwner && data.source === "live"}
+            includeOwner={includeOwner}
+            onChanged={() => setReloadKey((k) => k + 1)}
+          />
 
           <Section
             title="Handoff policy: real use vs. the eval"
