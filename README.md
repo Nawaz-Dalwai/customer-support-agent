@@ -16,7 +16,7 @@ RAG support chat: Bedrock Knowledge Base retrieval, Claude structured answers, p
 
 Caveats: 340 of 500 KB articles are ground-truth for the test set (easier than production). Answer-quality sim used a stronger model self-grading.
 
-**Next:** Full WixQA article set for retrieval eval · Haiku answer-quality eval with human spot-checks · *(done)* auto handoff + escalation eval · *(done)* signal logging + thumbs feedback · End-to-end latency/cost.
+**Next:** Full WixQA article set for retrieval eval · Haiku answer-quality eval with human spot-checks · *(done)* auto handoff + escalation eval · *(done)* "Did this fix it?" outcomes · *(done)* selectable handoff policy · *(done)* insights page with cost per reply.
 
 ## How it works
 
@@ -31,11 +31,25 @@ Side panels: thinking, categories, and source articles. Env vars: `.env.local.ex
 
 `redirect_to_agent` opens a mock ticket immediately (no extra click): queue from category, priority from keywords/mood, summary + transcript. Stored in Redis; owner `GET /api/handoff`. Visitors: 3/day.
 
-**Escalation eval (33 cases, Haiku):** 100% recall on must-escalate; ~6% false handoffs on answerable questions (`data/eval/results/escalation-summary.json`).
+**Handoff policy.** Anyone can pick how readily the bot hands off, per chat: **Cautious** (hand off whenever unsure or money, access or security is involved), **Balanced** (default: answer what the articles cover), **Resolve-first** (hand off only when a person is asked for or staff must decide). Each level is a different handoff rule in the prompt; the level is logged on every reply. A Compare panel in the chat shows the measured trade-off:
+
+| Policy | Needed handoffs caught | Unneeded handoffs |
+|---|---|---|
+| Cautious | 100% (17/17) | 69% (11/16) |
+| Balanced | 100% (17/17) | 6% (1/16) |
+| Resolve-first | 71% (12/17) | 6% (1/16) |
+
+33 hand-labelled conversations through the app's own `/api/chat` route (run locally) on Haiku (`npm run eval:escalation -- --levels cautious,balanced,resolve_first`; results in `data/eval/results/escalation-<level>-summary.json`). Labels follow Balanced's rules, so Resolve-first's 5 misses are the off-topic and not-covered questions it is told to answer instead. Small sample: read the gaps, not the exact percentages.
 
 ## Feedback
 
-Each reply is logged (question, answer, mood, categories, handoff, sources, timing, tokens). Thumbs up/down on thumbs down asks a reason. Owner `GET /api/feedback`; export via `feedback:export` → `data/feedback/` (gitignored). Records kept 30 days.
+Each reply is logged (question, answer, mood, categories, handoff, policy, sources, timing, tokens). Instead of thumbs, answers ask **"Did this fix it?"**: numbered steps get tick boxes, **Still stuck** asks why and offers a person (the ticket carries the reason and the steps already tried), and handoff replies offer **Didn't need a person?** to catch unnecessary escalations. Owner `GET /api/feedback`; export via `feedback:export` → `data/feedback/` (gitignored). Records kept 30 days.
+
+## Insights
+
+`/insights` turns the reply records into a report: resolved %, handoff %, unneeded handoffs, reply time and estimated cost per reply; resolution and handoffs by category; why customers got stuck; each handoff policy in real use next to its eval numbers; and the latest problem replies with the articles used.
+
+Visitors see **labelled sample data** (150 records built by `npm run build:insights-sample` from public WixQA questions and the escalation test cases; outcomes and timings simulated). Real records contain visitors' questions, so **live data is owner-only**, checked server-side (`GET /api/insights?source=live`).
 
 ## Tech stack
 
@@ -60,20 +74,21 @@ WixQA: 400 questions with known articles. Full numbers in `data/eval/results/`.
 | **Search** | Right article in context **95%** at 10 chunks / 5 articles (was 90.5% at 5) |
 | **Follow-ups** | Merged search: **97.5%** vs **72.5%** message-only (`followups-summary.json`) |
 | **Answers** | **90%** fully correct simulated; **97%** when retrieval hit (`simulation-summary.json`) |
-| **Escalation** | **100%** needed handoffs; **94%** precision (`escalation-summary.json`) |
+| **Escalation** | Balanced: **100%** needed handoffs, **6%** unneeded; per-policy table under [Handoff](#handoff) |
 
 Search eval used an easy subset (many articles are direct answers to test questions). Answer sim is not the live Haiku app.
 
 ## Cost
 
-Haiku: fractions of a cent per question. Bedrock KB: storage + retrieve. Vercel/Upstash: free tier for demo scale.
+About **$0.002 per first question on Haiku**: ~6.1k input + ~420 output tokens (escalation eval average) is ~$0.0008 of Claude, and the knowledge base search is ~$0.001, so search is over half the cost. Follow-ups run two searches. Opus 5.5 costs 40x Haiku per token. Rates live in `app/lib/pricing.ts` (list prices, no prompt caching); the KB search price is from the AWS pricing page and not yet checked against the bill. Vercel/Upstash: free tier for demo scale.
 
 ## Layout
 
 ```
-app/api/{chat,feedback,handoff,session}/   server routes
-app/lib/                                   retrieval, access, handoff, signals
-components/                                chat + sidebars
+app/api/{chat,feedback,handoff,insights,session}/   server routes
+app/insights/                              insights page
+app/lib/                                   retrieval, access, handoff, signals, pricing, escalation levels
+components/                                chat, sidebars, policy selector, insights view
 data/{kb,eval}/                            articles and eval sets
 infra/knowledge-base.yaml
 scripts/                                   tests and offline evals
