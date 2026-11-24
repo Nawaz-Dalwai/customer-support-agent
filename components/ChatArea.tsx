@@ -12,6 +12,7 @@ import rehypeRaw from "rehype-raw";
 import {
   HandHelping,
   LifeBuoyIcon,
+  RotateCcw,
   ChevronDown,
   ChevronRight,
   MessageSquare,
@@ -29,7 +30,7 @@ import {
 } from "@/app/lib/feedback-reasons";
 import { STARTER_QUESTIONS } from "@/app/lib/starter-questions";
 import { DEFAULT_ESCALATION_LEVEL, type EscalationLevel } from "@/app/lib/escalation-levels";
-import PolicySelector from "@/components/PolicySelector";
+import PolicySelector, { PolicyToggle } from "@/components/PolicySelector";
 import "highlight.js/styles/atom-one-dark.css";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Textarea } from "@/components/ui/textarea";
@@ -185,8 +186,20 @@ type OutcomeState = {
   status: "saving" | "saved" | "error";
 };
 
+// "Try again" after a stuck reason: a visible follow-up sent as the customer, worded for the reason.
+// "Didn't answer my question" only fills the message box: a generic retry would find the same
+// articles, so the customer says what they meant instead.
+const RETRY_MESSAGES: Record<StuckReason, string> = {
+  didnt_work: "I tried those steps and it didn't work. Is there another way to do this?",
+  incomplete: "Some steps seem to be missing. Can you give me the complete steps?",
+  incorrect: "That doesn't look right for my situation. Can you check again?",
+  not_answered: "What I meant was: ",
+};
+const RETRY_FILLS_INPUT: StuckReason = "not_answered";
+
 // Asked under every answer that didn't hand off: the outcome, not a rating, is the success metric.
-// "Still stuck" asks why and offers a person; on a handoff reply the customer can say it wasn't needed.
+// "Still stuck" asks why, then offers to try again (latest reply only) or a person; on a handoff
+// reply the customer can say it wasn't needed.
 const ReplyOutcome = ({
   handedOff,
   outcome,
@@ -194,6 +207,9 @@ const ReplyOutcome = ({
   handoff,
   onReport,
   onTalkToPerson,
+  canRetry,
+  retried,
+  onTryAgain,
 }: {
   handedOff: boolean;
   outcome?: OutcomeState;
@@ -201,6 +217,9 @@ const ReplyOutcome = ({
   handoff?: HandoffState;
   onReport: (result: OutcomeResult, reason: StuckReason | null) => void;
   onTalkToPerson: () => void;
+  canRetry: boolean; // latest reply, not loading, questions left
+  retried: boolean;
+  onTryAgain: (reason: StuckReason) => void;
 }) => {
   const saveError = outcome?.status === "error" && (
     <span className="ml-1 text-red-600">Couldn&apos;t save your answer</span>
@@ -281,10 +300,35 @@ const ReplyOutcome = ({
             </div>
           ) : (
             <>
-              <Button size="sm" className="h-7 gap-1.5 text-xs" onClick={onTalkToPerson}>
-                <LifeBuoyIcon className="h-3.5 w-3.5" />
-                Talk to a person
-              </Button>
+              {outcome.reason && outcome.status !== "error" && (
+                <p>
+                  <span className="font-medium text-foreground/80">Thanks, noted.</span>{" "}
+                  {retried
+                    ? outcome.reason === RETRY_FILLS_INPUT
+                      ? "Finish your message below and send it."
+                      : "I've asked again below."
+                    : canRetry
+                      ? "Want me to try again, or talk to a person?"
+                      : "You can talk to a person if you're still stuck."}
+                </p>
+              )}
+              <div className="flex flex-wrap items-center gap-2">
+                {outcome.reason && canRetry && !retried && (
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="h-7 gap-1.5 text-xs"
+                    onClick={() => onTryAgain(outcome.reason!)}
+                  >
+                    <RotateCcw className="h-3.5 w-3.5" />
+                    {outcome.reason === RETRY_FILLS_INPUT ? "Rephrase my question" : "Try again"}
+                  </Button>
+                )}
+                <Button size="sm" className="h-7 gap-1.5 text-xs" onClick={onTalkToPerson}>
+                  <LifeBuoyIcon className="h-3.5 w-3.5" />
+                  Talk to a person
+                </Button>
+              </div>
               {handoff?.status === "error" && <p className="text-red-600">{handoff.message}</p>}
             </>
           )}
@@ -545,6 +589,7 @@ interface ConversationHeaderProps {
   models: Pick<ChatModel, "id" | "name">[];
   showAvatar: boolean;
   session: SessionInfo;
+  leading?: React.ReactNode; // shown on the left of the row (the handoff policy button)
 }
 
 const ConversationHeader: React.FC<ConversationHeaderProps> = ({
@@ -553,6 +598,7 @@ const ConversationHeader: React.FC<ConversationHeaderProps> = ({
   models,
   showAvatar,
   session,
+  leading,
 }) => (
   <div className="p-0 flex flex-col sm:flex-row items-start sm:items-center justify-between pb-2 animate-fade-in">
     <div className="flex items-center space-x-4 mb-2 sm:mb-0">
@@ -565,6 +611,7 @@ const ConversationHeader: React.FC<ConversationHeaderProps> = ({
           </div>
         </>
       )}
+      {leading}
     </div>
     <div className="flex items-center gap-2 w-full sm:w-auto">
       <span className="text-xs text-muted-foreground whitespace-nowrap">
@@ -615,6 +662,8 @@ function ChatArea() {
   const [showAvatar, setShowAvatar] = useState(false);
   const [session, setSession] = useState<SessionInfo>(PUBLIC_SESSION);
   const [escalationLevel, setEscalationLevel] = useState<EscalationLevel>(DEFAULT_ESCALATION_LEVEL);
+  const [policyOpen, setPolicyOpen] = useState(false); // handoff policy panel, closed by default
+  const [retried, setRetried] = useState<Record<string, true>>({}); // reply ids where "Try again" was used
   // Keyed by the id of the assistant message whose "Talk to a human" button was clicked
   const [handoffs, setHandoffs] = useState<Record<string, HandoffState>>({});
 
@@ -987,9 +1036,9 @@ function ChatArea() {
     handleSubmit(question.slice(0, session.maxMessageChars));
   };
 
-  const handleStarterQuestionClick = (question: string) => {
-    if (outOfQuestions || isLoading) return;
-    const value = question.slice(0, session.maxMessageChars);
+  // Put text in the message box and leave the cursor at its end, ready to edit or send
+  const fillInput = (text: string) => {
+    const value = text.slice(0, session.maxMessageChars);
     setInput(value);
     requestAnimationFrame(() => {
       const textarea = textareaRef.current;
@@ -998,6 +1047,19 @@ function ChatArea() {
       textarea.focus();
       textarea.setSelectionRange(value.length, value.length);
     });
+  };
+
+  const handleStarterQuestionClick = (question: string) => {
+    if (outOfQuestions || isLoading) return;
+    fillInput(question);
+  };
+
+  // "Try again" under a stuck reply: send the reason-worded follow-up, or fill the box to rephrase
+  const tryAgain = (replyId: string, reason: StuckReason) => {
+    if (outOfQuestions || isLoading) return;
+    setRetried((r) => ({ ...r, [replyId]: true }));
+    if (reason === RETRY_FILLS_INPUT) fillInput(RETRY_MESSAGES[reason]);
+    else handleSubmit(RETRY_MESSAGES[reason]);
   };
 
   return (
@@ -1009,8 +1071,16 @@ function ChatArea() {
           models={session.models}
           showAvatar={showAvatar}
           session={session}
+          leading={
+            <PolicyToggle value={escalationLevel} expanded={policyOpen} onToggle={() => setPolicyOpen((o) => !o)} />
+          }
         />
-        <PolicySelector value={escalationLevel} onChange={setEscalationLevel} disabled={isLoading} />
+        <PolicySelector
+          value={escalationLevel}
+          onChange={setEscalationLevel}
+          disabled={isLoading}
+          expanded={policyOpen}
+        />
         <div className="flex-1 overflow-y-auto p-4 space-y-4">
           {messages.length === 0 ? (
             <div className="flex flex-col items-center justify-center h-full animate-fade-in-up">
@@ -1101,6 +1171,9 @@ function ChatArea() {
                             )
                           }
                           onTalkToPerson={() => talkToPersonAfterStuck(message, index, reply.id)}
+                          canRetry={index === messages.length - 1 && !isLoading && !outOfQuestions}
+                          retried={!!retried[reply.id]}
+                          onTryAgain={(reason) => tryAgain(reply.id, reason)}
                         />
                       );
                     })()}
