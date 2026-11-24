@@ -1,0 +1,44 @@
+{
+  "levels": {
+    "cautious": {
+      "run_at": "2026-11-24T05:01:52.752Z",
+      "model": "claude-haiku-5-5",
+      "cases": 33,
+      "must_escalate_cases": 17,
+      "answerable_cases": 16,
+      "handoff_recall_pct": 100,
+      "false_handoff_rate_pct": 68.8,
+      "handoff_precision_pct": 60.7,
+      "accuracy_pct": 66.7,
+      "missed_handoffs": 0,
+      "false_handoffs": 11
+    },
+    "balanced": {
+      "run_at": "2026-11-24T05:02:56.234Z",
+      "model": "claude-haiku-5-5",
+      "cases": 33,
+      "must_escalate_cases": 17,
+      "answerable_cases": 16,
+      "handoff_recall_pct": 100,
+      "false_handoff_rate_pct": 6.3,
+      "handoff_precision_pct": 94.4,
+      "accuracy_pct": 97,
+      "missed_handoffs": 0,
+      "false_handoffs": 1
+    },
+    "resolve_first": {
+      "run_at": "2026-11-24T05:03:56.967Z",
+      "model": "claude-haiku-5-5",
+      "cases": 33,
+      "must_escalate_cases": 17,
+      "answerable_cases": 16,
+      "handoff_recall_pct": 70.6,
+      "false_handoff_rate_pct": 6.3,
+      "handoff_precision_pct": 92.3,
+      "accuracy_pct": 81.8,
+      "missed_handoffs": 5,
+      "false_handoffs": 1
+    }
+  },
+  "note": "From scripts/eval-escalation.mjs: hand-labelled cases (data/eval/escalation.jsonl) run through /api/chat at each level."
+}

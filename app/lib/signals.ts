@@ -4,6 +4,7 @@
 // them at GET /api/feedback.
 import { getRedis } from "@/app/lib/access";
 import type { FeedbackReason, OutcomeResult, StuckReason } from "@/app/lib/feedback-reasons";
+import type { EscalationLevel } from "@/app/lib/escalation-levels";
 
 export interface ReplyOutcome {
   result: OutcomeResult;
@@ -19,6 +20,7 @@ export interface ReplySignal {
   created_at: string;
   requested_by: "visitor" | "owner";
   model: string;
+  escalation_level?: EscalationLevel; // missing on replies logged before the setting existed (= balanced)
   turn: number;
   question: string;
   response: string;
@@ -144,5 +146,6 @@ export function summarize(rs: ReplySignal[]) {
     by_category: countBy((r) => (r.matched_categories.length ? r.matched_categories : ["none"])),
     by_mood: countBy((r) => [r.user_mood]),
     by_model: countBy((r) => [r.model]),
+    by_escalation_level: countBy((r) => [r.escalation_level ?? "balanced"]),
   };
 }

@@ -28,6 +28,8 @@ import {
   type StuckReason,
 } from "@/app/lib/feedback-reasons";
 import { STARTER_QUESTIONS } from "@/app/lib/starter-questions";
+import { DEFAULT_ESCALATION_LEVEL, type EscalationLevel } from "@/app/lib/escalation-levels";
+import PolicySelector from "@/components/PolicySelector";
 import "highlight.js/styles/atom-one-dark.css";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Textarea } from "@/components/ui/textarea";
@@ -612,6 +614,7 @@ function ChatArea() {
   const [selectedModel, setSelectedModel] = useState(DEFAULT_MODEL_ID);
   const [showAvatar, setShowAvatar] = useState(false);
   const [session, setSession] = useState<SessionInfo>(PUBLIC_SESSION);
+  const [escalationLevel, setEscalationLevel] = useState<EscalationLevel>(DEFAULT_ESCALATION_LEVEL);
   // Keyed by the id of the assistant message whose "Talk to a human" button was clicked
   const [handoffs, setHandoffs] = useState<Record<string, HandoffState>>({});
 
@@ -863,6 +866,7 @@ function ChatArea() {
             content,
           })),
           model: selectedModel,
+          escalation_level: escalationLevel,
         }),
       });
 
@@ -1006,6 +1010,7 @@ function ChatArea() {
           showAvatar={showAvatar}
           session={session}
         />
+        <PolicySelector value={escalationLevel} onChange={setEscalationLevel} disabled={isLoading} />
         <div className="flex-1 overflow-y-auto p-4 space-y-4">
           {messages.length === 0 ? (
             <div className="flex flex-col items-center justify-center h-full animate-fade-in-up">
