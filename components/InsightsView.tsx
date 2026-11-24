@@ -53,6 +53,15 @@ type Insights = {
   newest: string | null;
   overall: Rates & { median_total_seconds: number | null; median_input_tokens: number | null };
   negative_reasons: Record<string, number>;
+  retries: {
+    stuck_answers: number;
+    retries: number;
+    retried_pct_of_stuck: number | null;
+    outcome_reported: number;
+    resolved: number;
+    resolved_pct_of_reported: number | null;
+    went_to_person: number;
+  };
   by_category: Record<string, Rates>;
   by_mood: Record<string, Rates>;
   by_model: Record<string, Rates>;
@@ -315,6 +324,26 @@ export default function InsightsView() {
               <CountBars rows={moods} />
             </Section>
           </div>
+
+          <Section
+            title="After Still stuck"
+            hint='How often customers used "Try again", and whether the new answer fixed it or ended with a person.'
+          >
+            <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
+              <Stat label="Answers marked stuck" value={String(data.retries.stuck_answers)} />
+              <Stat
+                label="Tried again"
+                value={String(data.retries.retries)}
+                detail={data.retries.stuck_answers ? `${pct(data.retries.retried_pct_of_stuck)} of stuck answers` : undefined}
+              />
+              <Stat
+                label="Fixed after retry"
+                value={data.retries.outcome_reported ? pct(data.retries.resolved_pct_of_reported) : "–"}
+                detail={`${data.retries.resolved} of ${data.retries.outcome_reported} who answered`}
+              />
+              <Stat label="Retry ended with a person" value={String(data.retries.went_to_person)} detail="handed off, or asked after" />
+            </div>
+          </Section>
 
           <Section
             title="Handoff policy: real use vs. the eval"

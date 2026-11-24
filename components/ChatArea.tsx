@@ -664,6 +664,7 @@ function ChatArea() {
   const [escalationLevel, setEscalationLevel] = useState<EscalationLevel>(DEFAULT_ESCALATION_LEVEL);
   const [policyOpen, setPolicyOpen] = useState(false); // handoff policy panel, closed by default
   const [retried, setRetried] = useState<Record<string, true>>({}); // reply ids where "Try again" was used
+  const [pendingRetryOf, setPendingRetryOf] = useState<string | null>(null); // "Rephrase" waiting to be sent
   // Keyed by the id of the assistant message whose "Talk to a human" button was clicked
   const [handoffs, setHandoffs] = useState<Record<string, HandoffState>>({});
 
@@ -861,9 +862,14 @@ function ChatArea() {
     console.log(`⏱️ ${label}: ${duration.toFixed(2)}ms`);
   };
 
+  // retryOf: id of the stuck reply whose "Try again" sent this message (also picked up from a
+  // pending "Rephrase my question" when the customer sends the filled-in box)
   const handleSubmit = async (
     event: React.FormEvent<HTMLFormElement> | string,
+    retryOf?: string,
   ) => {
+    const retryOfId = retryOf ?? (typeof event === "string" ? undefined : pendingRetryOf ?? undefined);
+    setPendingRetryOf(null);
     if (typeof event !== "string") {
       event.preventDefault();
     }
@@ -916,6 +922,7 @@ function ChatArea() {
           })),
           model: selectedModel,
           escalation_level: escalationLevel,
+          ...(retryOfId ? { retry_of: retryOfId } : {}),
         }),
       });
 
@@ -1058,8 +1065,12 @@ function ChatArea() {
   const tryAgain = (replyId: string, reason: StuckReason) => {
     if (outOfQuestions || isLoading) return;
     setRetried((r) => ({ ...r, [replyId]: true }));
-    if (reason === RETRY_FILLS_INPUT) fillInput(RETRY_MESSAGES[reason]);
-    else handleSubmit(RETRY_MESSAGES[reason]);
+    if (reason === RETRY_FILLS_INPUT) {
+      setPendingRetryOf(replyId);
+      fillInput(RETRY_MESSAGES[reason]);
+    } else {
+      handleSubmit(RETRY_MESSAGES[reason], replyId);
+    }
   };
 
   return (

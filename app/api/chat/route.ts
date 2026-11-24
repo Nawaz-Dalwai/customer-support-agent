@@ -42,6 +42,8 @@ const requestSchema = z.object({
     .max(MAX_MESSAGES),
   model: z.string(),
   escalation_level: z.enum(ESCALATION_LEVEL_IDS).default(DEFAULT_ESCALATION_LEVEL),
+  // Set when this message was sent by "Try again" under a reply the customer said didn't fix it
+  retry_of: z.uuid().optional(),
 });
 
 // ---- Structured output: Claude's reply must match this schema ----------------------------
@@ -166,7 +168,7 @@ export async function POST(req: Request) {
   if (!parsedRequest.success) {
     return jsonResponse({ error: "Invalid request" }, 400);
   }
-  const { messages, escalation_level: escalationLevel } = parsedRequest.data;
+  const { messages, escalation_level: escalationLevel, retry_of: retryOf } = parsedRequest.data;
 
   // Owner (signed-in browser): any allowed model, no limits. Public visitors: Haiku only,
   // short messages, and a per-IP request quota - all enforced here, not just in the UI.
@@ -274,6 +276,7 @@ export async function POST(req: Request) {
           requested_by: owner ? "owner" : "visitor",
           model: response.model,
           escalation_level: escalationLevel,
+          ...(retryOf ? { retry_of: retryOf } : {}),
           turn: messages.filter((m) => m.role === "user").length,
           question: clip(latest.content, 1000),
           response: clip(reply.response, 4000),

@@ -43,7 +43,7 @@ Side panels: thinking, categories, and source articles. Env vars: `.env.local.ex
 
 ## Feedback
 
-Each reply is logged (question, answer, mood, categories, handoff, policy, sources, timing, tokens). Instead of thumbs, answers ask **"Did this fix it?"**: numbered steps get tick boxes, **Still stuck** asks why and offers a person (the ticket carries the reason and the steps already tried), and handoff replies offer **Didn't need a person?** to catch unnecessary escalations. Owner `GET /api/feedback`; export via `feedback:export` → `data/feedback/` (gitignored). Records kept 30 days.
+Each reply is logged (question, answer, mood, categories, handoff, policy, sources, timing, tokens). Instead of thumbs, answers ask **"Did this fix it?"**: numbered steps get tick boxes, **Still stuck** asks why, then offers **Try again** (a follow-up worded for the reason, or a prompt to rephrase) or a person (the ticket carries the reason and the steps already tried); `/insights` shows how often a retry fixed it, and handoff replies offer **Didn't need a person?** to catch unnecessary escalations. Owner `GET /api/feedback`; export via `feedback:export` → `data/feedback/` (gitignored). Records kept 30 days.
 
 ## Insights
 

@@ -1,5 +1,5 @@
 // Builds the SAMPLE data shown on /insights to visitors (and to the owner in "Sample" mode).
-// 150 fake reply records in the same shape as the real ones in app/lib/signals.ts, so the page
+// 150 fake reply records (plus "Try again" follow-ups) in the same shape as the real ones in app/lib/signals.ts, so the page
 // and summarize() treat both alike. Nothing here is a real customer:
 //   - answerable questions + their articles come from the public WixQA set (data/eval/*.jsonl)
 //   - questions that need a person come from the hand-written escalation cases
@@ -208,6 +208,56 @@ for (let i = 0; i < COUNT; i++) {
     total_seconds: round(search_seconds + between(...t.total)),
     input_tokens: int(5200, 7200) + (turn - 1) * int(500, 1200),
     output_tokens,
+    ...(outcome ? { outcome } : {}),
+  });
+}
+
+// "Try again" follow-ups: about half of stuck answers get a retry whose own outcome is recorded.
+// Drawn after the main loop so the 150 records above stay the same.
+const RETRY_MESSAGES = {
+  didnt_work: "I tried those steps and it didn't work. Is there another way to do this?",
+  incomplete: "Some steps seem to be missing. Can you give me the complete steps?",
+  incorrect: "That doesn't look right for my situation. Can you check again?",
+};
+for (const src of records.filter((r) => r.outcome?.result === "stuck")) {
+  if (!chance(0.5)) continue;
+  const created = Date.parse(src.outcome.at) + int(10, 120) * 1000;
+  const reason = src.outcome.reason;
+  const handed_off = chance(0.12);
+  const t = TIMING[src.model];
+  const search_seconds = round(between(0.5, 1.6));
+  let outcome;
+  if (!handed_off && chance(0.7)) {
+    const steps_total = chance(0.6) ? int(2, 6) : 0;
+    outcome = chance(0.55)
+      ? { result: "resolved", reason: null, steps_done: steps_total, steps_total, escalated: false }
+      : { result: "stuck", reason: weighted([["didnt_work", 2], ["incomplete", 1], ["not_answered", 1]]), steps_done: steps_total ? int(0, steps_total) : 0, steps_total, escalated: chance(0.5) };
+    outcome.at = new Date(created + int(30, 600) * 1000).toISOString();
+  }
+  records.push({
+    id: uuid(),
+    created_at: new Date(created).toISOString(),
+    requested_by: src.requested_by,
+    model: src.model,
+    escalation_level: src.escalation_level,
+    retry_of: src.id,
+    turn: src.turn + 1,
+    question: RETRY_MESSAGES[reason] ?? `What I meant was: ${src.question}`,
+    response: handed_off
+      ? "I've passed this conversation to the support team so someone can help you directly."
+      : "Here's another way to do this, with the complete steps from the help articles.",
+    user_mood: weighted([["frustrated", 2], ["neutral", 2], ["confused", 1]]),
+    matched_categories: src.matched_categories,
+    handed_off,
+    handoff_reason: handed_off ? HANDOFF_REASON.balanced_unsure : "",
+    context_used: true,
+    refused: false,
+    rag_working: true,
+    sources: src.sources,
+    search_seconds,
+    total_seconds: round(search_seconds + between(...t.total)),
+    input_tokens: int(5200, 7200) + src.turn * int(500, 1200),
+    output_tokens: int(...t.out),
     ...(outcome ? { outcome } : {}),
   });
 }

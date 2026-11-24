@@ -21,6 +21,7 @@ export interface ReplySignal {
   requested_by: "visitor" | "owner";
   model: string;
   escalation_level?: EscalationLevel; // missing on replies logged before the setting existed (= balanced)
+  retry_of?: string; // id of the stuck reply whose "Try again" produced this reply
   turn: number;
   question: string;
   response: string;
@@ -142,6 +143,23 @@ export function summarize(rs: ReplySignal[]) {
       median_input_tokens: median(rs.map((r) => r.input_tokens)),
       median_output_tokens: median(rs.map((r) => r.output_tokens)),
     },
+    // "Try again" after Still stuck: did the retry's own answer fix it, or end with a person?
+    retries: (() => {
+      const stuckAnswers = rs.filter((r) => r.outcome?.result === "stuck").length;
+      const retried = rs.filter((r) => r.retry_of);
+      const reported = retried.filter((r) => !r.handed_off && r.outcome && r.outcome.result !== "unneeded_handoff");
+      const resolved = reported.filter((r) => r.outcome!.result === "resolved").length;
+      return {
+        stuck_answers: stuckAnswers,
+        retries: retried.length,
+        retried_pct_of_stuck: pct(retried.length, stuckAnswers),
+        outcome_reported: reported.length,
+        resolved,
+        resolved_pct_of_reported: pct(resolved, reported.length),
+        // the retry handed off, or the customer was still stuck and asked for a person
+        went_to_person: retried.filter((r) => r.handed_off || r.outcome?.escalated).length,
+      };
+    })(),
     negative_reasons: negativeReasons,
     by_category: countBy((r) => (r.matched_categories.length ? r.matched_categories : ["none"])),
     by_mood: countBy((r) => [r.user_mood]),

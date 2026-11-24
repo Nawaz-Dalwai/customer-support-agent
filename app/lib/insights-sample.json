@@ -1063,6 +1063,52 @@
    "output_tokens": 358
   },
   {
+   "id": "58c0aec8-6a4d-40bc-b282-afab32e540c2",
+   "created_at": "2026-11-19T09:33:01.546Z",
+   "requested_by": "visitor",
+   "model": "claude-haiku-5-5",
+   "escalation_level": "balanced",
+   "retry_of": "2553a212-87e5-4d10-84b8-22b1b1fde730",
+   "turn": 4,
+   "question": "I tried those steps and it didn't work. Is there another way to do this?",
+   "response": "Here's another way to do this, with the complete steps from the help articles.",
+   "user_mood": "neutral",
+   "matched_categories": [
+    "billing"
+   ],
+   "handed_off": false,
+   "handoff_reason": "",
+   "context_used": true,
+   "refused": false,
+   "rag_working": true,
+   "sources": [
+    {
+     "file": "Canceling_a_Wix_Premium_or_Studio_Plan.txt",
+     "score": 0.706
+    },
+    {
+     "file": "Unable_to_Open_the_Wix_Editor.txt",
+     "score": 0.545
+    },
+    {
+     "file": "Pricing_Plans_Customizing_the_Look_of_Your_Pricing_Plans_Page.txt",
+     "score": 0.462
+    },
+    {
+     "file": "Changing_the_Title_Displayed_in_the_Browser_Tab.txt",
+     "score": 0.453
+    },
+    {
+     "file": "Downloading_Invoices_for_Wix_Subscriptions.txt",
+     "score": 0.412
+    }
+   ],
+   "search_seconds": 1.12,
+   "total_seconds": 5.14,
+   "input_tokens": 8150,
+   "output_tokens": 510
+  },
+  {
    "id": "2553a212-87e5-4d10-84b8-22b1b1fde730",
    "created_at": "2026-11-19T09:30:41.546Z",
    "requested_by": "visitor",
@@ -1803,6 +1849,60 @@
    "total_seconds": 3.31,
    "input_tokens": 8400,
    "output_tokens": 400
+  },
+  {
+   "id": "e916e100-c1aa-45d5-b35e-2f574fab3adf",
+   "created_at": "2026-11-16T23:56:37.466Z",
+   "requested_by": "owner",
+   "model": "claude-sonnet-5-5",
+   "escalation_level": "balanced",
+   "retry_of": "4195acad-0b26-41b6-b8e4-6995476a1890",
+   "turn": 2,
+   "question": "Some steps seem to be missing. Can you give me the complete steps?",
+   "response": "Here's another way to do this, with the complete steps from the help articles.",
+   "user_mood": "neutral",
+   "matched_categories": [
+    "domains_email"
+   ],
+   "handed_off": false,
+   "handoff_reason": "",
+   "context_used": true,
+   "refused": false,
+   "rag_working": true,
+   "sources": [
+    {
+     "file": "Email_Marketing_Improving_the_Deliverability_of_Your_Campaign.txt",
+     "score": 0.898
+    },
+    {
+     "file": "Email_Marketing_Preventing_Campaigns_from_Being_Marked_as_Spam.txt",
+     "score": 0.875
+    },
+    {
+     "file": "Customizing_the_Social_Share_Settings_for_Your_Sites_Pages.txt",
+     "score": 0.58
+    },
+    {
+     "file": "Wix_Editor_Hidden_Elements_in_Your_Mobile_Editor.txt",
+     "score": 0.568
+    },
+    {
+     "file": "Connecting_a_Domain_to_Wix_Using_the_Pointing_Method.txt",
+     "score": 0.526
+    }
+   ],
+   "search_seconds": 0.82,
+   "total_seconds": 6.61,
+   "input_tokens": 7450,
+   "output_tokens": 467,
+   "outcome": {
+    "result": "resolved",
+    "reason": null,
+    "steps_done": 6,
+    "steps_total": 6,
+    "escalated": false,
+    "at": "2026-11-17T00:04:35.466Z"
+   }
   },
   {
    "id": "c45511de-8ce2-4c73-a053-d42712b87d57",
@@ -3882,6 +3982,60 @@
    "output_tokens": 549
   },
   {
+   "id": "ccf8c2e6-0eb0-4c8b-aa8c-e17a28f0f1a9",
+   "created_at": "2026-11-07T12:18:07.675Z",
+   "requested_by": "visitor",
+   "model": "claude-haiku-5-5",
+   "escalation_level": "cautious",
+   "retry_of": "828fe926-9a63-468e-b552-8bea6bf5bcae",
+   "turn": 2,
+   "question": "Some steps seem to be missing. Can you give me the complete steps?",
+   "response": "Here's another way to do this, with the complete steps from the help articles.",
+   "user_mood": "frustrated",
+   "matched_categories": [
+    "site_editor"
+   ],
+   "handed_off": false,
+   "handoff_reason": "",
+   "context_used": true,
+   "refused": false,
+   "rag_working": true,
+   "sources": [
+    {
+     "file": "Wix_Editor_Managing_Advanced_Menus.txt",
+     "score": 0.715
+    },
+    {
+     "file": "Wix_Editor_Adding_and_Setting_Up_Collapsible_Text.txt",
+     "score": 0.547
+    },
+    {
+     "file": "Wix_Stores_Adding_and_Setting_Up_a_Wishlist.txt",
+     "score": 0.464
+    },
+    {
+     "file": "Wix_Stores_Customizing_Product_Galleries.txt",
+     "score": 0.433
+    },
+    {
+     "file": "Wix_Forms_Adding_Payments_to_a_Site_Form.txt",
+     "score": 0.407
+    }
+   ],
+   "search_seconds": 1.35,
+   "total_seconds": 5,
+   "input_tokens": 7478,
+   "output_tokens": 319,
+   "outcome": {
+    "result": "stuck",
+    "reason": "not_answered",
+    "steps_done": 2,
+    "steps_total": 5,
+    "escalated": true,
+    "at": "2026-11-07T12:19:58.675Z"
+   }
+  },
+  {
    "id": "828fe926-9a63-468e-b552-8bea6bf5bcae",
    "created_at": "2026-11-07T12:14:54.675Z",
    "requested_by": "visitor",
@@ -5460,6 +5614,60 @@
    "output_tokens": 355
   },
   {
+   "id": "ec2f05a1-66c0-4675-8425-0ac6a9491cad",
+   "created_at": "2026-11-01T12:47:09.770Z",
+   "requested_by": "visitor",
+   "model": "claude-haiku-5-5",
+   "escalation_level": "resolve_first",
+   "retry_of": "6f2472c6-40b2-4c76-8336-d4276dba18ef",
+   "turn": 4,
+   "question": "I tried those steps and it didn't work. Is there another way to do this?",
+   "response": "Here's another way to do this, with the complete steps from the help articles.",
+   "user_mood": "confused",
+   "matched_categories": [
+    "site_editor"
+   ],
+   "handed_off": false,
+   "handoff_reason": "",
+   "context_used": true,
+   "refused": false,
+   "rag_working": true,
+   "sources": [
+    {
+     "file": "Wix_Editor_Adding_and_Managing_Repeaters_Lists_Grids.txt",
+     "score": 0.769
+    },
+    {
+     "file": "Wix_Editor_Elements_that_Cant_be_Added_to_Repeaters.txt",
+     "score": 0.735
+    },
+    {
+     "file": "CMS_About_Dynamic_Pages.txt",
+     "score": 0.519
+    },
+    {
+     "file": "Wix_Editor_Request_Responsive_Sites.txt",
+     "score": 0.476
+    },
+    {
+     "file": "Wix_Editor_Using_the_Layers_Panel.txt",
+     "score": 0.417
+    }
+   ],
+   "search_seconds": 0.54,
+   "total_seconds": 5.98,
+   "input_tokens": 7774,
+   "output_tokens": 344,
+   "outcome": {
+    "result": "resolved",
+    "reason": null,
+    "steps_done": 0,
+    "steps_total": 0,
+    "escalated": false,
+    "at": "2026-11-01T12:51:02.770Z"
+   }
+  },
+  {
    "id": "6f2472c6-40b2-4c76-8336-d4276dba18ef",
    "created_at": "2026-11-01T12:37:11.770Z",
    "requested_by": "visitor",
@@ -5761,6 +5969,61 @@
     "steps_total": 0,
     "escalated": false,
     "at": "2026-10-31T15:50:32.922Z"
+   }
+  },
+  {
+   "id": "e9f311dc-3ad6-40ba-822d-04034aa79f6f",
+   "created_at": "2026-10-31T09:07:45.837Z",
+   "requested_by": "visitor",
+   "model": "claude-haiku-5-5",
+   "escalation_level": "balanced",
+   "retry_of": "b67a8392-680c-4350-83fc-b3b7ad21b8f8",
+   "turn": 2,
+   "question": "Some steps seem to be missing. Can you give me the complete steps?",
+   "response": "Here's another way to do this, with the complete steps from the help articles.",
+   "user_mood": "confused",
+   "matched_categories": [
+    "account",
+    "payments"
+   ],
+   "handed_off": false,
+   "handoff_reason": "",
+   "context_used": true,
+   "refused": false,
+   "rag_working": true,
+   "sources": [
+    {
+     "file": "Managing_Your_Payment_Methods_for_Wix_Services.txt",
+     "score": 0.798
+    },
+    {
+     "file": "Wix_Payments_Refunding_Customers.txt",
+     "score": 0.496
+    },
+    {
+     "file": "Assigning_a_Premium_Plan_to_a_Different_Site_in_Your_Wix_Account.txt",
+     "score": 0.474
+    },
+    {
+     "file": "Third_Party_App_Modalyst_Dropshipping_by_Modalyst.txt",
+     "score": 0.394
+    },
+    {
+     "file": "Wix_SEO_Setup_Checklist_Adding_Missing_Alt_Text_to_Your_Images.txt",
+     "score": 0.358
+    }
+   ],
+   "search_seconds": 1.33,
+   "total_seconds": 5.64,
+   "input_tokens": 7539,
+   "output_tokens": 466,
+   "outcome": {
+    "result": "resolved",
+    "reason": null,
+    "steps_done": 4,
+    "steps_total": 4,
+    "escalated": false,
+    "at": "2026-10-31T09:12:02.837Z"
    }
   },
   {
