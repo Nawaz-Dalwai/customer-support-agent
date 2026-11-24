@@ -16,7 +16,7 @@ RAG support chat: Bedrock Knowledge Base retrieval, Claude structured answers, p
 
 Caveats: 340 of 500 KB articles are ground-truth for the test set (easier than production). Answer-quality sim used a stronger model self-grading.
 
-**Next:** Full WixQA article set for retrieval eval · Haiku answer-quality eval with human spot-checks · *(done)* auto handoff + escalation eval · *(done)* "Did this fix it?" outcomes · *(done)* selectable handoff policy · *(done)* insights page with cost per reply.
+**Next:** Full WixQA article set for retrieval eval · Haiku answer-quality eval with human spot-checks · *(done)* auto handoff + escalation eval · *(done)* "Did this fix it?" outcomes · *(done)* selectable handoff policy · *(done)* insights page with cost per reply · *(done)* monthly self-review that proposes fixes.
 
 ## How it works
 
@@ -51,6 +51,14 @@ Each reply is logged (question, answer, mood, categories, handoff, policy, sourc
 
 Visitors see **labelled sample data** (150 records built by `npm run build:insights-sample` from public WixQA questions and the escalation test cases; outcomes and timings simulated). Real records contain visitors' questions, so **live data is owner-only**, checked server-side (`GET /api/insights?source=live`).
 
+## Monthly self-review
+
+Once a month (Vercel Cron, `vercel.json`) the app reviews its own failures. It takes the last 30 days of problem replies (still stuck, unneeded handoffs, failed retries; up to 25), re-runs the article search for each, groups them by category and asks **Claude Sonnet 5.5** why each group failed: missing article information, a search miss, a prompt rule or the handoff policy. Each finding cites the replies and gives a concrete fix (article to extend, exact prompt wording to change).
+
+Fixes are **proposals only**: the owner approves or rejects them under **Suggested fixes** on `/insights`, and approved ones are applied by hand in a normal commit. One run per day at most (the monthly job and the owner's **Run review now** share the limit); the cron endpoint needs `CRON_SECRET`. Visitors see 3 labelled sample findings.
+
+Dry run on the 17 sample problem replies: 6 Claude calls, 13 findings, **$0.20**, 24 s. The 25-reply cap keeps a run under ~$0.60.
+
 ## Tech stack
 
 | Part | What's used |
@@ -80,14 +88,14 @@ Search eval used an easy subset (many articles are direct answers to test questi
 
 ## Cost
 
-About **$0.002 per first question on Haiku**: ~6.1k input + ~420 output tokens (escalation eval average) is ~$0.0008 of Claude, and the knowledge base search is ~$0.001, so search is over half the cost. Follow-ups run two searches. Opus 5.5 costs 40x Haiku per token. Rates live in `app/lib/pricing.ts` (list prices, no prompt caching); the KB search price ($1 per 1,000) is confirmed on the AWS bill. Vercel/Upstash: free tier for demo scale.
+About **$0.002 per first question on Haiku**: ~6.1k input + ~420 output tokens (escalation eval average) is ~$0.0008 of Claude, and the knowledge base search is ~$0.001, so search is over half the cost. Follow-ups run two searches. Opus 5.5 costs 40x Haiku per token. Rates live in `app/lib/pricing.ts` (list prices, no prompt caching); the KB search price ($1 per 1,000) is confirmed on the AWS bill. Monthly self-review: ~$0.02 per reviewed reply on Sonnet, capped at 25 replies per run. Vercel/Upstash: free tier for demo scale.
 
 ## Layout
 
 ```
-app/api/{chat,feedback,handoff,insights,session}/   server routes
+app/api/{chat,feedback,handoff,insights,review,session}/   server routes
 app/insights/                              insights page
-app/lib/                                   retrieval, access, handoff, signals, pricing, escalation levels
+app/lib/                                   retrieval, access, handoff, signals, pricing, escalation levels, chat prompt, self-review
 components/                                chat, sidebars, policy selector, insights view
 data/{kb,eval}/                            articles and eval sets
 infra/knowledge-base.yaml
