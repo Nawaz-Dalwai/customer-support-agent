@@ -6,7 +6,8 @@ export const CLAUDE_PRICE_PER_MTOK: Record<string, { input: number; output: numb
   "claude-sonnet-5-5": { input: 2, output: 10 },
   "claude-haiku-5-5": { input: 0.1, output: 0.5 },
 };
-// Bedrock Managed Knowledge Base search: $1 per 1,000 Retrieve calls (AWS pricing page).
+// Bedrock Managed Knowledge Base search: $1 per 1,000 Retrieve calls (pricing page; confirmed on the
+// AWS bill 2026-11-24: 1,644 queries billed at $1.644 before credits).
 // First messages make one search; follow-ups make two (latest alone + latest with previous).
 export const KB_SEARCH_PRICE_USD = 0.001;
 

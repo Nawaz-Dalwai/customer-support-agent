@@ -80,7 +80,7 @@ Search eval used an easy subset (many articles are direct answers to test questi
 
 ## Cost
 
-About **$0.002 per first question on Haiku**: ~6.1k input + ~420 output tokens (escalation eval average) is ~$0.0008 of Claude, and the knowledge base search is ~$0.001, so search is over half the cost. Follow-ups run two searches. Opus 5.5 costs 40x Haiku per token. Rates live in `app/lib/pricing.ts` (list prices, no prompt caching); the KB search price is from the AWS pricing page and not yet checked against the bill. Vercel/Upstash: free tier for demo scale.
+About **$0.002 per first question on Haiku**: ~6.1k input + ~420 output tokens (escalation eval average) is ~$0.0008 of Claude, and the knowledge base search is ~$0.001, so search is over half the cost. Follow-ups run two searches. Opus 5.5 costs 40x Haiku per token. Rates live in `app/lib/pricing.ts` (list prices, no prompt caching); the KB search price ($1 per 1,000) is confirmed on the AWS bill. Vercel/Upstash: free tier for demo scale.
 
 ## Layout
 
