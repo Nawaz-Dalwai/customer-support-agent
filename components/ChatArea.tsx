@@ -450,20 +450,25 @@ const SuggestedQuestions = ({
 }) => {
   if (!questions || questions.length === 0) return null;
 
+  // Labelled, link-style rows so they don't read as more "Did this fix it?" options
   return (
-    <div className="mt-2 pl-10">
-      {questions.map((question, index) => (
-        <Button
-          key={index}
-          className="text-sm mb-2 mr-2 ml-0 text-gray-500 shadow-sm"
-          variant="outline"
-          size="sm"
-          onClick={() => onQuestionClick(question)}
-          disabled={isLoading}
-        >
-          {question}
-        </Button>
-      ))}
+    <div className="mt-3 pl-10">
+      <p className="mb-1 text-xs font-medium text-muted-foreground">Related questions</p>
+      <ul className="space-y-0.5">
+        {questions.map((question, index) => (
+          <li key={index}>
+            <button
+              type="button"
+              className="group inline-flex items-start gap-1 rounded px-1 py-0.5 text-left text-sm text-muted-foreground transition-colors hover:bg-accent hover:text-foreground disabled:opacity-50"
+              onClick={() => onQuestionClick(question)}
+              disabled={isLoading}
+            >
+              <ChevronRight className="mt-0.5 h-3.5 w-3.5 shrink-0" aria-hidden />
+              {question}
+            </button>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
@@ -1188,15 +1193,16 @@ function ChatArea() {
                         />
                       );
                     })()}
-                  {message.role === "assistant" && (
-                    <SuggestedQuestions
-                      questions={
-                        JSON.parse(message.content).suggested_questions || []
-                      }
-                      onQuestionClick={handleSuggestedQuestionClick}
-                      isLoading={isLoading}
-                    />
-                  )}
+                  {/* Related questions: latest reply only, and not once the customer said they're still stuck */}
+                  {message.role === "assistant" &&
+                    index === messages.length - 1 &&
+                    outcomes[ratableReply(message.content)?.id ?? ""]?.result !== "stuck" && (
+                      <SuggestedQuestions
+                        questions={JSON.parse(message.content).suggested_questions || []}
+                        onQuestionClick={handleSuggestedQuestionClick}
+                        isLoading={isLoading}
+                      />
+                    )}
                 </div>
               ))}
               <div ref={messagesEndRef} style={{ height: "1px" }} />
