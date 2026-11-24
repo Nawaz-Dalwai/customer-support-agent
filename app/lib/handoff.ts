@@ -5,6 +5,14 @@ import crypto from "crypto";
 import { getRedis } from "@/app/lib/access";
 import { clip } from "@/app/lib/signals";
 import customerSupportCategories from "@/app/lib/customer_support_categories.json";
+import { FEEDBACK_REASONS, type StuckReason } from "@/app/lib/feedback-reasons";
+
+// Sent when the customer said an answer didn't fix it and then asked for a person
+export interface StuckReport {
+  reason: StuckReason | null;
+  steps_done: number;
+  steps_total: number;
+}
 
 export type HandoffPriority = "urgent" | "high" | "normal";
 
@@ -22,6 +30,8 @@ export interface HandoffTicket {
   summary: string;
   transcript: { role: "user" | "assistant"; text: string }[];
   requested_by: "visitor" | "owner";
+  // How far the customer got with the last answer's steps, when they said it didn't fix it
+  customer_progress?: string;
 }
 
 const TICKETS_KEY = "csa:handoff:tickets";
@@ -77,6 +87,7 @@ function pickPriority(
 export function buildTicket(
   messages: { role: "user" | "assistant"; content: string }[],
   requestedBy: HandoffTicket["requested_by"],
+  stuck?: StuckReport,
 ): HandoffTicket {
   const transcript = messages.map((m) => {
     const reply = m.role === "assistant" ? parseReply(m.content) : null;
@@ -85,7 +96,13 @@ export function buildTicket(
   });
 
   const lastReply = [...messages].reverse().map((m) => (m.role === "assistant" ? parseReply(m.content) : null)).find(Boolean) ?? {};
-  const reason = lastReply.redirect_to_agent?.reason?.trim() || "Customer asked to talk to a person";
+  const reason = stuck
+    ? `Customer said the answer didn't fix it${stuck.reason ? ` (${FEEDBACK_REASONS[stuck.reason].toLowerCase()})` : ""}`
+    : lastReply.redirect_to_agent?.reason?.trim() || "Customer asked to talk to a person";
+  const progress =
+    stuck && stuck.steps_total > 0
+      ? `Ticked off ${stuck.steps_done} of ${stuck.steps_total} steps in the last answer.`
+      : undefined;
   const mood = lastReply.user_mood ?? "neutral";
   const categories = (lastReply.matched_categories ?? []).filter((c) =>
     customerSupportCategories.categories.some((known) => known.id === c),
@@ -99,7 +116,8 @@ export function buildTicket(
   const summary = [
     `Customer asked: "${firstQuestion}"`,
     userTurns.length > 1 ? `Latest message: "${latestQuestion}"` : null,
-    `The assistant handed off because: ${reason}`,
+    stuck ? `Handed off because: ${reason}` : `The assistant handed off because: ${reason}`,
+    progress ?? null,
     `${userTurns.length} customer message${userTurns.length === 1 ? "" : "s"} in the conversation; mood: ${mood}.`,
   ]
     .filter(Boolean)
@@ -118,6 +136,7 @@ export function buildTicket(
     summary,
     transcript,
     requested_by: requestedBy,
+    ...(progress ? { customer_progress: progress } : {}),
   };
 }
 

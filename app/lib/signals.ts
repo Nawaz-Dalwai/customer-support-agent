@@ -1,8 +1,18 @@
 // Server-only: one record per assistant reply with the signals Claude already returns (mood,
-// categories, handoff, context used), the search results, cost and timing, and the user's
-// thumbs up/down. Stored in Upstash Redis for 30 days; the owner reads them at GET /api/feedback.
+// categories, handoff, context used), the search results, cost and timing, and the outcome the
+// customer reported ("Did this fix it?"). Stored in Upstash Redis for 30 days; the owner reads
+// them at GET /api/feedback.
 import { getRedis } from "@/app/lib/access";
-import type { FeedbackReason } from "@/app/lib/feedback-reasons";
+import type { FeedbackReason, OutcomeResult, StuckReason } from "@/app/lib/feedback-reasons";
+
+export interface ReplyOutcome {
+  result: OutcomeResult;
+  reason: StuckReason | null; // only when result is "stuck"
+  steps_done: number; // numbered steps the customer ticked off in the answer
+  steps_total: number;
+  escalated: boolean; // the customer then asked for a person
+  at: string;
+}
 
 export interface ReplySignal {
   id: string;
@@ -24,8 +34,16 @@ export interface ReplySignal {
   total_seconds: number;
   input_tokens: number;
   output_tokens: number;
+  outcome?: ReplyOutcome;
+  // Legacy: thumbs up/down, recorded before "Did this fix it?" replaced them
   feedback?: { rating: "up" | "down"; reason: FeedbackReason | null; at: string };
 }
+
+// The customer's negative signal on a reply, whichever version of the UI recorded it
+export const isNegative = (r: ReplySignal) =>
+  r.outcome ? r.outcome.result !== "resolved" : r.feedback?.rating === "down";
+export const negativeReason = (r: ReplySignal): string | null =>
+  r.outcome ? (r.outcome.result === "unneeded_handoff" ? "unneeded_handoff" : r.outcome.reason) : (r.feedback?.reason ?? null);
 
 const signalKey = (id: string) => `csa:signal:${id}`;
 const INDEX_KEY = "csa:signals";
@@ -44,17 +62,17 @@ export async function saveSignal(signal: ReplySignal): Promise<void> {
 
 type FeedbackResult = "saved" | "not_found" | "no_store";
 
-// Only replies that were logged can be rated, and a later vote replaces an earlier one.
-export async function saveFeedback(
-  id: string,
-  rating: "up" | "down",
-  reason: FeedbackReason | null,
-): Promise<FeedbackResult> {
+// Only replies that were logged can get an outcome, and a later report replaces an earlier one.
+export async function saveOutcome(id: string, outcome: Omit<ReplyOutcome, "at">): Promise<FeedbackResult> {
   const store = getRedis();
   if (!store) return "no_store";
   const signal = await store.get<ReplySignal>(signalKey(id));
   if (!signal) return "not_found";
-  signal.feedback = { rating, reason: rating === "down" ? reason : null, at: new Date().toISOString() };
+  signal.outcome = {
+    ...outcome,
+    reason: outcome.result === "stuck" ? outcome.reason : null,
+    at: new Date().toISOString(),
+  };
   await store.set(signalKey(id), JSON.stringify(signal), { keepTtl: true });
   return "saved";
 }
@@ -77,17 +95,27 @@ const median = (xs: number[]) => {
 };
 
 function rates(rs: ReplySignal[]) {
-  const rated = rs.filter((r) => r.feedback);
-  const up = rated.filter((r) => r.feedback!.rating === "up").length;
+  // "Did this fix it?" is only asked on answers, not on replies that handed off
+  const answered = rs.filter((r) => !r.handed_off);
+  const reported = answered.filter((r) => r.outcome && r.outcome.result !== "unneeded_handoff");
+  const resolved = reported.filter((r) => r.outcome!.result === "resolved").length;
+  const stuck = reported.length - resolved;
+  const legacy = rs.filter((r) => !r.outcome && r.feedback);
+  const legacyUp = legacy.filter((r) => r.feedback!.rating === "up").length;
   return {
     replies: rs.length,
-    rated: rated.length,
-    rated_pct: pct(rated.length, rs.length),
-    thumbs_up: up,
-    thumbs_down: rated.length - up,
-    thumbs_up_pct_of_rated: pct(up, rated.length),
+    answered: answered.length,
+    outcome_reported: reported.length,
+    outcome_reported_pct: pct(reported.length, answered.length),
+    resolved,
+    stuck,
+    resolved_pct_of_reported: pct(resolved, reported.length),
+    stuck_then_escalated: reported.filter((r) => r.outcome!.escalated).length,
     handoff_pct: pct(rs.filter((r) => r.handed_off).length, rs.length),
+    unneeded_handoffs: rs.filter((r) => r.outcome?.result === "unneeded_handoff").length,
     articles_not_used_pct: pct(rs.filter((r) => !r.context_used).length, rs.length),
+    legacy_thumbs_up: legacyUp,
+    legacy_thumbs_down: legacy.length - legacyUp,
   };
 }
 
@@ -97,11 +125,10 @@ export function summarize(rs: ReplySignal[]) {
     for (const r of rs) for (const k of key(r)) groups.set(k, [...(groups.get(k) ?? []), r]);
     return Object.fromEntries([...groups].sort((a, b) => b[1].length - a[1].length).map(([k, g]) => [k, rates(g)]));
   };
-  const down = rs.filter((r) => r.feedback?.rating === "down");
-  const downReasons: Record<string, number> = {};
-  for (const r of down) {
-    const k = r.feedback!.reason ?? "no_reason";
-    downReasons[k] = (downReasons[k] ?? 0) + 1;
+  const negativeReasons: Record<string, number> = {};
+  for (const r of rs.filter(isNegative)) {
+    const k = negativeReason(r) ?? "no_reason";
+    negativeReasons[k] = (negativeReasons[k] ?? 0) + 1;
   }
 
   return {
@@ -113,7 +140,7 @@ export function summarize(rs: ReplySignal[]) {
       median_input_tokens: median(rs.map((r) => r.input_tokens)),
       median_output_tokens: median(rs.map((r) => r.output_tokens)),
     },
-    thumbs_down_reasons: downReasons,
+    negative_reasons: negativeReasons,
     by_category: countBy((r) => (r.matched_categories.length ? r.matched_categories : ["none"])),
     by_mood: countBy((r) => [r.user_mood]),
     by_model: countBy((r) => [r.model]),

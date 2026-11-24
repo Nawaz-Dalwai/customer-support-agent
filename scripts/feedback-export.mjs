@@ -1,11 +1,11 @@
-// Feedback loop: pulls the owner report from GET /api/feedback and writes every thumbs-down reply
+// Feedback loop: pulls the owner report from GET /api/feedback and writes every negative reply (still stuck, didn't need a person, or legacy thumbs-down)
 // to a triage file, each with a suggested cause and where a fix or new eval case belongs.
 //
 // Run: npm run feedback:export                          (live demo)
 //      BASE_URL=http://localhost:3000 npm run feedback:export
 //      npm run feedback:export -- --include-owner        (also the owner's own test chats)
-// Out: data/feedback/report-YYYY-MM-DD.json      summary: ratings, handoffs, categories, moods
-//      data/feedback/triage-YYYY-MM-DD.jsonl     one thumbs-down reply per line, to label by hand
+// Out: data/feedback/report-YYYY-MM-DD.json      summary: outcomes, handoffs, categories, moods
+//      data/feedback/triage-YYYY-MM-DD.jsonl     one negative reply per line, to label by hand
 // data/feedback/ is git-ignored: it holds real visitor questions.
 import crypto from "node:crypto";
 import fs from "node:fs";
@@ -34,8 +34,11 @@ if (!res.ok) {
 }
 
 // A first guess at the cause, so triage starts from the most likely fix
+const reasonOf = (s) =>
+  s.outcome ? (s.outcome.result === "unneeded_handoff" ? "unneeded_handoff" : s.outcome.reason) : (s.feedback?.reason ?? null);
+
 function suggestCause(s) {
-  const reason = s.feedback.reason;
+  const reason = reasonOf(s);
   if (reason === "needed_person" || reason === "unneeded_handoff") {
     return { cause: "escalation", next_step: "Add as a case in data/eval/escalation.jsonl, then adjust the handoff rules in the system prompt" };
   }
@@ -48,10 +51,13 @@ function suggestCause(s) {
   return { cause: "answer_quality", next_step: "Compare the reply with the sources shown; if they hold the answer, it's a prompt or model issue" };
 }
 
-const triage = report.thumbs_down.map((s) => ({
+const triage = report.negative.map((s) => ({
   id: s.id,
   created_at: s.created_at,
-  reason: s.feedback.reason,
+  result: s.outcome?.result ?? "legacy_thumbs_down",
+  reason: reasonOf(s),
+  steps: s.outcome ? `${s.outcome.steps_done}/${s.outcome.steps_total}` : null,
+  escalated: s.outcome?.escalated ?? false,
   question: s.question,
   response: s.response,
   sources: s.sources,
@@ -66,16 +72,16 @@ const triage = report.thumbs_down.map((s) => ({
 
 const date = new Date().toISOString().slice(0, 10);
 fs.mkdirSync(OUT_DIR, { recursive: true });
-const { thumbs_down: _rows, ...summary } = report;
+const { negative: _rows, ...summary } = report;
 fs.writeFileSync(path.join(OUT_DIR, `report-${date}.json`), JSON.stringify(summary, null, 2) + "\n");
 fs.writeFileSync(path.join(OUT_DIR, `triage-${date}.jsonl`), triage.map((t) => JSON.stringify(t)).join("\n") + (triage.length ? "\n" : ""));
 
 const o = report.overall;
 console.log(`${report.reply_count} replies (${report.scope}) since ${report.oldest ?? "-"}`);
 console.log(
-  `Rated ${o.rated} (${o.rated_pct ?? 0}%) · thumbs up ${o.thumbs_up_pct_of_rated ?? "-"}% of rated · handoffs ${o.handoff_pct ?? 0}% · articles not used ${o.articles_not_used_pct ?? 0}%`,
+  `Outcome reported on ${o.outcome_reported} answers (${o.outcome_reported_pct ?? 0}%) · resolved ${o.resolved_pct_of_reported ?? "-"}% of reported · handoffs ${o.handoff_pct ?? 0}% · unneeded handoffs ${o.unneeded_handoffs} · articles not used ${o.articles_not_used_pct ?? 0}%`,
 );
 const causes = {};
 for (const t of triage) causes[t.suggested.cause] = (causes[t.suggested.cause] ?? 0) + 1;
 if (triage.length) console.table(causes);
-console.log(`Wrote data/feedback/report-${date}.json and data/feedback/triage-${date}.jsonl (${triage.length} thumbs-down)`);
+console.log(`Wrote data/feedback/report-${date}.json and data/feedback/triage-${date}.jsonl (${triage.length} negative)`);

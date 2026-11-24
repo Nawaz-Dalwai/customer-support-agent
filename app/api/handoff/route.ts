@@ -3,6 +3,7 @@
 import { z } from "zod/v4";
 import { clientIp, consumePublicHandoff, isOwner } from "@/app/lib/access";
 import { buildTicket, listTickets, saveTicket } from "@/app/lib/handoff";
+import { STUCK_REASONS } from "@/app/lib/feedback-reasons";
 
 export const dynamic = "force-dynamic";
 
@@ -16,6 +17,15 @@ const requestSchema = z.object({
     )
     .min(2)
     .max(40),
+  // Present when the customer clicked "Still stuck" and then "Talk to a person"
+  stuck: z
+    .object({
+      reason: z.enum(STUCK_REASONS).nullable(),
+      steps_done: z.int().min(0).max(50),
+      steps_total: z.int().min(0).max(50),
+    })
+    .refine((s) => s.steps_done <= s.steps_total)
+    .optional(),
 });
 
 export async function POST(req: Request) {
@@ -23,7 +33,7 @@ export async function POST(req: Request) {
   if (!parsed.success) {
     return Response.json({ error: "Invalid request" }, { status: 400 });
   }
-  const { messages } = parsed.data;
+  const { messages, stuck } = parsed.data;
   if (!messages.some((m) => m.role === "user")) {
     return Response.json({ error: "Invalid request" }, { status: 400 });
   }
@@ -43,7 +53,7 @@ export async function POST(req: Request) {
     }
   }
 
-  const ticket = buildTicket(messages, owner ? "owner" : "visitor");
+  const ticket = buildTicket(messages, owner ? "owner" : "visitor", stuck);
   let stored = false;
   try {
     stored = await saveTicket(ticket);

@@ -1,30 +1,41 @@
-// Thumbs up/down on a reply (POST), and the owner's report over the logged reply signals (GET).
-// GET /api/feedback                    visitor replies only, summary + every thumbs-down reply
+// "Did this fix it?" on a reply (POST), and the owner's report over the logged reply signals (GET).
+// GET /api/feedback                    visitor replies only, summary + every negative reply
 // GET /api/feedback?include_owner=1    also counts the owner's own test conversations
 import { z } from "zod/v4";
 import { isOwner } from "@/app/lib/access";
-import { FEEDBACK_REASONS, type FeedbackReason } from "@/app/lib/feedback-reasons";
-import { listSignals, saveFeedback, summarize } from "@/app/lib/signals";
+import { STUCK_REASONS } from "@/app/lib/feedback-reasons";
+import { isNegative, listSignals, saveOutcome, summarize } from "@/app/lib/signals";
 
 export const dynamic = "force-dynamic";
 
-const reasonIds = Object.keys(FEEDBACK_REASONS) as [FeedbackReason, ...FeedbackReason[]];
-const feedbackSchema = z.object({
-  id: z.uuid(),
-  rating: z.enum(["up", "down"]),
-  reason: z.enum(reasonIds).nullable().optional(),
-});
+const MAX_STEPS = 50;
+const outcomeSchema = z
+  .object({
+    id: z.uuid(),
+    result: z.enum(["resolved", "stuck", "unneeded_handoff"]),
+    reason: z.enum(STUCK_REASONS).nullable().optional(),
+    steps_done: z.int().min(0).max(MAX_STEPS).optional(),
+    steps_total: z.int().min(0).max(MAX_STEPS).optional(),
+    escalated: z.boolean().optional(),
+  })
+  .refine((o) => (o.steps_done ?? 0) <= (o.steps_total ?? 0), { message: "steps_done exceeds steps_total" });
 
 export async function POST(req: Request) {
-  const parsed = feedbackSchema.safeParse(await req.json().catch(() => null));
+  const parsed = outcomeSchema.safeParse(await req.json().catch(() => null));
   if (!parsed.success) {
     return Response.json({ error: "Invalid feedback" }, { status: 400 });
   }
-  const { id, rating, reason } = parsed.data;
+  const { id, result, reason, steps_done, steps_total, escalated } = parsed.data;
   try {
-    const result = await saveFeedback(id, rating, reason ?? null);
-    if (result === "no_store") return Response.json({ error: "Feedback isn't being collected right now" }, { status: 503 });
-    if (result === "not_found") return Response.json({ error: "Unknown or expired reply" }, { status: 404 });
+    const saved = await saveOutcome(id, {
+      result,
+      reason: reason ?? null,
+      steps_done: steps_done ?? 0,
+      steps_total: steps_total ?? 0,
+      escalated: result === "stuck" && !!escalated,
+    });
+    if (saved === "no_store") return Response.json({ error: "Feedback isn't being collected right now" }, { status: 503 });
+    if (saved === "not_found") return Response.json({ error: "Unknown or expired reply" }, { status: 404 });
     return Response.json({ ok: true });
   } catch (error) {
     console.error("Feedback not saved:", error);
@@ -50,7 +61,8 @@ export async function GET(req: Request) {
       reply_count: signals.length,
       oldest: signals.at(-1)?.created_at ?? null,
       ...summarize(signals),
-      thumbs_down: signals.filter((s) => s.feedback?.rating === "down"),
+      // Still stuck, didn't need a person, or (older records) thumbs down
+      negative: signals.filter(isNegative),
     },
     { headers: { "Cache-Control": "no-store" } },
   );

@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { createContext, useContext, useEffect, useRef, useState } from "react";
+import type { Components } from "react-markdown";
 import config from "@/config";
 import { MODELS, DEFAULT_MODEL_ID, type ChatModel } from "@/app/lib/models";
 import { Button } from "@/components/ui/button";
@@ -17,12 +18,15 @@ import {
   Send,
   Bot,
   CircleCheck,
-  ThumbsUp,
-  ThumbsDown,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import type { HandoffTicket } from "@/app/lib/handoff";
-import { FEEDBACK_REASONS, type FeedbackReason } from "@/app/lib/feedback-reasons";
+import {
+  FEEDBACK_REASONS,
+  STUCK_REASONS,
+  type OutcomeResult,
+  type StuckReason,
+} from "@/app/lib/feedback-reasons";
 import { STARTER_QUESTIONS } from "@/app/lib/starter-questions";
 import "highlight.js/styles/atom-one-dark.css";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
@@ -118,6 +122,12 @@ const HandoffTicketCard = ({ ticket, stored }: { ticket: HandoffTicket; stored: 
           <dt className="inline font-medium">Mood: </dt>
           <dd className="inline">{ticket.user_mood}</dd>
         </div>
+        {ticket.customer_progress && (
+          <div>
+            <dt className="inline font-medium">Progress: </dt>
+            <dd className="inline">{ticket.customer_progress}</dd>
+          </div>
+        )}
         <div>
           <dt className="font-medium">Summary:</dt>
           <dd className="whitespace-pre-wrap">{ticket.summary}</dd>
@@ -167,69 +177,163 @@ const UISelector = ({
   );
 };
 
-type FeedbackState = {
-  rating: "up" | "down";
-  reason: FeedbackReason | null;
+type OutcomeState = {
+  result: OutcomeResult;
+  reason: StuckReason | null;
   status: "saving" | "saved" | "error";
 };
 
-const ReplyFeedback = ({
+// Asked under every answer that didn't hand off: the outcome, not a rating, is the success metric.
+// "Still stuck" asks why and offers a person; on a handoff reply the customer can say it wasn't needed.
+const ReplyOutcome = ({
   handedOff,
-  feedback,
-  onRate,
+  outcome,
+  steps,
+  handoff,
+  onReport,
+  onTalkToPerson,
 }: {
   handedOff: boolean;
-  feedback?: FeedbackState;
-  onRate: (rating: "up" | "down", reason: FeedbackReason | null) => void;
+  outcome?: OutcomeState;
+  steps: { done: number; total: number };
+  handoff?: HandoffState;
+  onReport: (result: OutcomeResult, reason: StuckReason | null) => void;
+  onTalkToPerson: () => void;
 }) => {
-  const reasons = (Object.keys(FEEDBACK_REASONS) as FeedbackReason[]).filter((r) =>
-    handedOff ? r !== "needed_person" : r !== "unneeded_handoff",
+  const saveError = outcome?.status === "error" && (
+    <span className="ml-1 text-red-600">Couldn&apos;t save your answer</span>
   );
-  const iconButton = (rating: "up" | "down") => {
-    const Icon = rating === "up" ? ThumbsUp : ThumbsDown;
-    const active = feedback?.rating === rating;
+
+  if (handedOff) {
+    return (
+      <div className="mt-1 pl-10 text-xs text-muted-foreground">
+        {outcome?.result === "unneeded_handoff" ? (
+          outcome.status !== "error" && <span>Thanks, we&apos;ll use that to hand off less often.</span>
+        ) : (
+          <Button
+            variant="link"
+            size="sm"
+            className="h-6 p-0 text-xs text-muted-foreground"
+            onClick={() => onReport("unneeded_handoff", null)}
+          >
+            Didn&apos;t need a person for this?
+          </Button>
+        )}
+        {saveError}
+      </div>
+    );
+  }
+
+  const choice = (result: "resolved" | "stuck", label: string) => {
+    const active = outcome?.result === result;
     return (
       <Button
-        variant="ghost"
+        variant={active ? "secondary" : "outline"}
         size="sm"
-        className={`h-7 w-7 p-0 ${active ? "text-foreground" : "text-muted-foreground"}`}
-        aria-label={rating === "up" ? "Helpful" : "Not helpful"}
+        className="h-7 px-2.5 text-xs"
         aria-pressed={active}
-        onClick={() => onRate(rating, null)}
+        onClick={() => onReport(result, null)}
       >
-        <Icon className="h-3.5 w-3.5" fill={active ? "currentColor" : "none"} />
+        {label}
       </Button>
     );
   };
 
   return (
-    <div className="mt-1 pl-10 text-xs text-muted-foreground">
-      <div className="flex items-center gap-1">
-        {iconButton("up")}
-        {iconButton("down")}
-        {feedback?.status === "error" && <span className="ml-1 text-red-600">Couldn&apos;t save your feedback</span>}
-        {feedback?.status === "saved" && (feedback.rating === "up" || feedback.reason) && (
-          <span className="ml-1">Thanks for the feedback</span>
+    <div className="mt-1.5 pl-10 text-xs text-muted-foreground">
+      <div className="flex flex-wrap items-center gap-2">
+        <span className="font-medium text-foreground/80">Did this fix it?</span>
+        {choice("resolved", "Yes, fixed")}
+        {choice("stuck", "Still stuck")}
+        {steps.total > 0 && !outcome && (
+          <span>
+            {steps.done} of {steps.total} steps done
+          </span>
         )}
+        {outcome?.result === "resolved" && outcome.status === "saved" && <span>Glad that worked.</span>}
+        {saveError}
       </div>
-      {feedback?.rating === "down" && !feedback.reason && feedback.status !== "error" && (
-        <div className="mt-1 flex flex-wrap items-center gap-2">
-          <span>What went wrong?</span>
-          {reasons.map((r) => (
-            <Button
-              key={r}
-              variant="outline"
-              size="sm"
-              className="h-6 px-2 text-xs"
-              onClick={() => onRate("down", r)}
-            >
-              {FEEDBACK_REASONS[r]}
-            </Button>
-          ))}
+      {outcome?.result === "stuck" && (
+        <div className="mt-2 space-y-2">
+          <div className="flex flex-wrap items-center gap-2">
+            <span>What went wrong?</span>
+            {STUCK_REASONS.map((r) => (
+              <Button
+                key={r}
+                variant={outcome.reason === r ? "secondary" : "outline"}
+                size="sm"
+                className="h-6 px-2 text-xs"
+                aria-pressed={outcome.reason === r}
+                onClick={() => onReport("stuck", r)}
+              >
+                {FEEDBACK_REASONS[r]}
+              </Button>
+            ))}
+          </div>
+          {handoff?.status === "done" ? (
+            <HandoffTicketCard ticket={handoff.ticket} stored={handoff.stored} />
+          ) : handoff?.status === "loading" ? (
+            <div className="flex items-center">
+              <div className="animate-spin rounded-full h-3 w-3 border-b-2 border-gray-500 mr-2" />
+              Opening a ticket with our support team…
+            </div>
+          ) : (
+            <>
+              <Button size="sm" className="h-7 gap-1.5 text-xs" onClick={onTalkToPerson}>
+                <LifeBuoyIcon className="h-3.5 w-3.5" />
+                Talk to a person
+              </Button>
+              {handoff?.status === "error" && <p className="text-red-600">{handoff.message}</p>}
+            </>
+          )}
         </div>
       )}
     </div>
   );
+};
+
+// ---- Numbered steps as a checklist ------------------------------------------------------
+// Each numbered list item in an answer gets a tick box, keyed by its line in the Markdown so
+// the state survives re-renders. The count of ticked steps goes with "Did this fix it?" and
+// into the ticket if the customer asks for a person.
+type StepChecklist = { checked: number[]; toggle: (line: number) => void };
+const StepsContext = createContext<StepChecklist | null>(null);
+const InOrderedList = createContext(false);
+
+const countSteps = (markdown: string) => (markdown.match(/^\s*\d+[.)]\s+\S/gm) ?? []).length;
+
+const checklistComponents: Components = {
+  ol: ({ node: _node, children, ...props }) => (
+    <InOrderedList.Provider value>
+      <ol {...props} className="my-2 list-none space-y-1.5 pl-0">
+        {children}
+      </ol>
+    </InOrderedList.Provider>
+  ),
+  ul: ({ node: _node, children, ...props }) => (
+    <InOrderedList.Provider value={false}>
+      <ul {...props}>{children}</ul>
+    </InOrderedList.Provider>
+  ),
+  li: function ChecklistItem({ node, children, ...props }) {
+    const steps = useContext(StepsContext);
+    const ordered = useContext(InOrderedList);
+    const line = node?.position?.start.line;
+    if (!steps || !ordered || line === undefined) return <li {...props}>{children}</li>;
+    const done = steps.checked.includes(line);
+    return (
+      <li {...props} className="flex items-start gap-2">
+        <input
+          type="checkbox"
+          checked={done}
+          onChange={() => steps.toggle(line)}
+          aria-label={done ? "Mark step as not done" : "Mark step as done"}
+          className="mt-0.5 h-4 w-4 shrink-0 cursor-pointer accent-primary"
+        />
+        <div className={cn("min-w-0 flex-1 [&>p]:my-0", done && "text-muted-foreground")}>{children}</div>
+      </li>
+    );
+  },
 };
 
 // Only real model replies carry the server's id; placeholders and error messages can't be rated
@@ -323,11 +427,13 @@ const MessageContent = ({
   role,
   handoff,
   onRequestHandoff,
+  steps,
 }: {
   content: string;
   role: string;
   handoff?: HandoffState;
   onRequestHandoff?: () => void;
+  steps?: StepChecklist; // set on answers the customer can work through
 }) => {
   const [thinking, setThinking] = useState(true);
   const [parsed, setParsed] = useState<{
@@ -387,9 +493,14 @@ const MessageContent = ({
 
   return (
     <>
-      <ReactMarkdown rehypePlugins={[rehypeRaw, rehypeHighlight]}>
-        {parsed.response || content}
-      </ReactMarkdown>
+      <StepsContext.Provider value={steps ?? null}>
+        <ReactMarkdown
+          rehypePlugins={[rehypeRaw, rehypeHighlight]}
+          components={steps ? checklistComponents : undefined}
+        >
+          {parsed.response || content}
+        </ReactMarkdown>
+      </StepsContext.Provider>
       {parsed.redirect_to_agent && (
         <UISelector
           redirectToAgent={parsed.redirect_to_agent}
@@ -504,27 +615,65 @@ function ChatArea() {
   // Keyed by the id of the assistant message whose "Talk to a human" button was clicked
   const [handoffs, setHandoffs] = useState<Record<string, HandoffState>>({});
 
-  // Keyed by the server's reply id, which is what the feedback is stored against
-  const [feedback, setFeedback] = useState<Record<string, FeedbackState>>({});
+  // Keyed by the server's reply id, which is what the outcome is stored against
+  const [outcomes, setOutcomes] = useState<Record<string, OutcomeState>>({});
+  // Ticked step lines, keyed by the assistant message id
+  const [checkedSteps, setCheckedSteps] = useState<Record<string, number[]>>({});
 
-  const rateReply = async (replyId: string, rating: "up" | "down", reason: FeedbackReason | null) => {
-    setFeedback((f) => ({ ...f, [replyId]: { rating, reason, status: "saving" } }));
+  const toggleStep = (messageId: string, line: number) =>
+    setCheckedSteps((s) => {
+      const current = s[messageId] ?? [];
+      return {
+        ...s,
+        [messageId]: current.includes(line) ? current.filter((l) => l !== line) : [...current, line],
+      };
+    });
+
+  const stepProgress = (message: Message) => {
+    let total = 0;
+    try {
+      total = countSteps(JSON.parse(message.content).response ?? "");
+    } catch {}
+    return { done: Math.min((checkedSteps[message.id] ?? []).length, total), total };
+  };
+
+  const reportOutcome = async (
+    replyId: string,
+    result: OutcomeResult,
+    reason: StuckReason | null,
+    steps: { done: number; total: number },
+    escalated = false,
+  ) => {
+    setOutcomes((o) => ({ ...o, [replyId]: { result, reason, status: "saving" } }));
     try {
       const response = await fetch("/api/feedback", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ id: replyId, rating, reason }),
+        body: JSON.stringify({
+          id: replyId,
+          result,
+          reason,
+          steps_done: steps.done,
+          steps_total: steps.total,
+          escalated,
+        }),
       });
       if (!response.ok) throw new Error(`Feedback failed with status ${response.status}`);
-      setFeedback((f) => ({ ...f, [replyId]: { rating, reason, status: "saved" } }));
+      setOutcomes((o) => ({ ...o, [replyId]: { result, reason, status: "saved" } }));
     } catch (error) {
-      console.error("Feedback not saved:", error);
-      setFeedback((f) => ({ ...f, [replyId]: { rating, reason, status: "error" } }));
+      console.error("Outcome not saved:", error);
+      setOutcomes((o) => ({ ...o, [replyId]: { result, reason, status: "error" } }));
     }
   };
 
-  // history: the conversation up to and including the assistant message that handed off
-  const requestHandoff = async (messageId: string, history: Message[]) => {
+  // history: the conversation up to and including the assistant message that handed off.
+  // stuck: set when the customer said the answer didn't fix it and asked for a person.
+  // Returns whether a ticket was opened.
+  const requestHandoff = async (
+    messageId: string,
+    history: Message[],
+    stuck?: { reason: StuckReason | null; steps_done: number; steps_total: number },
+  ): Promise<boolean> => {
     setHandoffs((h) => ({ ...h, [messageId]: { status: "loading" } }));
     try {
       const response = await fetch("/api/handoff", {
@@ -532,6 +681,7 @@ function ChatArea() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           messages: history.map(({ role, content }) => ({ role, content })),
+          ...(stuck ? { stuck } : {}),
         }),
       });
       const data = await response.json().catch(() => ({}));
@@ -542,6 +692,7 @@ function ChatArea() {
         ...h,
         [messageId]: { status: "done", ticket: data.ticket, stored: !!data.stored },
       }));
+      return true;
     } catch (error) {
       setHandoffs((h) => ({
         ...h,
@@ -550,7 +701,19 @@ function ChatArea() {
           message: error instanceof Error ? error.message : "Couldn't reach an agent. Please try again.",
         },
       }));
+      return false;
     }
+  };
+
+  const talkToPersonAfterStuck = async (message: Message, index: number, replyId: string) => {
+    const steps = stepProgress(message);
+    const reason = outcomes[replyId]?.reason ?? null;
+    const opened = await requestHandoff(message.id, messages.slice(0, index + 1), {
+      reason,
+      steps_done: steps.done,
+      steps_total: steps.total,
+    });
+    if (opened) reportOutcome(replyId, "stuck", reason, steps, true);
   };
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
@@ -897,19 +1060,44 @@ function ChatArea() {
                         onRequestHandoff={() =>
                           requestHandoff(message.id, messages.slice(0, index + 1))
                         }
+                        steps={
+                          (() => {
+                            const reply = message.role === "assistant" ? ratableReply(message.content) : null;
+                            return reply && !reply.handedOff
+                              ? {
+                                  checked: checkedSteps[message.id] ?? [],
+                                  toggle: (line: number) => toggleStep(message.id, line),
+                                }
+                              : undefined;
+                          })()
+                        }
                       />
                     </div>
                   </div>
                   {message.role === "assistant" &&
                     (() => {
                       const reply = ratableReply(message.content);
-                      return reply ? (
-                        <ReplyFeedback
+                      if (!reply) return null;
+                      const steps = stepProgress(message);
+                      return (
+                        <ReplyOutcome
                           handedOff={reply.handedOff}
-                          feedback={feedback[reply.id]}
-                          onRate={(rating, reason) => rateReply(reply.id, rating, reason)}
+                          outcome={outcomes[reply.id]}
+                          steps={steps}
+                          handoff={reply.handedOff ? undefined : handoffs[message.id]}
+                          onReport={(result, reason) =>
+                            reportOutcome(
+                              reply.id,
+                              result,
+                              reason,
+                              steps,
+                              // keep the escalation on record if the reason is changed after the ticket opened
+                              result === "stuck" && handoffs[message.id]?.status === "done",
+                            )
+                          }
+                          onTalkToPerson={() => talkToPersonAfterStuck(message, index, reply.id)}
                         />
-                      ) : null;
+                      );
                     })()}
                   {message.role === "assistant" && (
                     <SuggestedQuestions
@@ -950,7 +1138,7 @@ function ChatArea() {
           />
           <div className="flex justify-between items-center p-3">
             <span className="text-xs text-muted-foreground">
-              Questions and ratings kept for 30 days
+              Questions and feedback kept for 30 days
               {!session.owner && (
                 <span className="ml-2">
                   · {input.length}/{session.maxMessageChars}
