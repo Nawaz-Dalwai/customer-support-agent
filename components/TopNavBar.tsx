@@ -1,7 +1,9 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Moon, Sun, Check } from "lucide-react";
+import { Moon, Sun, Check, BarChart3, MessageSquare } from "lucide-react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useTheme } from "next-themes";
 import { themes } from "@/styles/themes";
 import {
@@ -44,6 +46,7 @@ const ColorCircle = ({
 
 const TopNavBar = () => {
   const { theme, setTheme } = useTheme();
+  const onInsights = usePathname() === "/insights";
   const [colorTheme, setColorTheme] = useState<ThemeName>("neutral");
   const [mounted, setMounted] = useState(false);
 
@@ -94,6 +97,12 @@ const TopNavBar = () => {
         </p>
       </div>
       <div className="flex items-center gap-2">
+        <Button variant="outline" asChild>
+          <Link href={onInsights ? "/" : "/insights"} className="gap-1.5">
+            {onInsights ? <MessageSquare className="h-4 w-4" /> : <BarChart3 className="h-4 w-4" />}
+            <span className="hidden sm:inline">{onInsights ? "Chat" : "Insights"}</span>
+          </Link>
+        </Button>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="outline">

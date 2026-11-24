@@ -28,7 +28,8 @@
     "eval:escalation": "node --env-file-if-exists=.env.local scripts/eval-escalation.mjs",
     "eval:reranking": "AWS_PROFILE= node --env-file-if-exists=.env.local scripts/eval-reranking.mjs",
     "eval:sim:prepare": "AWS_PROFILE= node --env-file-if-exists=.env.local scripts/eval-sim-prepare.mjs",
-    "eval:sim:rerun:prepare": "AWS_PROFILE= node --env-file-if-exists=.env.local --experimental-strip-types --no-warnings scripts/eval-sim-rerun-prepare.mjs"
+    "eval:sim:rerun:prepare": "AWS_PROFILE= node --env-file-if-exists=.env.local --experimental-strip-types --no-warnings scripts/eval-sim-rerun-prepare.mjs",
+    "build:insights-sample": "node scripts/build-insights-sample.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.8.0",
